@@ -1,0 +1,7 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Checklists for publication of image analysis workflows
+    numbered: false
+    chapters:
+    - file: novel
