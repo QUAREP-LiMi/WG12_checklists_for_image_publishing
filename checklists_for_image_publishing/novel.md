@@ -36,7 +36,7 @@ Don't do bad things
 `````{admonition} A warning
 :class: warning
 
-Don't do bad things
+Describe the limitations please 
 `````
 
 `````{dropdown} This recommendation has two different opinions
