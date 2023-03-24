@@ -2,6 +2,9 @@ format: jb-book
 root: intro
 parts:
   - caption: Checklists for publication of image analysis workflows
-    numbered: false
     chapters:
     - file: novel
+  - caption: Other resources
+    chapters:
+    - file: glossary
+    - file: genindex

@@ -5,10 +5,13 @@
 blah
 
 ## Another thought
-
+```{index} Thoughts
+```
 blah blah
 
 ````{dropdown} Minimal recommendations
+```{index} Citations
+```
 **Cite components & platform** Do this
 
 **Describe sequence** Do something else
@@ -20,7 +23,8 @@ Don't do bad things
 ```
 
 ```{dropdown} Key settings - this one is long so it's a dropdown
-**Key settings** Write down abcdefghijklm
+
+**Key {term}`setting`s** Write down abcdefghijklm
 ```
 
 
