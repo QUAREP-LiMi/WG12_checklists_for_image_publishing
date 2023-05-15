@@ -6,7 +6,7 @@ Within Quarep-LiMi the Image Analysis and Visualization Working Group (Quarep-Li
 
 WG12 will provide a white-paper, guidelines, training materials, teaching slides with example images, and an application of the guidelines in a video-tutorial. WG12 has members from academic and corporate research, and publishing. Members are active in image analysis, image publishing, image software design, and data visualization.
 
-
+(reachout)=
 Please reach out: https://quarep.org/working-groups/wg-12-image-visualization-and-analysis/
 
 <!--Notes which will not be shown on the actual page-->
