@@ -1,10 +1,26 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Checklists for image publishing
+    chapters:
+    - file: image_intro
+    - file: format
+    - file: channels
+    - file: annotation
+    - file: availability  
   - caption: Checklists for publication of image analysis workflows
     chapters:
+    - file: analysis_intro
+    - file: established
     - file: novel
+    - file: ml
   - caption: Other resources
     chapters:
+    - file: additional
+    - file: contribute
+    - file: faq
+    - file: teaching
+    - file: whois
     - file: glossary
+    - file: bibliography
     - file: genindex
