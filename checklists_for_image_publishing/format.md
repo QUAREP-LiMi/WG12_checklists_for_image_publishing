@@ -7,7 +7,7 @@ Light microscopy images in publications can rapidly communicate useful details i
 - [ ] <img src="images_icons/blank.png" height="25px"> Focus on relevant content
   - Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size. 
 - [ ] <img src="images_icons/blank.png" height="25px">  Separate individual images
-  -   - A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience
+  - A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience.
 - [ ] <img src="images_icons/blank.png" height="25px"> Show example image used for quantifications
   - Provide context and a dash of accountability by complementing a graph of results with one of the quantified images. 
 - [ ] <img src="images_icons/blank.png" height="25px"> Indicate position of zoom-view/inset in full-view/original image
