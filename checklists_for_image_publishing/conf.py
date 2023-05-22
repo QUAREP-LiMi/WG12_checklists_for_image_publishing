@@ -21,6 +21,7 @@ html_title = 'Checklists for Image Publishing'
 latex_engine = 'pdflatex'
 myst_enable_extensions = ['html_image', 'colon_fence', 'dollarmath', 'linkify', 'substitution', 'tasklist']
 myst_enable_checkboxes = True
+myst_heading_anchors = 3
 myst_url_schemes = ['mailto', 'http', 'https']
 nb_execution_allow_errors = False
 nb_execution_cache_path = ''
