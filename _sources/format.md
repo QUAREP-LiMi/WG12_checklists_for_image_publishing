@@ -15,7 +15,6 @@ Light microscopy images in publications can rapidly communicate useful details i
 - [ ] <img src="images_icons/blank.png" height="25px"> Show images of the range of described phenotype
   - As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
 
-
 ````
 
 <!--Notes which will not be shown on the actual page-->
