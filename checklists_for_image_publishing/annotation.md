@@ -16,5 +16,3 @@
 
 ````
 <!--Notes which will not be shown on the actual page-->
-
-- [ ] <img src="images_icons/blank.png" height="25px"> Annotate imaging details important for interpreting the figure. (Depending on the main message and imaging technique this may be e.g. image pixel size, imaging intervals (time-lapse in movies), exposure time, or anatomical section.)
