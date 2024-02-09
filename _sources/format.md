@@ -5,29 +5,81 @@ Light microscopy images in publications can rapidly communicate useful details i
 ``````{note}
 
 `````{dropdown} <img src="images_icons/ImageFormat_1.png" width="50px">  &nbsp;Focus on relevant content
+
 ````{tab-set}
+
 ```{tab-item} Description
+
 Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size.
+
 ```
+
 ```{tab-item} Links
+
+[Link text Here]([https://link-url-here.org](https://f1000research.com/articles/9-1373))
+
 ```
 ````
 `````
 
 `````{dropdown} <img src="images_icons/ImageFormat_2.png" width="50px">  &nbsp;Separate individual images
-  - A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience.
+
+````{tab-set}
+
+```{tab-item} Description
+
+A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience.
+
+```
+
+```{tab-item} Links
+
+```
+````
 `````
 
 `````{dropdown} <img src="images_icons/ImageFormat_3.png" width="50px">  &nbsp;Show example image used for quantifications
-  - Provide context and a dash of accountability by complementing a graph of results with one of the quantified images.
+
+````{tab-set}
+
+```{tab-item} Description
+
+Provide context and a dash of accountability by complementing a graph of results with one of the quantified images.
+
+```
+
+```{tab-item} Links
+
+```
+
+````
 `````
 
 `````{dropdown} <img src="images_icons/ImageFormat_4.png" width="50px"> &nbsp;Indicate position of zoom-view/inset in full-view/original image
-  - When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool.
+
+````{tab-set}
+
+```{tab-item} Description
+
+When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool.
+
+```
+
+```{tab-item} Links
+```
+````
 `````
 
 `````{dropdown} <img src="images_icons/ImageFormat_5.png" width="50px"> &nbsp;Show images of the range of described phenotype
-  - As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
+
+````{tab-set}
+
+```{tab-item} Description
+
+As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
+
+```
+````
 `````
 
 ``````
