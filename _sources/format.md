@@ -2,8 +2,9 @@
 
 Light microscopy images in publications can rapidly communicate useful details if they are prepared to be information dense, clean and containing the most important information/metadata the audience needs to see at a glance. A set of simple processing rules can focus the audience’s attention to the most relevant parts that are crucial for understanding the experiment and/or results. Consult the steps below to start your journey to create understandable and reproducible figures. 
 
-``````{admonition}
+``````{admonition} Minimal
 :class: warning
+
 
 `````{dropdown} <img src="images_icons/ImageFormat_1.png" width="50px">  &nbsp;Focus on relevant content
 
