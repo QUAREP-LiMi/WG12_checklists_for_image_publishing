@@ -16,7 +16,7 @@ Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images 
 
 ```{tab-item} Links
 
-[https://link-url-here.org](https://f1000research.com/articles/9-1373)
+[Effective image visualization for publications](https://f1000research.com/articles/9-1373)
 
 ```
 ````
