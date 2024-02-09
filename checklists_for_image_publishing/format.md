@@ -5,7 +5,13 @@ Light microscopy images in publications can rapidly communicate useful details i
 ````{note}
 
 ```{dropdown} <img src="images_icons/ImageFormat_1.png" width="50px">  &nbsp;Focus on relevant content
-- Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size.
+``{tab-set}
+`{tab-item} Description
+Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size.
+`
+`{tab-item} Links
+`
+``
 ```
 
 ```{dropdown} <img src="images_icons/ImageFormat_2.png" width="50px">  &nbsp;Separate individual images
