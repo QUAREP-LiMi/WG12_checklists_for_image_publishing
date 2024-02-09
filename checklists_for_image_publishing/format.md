@@ -2,7 +2,8 @@
 
 Light microscopy images in publications can rapidly communicate useful details if they are prepared to be information dense, clean and containing the most important information/metadata the audience needs to see at a glance. A set of simple processing rules can focus the audience’s attention to the most relevant parts that are crucial for understanding the experiment and/or results. Consult the steps below to start your journey to create understandable and reproducible figures. 
 
-````{dropdown} Minimal 
+:::{admonition} Chapter outline
+:class: tip
 
 - [ ] <img src="images_icons/blank.png" height="25px"> Focus on relevant content
   - Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size. 
@@ -14,7 +15,6 @@ Light microscopy images in publications can rapidly communicate useful details i
   - When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool. 
 - [ ] <img src="images_icons/blank.png" height="25px"> Show images of the range of described phenotype
   - As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
-
-````
+:::
 
 <!--Notes which will not be shown on the actual page-->
