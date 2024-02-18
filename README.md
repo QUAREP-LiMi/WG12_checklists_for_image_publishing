@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/618487871.svg)](https://zenodo.org/doi/10.5281/zenodo.10675863)
+
 # Checklists for Image Publishing
 
 This cookiecutter creates a simple boilerplate for a Jupyter Book.
