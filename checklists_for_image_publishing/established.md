@@ -1,31 +1,100 @@
 # Established workflows
 
 
-````{dropdown} Minimal 
-- [ ] <img src="images_icons/icon_cite.svg" height="25px"> Cite workflow & platform
+``````{admonition} Minimal 
+:class: warning
 
-- [ ] <img src="images_icons/icon_key_settings.svg" height="25px"> Key settings
+`````{dropdown} <img src="images_icons/icon_cite.svg" width="50px"> &nbsp; Cite workflow & platform
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
 
-- [ ] <img src="images_icons/icon_example.svg" height="25px"> Example data
+`````{dropdown} <img src="images_icons/icon_key_settings.svg" width="50px"> &nbsp; Key settings
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
 
-- [ ] <img src="images_icons/icon_roi.svg" height="25px"> Manual ROIs
+`````{dropdown} <img src="images_icons/icon_example.svg" width="50px"> &nbsp; Example data
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
 
-- [ ] <img src="images_icons/icon_version.svg" height="25px"> Exact version
+`````{dropdown} <img src="images_icons/icon_roi.svg" width="50px"> &nbsp; Manual ROIs
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
 
+`````{dropdown} <img src="images_icons/icon_version.svg" width="50px"> &nbsp; Exact version
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
+
+``````
+
+``````{admonition} Recommended
+:class: warning
+
+`````{dropdown} <img src="images_icons/icon_all_settings.svg" width="50px"> &nbsp; All settings
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
+
+`````{dropdown} <img src="images_icons/icon_public_example.svg" width="50px"> &nbsp; Public example
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
+
+``````
+
+``````{admonition} Ideal
+:class: warning
+
+`````{dropdown} <img src="images_icons/icon_screen_recording.svg" width="50px"> &nbsp; Document usage (e.g. screen recording or tutorial)
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
+
+`````{dropdown} <img src="images_icons/icon_cloud_container.svg" width="50px"> &nbsp; Cloud hosted or container
+````` 
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
 ````
 
-````{dropdown} Recommended
-- [ ] <img src="images_icons/icon_all_settings.svg" height="25px"> All settings
-
-- [ ] <img src="images_icons/icon_public_example.svg" height="25px"> Public example
-
-````
-
-````{dropdown} Ideal
-- [ ] <img src="images_icons/icon_screen_recording.svg" height="25px"> Document usage (e.g. screen recording or tutorial)
-
-- [ ] <img src="images_icons/icon_cloud_container.svg" height="25px"> Cloud hosted or container
-
-````
+``````
 
 <!--Notes which will not be shown on the actual page-->
