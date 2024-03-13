@@ -42,7 +42,7 @@
 ``````
 
 ``````{admonition} Recommended
-:class: attention
+:class: note
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Annotate imaging details important for interpreting the figure. 
 

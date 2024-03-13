@@ -68,7 +68,7 @@ If creating merged images, ensure the LUTs chosen are separable for color-blind 
 ``````
 
 ``````{admonition} Recommended
-:class: attention
+:class: note
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Provide intensity scales (calibration bar) for grayscale, color, pseudocolor
 ````{tab-set}

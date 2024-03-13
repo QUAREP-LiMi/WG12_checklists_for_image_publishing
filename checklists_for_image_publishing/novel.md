@@ -60,7 +60,7 @@
 ``````
 
 ``````{admonition} Recommended
-:class: attention
+:class: note
 
 `````{dropdown} <img src="images_icons/icon_all_settings.svg" width="50px"> &nbsp; All settings
 ````{tab-set}
