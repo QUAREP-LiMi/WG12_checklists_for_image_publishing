@@ -15,7 +15,7 @@
 ``````
 
 ``````{admonition} Recommended
-:class: warning
+:class: attention
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Images are freely downloadable (public databse)
 ````{tab-set}
@@ -29,7 +29,7 @@
 ``````
 
 ``````{admonition} Ideal
-:class: warning
+:class: tip
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Image files are in dedicated image database (added value database or image archive)
 ````{tab-set}

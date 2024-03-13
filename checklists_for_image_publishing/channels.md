@@ -68,7 +68,7 @@ If creating merged images, ensure the LUTs chosen are separable for color-blind 
 ``````
 
 ``````{admonition} Recommended
-:class: warning
+:class: attention
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Provide intensity scales (calibration bar) for grayscale, color, pseudocolor
 ````{tab-set}
@@ -82,7 +82,7 @@ If creating merged images, ensure the LUTs chosen are separable for color-blind 
 ``````
 
 ``````{admonition} Ideal
-:class: warning
+:class: tip
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Pseudo-colored images: additionally provide grayscale version for comparison
 ````{tab-set}

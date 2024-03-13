@@ -60,7 +60,7 @@
 ``````
 
 ``````{admonition} Recommended
-:class: warning
+:class: attention
 
 `````{dropdown} <img src="images_icons/icon_all_settings.svg" width="50px"> &nbsp; All settings
 ````{tab-set}
@@ -101,7 +101,7 @@
 ``````
 
 ``````{admonition} Ideal
-:class: warning
+:class: tip
 
 `````{dropdown} <img src="images_icons/icon_screen_recording.svg" width="50px"> &nbsp; Screen recording or tutorial
 ````{tab-set}
