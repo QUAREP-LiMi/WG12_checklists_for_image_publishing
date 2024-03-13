@@ -15,7 +15,7 @@
 ``````
 
 ``````{admonition} Recommended
-:class: attention
+:class: note
 
 `````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Images are freely downloadable (public databse)
 ````{tab-set}
