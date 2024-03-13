@@ -33,7 +33,7 @@
 ``````
 
 ``````{admonition} Recommended (Pre-trained & novel models)
-:class: warning
+:class: note
 
 `````{dropdown} <img src="images_icons/icon_train_test_metadata.svg" width="50px"> &nbsp; Train, test & metadata
 ````{tab-set}
@@ -74,7 +74,7 @@
 ``````
 
 ``````{admonition} Ideal (novel models)
-:class: warning
+:class: tip
 
 `````{dropdown} <img src="images_icons/icon_model_format.svg" width="50px"> &nbsp; Standardized format
 ````{tab-set}
