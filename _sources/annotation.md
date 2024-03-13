@@ -1,18 +1,59 @@
 # Image annotation
 
-````{dropdown} Minimal 
-- [ ] <img src="images_icons/blank.png" height="25px"> Add scale information (scale bar, image length; in figure/figure legend)
+``````{admonition} Minimal 
+:class: warning
 
-- [ ] <img src="images_icons/blank.png" height="25px">  Explain all annotations (in figure/figure legend)
+`````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Add scale information (scale bar, image length; in figure/figure legend)
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
 
-- [ ] <img src="images_icons/blank.png" height="25px"> Annotations should be legible (line width, size/point size, color)
+`````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Explain all annotations (in figure/figure legend)
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+`````  
+
+`````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Annotations should be legible (line width, size/point size, color)
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
+````
+````` 
  
-- [ ] <img src="images_icons/blank.png" height="25px">  Annotations should not obscure key data
-
+`````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Annotations should not obscure key data
+````{tab-set}
+```{tab-item} Description
+```
+```{tab-item} Links
+```
 ````
+`````  
 
-````{dropdown} Recommended
-- [ ] <img src="images_icons/blank.png" height="25px"> Annotate imaging details important for interpreting the figure. (Depending on the main message and imaging technique this may be e.g. image pixel size, imaging intervals (time-lapse in movies), exposure time, or anatomical section.)
+``````
 
+``````{admonition} Recommended
+:class: attention
+
+`````{dropdown} <img src="images_icons/blank.png" height="50px"> &nbsp; Annotate imaging details important for interpreting the figure. 
+
+````{tab-set}
+```{tab-item} Description
+(Depending on the main message and imaging technique this may be e.g. image pixel size, imaging intervals (time-lapse in movies), exposure time, or anatomical section.)
+```
+```{tab-item} Links
+```
 ````
+````` 
+
+``````
 <!--Notes which will not be shown on the actual page-->

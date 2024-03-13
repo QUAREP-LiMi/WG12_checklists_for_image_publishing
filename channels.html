@@ -392,53 +392,137 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="image-colors-and-channels">
 <h1>Image colors and channels<a class="headerlink" href="#image-colors-and-channels" title="Permalink to this heading">#</a></h1>
+<div class="warning admonition">
+<p class="admonition-title">Minimal</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Minimal<div class="sd-summary-down docutils">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Annotation of channels (staining, marker etc.) visible<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a> Annotation of channels (staining, marker etc.) visible
-Add the staining or marker within or beside the relevant image (panel).</p></li>
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a>  Adjust brightness/contrast, report adjustments, use uniform color-scales
-Intensity range adjustments should be monitored with the image histogram and done with care: a too wide intensity range results in ‘faded’ images that lack details, while a too narrow intensity range removes data.
-Use a range indicator LUT (e.g. HiLo in Fiji) to highlight pixels where data was removed due to a too narrow intensity range</p></li>
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a> Image comparison: use same adjustments
-Any adjustments to the image, such as brightness/contrast must be consistent across all images within an experiment, that might be directly compared.</p></li>
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a>  Channel colors high visibility on background. Best visibility: grayscale
-Ensure the use of highly contrastive colors when choosing for your individual microscopy channels. Darker colors, like blue, are less visible on a black background while lighter colors, like yellow, are highly visible on a black background but less so on a brightfield image with a white background.</p></li>
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a> Multi-color: provide grayscale for each color channel
-Grayscale images are often easier to visually distinguish fine detail within than color channels; providing them ensures the reader can see your phenotype to best effect.</p></li>
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a>  Multi-color: if channels are merged, make accessible to color blind
-If creating merged images, ensure the LUTs chosen are separable for color-blind readers; online simulations can help you check this.</p></li>
-</ul>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Add the staining or marker within or beside the relevant image (panel).</p>
+</div>
+</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Recommended<div class="sd-summary-down docutils">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Adjust brightness/contrast, report adjustments, use uniform color-scales<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a> Provide intensity scales (calibration bar) for grayscale, color, pseudocolor</p></li>
-</ul>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-1" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Intensity range adjustments should be monitored with the image histogram and done with care: a too wide intensity range results in ‘faded’ images that lack details, while a too narrow intensity range removes data.
+Use a range indicator LUT (e.g. HiLo in Fiji) to highlight pixels where data was removed due to a too narrow intensity range</p>
+</div>
+</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Ideal<div class="sd-summary-down docutils">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Image comparison: use same adjustments<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a> Pseudo-colored images: additionally provide grayscale version for comparison</p></li>
-<li class="task-list-item"><p class="sd-card-text"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 25px;" /></a>  Gamma adjustments: additionally provide linear-adjusted image for comparison</p></li>
-</ul>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Any adjustments to the image, such as brightness/contrast must be consistent across all images within an experiment, that might be directly compared.</p>
 </div>
-</details><!--Notes which will not be shown on the actual page--></section>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Channel colors high visibility on background. Best visibility: grayscale<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Ensure the use of highly contrastive colors when choosing for your individual microscopy channels. Darker colors, like blue, are less visible on a black background while lighter colors, like yellow, are highly visible on a black background but less so on a brightfield image with a white background.</p>
+</div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Multi-color: provide grayscale for each color channel<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Grayscale images are often easier to visually distinguish fine detail within than color channels; providing them ensures the reader can see your phenotype to best effect.</p>
+</div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Multi-color: if channels are merged, make accessible to color blind<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">If creating merged images, ensure the LUTs chosen are separable for color-blind readers; online simulations can help you check this.</p>
+</div>
+</div>
+</div>
+</details></div>
+<div class="attention admonition">
+<p class="admonition-title">Recommended</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Provide intensity scales (calibration bar) for grayscale, color, pseudocolor<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+</div>
+</div>
+</details></div>
+<div class="tip admonition">
+<p class="admonition-title">Ideal</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Pseudo-colored images: additionally provide grayscale version for comparison<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="_images/blank.png"><img alt="_images/blank.png" src="_images/blank.png" style="height: 50px;" /></a>   Gamma adjustments: additionally provide linear-adjusted image for comparison<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+</div>
+</div>
+</details></div>
+<!--Notes which will not be shown on the actual page--></section>
 
     <script type="text/x-thebe-config">
     {
