@@ -3,24 +3,24 @@ root: intro
 parts:
   - caption: Checklists for image publishing
     chapters:
-    - file: image_intro
-    - file: format
-    - file: channels
-    - file: annotation
-    - file: availability  
+    - file: image_publishing/intro_image_publishing.md
+    - file: image_publishing/1_image_format.md
+    - file: image_publishing/2_image_colors_channels.md
+    - file: image_publishing/3_image_annotation.md
+    - file: image_publishing/availability  
   - caption: Checklists for publication of image analysis workflows
     chapters:
-    - file: analysis_intro
-    - file: established
-    - file: novel
-    - file: ml
+    - file: analysis_workflows/intro_analysis_workflows.md
+    - file: analysis_workflows/1_established_workflows.md
+    - file: analysis_workflows/2_novel_workflows.md
+    - file: analysis_workflows/3_machine_learning_workflows.md
   - caption: Other resources
     chapters:
-    - file: additional
-    - file: contribute
-    - file: faq
-    - file: teaching
-    - file: whois
-    - file: glossary
-    - file: bibliography
+    - file: additional/additional_topics.md
+    - file: additional/how_to_contribute.md
+    - file: additional/faq.md
+    - file: additional/teaching_outreach.md
+    - file: additional/whois.md
+    - file: additional/glossary.md
+    - file: additional/bibliography.md
     - file: genindex
