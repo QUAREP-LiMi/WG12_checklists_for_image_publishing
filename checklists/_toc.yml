@@ -12,7 +12,7 @@ parts:
     chapters:
     - file: analysis_workflows/intro_analysis_workflows.md
     - file: analysis_workflows/1_established_workflows.md
-    - file: analysis_workflows/2_novel_workflows.md
+    - file: analysis_workflows/2_new_workflows.md
     - file: analysis_workflows/3_machine_learning_workflows.md
   - caption: Other resources
     chapters:
