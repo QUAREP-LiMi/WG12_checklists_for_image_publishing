@@ -16,11 +16,11 @@ parts:
     - file: analysis_workflows/3_machine_learning_workflows.md
   - caption: Other resources
     chapters:
-    - file: additional/additional_topics.md
-    - file: additional/how_to_contribute.md
-    - file: additional/faq.md
-    - file: additional/teaching_outreach.md
-    - file: additional/whois.md
-    - file: additional/glossary.md
-    - file: additional/bibliography.md
+    - file: other_resources/additional_topics.md
+    - file: other_resources/how_to_contribute.md
+    - file: other_resources/faq.md
+    - file: other_resources/teaching_outreach.md
+    - file: other_resources/whois.md
+    - file: other_resources/glossary.md
+    - file: other_resources/bibliography.md
     - file: genindex
