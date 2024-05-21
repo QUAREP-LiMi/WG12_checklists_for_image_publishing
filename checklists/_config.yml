@@ -27,7 +27,7 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/QUAREP-LiMi/WG12_checklists_for_image_publishing  # Online location of your book
-  path_to_book: checklists_for_image_publishing  # Optional path to your book, relative to the repository root
+  path_to_book: checklists  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
