@@ -6,7 +6,7 @@ Light microscopy images in publications can rapidly communicate useful details i
 :class: warning
 
 
-`````{dropdown} <img src="images_icons/ImageFormat_1.png" width="50px">  &nbsp;Focus on relevant content
+`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageFormat_1.png" width="50px">  &nbsp;Focus on relevant content
 
 ````{tab-set}
 
@@ -24,7 +24,7 @@ Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images 
 ````
 `````
 
-`````{dropdown} <img src="images_icons/ImageFormat_2.png" width="50px">  &nbsp;Separate individual images
+`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageFormat_2.png" width="50px">  &nbsp;Separate individual images
 
 ````{tab-set}
 
@@ -40,7 +40,7 @@ A border between individual images makes distinction easier reducing the risk of
 ````
 `````
 
-`````{dropdown} <img src="images_icons/ImageFormat_3.png" width="50px">  &nbsp;Show example image used for quantifications
+`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageFormat_3.png" width="50px">  &nbsp;Show example image used for quantifications
 
 ````{tab-set}
 
@@ -57,7 +57,7 @@ Provide context and a dash of accountability by complementing a graph of results
 ````
 `````
 
-`````{dropdown} <img src="images_icons/ImageFormat_4.png" width="50px"> &nbsp;Indicate position of zoom-view/inset in full-view/original image
+`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageFormat_4.png" width="50px"> &nbsp;Indicate position of zoom-view/inset in full-view/original image
 
 ````{tab-set}
 
@@ -72,7 +72,7 @@ When the big picture is as important as the small details, show both. An indicat
 ````
 `````
 
-`````{dropdown} <img src="images_icons/ImageFormat_5.png" width="50px"> &nbsp;Show images of the range of described phenotype
+`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageFormat_5.png" width="50px"> &nbsp;Show images of the range of described phenotype
 
 ````{tab-set}
 
