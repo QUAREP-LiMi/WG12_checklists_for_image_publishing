@@ -3,7 +3,7 @@
 ``````{admonition} Minimal 
 :class: warning
 
-`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageAnnot_1.png" height="50px"> &nbsp; Add scale information (scale bar, image length; in figure/figure legend)
+`````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAnnot_1.png" height="50px"> &nbsp; Add scale information (scale bar, image length; in figure/figure legend)
 ````{tab-set}
 ```{tab-item} Description
 ```
@@ -12,7 +12,7 @@
 ````
 ````` 
 
-`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageAnnot_2.png" height="50px"> &nbsp; Explain all annotations (in figure/figure legend)
+`````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAnnot_2.png" height="50px"> &nbsp; Explain all annotations (in figure/figure legend)
 ````{tab-set}
 ```{tab-item} Description
 ```
@@ -21,7 +21,7 @@
 ````
 `````  
 
-`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageAnnot_3.png" height="50px"> &nbsp; Annotations should be legible (line width, size/point size, color)
+`````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAnnot_3.png" height="50px"> &nbsp; Annotations should be legible (line width, size/point size, color)
 ````{tab-set}
 ```{tab-item} Description
 ```
@@ -30,7 +30,7 @@
 ````
 ````` 
  
-`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageAnnot_4.png" height="50px"> &nbsp; Annotations should not obscure key data
+`````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAnnot_4.png" height="50px"> &nbsp; Annotations should not obscure key data
 ````{tab-set}
 ```{tab-item} Description
 ```
@@ -44,7 +44,7 @@
 ``````{admonition} Recommended
 :class: note
 
-`````{dropdown} <img src="image_publishing/icons_image_publishing/ImageAnnot_5.png" height="50px"> &nbsp; Annotate imaging details important for interpreting the figure. 
+`````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAnnot_5.png" height="50px"> &nbsp; Annotate imaging details important for interpreting the figure. 
 
 ````{tab-set}
 ```{tab-item} Description

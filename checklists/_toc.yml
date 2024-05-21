@@ -7,7 +7,7 @@ parts:
     - file: image_publishing/1_image_format.md
     - file: image_publishing/2_image_colors_channels.md
     - file: image_publishing/3_image_annotation.md
-    - file: image_publishing/availability  
+    - file: image_publishing/4_image_availability.md
   - caption: Checklists for publication of image analysis workflows
     chapters:
     - file: analysis_workflows/intro_analysis_workflows.md
