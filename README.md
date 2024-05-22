@@ -12,11 +12,11 @@ If you'd like to develop and/or build the Checklists for Image Publishing book, 
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-3. (Optional) Edit the books source files located in the `checklists_for_image_publishing/` directory
-4. Run `jupyter-book clean checklists_for_image_publishing/` to remove any existing builds
-5. Run `jupyter-book build checklists_for_image_publishing/`
+3. (Optional) Edit the books source files located in the `checklists/` directory
+4. Run `jupyter-book clean checklists/` to remove any existing builds
+5. Run `jupyter-book build checklists/`
 
-A fully-rendered HTML version of the book will be built in `checklists_for_image_publishing/_build/html/`.
+A fully-rendered HTML version of the book will be built in `checklists/_build/html/`.
 
 ### Hosting the book
 

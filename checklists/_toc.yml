@@ -1,0 +1,26 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Checklists for image publishing
+    chapters:
+    - file: image_publishing/intro_image_publishing.md
+    - file: image_publishing/1_image_format.md
+    - file: image_publishing/2_image_colors_channels.md
+    - file: image_publishing/3_image_annotation.md
+    - file: image_publishing/4_image_availability.md
+  - caption: Checklists for publication of image analysis workflows
+    chapters:
+    - file: analysis_workflows/intro_analysis_workflows.md
+    - file: analysis_workflows/1_established_workflows.md
+    - file: analysis_workflows/2_new_workflows.md
+    - file: analysis_workflows/3_machine_learning_workflows.md
+  - caption: Other resources
+    chapters:
+    - file: other_resources/additional_topics.md
+    - file: other_resources/how_to_contribute.md
+    - file: other_resources/faq.md
+    - file: other_resources/teaching_outreach.md
+    - file: other_resources/whois.md
+    - file: other_resources/glossary.md
+    - file: other_resources/bibliography.md
+    - file: genindex
