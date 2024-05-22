@@ -2,8 +2,9 @@
 
 Specific teaching and outreach activities associated with these checklists are below.
 
+- Christopher Schmied & Jan Brocher, 2024 - Figure Making Best Practices - Checklists & Demo, hosted by BINA in collaboration with QUAREP ([online](https://www.youtube.com/watch?v=CgfnlcxbjuI&t=1s)) 
 - Christopher Schmied & Beth Cimini, 2023 - 22nd International European Light Microscopy Initiative Meeting (Noordwijkerhout, The Netherlands)
-- Michael Nelson, 2023 - Marine Biological Laboratory: Analytical and quantitative light microscopy (Woods Hole, United States)  
+- Helen Wilson, 2023 - Marine Biological Laboratory: Analytical and Quantitative Light Microscopy (Woods Hole, United States)  
 - Helena Jambor & Christopher Schmied, 2023 -  QUAREP-LiMI Bi-Annual Meeting (online)
 - Christopher Schmied, 2022 - Fondazione Human Technopole: Introduction to bio-image analysis (Milan, Italy) 
 - Christopher Schmied, 2022 - EMBO Practical Course: Light sheet microscopy (Brno, Czech Republic)  

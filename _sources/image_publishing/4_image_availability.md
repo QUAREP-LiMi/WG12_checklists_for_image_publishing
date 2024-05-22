@@ -1,3 +1,4 @@
+(image_availability)=
 # Image availability
 
 ``````{admonition} Minimal 

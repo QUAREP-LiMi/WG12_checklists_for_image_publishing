@@ -1,3 +1,4 @@
+(image_format)=
 # Image format
 
 Light microscopy images in publications can rapidly communicate useful details if they are prepared to be information dense, clean and containing the most important information/metadata the audience needs to see at a glance. A set of simple processing rules can focus the audience’s attention to the most relevant parts that are crucial for understanding the experiment and/or results. Consult the steps below to start your journey to create understandable and reproducible figures. 
@@ -30,11 +31,13 @@ Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images 
 
 ```{tab-item} Description
 
-A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience.
+A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience. There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.
 
 ```
 
 ```{tab-item} Links
+
+See the [creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) [QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
 
 ```
 ````

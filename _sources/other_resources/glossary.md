@@ -1,6 +1,7 @@
+(glossary)=
 # Glossary
 
-```{glossary}
+```{Glossary}
 
 Image
   Used here for image data from a microscope experiment, principles described may also apply to medical images, electron microscopy images.
