@@ -1,3 +1,4 @@
+(machine_learning_workflows)=
 # Machine learning workflows
 
 ``````{admonition} Minimal

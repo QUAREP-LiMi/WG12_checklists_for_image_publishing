@@ -1,3 +1,4 @@
+(new_workflows)=
 # New workflows
 
 ``````{admonition} Minimal 

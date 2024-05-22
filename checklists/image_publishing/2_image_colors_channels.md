@@ -1,3 +1,4 @@
+(image_colors_channels)=
 # Image colors and channels
 
 

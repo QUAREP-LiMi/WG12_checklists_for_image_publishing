@@ -1,3 +1,4 @@
+(image_annotation)=
 # Image annotation
 
 ``````{admonition} Minimal 

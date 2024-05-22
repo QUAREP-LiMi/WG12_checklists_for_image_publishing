@@ -1,3 +1,4 @@
+(additional_topics)=
 # Additional topics and tutorials
 
 ## Making final image figures 

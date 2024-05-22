@@ -1,3 +1,4 @@
+(faq)=
 # Frequently asked questions
 
 ## Why isn't X covered here?

@@ -1,3 +1,4 @@
+(intro_image_publishing)=
 # Introduction
 
 In this section, we discuss how best to prepare microscope images to appear in a figure. For overall information about putting figures together, see our appendix on [making final image figures](./additional.md)
