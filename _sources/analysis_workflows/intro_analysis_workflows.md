@@ -15,7 +15,7 @@ The following three categories of workflows are used in the checklist as require
 2. **Novel workflows**: established or new image analysis components (available in software platforms or libraries) are assembled by researchers into a novel workflow.
 3. **Machine learning (ML) workflows**: ML uses an extended technical terminology and ML workflows that utilize deep neural networks (‘deep learning’) face unique challenges with respect to reproducibility. Given the rapid advancements in this field, we created a separate ML checklist. 
 
-### References
+## References
 
 [1] Miura, K., P. Paul-Gilloteaux, S. Tosi, and J. Colombelli. 2020. Workflows and Components of Bioimage Analysis. In Bioimage Data Analysis Workflows. Springer International Publishing, https://doi.org/10.1007/978-3-030-22386-1_1
 
