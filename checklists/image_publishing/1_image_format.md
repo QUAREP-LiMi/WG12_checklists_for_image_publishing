@@ -50,8 +50,8 @@ Those example images should be unchanged to show the original data that were use
 ```
 
 ```{tab-item} Links
+None
 ```
-
 ````
 `````
 

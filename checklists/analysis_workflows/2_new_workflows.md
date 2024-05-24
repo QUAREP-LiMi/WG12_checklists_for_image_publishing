@@ -1,4 +1,4 @@
-
+(new_workflows)=
 # New workflows
 
 ``````{admonition} Minimal 
@@ -10,6 +10,7 @@
 All components (plugins or packages used in the workflow) should be cited. If a publication does not exist, the download URL and the author of the component can be added in the Methods section. The specific platform used for running the workflow code should also be cited, especially in the case of Apple computers with varying chipset options. 
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -41,7 +42,6 @@ https://doi.org/10.15252/embj.2020105889
 [A guide to accurate reporting in digital image processing – can anyone reproduce your quantitative analysis?](https://journals.biologists.com/jcs/article/134/6/jcs254151/237886/A-guide-to-accurate-reporting-in-digital-image)
 https://doi.org/10.1242/jcs.254151
 ```
-```
 ````
 ````` 
 
@@ -50,8 +50,10 @@ https://doi.org/10.1242/jcs.254151
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_roi.svg" width="50px"> &nbsp; Manual ROIs
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -59,8 +61,10 @@ https://doi.org/10.1242/jcs.254151
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_version.svg" width="50px"> &nbsp; Exact versions
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -88,8 +92,10 @@ Publish the workflow code and example data in public repository such as GitHub o
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_all_settings.svg" width="50px"> &nbsp; All settings
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -102,6 +108,7 @@ Publish the workflow code and example data in public repository such as GitHub o
 Describe the biological context of why this workflow was created, the target of measurement, and possibly refer to similar or related workflows. This text can either be a part of methods, supplementaty materials, or README file in the code package. 
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -112,6 +119,7 @@ Describe the biological context of why this workflow was created, the target of 
 The scope and the limit of the workflow is better be clearly explained in text. For example, "this workflow is specifically designed for this project and not intended for general use",  "This workflow is applicable only for 3D data, not 2D", "Only with 8-bit image data", "the cell diameter should be larger than xx pixels to avoid large errors", "boundary cells are excluded from analysis" etc. As suggested in the examples, all necessary file type data should be included (TIFF vs PNG vs JPG), for example if a fluorescence image is RGB rather than a 3 channel image with red green and blue channels, both of which are possible in a TIFF file.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -127,6 +135,7 @@ The scope and the limit of the workflow is better be clearly explained in text. 
 Including screengrabs of key steps in a pipeline, or if the option is available, a whole video (which could be a link to a hosted video, for example on YouTube or Google Drive) can make it far easier to reproduce an experiment, even a digital one. There are frequently steps or intermediate results experienced users take for granted, that may not be obvious to newer users of a given software or pipeline - these things can be captured in a full video recording of use but might be missed in a writeup.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -134,8 +143,10 @@ Including screengrabs of key steps in a pipeline, or if the option is available,
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_easy_install.svg" width="50px"> &nbsp; Easy install & usage, container
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 

@@ -1,4 +1,4 @@
-
+(established_workflows)=
 # Established workflows
 
 
@@ -8,9 +8,10 @@
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cite.svg" width="50px"> &nbsp; Cite workflow & platform
 ````{tab-set}
 ```{tab-item} Description
-
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -37,6 +38,7 @@ https://doi.org/10.1242/jcs.254151
 Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. 
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -60,6 +62,7 @@ If manualy annotated ROIs are used in the workflow, those ROIs should be saved a
 If the workflow used is published with version tracked code in a public repository e.g. GitHub, the release date or the exact verion of the code should be present in the methods section or supplementary material section. If the workflow is from a commertial software package, the version of the package and the name of the worlflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication. 
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -86,8 +89,10 @@ https://doi.org/10.1242/jcs.254151
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_public_example.svg" width="50px"> &nbsp; Public example
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -103,6 +108,7 @@ https://doi.org/10.1242/jcs.254151
 Including screengrabs of key steps in a pipeline, or if the option is available, a whole video (which could be a link to a hosted video, for example on YouTube or Google Drive) can make it far easier to reproduce an experiment, even a purely digital one. There are frequently steps or intermediate results experienced users take for granted, that may not be obvious to newer users of a given software or pipeline - these things can be captured in a full video recording of use but might be missed in a writeup.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
