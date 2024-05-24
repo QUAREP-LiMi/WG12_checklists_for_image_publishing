@@ -1,11 +1,12 @@
 (glossary)=
+
 # Glossary
 
 ```{Glossary}
 
 Image
   Used here for image data from a microscope experiment, principles described may also apply to medical images, electron microscopy images.
-  
+
 Original image
   Output files/source image data of the microscope; depending on microscope type and the vendor these may be essentially “raw”, i.e., what is visible through the ocular, or pre-processed.
 
