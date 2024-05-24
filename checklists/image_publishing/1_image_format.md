@@ -50,6 +50,7 @@ See the [creation of a panel of images using InkScape with imports from Fiji.](h
 ```{tab-item} Description
 
 Provide context and a dash of accountability by complementing a graph of results with one of the quantified images.
+Those example images should be unchanged to show the original data that were used for quantification. It maximally should include a quantitative background subtraction by subtracting a measured imaging background value if significantly high to reduce any negative impact on intensity readout. Any contrast adjustment should be avoided on those examples.
 
 ```
 
@@ -66,11 +67,13 @@ Provide context and a dash of accountability by complementing a graph of results
 
 ```{tab-item} Description
 
-When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool.
+When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool. Zoomed-in areas of an overview image should always be indicated as exactly as possible.
 
 ```
 
 ```{tab-item} Links
+[Create loss-less, original quality insets using Fiji and Inkscape](https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&t=1197)
+
 ```
 ````
 `````
