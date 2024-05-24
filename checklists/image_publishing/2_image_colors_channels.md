@@ -11,6 +11,7 @@
 Add the staining or marker within or beside the relevant image (panel). 
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -22,6 +23,7 @@ Intensity range adjustments should be monitored with the image histogram and don
 Use a range indicator LUT (e.g. HiLo in Fiji) to highlight pixels where data was removed due to a too narrow intensity range
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 `````  
@@ -32,6 +34,7 @@ Use a range indicator LUT (e.g. HiLo in Fiji) to highlight pixels where data was
 Any adjustments to the image, such as brightness/contrast must be consistent across all images within an experiment, that might be directly compared.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -42,6 +45,7 @@ Any adjustments to the image, such as brightness/contrast must be consistent acr
 Ensure the use of highly contrastive colors when choosing for your individual microscopy channels. Darker colors, like blue, are less visible on a black background while lighter colors, like yellow, are highly visible on a black background but less so on a brightfield image with a white background.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 `````  
@@ -52,6 +56,7 @@ Ensure the use of highly contrastive colors when choosing for your individual mi
 Grayscale images are often easier to visually distinguish fine detail within than color channels; providing them ensures the reader can see your phenotype to best effect.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -62,6 +67,7 @@ Grayscale images are often easier to visually distinguish fine detail within tha
 If creating merged images, ensure the LUTs chosen are separable for color-blind readers; online simulations can help you check this.
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 `````  
@@ -74,8 +80,10 @@ If creating merged images, ensure the LUTs chosen are separable for color-blind 
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageColors_7.png" height="50px"> &nbsp; Provide intensity scales (calibration bar) for grayscale, color, pseudocolor
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -88,8 +96,10 @@ If creating merged images, ensure the LUTs chosen are separable for color-blind 
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageColors_8.png" height="50px"> &nbsp; Pseudo-colored images: additionally provide grayscale version for comparison
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 ````` 
@@ -97,8 +107,10 @@ If creating merged images, ensure the LUTs chosen are separable for color-blind 
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageColors_9.png" height="50px"> &nbsp; Gamma adjustments: additionally provide linear-adjusted image for comparison
 ````{tab-set}
 ```{tab-item} Description
+TODO
 ```
 ```{tab-item} Links
+TODO
 ```
 ````
 `````  
