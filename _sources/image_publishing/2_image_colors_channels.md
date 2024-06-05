@@ -136,12 +136,12 @@ https://drive.google.com/file/d/1LqyRhEmfdt7sJvMG6kTG3oedkI10IC7E/view?usp=drive
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageColors_8.png" height="50px"> &nbsp; Pseudo-colored images: additionally provide grayscale version for comparison
 ````{tab-set}
 ```{tab-item} Description
-TODO
+See links for guides and options for creating pseudo-colored images. Of course, greyscale provides the best and usually "fairest" contrast for a single channel, though LookUp Tables can emphasize certain pixel value ranges that are relevant to a particular study.
 ```
 ```{tab-item} Links
 
-https://www.youtube.com/watch?v=JT9mUkEG-C0&ab_channel=Microcourses
-
+[Best Practices for Pseudo-coloring Fluorescence Microscopy Images](https://www.youtube.com/watch?v=JT9mUkEG-C0&ab_channel=Microcourses)
+[Learn how to create figures using the OMERO extension OMERO.figure.](https://www.youtube.com/watch?v=YeCFaB7VAAQ)
 
 ```
 ````
