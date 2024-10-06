@@ -117,8 +117,10 @@ As tempting as it may be to cherry pick the image that shows the nicest or most 
 Be sure to clearly indicate which population each image is selected from.
 
 ```
+
 ```{tab-item} Links
 Protocol for per-metadata representative image crop generation - https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713
+
 ```
 ````
 `````

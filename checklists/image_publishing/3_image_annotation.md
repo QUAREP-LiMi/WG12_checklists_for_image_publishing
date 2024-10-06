@@ -7,7 +7,7 @@
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAnnot_1.png" height="50px"> &nbsp; Add scale information (scale bar, image length; in figure/figure legend)
 ````{tab-set}
 ```{tab-item} Description
-Include scale information by incorporating a scale bar within the image to provide a reference for size and distance. Additionally, specify the actual dimensions that the scale bar represents in the figure legend or accompanying text to ensure accurate interpretation of the image's scale.
+Include scale information by incorporating a scale bar within (or outside if insufficient contrast/visibility or obstructs key information, see other checks!) the image to provide a reference for size and distance. Additionally, specify the actual dimensions that the scale bar represents in the figure legend or accompanying text to ensure accurate interpretation of the image's scale.
 ```
 ```{tab-item} Links
 Add a scale bar in OMERO Figures:
@@ -40,7 +40,7 @@ TODO
 Annotations should be legible by using an appropriate line width, font size, and point size that ensures clarity and readability. Additionally, choose colors that provide strong contrast against the background and other elements in the image to enhance visibility.
 ```
 ```{tab-item} Links
-https://postacquisition.wordpress.com/2016/02/01/annotating-images/
+Adding annotations in Fiji https://postacquisition.wordpress.com/2016/02/01/annotating-images/
 ```
 ````
 ````` 
