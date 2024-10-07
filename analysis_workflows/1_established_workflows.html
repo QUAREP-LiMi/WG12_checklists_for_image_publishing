@@ -442,8 +442,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Key settings are specific settings of variable parameters that largely affect the outcome of the workflow when the settings are changed, for a given program and version. For example, the spot diameter setting in Trackmate is a key setting that may largely change the tracking results with a slightly different setting. The choice of algorithm for particle linking is also a key setting.  If the exact same settings are used as the referenced workflow, it is possible to omit them, but writers should be aware that readers will be more likely to use and cite their work if they can utilize their protocol!<br />
-WARNING Users should be careful that the overall defaults have not been changed by an administrator, for example a single installation of Fiji used by multiple users may have left over settings changes (like “Invert”) that significantly impact the analysis workflow.</p>
+<p class="sd-card-text">Key settings are specific settings of variable parameters that significantly affect the outcome of the workflow when those settings are changed, and can be unique for a given program and version. For example, the spot diameter setting in Trackmate is a key setting that may change the tracking results with a slightly different setting. The choice of algorithm for particle linking is also a key setting.  If the exact same settings are used as the referenced workflow, it is possible to omit them, but writers should be aware that readers will be more likely to use and cite their work if they can utilize their protocol!  WARNING: Users should be careful that the overall defaults have not been changed by an administrator, for example a single installation of Fiji accessed by multiple users may have left over settings changes (like “Invert”) that significantly impact an analysis workflow.</p>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
@@ -486,7 +485,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-6">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">If manualy annotated ROIs are used in the workflow, those ROIs should be saved as a separate file and uploaded as part of the workflow package. In ImageJ, manualy created ROIs can be stored in ROI manager and saved as a file via the menu associated with ROI Manager.</p>
+<p class="sd-card-text">If manually annotated ROIs are used in the workflow, those ROIs should be saved as a separate file and uploaded as part of the workflow package. Without these ROIs included, manually selected areas prevent others from reproducing the workflow on their own.</p>
 </div>
 <input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-7">
@@ -507,12 +506,16 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-8">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">If the workflow used is published with version tracked code in a public repository e.g. GitHub, the release date or the exact verion of the code should be present in the methods section or supplementary material section. If the workflow is from a commertial software package, the version of the package and the name of the worlflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication.</p>
+<p class="sd-card-text">If the workflow used is published as a version tracked code in a public repository (e.g. GitHub), the release date or the exact version of the code should be present in the Methods section or supplementary material section. If the workflow is from a commercial software package, the version of the package and the name of the workflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication.</p>
 </div>
 <input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-9">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">For example:
+<a class="reference external" href="https://imagej.net/plugins/trackmate/tutorials/getting-started">https://imagej.net/plugins/trackmate/tutorials/getting-started</a></p>
+<p class="sd-card-text">Example references:</p>
+<p class="sd-card-text">Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832. doi:10.1038/s41592-022-01507-1</p>
+<p class="sd-card-text">Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80–90. doi:10.1016/j.ymeth.2016.09.016</p>
 </div>
 </div>
 </div>
@@ -553,7 +556,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-12" name="sd-tab-set-6" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-12">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. Best is to provide this example data on a public repository.</p>
 </div>
 <input id="sd-tab-item-13" name="sd-tab-set-6" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-13">
@@ -576,12 +579,14 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-14" name="sd-tab-set-7" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-14">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Including screengrabs of key steps in a pipeline, or if the option is available, a whole video (which could be a link to a hosted video, for example on YouTube or Google Drive) can make it far easier to reproduce an experiment, even a purely digital one. There are frequently steps or intermediate results experienced users take for granted, that may not be obvious to newer users of a given software or pipeline - these things can be captured in a full video recording of use but might be missed in a writeup.</p>
+<p class="sd-card-text">Including screengrabs of key steps in a pipeline, or if the option is available, a whole video (which could be a link to a hosted video, for example on YouTube or Google Drive) can make it far easier to reproduce an experiment, even a digital one. There are frequently steps or intermediate results experienced users take for granted, that may not be obvious to newer users of a given software or pipeline - these things can be captured in a full video recording of use but might be missed in a writeup.</p>
 </div>
 <input id="sd-tab-item-15" name="sd-tab-set-7" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-15">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">How to Screen Record on Your Mac (4 Options)| The TechSmith Blog
+<a class="reference external" href="https://www.techsmith.com/blog/screen-record-mac/">https://www.techsmith.com/blog/screen-record-mac/</a></p>
+<p class="sd-card-text">Screen recording in Windows - <a class="reference external" href="https://www.tomshardware.com/how-to/screen-record-in-windows">https://www.tomshardware.com/how-to/screen-record-in-windows</a></p>
 </div>
 </div>
 </div>
@@ -597,7 +602,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-16" name="sd-tab-set-8" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-16">
 Description</label><div class="sd-tab-content docutils">
-<p>The method reproducibility is best ensured with a workflow code included in a container e.g. Docker container, that allows the exact reproduction of the environment for running the workflow code together with the example data. The image of that container can be shared as the reproducible workflow.  Otherwise, a publicly accessible exexutable environment e.g cloud hosted server can be prepared to let others to run the workflow code.</p>
+<p>The method reproducibility is best ensured with a workflow code included in a container (e.g. Docker container) that allows the exact reproduction of the environment for running the workflow code together with the example data. The image of that container can be shared as the reproducible workflow.  Otherwise, a publicly accessible executable environment (e.g. cloud hosted server) can be prepared to let others run the workflow code.</p>
 </div>
 <input id="sd-tab-item-17" name="sd-tab-set-8" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-17">

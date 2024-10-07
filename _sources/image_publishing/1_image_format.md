@@ -12,13 +12,26 @@ Light microscopy images in publications can rapidly communicate useful details i
 ````{tab-set}
 
 ```{tab-item} Description
-Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size.
+Crop empty/irrelevant portions of the image to focus the audience’s attention. Rotate images when required, ideally in 90 degree increments, but make sure to use bilinear or bicubic interpolation ohterwise. Resize images to fit the intended panel size, always making sure to constrain the aspect ratio.
 
 ```
 
 ```{tab-item} Links
-[Effective image visualization for publications](https://f1000research.com/articles/9-1373)
+Tutorials
+See the creation of a panel of images using InkScape with imports from Fiji. https://youtu.be/CgfnlcxbjuI?t=3579 
 
+QuickFigures plugin in Fiji: https://youtu.be/9Crg-FAOHmc?t=386
+
+or FigureJ here (more basic): 
+https://imagejdocu.list.lu/plugin/utilities/figurej/start
+
+References
+
+https://f1000research.com/articles/9-1373
+
+https://doi.org/10.1371/journal.pone.0240280
+
+https://doi.org/10.1111/jmi.12069
 ```
 ````
 `````
@@ -28,12 +41,27 @@ Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images 
 ````{tab-set}
 
 ```{tab-item} Description
-A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience. There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.
+There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.
 
 ```
 
 ```{tab-item} Links
-See the [creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) [QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
+See the [creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) 
+[QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
+
+or FigureJ here (more basic): 
+https://imagejdocu.list.lu/plugin/utilities/figurej/start
+
+or Omero.figure: 
+https://www.youtube.com/watch?v=YeCFaB7VAAQ 
+
+References
+
+https://f1000research.com/articles/9-1373
+
+https://doi.org/10.1371/journal.pone.0240280
+
+https://doi.org/10.1111/jmi.12069
 
 ```
 ````
@@ -60,12 +88,21 @@ None
 ````{tab-set}
 
 ```{tab-item} Description
-When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool. Zoomed-in areas of an overview image should always be indicated as exactly as possible.
+When the big picture is as important as the small details, show both. Zoomed-in areas of an image should always be indicated as exactly as possible.  The position of the inset within the full-view image should be made clear, should not obstruct any key data, and if resized, should not be interpolated to give the impression of higher resolution than was actually obtained.
 
 ```
 
 ```{tab-item} Links
 [Create loss-less, original quality insets using Fiji and Inkscape](https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&t=1197)
+
+[Create zoomed insets in OMERO Figures](https://youtu.be/5OQgB9fWqSI?t=376)
+
+Example files:
+SVG:
+https://drive.google.com/file/d/1oM7xA1PLjoeZv0am99ACd4rzH0TCk2Wo/view?usp=drive_link
+
+PNG:
+https://drive.google.com/file/d/1aNvqWRt1ixVIe5jtzUH0zpWyls9QseuJ/view?usp=drive_link
 
 ```
 ````
@@ -77,6 +114,12 @@ When the big picture is as important as the small details, show both. An indicat
 
 ```{tab-item} Description
 As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
+Be sure to clearly indicate which population each image is selected from.
+
+```
+
+```{tab-item} Links
+Protocol for per-metadata representative image crop generation - https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713
 
 ```
 ````

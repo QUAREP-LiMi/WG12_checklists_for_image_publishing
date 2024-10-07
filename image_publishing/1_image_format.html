@@ -423,12 +423,20 @@ document.write(`
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Crop empty/irrelevant pixels to focus the audience’s attention. Rotate images where required, ideally in 90 degree increments. Resize images to fit the intended panel size.</p>
+<p class="sd-card-text">Crop empty/irrelevant portions of the image to focus the audience’s attention. Rotate images when required, ideally in 90 degree increments, but make sure to use bilinear or bicubic interpolation ohterwise. Resize images to fit the intended panel size, always making sure to constrain the aspect ratio.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">Effective image visualization for publications</a></p>
+<p class="sd-card-text">Tutorials
+See the creation of a panel of images using InkScape with imports from Fiji. <a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">https://youtu.be/CgfnlcxbjuI?t=3579</a></p>
+<p class="sd-card-text">QuickFigures plugin in Fiji: <a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">https://youtu.be/9Crg-FAOHmc?t=386</a></p>
+<p class="sd-card-text">or FigureJ here (more basic):
+<a class="reference external" href="https://imagejdocu.list.lu/plugin/utilities/figurej/start">https://imagejdocu.list.lu/plugin/utilities/figurej/start</a></p>
+<p class="sd-card-text">References</p>
+<p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p>
 </div>
 </div>
 </div>
@@ -443,12 +451,21 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">A border between individual images makes distinction easier reducing the risk of confusion and mix up bot for the author and the audience. There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.</p>
+<p class="sd-card-text">There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.</p>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">See the <a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">creation of a panel of images using InkScape with imports from Fiji.</a> <a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji</a></p>
+<p class="sd-card-text">See the <a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">creation of a panel of images using InkScape with imports from Fiji.</a>
+<a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji</a></p>
+<p class="sd-card-text">or FigureJ here (more basic):
+<a class="reference external" href="https://imagejdocu.list.lu/plugin/utilities/figurej/start">https://imagejdocu.list.lu/plugin/utilities/figurej/start</a></p>
+<p class="sd-card-text">or Omero.figure:
+<a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">https://www.youtube.com/watch?v=YeCFaB7VAAQ</a></p>
+<p class="sd-card-text">References</p>
+<p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p>
 </div>
 </div>
 </div>
@@ -484,12 +501,18 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-6">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">When the big picture is as important as the small details, show both. An indication of the position of the detailed image that must be highlighted to the audience is a valuable tool. Zoomed-in areas of an overview image should always be indicated as exactly as possible.</p>
+<p class="sd-card-text">When the big picture is as important as the small details, show both. Zoomed-in areas of an image should always be indicated as exactly as possible.  The position of the inset within the full-view image should be made clear, should not obstruct any key data, and if resized, should not be interpolated to give the impression of higher resolution than was actually obtained.</p>
 </div>
 <input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-7">
 Links</label><div class="sd-tab-content docutils">
 <p class="sd-card-text"><a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&amp;t=1197">Create loss-less, original quality insets using Fiji and Inkscape</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://youtu.be/5OQgB9fWqSI?t=376">Create zoomed insets in OMERO Figures</a></p>
+<p class="sd-card-text">Example files:
+SVG:
+<a class="reference external" href="https://drive.google.com/file/d/1oM7xA1PLjoeZv0am99ACd4rzH0TCk2Wo/view?usp=drive_link">https://drive.google.com/file/d/1oM7xA1PLjoeZv0am99ACd4rzH0TCk2Wo/view?usp=drive_link</a></p>
+<p class="sd-card-text">PNG:
+<a class="reference external" href="https://drive.google.com/file/d/1aNvqWRt1ixVIe5jtzUH0zpWyls9QseuJ/view?usp=drive_link">https://drive.google.com/file/d/1aNvqWRt1ixVIe5jtzUH0zpWyls9QseuJ/view?usp=drive_link</a></p>
 </div>
 </div>
 </div>
@@ -504,7 +527,13 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-8">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.</p>
+<p class="sd-card-text">As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
+Be sure to clearly indicate which population each image is selected from.</p>
+</div>
+<input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-9">
+Links</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Protocol for per-metadata representative image crop generation - <a class="reference external" href="https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713">https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713</a></p>
 </div>
 </div>
 </div>

@@ -422,7 +422,7 @@ document.write(`
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">All components (plugins or packages used in the workflow) should be cited. If a publication does not exist, the download URL and the author of the component can be added in the Methods section. The specific platform used for running the workflow code should also be cited, especially in the case of Apple computers with varying chipset options.</p>
+<p class="sd-card-text">All components (plugins or packages used in the workflow) should be cited with the corresponding version. If publication does not exist, the download URL and the author of the component can be added in the methods section. The platform (including version) used for running the workflow code should also be cited, especially in the case of Apple computers with varying chipset options.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
@@ -442,7 +442,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">The outline of the workflow explaining the key processing steps helps readers to quickly understand the overall design of the workflow before examining the workflow in details. The best format is a flowchart, but it can also be a descriptive text. This description can be either in the methods section, supplementary material, or as a documentation associated with the code package.</p>
+<p class="sd-card-text">The outline of the workflow explains the key processing steps, and it helps readers to quickly understand the overall design of the workflow. The best format is a flowchart, but it can also be a descriptive text. This description can be either in the methods section, supplementary material, or provided as a documentation associated with the code package (GitHub readme, for example).</p>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
@@ -464,7 +464,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Key settings, e.g. the sigma value used for Gaussian blur, auto threshold algorithm, or the link range used for tracking, can be included as a hard-coded part of the workflow code (minimal), but we recommend a separate list of key settings as a list to explicitly present the condition of the use of the component in the workflow. This list can appear as a part of supplementary material (minimal) or as a part of code package in public repository (recommended).</p>
+<p class="sd-card-text">Key settings, e.g. the sigma value used for Gaussian blur, the auto threshold algorithm chosen, or the link range used for tracking, can be included as a hard-coded part of the workflow code (minimal), but we recommend a separate list of key settings as a table to explicitly present the condition of the use of the component in the workflow. This list can appear as a part of supplementary material (minimal) or as a part of code package in public repository (recommended).</p>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
@@ -487,12 +487,15 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-6">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">If manually annotated ROIs are used in the workflow, those ROIs should be saved as a separate file and uploaded as part of the workflow package. Without these ROIs included, manually selected areas prevent others from reproducing the workflow on their own.</p>
 </div>
 <input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-7">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">Measurements &amp; regions of interest · Analyzing fluorescence microscopy images with ImageJ
+<a class="reference external" href="https://petebankhead.gitbooks.io/imagej-intro/content/chapters/rois/rois.html#saving-rois">https://petebankhead.gitbooks.io/imagej-intro/content/chapters/rois/rois.html#saving-rois</a></p>
+<p class="sd-card-text">Saving ROIs created by analyze particles plugin - Development - <a class="reference external" href="http://Image.sc">Image.sc</a> Forum
+<a class="reference external" href="https://forum.image.sc/t/saving-rois-created-by-analyze-particles-plugin/39209">https://forum.image.sc/t/saving-rois-created-by-analyze-particles-plugin/39209</a></p>
 </div>
 </div>
 </div>
@@ -507,12 +510,17 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-8">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">If the workflow used is published as a version tracked code in a public repository (e.g. GitHub), the release date or the exact version of the code should be present in the Methods section or supplementary material section. If the workflow is from a commercial software package, the version of the package and the name of the workflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication.</p>
 </div>
 <input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-9">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">For example:
+<a class="reference external" href="https://imagej.net/plugins/trackmate/tutorials/getting-started">https://imagej.net/plugins/trackmate/tutorials/getting-started</a>
+For example:</p>
+<p class="sd-card-text">Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832. doi:10.1038/s41592-022-01507-1</p>
+<p class="sd-card-text">and / or</p>
+<p class="sd-card-text">Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80–90. doi:10.1016/j.ymeth.2016.09.016</p>
 </div>
 </div>
 </div>
@@ -552,7 +560,7 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-12" name="sd-tab-set-6" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-12">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">Sharing all settings is fairly straightforward in many cases - where a pipeline can be exported or a macro recorded - but can be tricky in others when certain impactful settings are “hidden” within Preferences or Settings sections of the software - for example Fiji has settings that change both the appearance (Invert LUT) and the values (Invert) of images, which may not be part of a given workflow but still can impact the results. Thus it is beneficial to list as much about the “state” of the program as possible, generally in the supplements as the lists can be quite long.</p>
 </div>
 <input id="sd-tab-item-13" name="sd-tab-set-6" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-13">
@@ -620,7 +628,11 @@ Description</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-19" name="sd-tab-set-9" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-19">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">How to Screen Record on Your Mac (4 Options)| The TechSmith Blog
+<a class="reference external" href="https://www.techsmith.com/blog/screen-record-mac/">https://www.techsmith.com/blog/screen-record-mac/</a></p>
+<p class="sd-card-text">How to screen record in Windows10&amp;11
+<a class="reference external" href="https://www.tomshardware.com/how-to/screen-record-in-windows">https://www.tomshardware.com/how-to/screen-record-in-windows</a></p>
+<p class="sd-card-text">Example: <a class="reference external" href="https://forum.image.sc/t/how-to-count-bees-pattern-recognition-and-segmentation/90115/9?u=mike_nelson">https://forum.image.sc/t/how-to-count-bees-pattern-recognition-and-segmentation/90115/9?u=mike_nelson</a></p>
 </div>
 </div>
 </div>
@@ -635,12 +647,19 @@ Links</label><div class="sd-tab-content docutils">
 <input checked="checked" id="sd-tab-item-20" name="sd-tab-set-10" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-20">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">Installation of software and its dependencies can become a major hurdle for usage of scientific software and thus to the reproduction of any analysis. Creating easy installations and documenting them for users is therefore vital to increase accessibility and reproducibility.</p>
+<p class="sd-card-text">To overcome the diversity of the computing environment and allow the execution of workflow by anyone, workflow and sample data packaged in a container together (e.g. FIJI version of ImageJ or Icy or Docker images), are ideal solutions for presenting new workflows.</p>
 </div>
 <input id="sd-tab-item-21" name="sd-tab-set-10" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-21">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">see example of preparation of a Docker for DL4Mic:</p>
+<p class="sd-card-text"><a class="github reference external" href="https://github.com/HenriquesLab/DL4MicEverywhere/blob/main/docs/USER_GUIDE.md#run-dl4miceverywhere-for-the-first-time">HenriquesLab/DL4MicEverywhere</a></p>
+<p class="sd-card-text">References
+Moreau, D., Wiebels, K. &amp; Boettiger, C. Containers for computational reproducibility. Nat Rev Methods Primers 3, 50 (2023). <a class="reference external" href="https://doi.org/10.1038/s43586-023-00236-9">https://doi.org/10.1038/s43586-023-00236-9</a></p>
+<p class="sd-card-text">Ten simple rules for writing Dockerfiles for reproducible data science | PLOS Computational Biology
+<a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008316">https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008316</a></p>
+<p class="sd-card-text"><a class="github reference external" href="https://github.com/HenriquesLab/DL4MicEverywhere/blob/main/docs/USER_GUIDE.md#run-dl4miceverywhere-for-the-first-time">HenriquesLab/DL4MicEverywhere</a></p>
 </div>
 </div>
 </div>
