@@ -37,7 +37,7 @@ html:
   use_repository_button: true
   use_edit_page_button: true
   analytics:
-    plaucible_analytics_domain: quarep-limi.github.io/wg12-checklists-for-image-publishing
+    plausible_analytics_domain: quarep-limi.github.io/wg12-checklists-for-image-publishing
 
 parse:
   myst_enable_extensions:
