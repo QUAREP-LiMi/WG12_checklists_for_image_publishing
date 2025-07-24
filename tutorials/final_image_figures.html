@@ -454,7 +454,7 @@ document.write(`
 <figure class="align-center" id="dpi-1">
 <img alt="Demonstration of raster images" src="../_images/DPI_Fig1.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Figure 1: (A) Example raster image with 1024 pixels x 1024 pixels and 8-bit depth. (B) A 100 pixels x 100 pixels crop  (A, yellow outline) reveals the discrete nature of a raster image. Continuous objects are discretized into individual pixels in space.</span><a class="headerlink" href="#dpi-1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Figure 1: (A) Example raster image with 1024 pixels x 1024 pixels and 8-bit depth. (B) A 100 pixels x 100 pixels crop  (A, yellow outline) reveals the discrete nature of a raster image. Continuous objects are discretized into individual pixels in space.</span><a class="headerlink" href="#dpi-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Typical image processing and analysis software are performing mathematical operations on this grid of pixels and thus are raster graphics software. Important for scientific images to understand is that each pixel in the image corresponds to an actual scientific measurement in a defined space on the imaged object. Thus, any computation on these values need to be performed with care to not alter this information improperly.</p>
@@ -472,7 +472,7 @@ document.write(`
 <figure class="align-center" id="dpi-2">
 <img alt="Example journal page without a figure" src="../_images/DPI_Fig2.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Figure 2: Mock A4 journal page at 300 dpi printing resolution. This translates to a dimension of 2480 and 3508 pixels.</span><a class="headerlink" href="#dpi-2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Figure 2: Mock A4 journal page at 300 dpi printing resolution. This translates to a dimension of 2480 and 3508 pixels.</span><a class="headerlink" href="#dpi-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="images-on-page-with-300-dpi">
@@ -482,7 +482,7 @@ document.write(`
 <figure class="align-center" id="dpi-3">
 <img alt="Example journal page with figure placed" src="../_images/DPI_Fig3.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Figure 3: Mock A4 journal page with example image at 300 dpi without resizing and each pixel of the example image corresponding directly to the required printing resolution.</span><a class="headerlink" href="#dpi-3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Figure 3: Mock A4 journal page with example image at 300 dpi without resizing and each pixel of the example image corresponding directly to the required printing resolution.</span><a class="headerlink" href="#dpi-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Thus our image would have a printed size of 87 mm x 87 mm. This would be a pretty large panel in our final figure. Typically one would like to show also other information (e.g. images, graphs). Thus, the image needs to be <strong>resized</strong> (Figure 3).</p>
@@ -495,7 +495,7 @@ document.write(`
 <figure class="align-center" id="dpi-4">
 <img alt="Image resized with different interpolations" src="../_images/DPI_Fig4.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Figure 4: (A) Original crop from example image (see Figure 1). (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using the bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging (E) Downsampling of the example image crop with nearest neighbor interpolation with averaging.</span><a class="headerlink" href="#dpi-4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Figure 4: (A) Original crop from example image (see Figure 1). (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using the bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging (E) Downsampling of the example image crop with nearest neighbor interpolation with averaging.</span><a class="headerlink" href="#dpi-4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Depending on which algorithm is used the individual pixel values are altered in different ways. In this example different resizing methods using Fiji <em><strong>Image &gt; Adjust &gt; Size…</strong></em> is performed. While we will not go into detail on all methods, it is <strong>important</strong> to understand that the size change of a raster image using raster graphics software needs to use some form of computation and depending on what precise operation is carried out can alter the pixel values.</p>
