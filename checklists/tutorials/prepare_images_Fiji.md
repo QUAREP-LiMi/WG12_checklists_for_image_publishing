@@ -1,20 +1,12 @@
 (tutorials)=
 # Prepare images with Fiji
 
-This tutorial is showing in practice how to create an image figure for publication using [Fiji](https://fiji.sc/). The intention is to go with one example from original image to a image figure. 
+This tutorial is showing in practice how to create an image figure for publication using [Fiji](https://fiji.sc/). The intention is to go with one example from original image to an image figure. 
 
-## Materials
+For this tutorial you are going to need: 
 
-We are going to need: 
-
-- Software: Fiji is just ImageJ (Fiji): [https://fiji.sc/](https://fiji.sc/)
+- Fiji is just ImageJ (Fiji): [https://fiji.sc/](https://fiji.sc/)
 - Image data: [Zenodo repository]()
-
-## Help
-
-If you need help write to the team on [image.sc](image.sc): [https://forum.image.sc/tag/quarep](https://forum.image.sc/tag/quarep). 
-
-You can also reach out to the creator of this tutorial: [schmiedc](https://forum.image.sc/u/schmiedc) 
 
 ## Input images
 
@@ -32,14 +24,12 @@ Acceptable methods to choose a image for a figure:
 - Show multiple examples of range of phenotype
 
 
-<!---
->>>> Tip box Macro recorder
+:::{tip}
 
-TIP: Fiji allows to record all processing steps that are carried including the settings using the macro recorder. This can be used to create a script to automatically process multipe images but could also be used to document all the processing. 
+Fiji allows to record all processing steps that are carried including the settings using the macro recorder. This can be used to create a script to automatically process multipe images but could also be used to document all the processing. 
 
 Record used functions and settings: Plugins > Macros > Record...
--->
-
+:::
 
 ## Visibility - Brightness Contrast
 
@@ -126,8 +116,14 @@ Tip box: Repository examples
 ## Methods description
 --->
 
-## More training material
+## Further material
 
 Cheatsheets for creating image figures
 
 Schmied C and Jambor HK. Effective image visualization for publications – a workflow using open access tools and concepts [version 2]. F1000Research 2021, 9:1373 (doi: 10.12688/f1000research.27140.2)
+
+## Help
+
+If you need help write to the team on [image.sc](image.sc): [https://forum.image.sc/tag/quarep](https://forum.image.sc/tag/quarep). 
+
+You can also reach out to the creator of this tutorial: [schmiedc](https://forum.image.sc/u/schmiedc) 
