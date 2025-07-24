@@ -14,6 +14,9 @@ parts:
     - file: analysis_workflows/1_established_workflows.md
     - file: analysis_workflows/2_new_workflows.md
     - file: analysis_workflows/3_machine_learning_workflows.md
+  - caption: Tutorials
+    chapters:
+    - file: tutorial/final_image_figures.md
   - caption: Other resources
     chapters:
     - file: other_resources/additional_topics.md
