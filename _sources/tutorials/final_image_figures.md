@@ -1,7 +1,5 @@
-(additional_topics)=
-# Additional topics and tutorials
-
-## Making final image figures 
+(tutorials)=
+# Add prepared images to final figure
 
 After image processing (e.g. image reconstruction, cropping, rotation, adjusting brightness contrast) the actual figure that will be published needs to be created. For creating correct and informative image figures the images need to be properly sized as well as annotated. In this section we would like to explain these tasks, common pitfalls and provide different receipts to solve them.
 
@@ -10,7 +8,7 @@ After image processing (e.g. image reconstruction, cropping, rotation, adjusting
 
 In order to understand many of the issues we will discuss below we need to first understand the concept of raster graphics. Any digital image, including a microscopy image, is a raster graphic and thus a grid of pixels (i.e. raster). A raster image has a discrete number of pixels in width and height and each pixel has a specific intensity value (bits) (Figure 1).
 
-```{figure} /other_resources/figures_other_resources/DPI_Fig1.png
+```{figure} /tutorials/final_image_figures_resources/DPI_Fig1.png
 ---
 alt: Demonstration of raster images
 align: center
@@ -38,7 +36,7 @@ Physical dimension of A4 page (Width x Height): 210 mm x 297 mm or 8.27 inches x
 
 An A4 page of 2480 x 3508 pixels corresponds to a printing resolution of 300 dpi (Figure 2). 
 
-```{figure} /other_resources/figures_other_resources/DPI_Fig2.png
+```{figure} /tutorials/final_image_figures_resources/DPI_Fig2.png
 ---
 alt: Example journal page without a figure
 align: center
@@ -54,7 +52,7 @@ We need to place our example images on this page to show the result. If we now w
 
 1024 / 300 dpi  = 3.14 inch = 87 mm 
 
-```{figure} /other_resources/figures_other_resources/DPI_Fig3.png
+```{figure} /tutorials/final_image_figures_resources/DPI_Fig3.png
 ---
 alt: Example journal page with figure placed
 align: center
@@ -71,7 +69,7 @@ Resizing an image using raster image processing software means in simple terms t
 
 This poses a problem for scientific images. As we introduced above each pixel in a scientific image corresponds to a specific measurement in space (sample) that has been acquired using a microscope. Ideally we don’t want to alter this information at all. However using different methods for resizing images can have dramatically different effects on the data (Figure 4).
 
-```{figure} /other_resources/figures_other_resources/DPI_Fig4.png
+```{figure} /tutorials/final_image_figures_resources/DPI_Fig4.png
 ---
 alt: Image resized with different interpolations
 align: center
