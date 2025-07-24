@@ -1,5 +1,5 @@
 (tutorials)=
-# Making final image figures 
+# Add prepared images to final figure
 
 After image processing (e.g. image reconstruction, cropping, rotation, adjusting brightness contrast) the actual figure that will be published needs to be created. For creating correct and informative image figures the images need to be properly sized as well as annotated. In this section we would like to explain these tasks, common pitfalls and provide different receipts to solve them.
 

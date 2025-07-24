@@ -16,7 +16,8 @@ parts:
     - file: analysis_workflows/3_machine_learning_workflows.md
   - caption: Tutorials
     chapters:
-    - file: tutorial/final_image_figures.md
+    - file: tutorials/prepare_images.md
+    - file: tutorials/final_image_figures.md
   - caption: Other resources
     chapters:
     - file: other_resources/additional_topics.md
