@@ -1,7 +1,7 @@
 (intro_image_publishing)=
 # Introduction
 
-Microscopy is a powerful tool to capture biological processes. The output of microscopy is image data (Figure 1). Publishing clear, informative microscopy figures is crucial for **life science researchers**, yet until now there have been no unified guidelines on how to do it. In response, members of **QUAREP-LiMi** (Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy) **Working Group 12** have created community-driven **checklists** to help you present images and image analysis results in a transparent and reproducible way. 
+Microscopy is a powerful tool to capture biological processes. Publishing clear, informative microscopy figures is crucial for **life science researchers**, yet until now there have been no unified guidelines on how to do it. In response, members of **QUAREP-LiMi** (Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy) **Working Group 12** have created community-driven **checklists** to help you present images and image analysis results in a transparent and reproducible way (Figure 1). 
 
 ```{figure} ./figures_image_publishing/intro_image_publication.png
 ---
