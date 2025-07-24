@@ -23,6 +23,7 @@ parts:
     chapters:
     - file: other_resources/additional_topics.md
     - file: other_resources/how_to_contribute.md
+    - file: other_resources/impact.md
     - file: other_resources/faq.md
     - file: other_resources/teaching_outreach.md
     - file: other_resources/whois.md
