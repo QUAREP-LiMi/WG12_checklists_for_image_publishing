@@ -11,9 +11,18 @@ Here, “ workflow” is defined as described in [1]:
 
 The following three categories of workflows are used in the checklist as requirements are different:
 
-1. **Established workflows or workflow templates**: workflows available in the scientific literature or well-established in the respective fields.
-2. **Novel workflows**: established or new image analysis components (available in software platforms or libraries) are assembled by researchers into a novel workflow.
-3. **Machine learning (ML) workflows**: ML uses an extended technical terminology and ML workflows that utilize deep neural networks (‘deep learning’) face unique challenges with respect to reproducibility. Given the rapid advancements in this field, we created a separate ML checklist. 
+1. **Established workflows or workflow templates**: workflows available in the scientific literature or well-established in the respective fields (Figure 1A).
+2. **Novel workflows**: established or new image analysis components (available in software platforms or libraries) are assembled by researchers into a novel workflow (Figure 1B).
+3. **Machine learning (ML) workflows**: ML uses an extended technical terminology and ML workflows that utilize deep neural networks (‘deep learning’) face unique challenges with respect to reproducibility. Given the rapid advancements in this field, we created a separate ML checklist (Figure 1C). 
+
+```{figure} ./figures_analysis_workflows/intro_analysis_workflows.png
+---
+alt: Overview of analysis workflows
+align: center
+name: workflows
+---
+Figure 1: (A) Established workflows or workflow templates (B) Novel workflows (C) Machine learning (ML) workflows. 
+```
 
 ## References
 
