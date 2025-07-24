@@ -8,6 +8,10 @@ For this tutorial you are going to need:
 - Fiji is just ImageJ (Fiji): [https://fiji.sc/](https://fiji.sc/)
 - Image data: [Zenodo repository]()
 
+## Condensed checklist 
+
+This tutorial is based on a condensed version of the checklist. 
+
 ## Input images
 
 - Is the result clearly shown?
@@ -22,7 +26,6 @@ Acceptable methods to choose a image for a figure:
 - Random selection
 - Based on analysis (middle of distribution)
 - Show multiple examples of range of phenotype
-
 
 :::{tip}
 
@@ -109,7 +112,14 @@ Tip box: Repository examples
 --->
 
 <!---
+## Extract documentation from macro
+
 ## Quantification
+
+- Results of quantifications are better than just visual results
+- Cite software tool and specify version
+- Describe workflow
+- Disclose critical parameters
 
 ## Describe images in figures
 
