@@ -19,6 +19,7 @@ parts:
     - file: tutorials/intro_tutorials.md
     - file: tutorials/prepare_images_Fiji.md
     - file: tutorials/final_image_figures.md
+    - file: tutorials/cellprofiler_workflow_documentation.md
   - caption: Other resources
     chapters:
     - file: other_resources/additional_topics.md
