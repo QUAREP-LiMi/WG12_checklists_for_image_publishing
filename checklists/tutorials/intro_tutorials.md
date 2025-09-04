@@ -13,13 +13,11 @@ For this tutorial you are going to need:
 
 To help guide authors to create good image figures we have created a set of [Checklists](https://doi.org/10.1038/s41592-023-01987-9). This tutorial is based on a condensed version of the checklist (see {ref}`figure-checklist`).
 
-```{figure} /tutorials/unit-1_resources/Figure2_condensed_checklist.png
----
+```{figure} /tutorials/unit-1_resources/condensed_checklist.png
 :alt: In
 :align: center
 :name: figure-checklist
-:figclass: unnumbered
----
+
 Condensed checklists. 
 ```
 
@@ -29,7 +27,7 @@ TODO: Explain the checklists and the condensed version. Provide an image. I woul
 
 ## Table of contents
 
-1) [Unit 1: Designing for Impact](./unit-1_impact.md)
+1) [Unit 1: Visibility](./unit-1_visibility.md)
 2) [Unit 2: Format](./unit-2_format.md)
 3) [Unit 3: Figure prep](./unit-3_figure_prep.md)
 
