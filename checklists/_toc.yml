@@ -17,8 +17,9 @@ parts:
   - caption: Tutorials
     chapters:
     - file: tutorials/intro_tutorials.md
-    - file: tutorials/prepare_images_Fiji.md
-    - file: tutorials/final_image_figures.md
+    - file: tutorials/unit-1_visibility.md
+    - file: tutorials/unit-2_format.md
+    - file: tutorials/unit-3_figure_prep.md
   - caption: Other resources
     chapters:
     - file: other_resources/additional_topics.md
