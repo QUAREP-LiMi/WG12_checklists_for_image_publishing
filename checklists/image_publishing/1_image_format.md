@@ -15,7 +15,7 @@ Light microscopy images in publications can rapidly communicate useful details i
 
 ```{tab-item} Description
 
-Crop empty/irrelevant portions of the image to focus the audience’s attention. Rotate images when required, ideally in 90 degree increments, but make sure to use bilinear or bicubic interpolation ohterwise. Resize images to fit the intended panel size, always making sure to constrain the aspect ratio.
+Crop empty/irrelevant portions of the image to focus the audience’s attention. Rotate images when required, ideally in 90 degree increments, but make sure to use bilinear or bicubic interpolation otherwise. Resize images to fit the intended panel size, always making sure to constrain the aspect ratio.
 
 ```
 
