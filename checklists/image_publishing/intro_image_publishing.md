@@ -1,7 +1,7 @@
 (intro_image_publishing)=
 # Introduction
 
-Microscopy is a powerful tool to capture biological processes. Publishing clear, informative microscopy figures is crucial for **life science researchers**, yet until now there have been no unified guidelines on how to do it. In response, members of **QUAREP-LiMi** (Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy) **Working Group 12** have created community-driven **checklists** to help you present images and image analysis results in a transparent and reproducible way (Figure 1). 
+Microscopy is a powerful tool to capture biological processes. Publishing clear, informative microscopy figures is crucial for **life science researchers**, yet until now there have been no unified guidelines on how to do it. In response, members of [**QUAREP-LiMi**](https://quarep.org/) (Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy) [**Working Group 12**](https://quarep.org/working-groups/wg-12-image-visualization-and-analysis/) have created community-driven [**checklists**](https://doi.org/10.1038/s41592-023-01987-9) to help you present images and image analysis results in a transparent and reproducible way (Figure 1). 
 
 ```{figure} ./figures_image_publishing/intro_image_publication.png
 ---
@@ -11,7 +11,7 @@ name: img_publication
 ---
 Figure 1: Microscopy image preparation workflow. The resulting images need to be processed to communicate the scientific result.  
 ```
-We’ve defined three tiers of standards – **Minimal** (essential requirements), **Recommended** (best practices for clarity), and **Ideal** (future goals) – to guide you on [what to include when preparing microscopy figures](https://pmc.ncbi.nlm.nih.gov/articles/PMC10922596/). These checklists offer practical pointers on everything from image formatting and color choices to figure annotations (like scale bars or arrows) and even how to share your image data and analysis workflows.
+We’ve defined three tiers of standards – **Minimal** (essential requirements), **Recommended** (best practices for clarity), and **Ideal** (future goals) – to guide you on [what to include when preparing microscopy figures](https://doi.org/10.1038/s41592-023-01987-9). These checklists offer practical pointers on everything from image formatting and color choices to figure annotations (like scale bars or arrows) and even how to share your image data and analysis workflows.
 
 By following this friendly guidance, you can remove the guesswork (and stress!) of figuring out what’s needed, and ensure your images are **more interpretable and reproducible** in the long run. Ultimately, **better-presented images mean better science** – your findings will be clearer, more credible, and easier for others to build upon.
 

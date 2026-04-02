@@ -98,8 +98,7 @@ For color LUTs darker colors, like blue, are less visible against a black backgr
 
 **Tutorials**
 - [See figures within](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001161)
-- Inverted Look Up Tables in Fiji: [Single tweet tutorial by Christophe Leterrier]
-(https://twitter.com/christlet/status/1126919664880291840)
+- [Inverted Look Up Tables in Fiji: Single tweet tutorial by Christophe Leterrier](https://twitter.com/christlet/status/1126919664880291840)
 - [Did you know – Image Analysis Style](https://didyouknowimageanalysis.wordpress.com/2023/03/17/including-visual-content-in-presentations-and-documents-without-breaking-the-file-size-bank-part-2/)
 
 
