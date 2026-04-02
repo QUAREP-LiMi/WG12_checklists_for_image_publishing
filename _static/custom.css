@@ -1,0 +1,46 @@
+p,
+li {
+    line-height: 1.7;
+}
+
+.admonition {
+    margin: 1.2rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.admonition.warning {
+    border-left: 5px solid #d9534f;
+}
+
+.admonition.note {
+    border-left: 5px solid #4a90e2;
+}
+
+.admonition.tip {
+    border-left: 5px solid #4caf50;
+}
+
+.sd-dropdown,
+details.dropdown {
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.sd-tab-set {
+    margin: 0.8rem 0 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bd-content .bd-article-container {
+    max-width: 920px;
+}
