@@ -40,6 +40,6 @@ Schmied C and Jambor HK. Effective image visualization for publications – a wo
 
 ## Help
 
-If you need help write to the team on [image.sc](image.sc): [https://forum.image.sc/tag/quarep](https://forum.image.sc/tag/quarep). 
+If you need help write to the team on [image.sc](https://forum.image.sc/): [https://forum.image.sc/tag/quarep](https://forum.image.sc/tag/quarep). 
 
 You can also reach out to the creator of this tutorial: [schmiedc](https://forum.image.sc/u/schmiedc) 

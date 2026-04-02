@@ -10,7 +10,7 @@
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 The used workflow should be cited with the corresponding version. If a publication does not exist, the download URL (e.g. GitHub repository), author, date of download and used version should be specified in the methods section. The platform (including version) used for running the workflow code should also be cited, especially in the case of Apple computers with varying chipset options.
@@ -24,7 +24,7 @@ The used workflow should be cited with the corresponding version. If a publicati
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Key settings are specific settings of variable parameters that significantly affect the outcome of the workflow when those settings are changed, and can be unique for a given program and version. For example, the spot diameter setting in Trackmate is a key setting that may change the tracking results with a slightly different setting. The choice of algorithm for particle linking is also a key setting.  If the exact same settings are used as the referenced workflow, it is possible to omit them, but writers should be aware that readers will be more likely to use and cite their work if they can utilize their protocol!  
@@ -45,7 +45,7 @@ WARNING: Users should be careful that the overall defaults have not been changed
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. 
@@ -59,7 +59,7 @@ Example data is required for testing the workflow and the outcome, for peers to 
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 If manually annotated ROIs are used in the workflow, those ROIs should be saved as a separate file and uploaded as part of the workflow package. Without these ROIs included, manually selected areas prevent others from reproducing the workflow on their own.
@@ -80,7 +80,7 @@ If manually annotated ROIs are used in the workflow, those ROIs should be saved 
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 If the workflow used is published as a version tracked code in a public repository (e.g. GitHub), the release date or the exact version of the code should be present in the Methods section or supplementary material section. If the workflow is from a commercial software package, the version of the package and the name of the workflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication. 
@@ -109,7 +109,7 @@ If the workflow used is published as a version tracked code in a public reposito
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Sharing all settings is fairly straightforward in many cases - where a pipeline can be exported or a macro recorded - but can be tricky in others when certain impactful settings are "hidden" within Preferences or Settings sections of the software - for example Fiji has settings that change both the appearance (Invert LUT) and the values (Invert) of images, which may not be part of a given workflow but still can impact the results. Thus it is beneficial to list as much about the "state" of the program as possible, generally in the supplements as the lists can be quite long. If applicable, share the environment specification file (e.g., conda, virtualenv, or similar) to further facilitate reproducibility.
@@ -131,7 +131,7 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 
@@ -167,7 +167,7 @@ Example data is required for testing the workflow and the outcome, for peers to 
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Including screengrabs of key steps in a pipeline, or if the option is available, a whole video (which could be a link to a hosted video, for example on YouTube or Google Drive) can make it far easier to reproduce an experiment, even a digital one. There are frequently steps or intermediate results experienced users take for granted, that may not be obvious to newer users of a given software or pipeline - these things can be captured in a full video recording of use but might be missed in a writeup.
@@ -188,7 +188,7 @@ Including screengrabs of key steps in a pipeline, or if the option is available,
 :open:
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 The method reproducibility is best ensured with a workflow code included in a container (e.g. Docker container) that allows the exact reproduction of the environment for running the workflow code together with the example data. The image of that container can be shared as the reproducible workflow.  Otherwise, a publicly accessible executable environment (e.g. cloud hosted server) can be prepared to let others run the workflow code.
