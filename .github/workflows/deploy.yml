@@ -26,6 +26,8 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+        # we are using jupyter-book 1
+        pip install "jupyter-book<2"
 
     # Build the book
     - name: Build the book
