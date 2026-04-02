@@ -148,11 +148,20 @@ Publish the workflow code and example data in a public repository such as GitHub
 ```{tab-item} Links
 **Tutorials**
 - [How to publish and cite code using GitHub and Zenodo.](https://www.youtube.com/watch?v=HZ6m8oxwvig)
+- [Overview over different repositories.](https://www.nature.com/articles/s41592-023-01987-9/figures/7)
+- [Totorial showing how to use Zenodo.](https://focalplane.biologists.com/2023/02/15/sharing-research-data-with-zenodo/)
+- [From publication to IDR study.](https://www.youtube.com/watch?v=dFg2PAF3k7s)
+- [Submitting your data to the BioImage Archive.](https://www.youtube.com/watch?v=ZZUslnHcoz0)
 
 **References** 
 - [Reproducible image handling and analysis | The EMBO Journal](https://www.embopress.org/doi/full/10.15252/embj.2020105889)
 - [A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research | PLOS Biology](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506)
 - [The five pillars of computational reproducibility: bioinformatics and beyond - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10591307/)
+- [Cell Painting Gallery (CPG).](https://arxiv.org/abs/2402.02203)
+- [BioImage Archive.](https://doi.org/10.1016/j.jmb.2022.167505)
+- [Image Data Resource (IDR).](https://idr.openmicroscopy.org/) 
+- [Electron Microscopy Public Image Archive (EMPIAR).](https://www.ebi.ac.uk/empiar/)
+- [A call for public archives for biological image data.](https://doi.org/10.1038/s41592-018-0195-8)
 ```
 ````
 ````` 

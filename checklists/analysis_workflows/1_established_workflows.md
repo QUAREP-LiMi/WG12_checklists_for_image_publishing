@@ -131,6 +131,21 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. Best is to provide this example data on a public repository.
 
 ```
+```{tab-item} Links
+
+**Tutorials**
+- [Overview over different repositories.](https://www.nature.com/articles/s41592-023-01987-9/figures/7)
+- [Totorial showing how to use Zenodo.](https://focalplane.biologists.com/2023/02/15/sharing-research-data-with-zenodo/)
+- [From publication to IDR study.](https://www.youtube.com/watch?v=dFg2PAF3k7s)
+- [Submitting your data to the BioImage Archive.](https://www.youtube.com/watch?v=ZZUslnHcoz0)
+
+**References**
+- [Cell Painting Gallery (CPG).](https://arxiv.org/abs/2402.02203)
+- [BioImage Archive.](https://doi.org/10.1016/j.jmb.2022.167505)
+- [Image Data Resource (IDR).](https://idr.openmicroscopy.org/) 
+- [Electron Microscopy Public Image Archive (EMPIAR).](https://www.ebi.ac.uk/empiar/)
+- [A call for public archives for biological image data.](https://doi.org/10.1038/s41592-018-0195-8)
+```
 
 ````
 ````` 

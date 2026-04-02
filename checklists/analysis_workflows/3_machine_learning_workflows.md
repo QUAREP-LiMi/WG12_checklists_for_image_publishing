@@ -112,9 +112,15 @@ The code used for training the model should be provided via public repositories 
 
 ```
 ```{tab-item} Links
-**Examples** 
+
+**Tutorial**
+- [How to publish and cite code using GitHub and Zenodo.](https://www.youtube.com/watch?v=HZ6m8oxwvig)
+
+**Examples**
 - [Cellpose](https://github.com/MouseLand/cellpose)
 - [Stardist](https://github.com/stardist/stardist)
+
+**References**
 - [Reproducibility standards for machine learning in the life sciences](https://doi.org/10.1038/s41592-021-01256-7)
 ```
 ````
