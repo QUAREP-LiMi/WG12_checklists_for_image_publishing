@@ -6,39 +6,41 @@ Light microscopy images in publications can rapidly communicate useful details i
 ``````{admonition} Minimal
 :class: warning
 
-
+<!-- Focus on relevant content -->
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_1.png" width="50px">  &nbsp;Focus on relevant content
 
+
 ````{tab-set}
+:default-tab: Description
 
 ```{tab-item} Description
+
 Crop empty/irrelevant portions of the image to focus the audience’s attention. Rotate images when required, ideally in 90 degree increments, but make sure to use bilinear or bicubic interpolation ohterwise. Resize images to fit the intended panel size, always making sure to constrain the aspect ratio.
 
 ```
 
 ```{tab-item} Links
-Tutorials
-See the creation of a panel of images using InkScape with imports from Fiji. https://youtu.be/CgfnlcxbjuI?t=3579 
 
-QuickFigures plugin in Fiji: https://youtu.be/9Crg-FAOHmc?t=386
+**Tutorials**
+- [Creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579)
+- [Create zoomed inset from BioVoxxel Figure Toolbox.](https://github.com/biovoxxel/BioVoxxel-Figure-Tools/#creating-zoomed-in-and-resized-versions-of-image-areas-eg-as-insets)
+- [QuickFigures plugin in Fiji.](https://youtu.be/9Crg-FAOHmc?t=386)
+- [FigureJ (more basic).](https://imagejdocu.list.lu/plugin/utilities/figurej/start)
 
-or FigureJ here (more basic): 
-https://imagejdocu.list.lu/plugin/utilities/figurej/start
+**References**
+- https://f1000research.com/articles/9-1373  
+- https://doi.org/10.1371/journal.pone.0240280  
+- https://doi.org/10.1111/jmi.12069  
 
-References
-
-https://f1000research.com/articles/9-1373
-
-https://doi.org/10.1371/journal.pone.0240280
-
-https://doi.org/10.1111/jmi.12069
 ```
 ````
 `````
 
+<!-- Separate individual images -->
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_2.png" width="50px">  &nbsp;Separate individual images
 
 ````{tab-set}
+:default-tab: Description
 
 ```{tab-item} Description
 There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.
@@ -46,80 +48,92 @@ There should always be some sort of border with a strong contrast to indicate a 
 ```
 
 ```{tab-item} Links
-See the [creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) 
-[QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
 
-or FigureJ here (more basic): 
-https://imagejdocu.list.lu/plugin/utilities/figurej/start
+**Tutorials**
+- [Creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) 
+- [QuickFigures plugin in Fiji.](https://youtu.be/9Crg-FAOHmc?t=386)
+- [FigureJ here (more basic).](https://imagejdocu.list.lu/plugin/utilities/figurej/start)
+- [Omero.figure.](https://www.youtube.com/watch?v=YeCFaB7VAAQ) 
 
-or Omero.figure: 
-https://www.youtube.com/watch?v=YeCFaB7VAAQ 
-
-References
-
-https://f1000research.com/articles/9-1373
-
-https://doi.org/10.1371/journal.pone.0240280
-
-https://doi.org/10.1111/jmi.12069
+**References**
+- https://f1000research.com/articles/9-1373
+- https://doi.org/10.1371/journal.pone.0240280
+- https://doi.org/10.1111/jmi.12069
 
 ```
 ````
 `````
-
+<!-- Show example image used for quantifications -->
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_3.png" width="50px">  &nbsp;Show example image used for quantifications
 
+
 ````{tab-set}
+:default-tab: Description
 
 ```{tab-item} Description
-Provide context and a dash of accountability by complementing a graph of results with one of the quantified images.
-Those example images should be unchanged to show the original data that were used for quantification. It maximally should include a quantitative background subtraction by subtracting a measured imaging background value if significantly high to reduce any negative impact on intensity readout. Any contrast adjustment should be avoided on those examples.
+Provide context and a dash of accountability by complementing a graph of results with at least one of the quantified images. Those example images should be unchanged to show the original data that were used for quantification. It maximally should include a quantitative background subtraction by subtracting a measured imaging background value if significantly high to reduce any negative impact on intensity readout. 
 
 ```
 
 ```{tab-item} Links
-None
+
+**Tutorials**
+- [QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
+- [Omero.figure](https://www.youtube.com/watch?v=YeCFaB7VAAQ)
+
+**References**
+- https://f1000research.com/articles/9-1373
+- https://doi.org/10.1371/journal.pone.0240280
+- https://doi.org/10.1111/jmi.12069
+
+
 ```
 ````
 `````
-
+<!-- Indicate position of zoom-view/inset in full-view/original image -->
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_4.png" width="50px"> &nbsp;Indicate position of zoom-view/inset in full-view/original image
 
+
 ````{tab-set}
+:default-tab: Description
 
 ```{tab-item} Description
-When the big picture is as important as the small details, show both. Zoomed-in areas of an image should always be indicated as exactly as possible.  The position of the inset within the full-view image should be made clear, should not obstruct any key data, and if resized, should not be interpolated to give the impression of higher resolution than was actually obtained.
+When presenting two magnification views of the same image (e.g., a full and a zoomed or inset view), the position of the inset within the full-view image should be indicated as exactly as possible. If the inset is placed on top of the full-view image, for example to save space, it should not obstruct any key data, and if resized, it should not be interpolated in a way that gives the impression of higher resolution than was actually obtained.
+```
+
+```{tab-item} Example
+
+<img src="/image_publishing/example_images/ZoomedInset_24042901.png" style="max-width: 100%; width: 600px; height: auto;">
+
+[Example as SVG](/image_publishing/example_images/ZoomedInset_24042901.svg)
 
 ```
 
 ```{tab-item} Links
-[Create loss-less, original quality insets using Fiji and Inkscape](https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&t=1197)
 
-[Create zoomed insets in OMERO Figures](https://youtu.be/5OQgB9fWqSI?t=376)
-
-Example files:
-SVG:
-https://drive.google.com/file/d/1oM7xA1PLjoeZv0am99ACd4rzH0TCk2Wo/view?usp=drive_link
-
-PNG:
-https://drive.google.com/file/d/1aNvqWRt1ixVIe5jtzUH0zpWyls9QseuJ/view?usp=drive_link
+**Tutorials**
+- [Create loss-less, original quality insets using Fiji and Inkscape](https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&t=1197)
+- [Create zoomed insets in OMERO Figures](https://youtu.be/5OQgB9fWqSI?t=376)
 
 ```
 ````
 `````
 
+<!-- Show images of the range of described phenotype -->
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_5.png" width="50px"> &nbsp;Show images of the range of described phenotype
 
 ````{tab-set}
+:default-tab: Description
 
 ```{tab-item} Description
-As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
-Be sure to clearly indicate which population each image is selected from.
+As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly. Be sure to clearly indicate which population each image is selected from.
 
 ```
 
 ```{tab-item} Links
-Protocol for per-metadata representative image crop generation - https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713
+
+**Tutorials**
+- [Protocol for per-metadata representative image crop generation](https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713)
 
 ```
 ````
