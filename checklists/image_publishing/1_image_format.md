@@ -19,7 +19,7 @@ Crop empty/irrelevant portions of the image to focus the audience’s attention.
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579)
@@ -47,7 +47,7 @@ There should always be some sort of border with a strong contrast to indicate a 
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) 
@@ -75,7 +75,7 @@ Provide context and a dash of accountability by complementing a graph of results
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
@@ -109,7 +109,7 @@ When presenting two magnification views of the same image (e.g., a full and a zo
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Create loss-less, original quality insets using Fiji and Inkscape](https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&t=1197)
@@ -130,7 +130,7 @@ As tempting as it may be to cherry pick the image that shows the nicest or most 
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Protocol for per-metadata representative image crop generation](https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713)

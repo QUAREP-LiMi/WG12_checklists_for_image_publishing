@@ -15,7 +15,7 @@ Include scale information by incorporating a scale bar within (or outside if ins
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 **Tutorials**
 - [Add a scale bar in OMERO Figures.](https://youtu.be/YeCFaB7VAAQ?si=zui5kBNJZNEQYIPn&t=95)
 - [Using ImageJ to add a scale bar to an image.](https://www.youtube.com/watch?v=1GVBIEwvfng)
@@ -51,7 +51,7 @@ Annotations should be legible by using an appropriate line width, font size, and
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 **Tutorials**
 - [Adding annotations in Fiji](https://postacquisition.wordpress.com/2016/02/01/annotating-images/)
 

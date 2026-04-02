@@ -1,0 +1,65 @@
+/* More breathing room */
+.bd-content .section {
+    margin-bottom: 1.5rem;
+}
+
+p,
+li {
+    line-height: 1.65;
+}
+
+/* Softer admonitions */
+.admonition {
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Stronger visual distinction for your three levels */
+.admonition.warning {
+    border-left: 5px solid #d9534f;
+}
+
+.admonition.note {
+    border-left: 5px solid #4a90e2;
+}
+
+.admonition.tip {
+    border-left: 5px solid #4caf50;
+}
+
+/* Improve dropdown appearance */
+details.dropdown {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.75rem;
+    background: #fafafa;
+}
+
+details.dropdown summary {
+    font-weight: 600;
+}
+
+/* Make nested content less cramped */
+.sd-tab-set,
+.tab-set {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+details.dropdown summary img {
+    vertical-align: middle;
+    margin-right: 0.4rem;
+}
+
+/* Slightly narrower readable text area */
+.bd-main .bd-content {
+    max-width: 900px;
+}

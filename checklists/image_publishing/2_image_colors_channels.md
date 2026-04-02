@@ -16,7 +16,7 @@ Clearly annotate the channels with specific information, including staining (bri
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Global BioImaging: Using OMERO.figure to add channel labels](https://youtu.be/5OQgB9fWqSI?t=308)
@@ -47,7 +47,7 @@ Plain brightness adjustments can increase background or decrease signal, without
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - One quick possibility to adjust the contrast of multiple imaghould be compared in one figure can be achieved [as shown here.](https://youtu.be/F6ll37NOgXc?si=liPCwE-PmWGFgM9Y&t=930)
@@ -70,7 +70,7 @@ Changes such as contrast adjustment, background subtractions, pseudo-coloring et
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - One quick possibility to adjust the contrast of multiple imaghould be compared in one figure can be achieved [as shown here.](https://youtu.be/F6ll37NOgXc?si=liPCwE-PmWGFgM9Y&t=930)
@@ -94,7 +94,7 @@ For color LUTs darker colors, like blue, are less visible against a black backgr
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [See figures within](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001161)
@@ -129,7 +129,7 @@ Our intensity perception is best when using grayscale (black to white). Thus, fo
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Exporting merge images and grayscale images from Fiji and aligning them in Inkscape.](https://youtu.be/F6ll37NOgXc?si=ot8oPgYVQ9yh8Pwo&t=1504)
@@ -162,7 +162,7 @@ Pseudo colors can be added to individual channels in Fiji via the >Image >Lookup
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Color blind friendly figures.](https://www.nki.nl/about-us/responsible-research/guidelines-color-blind-friendly-figures/)
@@ -226,7 +226,7 @@ Greyscale provides the best and usually "fairest" contrast for a single channel.
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 **Tutorials**
 - [Best Practices for Pseudo-coloring Fluorescence Microscopy Images](https://www.youtube.com/watch?v=JT9mUkEG-C0&ab_channel=Microcourses)
 - [Learn how to create figures using the OMERO extension OMERO.figure.](https://www.youtube.com/watch?v=YeCFaB7VAAQ)
@@ -246,7 +246,7 @@ Gamma as well as other non-linear adjustments change relative pixel intensity an
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Text based explanation specific to microscopy.](https://micro.magnet.fsu.edu/primer/java/digitalimaging/processing/gamma/index.html)

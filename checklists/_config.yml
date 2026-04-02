@@ -49,3 +49,10 @@ parse:
     - tasklist
   myst_enable_checkboxes: true
 
+
+sphinx:
+  config:
+    html_static_path: ['_static']
+    html_css_files:
+      - custom.css
+

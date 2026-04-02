@@ -7,6 +7,7 @@
 
 <!-- Cite workflow & platform -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cite.svg" width="50px"> &nbsp; Cite workflow & platform
+:open:
 
 ````{tab-set}
 :default-tab: Description
@@ -15,12 +16,12 @@
 The used workflow should be cited with the corresponding version. If a publication does not exist, the download URL (e.g. GitHub repository), author, date of download and used version should be specified in the methods section. The platform (including version) used for running the workflow code should also be cited, especially in the case of Apple computers with varying chipset options.
 
 ```
-
 ````
 ````` 
 
 <!-- Key settings -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_key_settings.svg" width="50px"> &nbsp; Key settings
+:open:
 
 ````{tab-set}
 :default-tab: Description
@@ -30,12 +31,10 @@ Key settings are specific settings of variable parameters that significantly aff
 
 WARNING: Users should be careful that the overall defaults have not been changed by an administrator, for example a single installation of Fiji accessed by multiple users may have left over settings changes (like "Invert") that significantly impact an analysis workflow.
 ```
-```{tab-item} Links
+```{tab-item} Resources
 **References**
 - [Reproducible image handling and analysis](https://doi.org/10.15252/embj.2020105889)
 - [A guide to accurate reporting in digital image processing – can anyone reproduce your quantitative analysis?](https://doi.org/10.1242/jcs.254151)
-
-
 
 ```
 ````
@@ -43,28 +42,31 @@ WARNING: Users should be careful that the overall defaults have not been changed
 
 <!-- Example data -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_example.svg" width="50px"> &nbsp; Example data
+:open:
 
 ````{tab-set}
 :default-tab: Description
 
 ```{tab-item} Description
 Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. 
-```
 
+```
 ````
 ````` 
 
 <!-- Manual ROIs -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_roi.svg" width="50px"> &nbsp; Manual ROIs
+:open:
 
 ````{tab-set}
 :default-tab: Description
 
 ```{tab-item} Description
 If manually annotated ROIs are used in the workflow, those ROIs should be saved as a separate file and uploaded as part of the workflow package. Without these ROIs included, manually selected areas prevent others from reproducing the workflow on their own.
+
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 **Tutorials**
 - [Measurements & regions of interest · Analyzing fluorescence microscopy images with ImageJ](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/rois/rois.html#saving-rois)
 - [Saving ROIs created by analyze particles plugin - Development - Image.sc Forum](https://forum.image.sc/t/saving-rois-created-by-analyze-particles-plugin/39209)
@@ -75,14 +77,17 @@ If manually annotated ROIs are used in the workflow, those ROIs should be saved 
 
 <!-- Exact version -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_version.svg" width="50px"> &nbsp; 
+:open:
+
 ````{tab-set}
 :default-tab: Description
 
 ```{tab-item} Description
 If the workflow used is published as a version tracked code in a public repository (e.g. GitHub), the release date or the exact version of the code should be present in the Methods section or supplementary material section. If the workflow is from a commercial software package, the version of the package and the name of the workflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication. 
+
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Example**
 - [TrackMate Documentation](https://imagej.net/plugins/trackmate/tutorials/getting-started)
@@ -90,10 +95,10 @@ If the workflow used is published as a version tracked code in a public reposito
 **References**
 - [TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines.](https://doi.org/10.1038/s41592-022-01507-1)
 - [TrackMate: An open and extensible platform for single-particle tracking](https://doi.org/10.1016/j.ymeth.2016.09.016)
+
 ```
 ````
 ````` 
-
 ``````
 
 ``````{admonition} Recommended
@@ -101,6 +106,7 @@ If the workflow used is published as a version tracked code in a public reposito
 
 <!-- All settings -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_all_settings.svg" width="50px"> &nbsp; All settings
+:open:
 
 ````{tab-set}
 :default-tab: Description
@@ -108,7 +114,7 @@ If the workflow used is published as a version tracked code in a public reposito
 ```{tab-item} Description
 Sharing all settings is fairly straightforward in many cases - where a pipeline can be exported or a macro recorded - but can be tricky in others when certain impactful settings are "hidden" within Preferences or Settings sections of the software - for example Fiji has settings that change both the appearance (Invert LUT) and the values (Invert) of images, which may not be part of a given workflow but still can impact the results. Thus it is beneficial to list as much about the "state" of the program as possible, generally in the supplements as the lists can be quite long. If applicable, share the environment specification file (e.g., conda, virtualenv, or similar) to further facilitate reproducibility.
 ```
-```{tab-item} Links
+```{tab-item} Resources
 
 **References**
 
@@ -122,6 +128,7 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 
 <!-- Public example -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_public_example.svg" width="50px"> &nbsp; Public example
+:open:
 
 ````{tab-set}
 :default-tab: Description
@@ -131,7 +138,7 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. Best is to provide this example data on a public repository.
 
 ```
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Overview over different repositories.](https://www.nature.com/articles/s41592-023-01987-9/figures/7)
@@ -157,6 +164,7 @@ Example data is required for testing the workflow and the outcome, for peers to 
 
 <!-- Document usage (e.g. screen recording or tutorial) -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_screen_recording.svg" width="50px"> &nbsp; Document usage (e.g. screen recording or tutorial)
+:open:
 
 ````{tab-set}
 :default-tab: Description
@@ -166,7 +174,7 @@ Including screengrabs of key steps in a pipeline, or if the option is available,
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [How to Screen Record on Your Mac (4 Options)| The TechSmith Blog](https://www.techsmith.com/blog/screen-record-mac/)
@@ -174,9 +182,11 @@ Including screengrabs of key steps in a pipeline, or if the option is available,
 ```
 ````
 ````` 
+
 <!-- Cloud hosted or container -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cloud_container.svg" width="50px"> &nbsp; Cloud hosted or container
-````` 
+:open:
+
 ````{tab-set}
 :default-tab: Description
 
@@ -185,7 +195,7 @@ The method reproducibility is best ensured with a workflow code included in a co
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 - [Tutorial - PDF](https://fox.cs.vt.edu/talks/2020/JCDL%202020%20Reproducibility%20Tutorial.pdf)
 - [Ten simple rules for writing Dockerfiles for reproducible data science](
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7654784/)
@@ -193,7 +203,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7654784/)
 
 ```
 ````
-
+````` 
 ``````
 
 <!--Notes which will not be shown on the actual page-->
