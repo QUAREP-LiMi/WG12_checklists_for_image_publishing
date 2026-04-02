@@ -197,6 +197,7 @@ Describe the biological context of why this workflow was created, the target of 
 
 <!-- Limitations-->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_limitations.svg" width="50px"> &nbsp; Limitations
+:open:
 
 ````{tab-set}
 
