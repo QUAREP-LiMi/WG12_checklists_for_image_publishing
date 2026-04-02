@@ -87,11 +87,14 @@ Each machine learning workflow must be accompanied by example image data that is
 :default-tab: Description
 
 ```{tab-item} Description
-To facilitate the reproduction and validation of results from either models trained from scratch or pre-trained models that were re-trained, the full training and testing data and any training metadata (e.g. hyperparameters, training time given computing resources) should be made available.
+To enable the reproduction and validation of the results, whether from model trained from scratch or fine-tuned, the full training and testing data should be made available, alongside all necessary metadata (e.g. hyperparameters, configuration, training time given computing resources).
 
 ```
 
 ```{tab-item} Links
+**Examples** 
+- [Stardist model and training dataset for automated tracking of MDA-MB-231 and BT20 cells](https://zenodo.org/records/4811213)
+
 **References**
 - [Reproducibility standards for machine learning in the life sciences](https://doi.org/10.1038/s41592-021-01256-7)
 ```
@@ -105,7 +108,8 @@ To facilitate the reproduction and validation of results from either models trai
 :default-tab: Description
 
 ```{tab-item} Description
-The code used for training the model should be provided. Code, as well as data, should be provided via public repositories (European Organization For Nuclear Research and OpenAIRE 2013).
+The code used for training the model should be provided via public repositories with long-term record (e.g. Zenodo), while also referencing the public datasets.
+
 ```
 ```{tab-item} Links
 **Examples** 
