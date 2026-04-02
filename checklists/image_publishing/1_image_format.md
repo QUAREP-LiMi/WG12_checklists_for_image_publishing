@@ -11,7 +11,7 @@ Light microscopy images in publications can rapidly communicate useful details i
 
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 
@@ -19,7 +19,7 @@ Crop empty/irrelevant portions of the image to focus the audience’s attention.
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579)
@@ -40,14 +40,14 @@ Crop empty/irrelevant portions of the image to focus the audience’s attention.
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_2.png" width="50px">  &nbsp;Separate individual images
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 There should always be some sort of border with a strong contrast to indicate a difference between images, whether this is the same color as the page background for individual images in a panel, or a color not otherwise found in the image for a magnified inset.
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Creation of a panel of images using InkScape with imports from Fiji.](https://youtu.be/CgfnlcxbjuI?t=3579) 
@@ -68,14 +68,14 @@ There should always be some sort of border with a strong contrast to indicate a 
 
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Provide context and a dash of accountability by complementing a graph of results with at least one of the quantified images. Those example images should be unchanged to show the original data that were used for quantification. It maximally should include a quantitative background subtraction by subtracting a measured imaging background value if significantly high to reduce any negative impact on intensity readout. 
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [QuickFigures plugin in Fiji](https://youtu.be/9Crg-FAOHmc?t=386)
@@ -95,7 +95,7 @@ Provide context and a dash of accountability by complementing a graph of results
 
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 When presenting two magnification views of the same image (e.g., a full and a zoomed or inset view), the position of the inset within the full-view image should be indicated as exactly as possible. If the inset is placed on top of the full-view image, for example to save space, it should not obstruct any key data, and if resized, it should not be interpolated in a way that gives the impression of higher resolution than was actually obtained.
@@ -109,7 +109,7 @@ When presenting two magnification views of the same image (e.g., a full and a zo
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Create loss-less, original quality insets using Fiji and Inkscape](https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&t=1197)
@@ -123,14 +123,14 @@ When presenting two magnification views of the same image (e.g., a full and a zo
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageFormat_5.png" width="50px"> &nbsp;Show images of the range of described phenotype
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly. Be sure to clearly indicate which population each image is selected from.
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Protocol for per-metadata representative image crop generation](https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713)

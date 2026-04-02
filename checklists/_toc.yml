@@ -22,7 +22,6 @@ parts:
     - file: tutorials/unit-3_figure_prep.md
   - caption: 4. Other resources
     chapters:
-    - file: other_resources/additional_topics.md
     - file: other_resources/how_to_contribute.md
     - file: other_resources/impact.md
     - file: other_resources/faq.md

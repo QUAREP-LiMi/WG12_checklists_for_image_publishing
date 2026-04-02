@@ -8,13 +8,13 @@
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAvail_1.png" height="50px"> &nbsp; Images are shared (lossless compression/microscope images)
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Image processing to create image figures should be performed on a copy of the orginal data. When publishing both the original image as well as the processed images (adjusted brightness contrast, crops etc) should be made available. Share microscopy images by uploading them to a reputable open-access repository ensuring they are properly annotated with metadata and accompanied by the relevant publication information. Additionally, provide clear licensing terms and link to the repository in the publication and related communications to facilitate easy access for other researchers.
 
 ```
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Sharing and reusing cell image data - PMC.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5994892/)
@@ -33,14 +33,14 @@ Image processing to create image figures should be performed on a copy of the or
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAvail_2.png" height="50px"> &nbsp; Images are freely downloadable (public databse)
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Ensure that image files are made freely downloadable by hosting them on an open-access platform or repository. Provide direct download links and ensure there are no access restrictions, so that other researchers can easily obtain and utilize the images.
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [Overview over different repositories.](https://www.nature.com/articles/s41592-023-01987-9/figures/7)
@@ -60,14 +60,14 @@ Ensure that image files are made freely downloadable by hosting them on an open-
 `````{dropdown} <img src="/image_publishing/icons_image_publishing/ImageAvail_3.png" height="50px"> &nbsp; Image files are in dedicated image database (added value database or image archive)
 
 ````{tab-set}
-:default-tab: Description
+
 
 ```{tab-item} Description
 Beyond simply offereing download links for analyzed image data, reusability of image data become maximized as "added value data" when properly curated and added to public image databases. Currently, IDR (Image Data Repository) maintained by open microscopy consortium and Bioimage Archive maintained by (EMBL-EBI) are two popular image databases. 
 
 ```
 
-```{tab-item} Links
+```{tab-item} Resources
 
 **Tutorials**
 - [From publication to IDR study.](https://www.youtube.com/watch?v=dFg2PAF3k7s)
