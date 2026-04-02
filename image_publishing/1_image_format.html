@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script data-domain="quarep-limi.github.io/wg12-checklists-for-image-publishing" defer="defer" src="https://plausible.io/js/script.js"></script>
@@ -65,6 +68,7 @@
     <link rel="prev" title="Introduction" href="intro_image_publishing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -80,19 +84,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -100,7 +93,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,8 +100,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -125,7 +117,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -155,21 +148,17 @@
     
     
     <img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-light" alt="Checklists for Image Publishing - Home"/>
-    <script>document.write(`<img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-dark" alt="Checklists for Image Publishing - Home"/>`);</script>
+    <img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-dark pst-js-only" alt="Checklists for Image Publishing - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -220,9 +209,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -369,7 +363,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -383,24 +377,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 
 </div></div>
       
@@ -431,6 +417,7 @@ document.write(`
 <p>Light microscopy images in publications can rapidly communicate useful details if they are prepared to be information dense, clean and containing the most important information/metadata the audience needs to see at a glance. A set of simple processing rules can focus the audience’s attention to the most relevant parts that are crucial for understanding the experiment and/or results. Consult the steps below to start your journey to create understandable and reproducible figures.</p>
 <div class="warning admonition">
 <p class="admonition-title">Minimal</p>
+<!-- Focus on relevant content -->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageFormat_1.png"><img alt="../_images/ImageFormat_1.png" src="../_images/ImageFormat_1.png" style="width: 50px;" /></a>   Focus on relevant content</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -443,19 +430,24 @@ Description</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Tutorials
-See the creation of a panel of images using InkScape with imports from Fiji. <a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">https://youtu.be/CgfnlcxbjuI?t=3579</a></p>
-<p class="sd-card-text">QuickFigures plugin in Fiji: <a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">https://youtu.be/9Crg-FAOHmc?t=386</a></p>
-<p class="sd-card-text">or FigureJ here (more basic):
-<a class="reference external" href="https://imagejdocu.list.lu/plugin/utilities/figurej/start">https://imagejdocu.list.lu/plugin/utilities/figurej/start</a></p>
-<p class="sd-card-text">References</p>
-<p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p>
-<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p>
-<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">Creation of a panel of images using InkScape with imports from Fiji.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/biovoxxel/BioVoxxel-Figure-Tools/#creating-zoomed-in-and-resized-versions-of-image-areas-eg-as-insets">Create zoomed inset from BioVoxxel Figure Toolbox.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://imagejdocu.list.lu/plugin/utilities/figurej/start">FigureJ (more basic).</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Separate individual images -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageFormat_2.png"><img alt="../_images/ImageFormat_2.png" src="../_images/ImageFormat_2.png" style="width: 50px;" /></a>   Separate individual images</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
@@ -467,72 +459,93 @@ Description</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">See the <a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">creation of a panel of images using InkScape with imports from Fiji.</a>
-<a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji</a></p>
-<p class="sd-card-text">or FigureJ here (more basic):
-<a class="reference external" href="https://imagejdocu.list.lu/plugin/utilities/figurej/start">https://imagejdocu.list.lu/plugin/utilities/figurej/start</a></p>
-<p class="sd-card-text">or Omero.figure:
-<a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">https://www.youtube.com/watch?v=YeCFaB7VAAQ</a></p>
-<p class="sd-card-text">References</p>
-<p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p>
-<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p>
-<p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">Creation of a panel of images using InkScape with imports from Fiji.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://imagejdocu.list.lu/plugin/utilities/figurej/start">FigureJ here (more basic).</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">Omero.figure.</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Show example image used for quantifications -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageFormat_3.png"><img alt="../_images/ImageFormat_3.png" src="../_images/ImageFormat_3.png" style="width: 50px;" /></a>   Show example image used for quantifications</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Provide context and a dash of accountability by complementing a graph of results with one of the quantified images.
-Those example images should be unchanged to show the original data that were used for quantification. It maximally should include a quantitative background subtraction by subtracting a measured imaging background value if significantly high to reduce any negative impact on intensity readout. Any contrast adjustment should be avoided on those examples.</p>
+<p class="sd-card-text">Provide context and a dash of accountability by complementing a graph of results with at least one of the quantified images. Those example images should be unchanged to show the original data that were used for quantification. It maximally should include a quantitative background subtraction by subtracting a measured imaging background value if significantly high to reduce any negative impact on intensity readout.</p>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-5">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">None</p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">Omero.figure</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://f1000research.com/articles/9-1373">https://f1000research.com/articles/9-1373</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pone.0240280">https://doi.org/10.1371/journal.pone.0240280</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1111/jmi.12069">https://doi.org/10.1111/jmi.12069</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Indicate position of zoom-view/inset in full-view/original image -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageFormat_4.png"><img alt="../_images/ImageFormat_4.png" src="../_images/ImageFormat_4.png" style="width: 50px;" /></a>  Indicate position of zoom-view/inset in full-view/original image</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-6">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">When the big picture is as important as the small details, show both. Zoomed-in areas of an image should always be indicated as exactly as possible.  The position of the inset within the full-view image should be made clear, should not obstruct any key data, and if resized, should not be interpolated to give the impression of higher resolution than was actually obtained.</p>
+<p class="sd-card-text">When presenting two magnification views of the same image (e.g., a full and a zoomed or inset view), the position of the inset within the full-view image should be indicated as exactly as possible. If the inset is placed on top of the full-view image, for example to save space, it should not obstruct any key data, and if resized, it should not be interpolated in a way that gives the impression of higher resolution than was actually obtained.</p>
 </div>
 <input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-7">
+Example</label><div class="sd-tab-content docutils">
+<img alt="../_images/ZoomedInset_24042901.png" src="../_images/ZoomedInset_24042901.png" />
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/3d557366e9cb71d1ff2535fc948edf54/ZoomedInset_24042901.svg"><span class="xref download myst">Example as SVG</span></a></p>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&amp;amp;t=1197">Create loss-less, original quality insets using Fiji and Inkscape</a></p>
-<p class="sd-card-text"><a class="reference external" href="https://youtu.be/5OQgB9fWqSI?t=376">Create zoomed insets in OMERO Figures</a></p>
-<p class="sd-card-text">Example files:
-SVG:
-<a class="reference external" href="https://drive.google.com/file/d/1oM7xA1PLjoeZv0am99ACd4rzH0TCk2Wo/view?usp=drive_link">https://drive.google.com/file/d/1oM7xA1PLjoeZv0am99ACd4rzH0TCk2Wo/view?usp=drive_link</a></p>
-<p class="sd-card-text">PNG:
-<a class="reference external" href="https://drive.google.com/file/d/1aNvqWRt1ixVIe5jtzUH0zpWyls9QseuJ/view?usp=drive_link">https://drive.google.com/file/d/1aNvqWRt1ixVIe5jtzUH0zpWyls9QseuJ/view?usp=drive_link</a></p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=DAeQ8svYdgWHPh0U&amp;amp;t=1197">Create loss-less, original quality insets using Fiji and Inkscape</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/5OQgB9fWqSI?t=376">Create zoomed insets in OMERO Figures</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Show images of the range of described phenotype -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageFormat_5.png"><img alt="../_images/ImageFormat_5.png" src="../_images/ImageFormat_5.png" style="width: 50px;" /></a>  Show images of the range of described phenotype</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-8">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly.
-Be sure to clearly indicate which population each image is selected from.</p>
-</div>
-<input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
+<input checked="checked" id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-9">
+Description</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">As tempting as it may be to cherry pick the image that shows the nicest or most representative case, show the audience a flavor of everything: the good, the bad and the ugly. Be sure to clearly indicate which population each image is selected from.</p>
+</div>
+<input id="sd-tab-item-10" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-10">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Protocol for per-metadata representative image crop generation - <a class="reference external" href="https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713">https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713</a></p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.713">Protocol for per-metadata representative image crop generation</a></p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -638,8 +651,8 @@ By QUAREP WG 12
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script data-domain="quarep-limi.github.io/wg12-checklists-for-image-publishing" defer="defer" src="https://plausible.io/js/script.js"></script>
@@ -65,6 +68,7 @@
     <link rel="prev" title="Introduction" href="intro_analysis_workflows.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -80,19 +84,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -100,7 +93,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,8 +100,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -125,7 +117,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -155,21 +148,17 @@
     
     
     <img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-light" alt="Checklists for Image Publishing - Home"/>
-    <script>document.write(`<img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-dark" alt="Checklists for Image Publishing - Home"/>`);</script>
+    <img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-dark pst-js-only" alt="Checklists for Image Publishing - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -220,9 +209,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -369,7 +363,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -383,24 +377,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 
 </div></div>
       
@@ -430,6 +416,7 @@ document.write(`
 <span id="id1"></span><h1>Established workflows<a class="headerlink" href="#established-workflows" title="Link to this heading">#</a></h1>
 <div class="warning admonition">
 <p class="admonition-title">Minimal</p>
+<!-- Cite workflow & platform -->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_cite.svg"><img alt="../_images/icon_cite.svg" src="../_images/icon_cite.svg" style="width: 50px;" /></a>   Cite workflow &amp; platform</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -437,162 +424,189 @@ document.write(`
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
-</div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
-Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text">The used workflow should be cited with the corresponding version. If a publication does not exist, the download URL (e.g. GitHub repository), author, date of download and used version should be specified in the methods section. The platform (including version) used for running the workflow code should also be cited, especially in the case of Apple computers with varying chipset options.</p>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Key settings -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_key_settings.svg"><img alt="../_images/icon_key_settings.svg" src="../_images/icon_key_settings.svg" style="width: 50px;" /></a>   Key settings</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
+<input checked="checked" id="sd-tab-item-1" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Key settings are specific settings of variable parameters that significantly affect the outcome of the workflow when those settings are changed, and can be unique for a given program and version. For example, the spot diameter setting in Trackmate is a key setting that may change the tracking results with a slightly different setting. The choice of algorithm for particle linking is also a key setting.  If the exact same settings are used as the referenced workflow, it is possible to omit them, but writers should be aware that readers will be more likely to use and cite their work if they can utilize their protocol!  WARNING: Users should be careful that the overall defaults have not been changed by an administrator, for example a single installation of Fiji accessed by multiple users may have left over settings changes (like “Invert”) that significantly impact an analysis workflow.</p>
+<p class="sd-card-text">Key settings are specific settings of variable parameters that significantly affect the outcome of the workflow when those settings are changed, and can be unique for a given program and version. For example, the spot diameter setting in Trackmate is a key setting that may change the tracking results with a slightly different setting. The choice of algorithm for particle linking is also a key setting.  If the exact same settings are used as the referenced workflow, it is possible to omit them, but writers should be aware that readers will be more likely to use and cite their work if they can utilize their protocol!</p>
+<p class="sd-card-text">WARNING: Users should be careful that the overall defaults have not been changed by an administrator, for example a single installation of Fiji accessed by multiple users may have left over settings changes (like “Invert”) that significantly impact an analysis workflow.</p>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7849301/">Reproducible image handling and analysis</a>
-<a class="reference external" href="https://doi.org/10.15252/embj.2020105889">https://doi.org/10.15252/embj.2020105889</a>
-<a class="reference external" href="https://journals.biologists.com/jcs/article/134/6/jcs254151/237886/A-guide-to-accurate-reporting-in-digital-image">A guide to accurate reporting in digital image processing – can anyone reproduce your quantitative analysis?</a>
-<a class="reference external" href="https://doi.org/10.1242/jcs.254151">https://doi.org/10.1242/jcs.254151</a></p>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.15252/embj.2020105889">Reproducible image handling and analysis</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1242/jcs.254151">A guide to accurate reporting in digital image processing – can anyone reproduce your quantitative analysis?</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Example data -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_example.svg"><img alt="../_images/icon_example.svg" src="../_images/icon_example.svg" style="width: 50px;" /></a>   Example data</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
 Description</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy.</p>
 </div>
-<input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
-Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
 </div>
 </div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Manual ROIs -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_roi.svg"><img alt="../_images/icon_roi.svg" src="../_images/icon_roi.svg" style="width: 50px;" /></a>   Manual ROIs</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-6">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 Description</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">If manually annotated ROIs are used in the workflow, those ROIs should be saved as a separate file and uploaded as part of the workflow package. Without these ROIs included, manually selected areas prevent others from reproducing the workflow on their own.</p>
 </div>
-<input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-7">
+<input id="sd-tab-item-5" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><a class="reference external" href="https://petebankhead.gitbooks.io/imagej-intro/content/chapters/rois/rois.html#saving-rois">Measurements &amp; regions of interest · Analyzing fluorescence microscopy images with ImageJ</a></p>
-<p class="sd-card-text"><a class="reference external" href="https://forum.image.sc/t/saving-rois-created-by-analyze-particles-plugin/39209">Saving ROIs created by analyze particles plugin - Development - Image.sc Forum</a></p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://petebankhead.gitbooks.io/imagej-intro/content/chapters/rois/rois.html#saving-rois">Measurements &amp; regions of interest · Analyzing fluorescence microscopy images with ImageJ</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://forum.image.sc/t/saving-rois-created-by-analyze-particles-plugin/39209">Saving ROIs created by analyze particles plugin - Development - Image.sc Forum</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Exact version -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><a class="reference internal" href="../_images/icon_version.svg"><img alt="../_images/icon_version.svg" src="../_images/icon_version.svg" style="width: 50px;" /></a>   Exact version</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><a class="reference internal" href="../_images/icon_version.svg"><img alt="../_images/icon_version.svg" src="../_images/icon_version.svg" style="width: 50px;" /></a>  </span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-8">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
 Description</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">If the workflow used is published as a version tracked code in a public repository (e.g. GitHub), the release date or the exact version of the code should be present in the Methods section or supplementary material section. If the workflow is from a commercial software package, the version of the package and the name of the workflow must appear in the manuscript.  If the workflow is only published as a supplementary material, cite that publication.</p>
 </div>
-<input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-9">
+<input id="sd-tab-item-7" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">For example:
-<a class="reference external" href="https://imagej.net/plugins/trackmate/tutorials/getting-started">https://imagej.net/plugins/trackmate/tutorials/getting-started</a></p>
-<p class="sd-card-text">Example references:</p>
-<p class="sd-card-text">Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832. doi:10.1038/s41592-022-01507-1</p>
-<p class="sd-card-text">Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80–90. doi:10.1016/j.ymeth.2016.09.016</p>
+<p class="sd-card-text"><strong>Example</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://imagej.net/plugins/trackmate/tutorials/getting-started">TrackMate Documentation</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1038/s41592-022-01507-1">TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1016/j.ymeth.2016.09.016">TrackMate: An open and extensible platform for single-particle tracking</a></p></li>
+</ul>
 </div>
 </div>
 </div>
 </details></div>
 <div class="note admonition">
 <p class="admonition-title">Recommended</p>
+<!-- All settings -->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_all_settings.svg"><img alt="../_images/icon_all_settings.svg" src="../_images/icon_all_settings.svg" style="width: 50px;" /></a>   All settings</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-10" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-10">
+<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
 Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Sharing all settings is fairly straightforward in many cases - where a pipeline can be exported or a macro recorded - but can be tricky in others when certain impactful settings are “hidden” within Preferences or Settings sections of the software - for example Fiji has settings that change both the appearance (Invert LUT) and the values (Invert) of images, which may not be part of a given workflow but still can impact the results. Thus it is beneficial to list as much about the “state” of the program as possible, generally in the supplements as the lists can be quite long.</p>
+<p class="sd-card-text">Sharing all settings is fairly straightforward in many cases - where a pipeline can be exported or a macro recorded - but can be tricky in others when certain impactful settings are “hidden” within Preferences or Settings sections of the software - for example Fiji has settings that change both the appearance (Invert LUT) and the values (Invert) of images, which may not be part of a given workflow but still can impact the results. Thus it is beneficial to list as much about the “state” of the program as possible, generally in the supplements as the lists can be quite long. If applicable, share the environment specification file (e.g., conda, virtualenv, or similar) to further facilitate reproducibility.</p>
 </div>
-<input id="sd-tab-item-11" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-11">
+<input id="sd-tab-item-9" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-9">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7849301/">Reproducible image handling and analysis</a>
-<a class="reference external" href="https://doi.org/10.15252/embj.2020105889">https://doi.org/10.15252/embj.2020105889</a>
-<a class="reference external" href="https://journals.biologists.com/jcs/article/134/6/jcs254151/237886/A-guide-to-accurate-reporting-in-digital-image">A guide to accurate reporting in digital image processing – can anyone reproduce your quantitative analysis?</a>
-<a class="reference external" href="https://doi.org/10.1242/jcs.254151">https://doi.org/10.1242/jcs.254151</a></p>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.15252/embj.2020105889">Reproducible image handling and analysis</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1242/jcs.254151">A guide to accurate reporting in digital image processing – can anyone reproduce your quantitative analysis?</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1093/bib/bbad375">The five pillars of computational reproducibility: bioinformatics and beyond</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Public example -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_public_example.svg"><img alt="../_images/icon_public_example.svg" src="../_images/icon_public_example.svg" style="width: 50px;" /></a>   Public example</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-12" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-12">
+<input checked="checked" id="sd-tab-item-10" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-10">
 Description</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. Best is to provide this example data on a public repository.</p>
 </div>
-<input id="sd-tab-item-13" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-13">
+<input id="sd-tab-item-11" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-11">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">TODO</p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://www.nature.com/articles/s41592-023-01987-9/figures/7">Overview over different repositories.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://focalplane.biologists.com/2023/02/15/sharing-research-data-with-zenodo/">Totorial showing how to use Zenodo.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=dFg2PAF3k7s">From publication to IDR study.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=ZZUslnHcoz0">Submitting your data to the BioImage Archive.</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>References</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://arxiv.org/abs/2402.02203">Cell Painting Gallery (CPG).</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1016/j.jmb.2022.167505">BioImage Archive.</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://idr.openmicroscopy.org/">Image Data Resource (IDR).</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.ebi.ac.uk/empiar/">Electron Microscopy Public Image Archive (EMPIAR).</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1038/s41592-018-0195-8">A call for public archives for biological image data.</a></p></li>
+</ul>
 </div>
 </div>
 </div>
 </details></div>
 <div class="tip admonition">
 <p class="admonition-title">Ideal</p>
+<!-- Document usage (e.g. screen recording or tutorial) -->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_screen_recording.svg"><img alt="../_images/icon_screen_recording.svg" src="../_images/icon_screen_recording.svg" style="width: 50px;" /></a>   Document usage (e.g. screen recording or tutorial)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-14" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-14">
+<input checked="checked" id="sd-tab-item-12" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-12">
 Description</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Including screengrabs of key steps in a pipeline, or if the option is available, a whole video (which could be a link to a hosted video, for example on YouTube or Google Drive) can make it far easier to reproduce an experiment, even a digital one. There are frequently steps or intermediate results experienced users take for granted, that may not be obvious to newer users of a given software or pipeline - these things can be captured in a full video recording of use but might be missed in a writeup.</p>
 </div>
-<input id="sd-tab-item-15" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-15">
+<input id="sd-tab-item-13" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-13">
 Links</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">How to Screen Record on Your Mac (4 Options)| The TechSmith Blog
-<a class="reference external" href="https://www.techsmith.com/blog/screen-record-mac/">https://www.techsmith.com/blog/screen-record-mac/</a></p>
-<p class="sd-card-text">Screen recording in Windows - <a class="reference external" href="https://www.tomshardware.com/how-to/screen-record-in-windows">https://www.tomshardware.com/how-to/screen-record-in-windows</a></p>
+<p class="sd-card-text"><strong>Tutorials</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://www.techsmith.com/blog/screen-record-mac/">How to Screen Record on Your Mac (4 Options)| The TechSmith Blog</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://www.tomshardware.com/how-to/screen-record-in-windows">Screen recording in Windows</a></p></li>
+</ul>
 </div>
 </div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><!-- Cloud hosted or container -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/icon_cloud_container.svg"><img alt="../_images/icon_cloud_container.svg" src="../_images/icon_cloud_container.svg" style="width: 50px;" /></a>   Cloud hosted or container</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 </div>
 </details><div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-16" name="sd-tab-set-8" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-16">
+<input checked="checked" id="sd-tab-item-14" name="sd-tab-set-8" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-14">
 Description</label><div class="sd-tab-content docutils">
 <p>The method reproducibility is best ensured with a workflow code included in a container (e.g. Docker container) that allows the exact reproduction of the environment for running the workflow code together with the example data. The image of that container can be shared as the reproducible workflow.  Otherwise, a publicly accessible executable environment (e.g. cloud hosted server) can be prepared to let others run the workflow code.</p>
 </div>
-<input id="sd-tab-item-17" name="sd-tab-set-8" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-17">
+<input id="sd-tab-item-15" name="sd-tab-set-8" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-15">
 Links</label><div class="sd-tab-content docutils">
-<p><a class="reference external" href="https://fox.cs.vt.edu/talks/2020/JCDL%202020%20Reproducibility%20Tutorial.pdf">Tutorial - PDF</a>
-<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7654784/">Ten simple rules for writing Dockerfiles for reproducible data science</a></p>
-<p><a class="reference external" href="https://www.nature.com/articles/s43586-023-00236-9">Containers for computational reproducibility</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fox.cs.vt.edu/talks/2020/JCDL%202020%20Reproducibility%20Tutorial.pdf">Tutorial - PDF</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7654784/">Ten simple rules for writing Dockerfiles for reproducible data science</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/s43586-023-00236-9">Containers for computational reproducibility</a></p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -696,8 +710,8 @@ By QUAREP WG 12
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
