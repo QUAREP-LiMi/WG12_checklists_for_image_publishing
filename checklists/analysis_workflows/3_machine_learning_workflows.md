@@ -6,7 +6,7 @@
 
 <!-- Cite original method -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cite.svg" width="50px"> &nbsp; Cite original method
-:open:
+
 
 ````{tab-set}
 
@@ -28,7 +28,7 @@ It is vital that the original deep learning method can be clearly identified. Th
 
 <!-- Access to model -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_model.svg" width="50px"> &nbsp; Access to model
-:open:
+
 
 ````{tab-set}
 
@@ -51,7 +51,7 @@ The model used for ML-based processing needs to be publicly accessible. The aim 
 
 <!-- Example or validation data -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_example.svg" width="50px"> &nbsp; Example or validation data
-:open:
+
 
 ````{tab-set}
 
@@ -85,7 +85,7 @@ Each machine learning workflow must be accompanied by example image data that is
 
 <!-- Train, test & metadata -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_train_test_metadata.svg" width="50px"> &nbsp; Train, test & metadata
-:open:
+
 
 ````{tab-set}
 
@@ -107,7 +107,7 @@ To enable the reproduction and validation of the results, whether from model tra
 
 <!-- Code available -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_code.svg" width="50px"> &nbsp; Code available
-:open:
+
 
 ````{tab-set}
 
@@ -133,7 +133,7 @@ The code used for training the model should be provided via public repositories 
 
 <!-- Limitations -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_limitations.svg" width="50px"> &nbsp; Limitations
-:open:
+
 
 ````{tab-set}
 
@@ -153,7 +153,7 @@ The authors should discuss and ideally test how well the model has performed and
 
 <!-- Cloud hosted or container -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cloud_container.svg" width="50px"> &nbsp; Cloud hosted or container
-:open:
+
 
 ````{tab-set}
 
@@ -181,7 +181,7 @@ The uptake and integration of code, models, and training data is vastly improved
 
 <!-- Standardized format -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_model_format.svg" width="50px"> &nbsp; Standardized format
-:open:
+
 
 ````{tab-set}
 

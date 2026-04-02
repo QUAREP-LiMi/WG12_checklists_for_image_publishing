@@ -6,7 +6,7 @@
 
 <!-- Cite components & platform -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cite.svg" width="50px"> &nbsp; Cite components & platform
-:open:
+
 
 ````{tab-set}
 
@@ -21,7 +21,7 @@ All components (plugins or packages used in the workflow) should be cited with t
 
 <!-- Describe sequence -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_describe_sequence.svg" width="50px"> &nbsp; Describe sequence
-:open:
+
 
 ````{tab-set}
 
@@ -44,7 +44,7 @@ The outline of the workflow explains the key processing steps, and it helps read
 
 <!-- Key settings -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_key_settings.svg" width="50px"> &nbsp; Key settings
-:open:
+
 
 ````{tab-set}
 
@@ -67,7 +67,7 @@ Key settings, e.g. the sigma value used for Gaussian blur, the auto threshold al
 
 <!-- Example data & code -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_example_data_code.svg" width="50px"> &nbsp; Example data & code
-:open:
+
 
 ````{tab-set}
 
@@ -88,7 +88,7 @@ Regardless of whether the analysis workflow is highly specific and not designed 
 
 <!-- Manual ROIs -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_roi.svg" width="50px"> &nbsp; Manual ROIs
-:open:
+
 
 ````{tab-set}
 
@@ -108,7 +108,7 @@ If manually annotated ROIs are used in the workflow, those ROIs should be saved 
 
 <!-- Exact version -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_version.svg" width="50px"> &nbsp; 
-:open:
+
 
 ````{tab-set}
 
@@ -136,7 +136,7 @@ If the workflow used is published as a version tracked code in a public reposito
 
 <!-- All settings -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_all_settings.svg" width="50px"> &nbsp; All settings
-:open:
+
 
 ````{tab-set}
 
@@ -148,7 +148,7 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 
 <!-- Public example data & code -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_public_example.svg" width="50px"> &nbsp; Public example data & code
-:open:
+
 
 ````{tab-set}
 
@@ -179,7 +179,7 @@ Publish the workflow code and example data in a public repository such as GitHub
 
 <!-- Rationale -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_rationale.svg" width="50px"> &nbsp; Rationale
-:open:
+
 
 ````{tab-set}
 
@@ -197,7 +197,7 @@ Describe the biological context of why this workflow was created, the target of 
 
 <!-- Limitations-->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_limitations.svg" width="50px"> &nbsp; Limitations
-:open:
+
 
 ````{tab-set}
 
@@ -216,7 +216,7 @@ The scope and the limit of the workflow is better be clearly explained in text. 
 
 <!-- Screen recording or tutorial -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_screen_recording.svg" width="50px"> &nbsp; Screen recording or tutorial
-:open:
+
 
 ````{tab-set}
 
@@ -234,7 +234,7 @@ Including screengrabs of key steps in a pipeline, or if the option is available,
 
 <!-- Easy install & usage, container -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_easy_install.svg" width="50px"> &nbsp; Easy install & usage, container
-:open:
+
 
 ````{tab-set}
 

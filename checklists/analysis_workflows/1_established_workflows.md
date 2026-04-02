@@ -7,7 +7,7 @@
 
 <!-- Cite workflow & platform -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cite.svg" width="50px"> &nbsp; Cite workflow & platform
-:open:
+
 
 ````{tab-set}
 
@@ -21,7 +21,7 @@ The used workflow should be cited with the corresponding version. If a publicati
 
 <!-- Key settings -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_key_settings.svg" width="50px"> &nbsp; Key settings
-:open:
+
 
 ````{tab-set}
 
@@ -42,7 +42,7 @@ WARNING: Users should be careful that the overall defaults have not been changed
 
 <!-- Example data -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_example.svg" width="50px"> &nbsp; Example data
-:open:
+
 
 ````{tab-set}
 
@@ -56,7 +56,7 @@ Example data is required for testing the workflow and the outcome, for peers to 
 
 <!-- Manual ROIs -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_roi.svg" width="50px"> &nbsp; Manual ROIs
-:open:
+
 
 ````{tab-set}
 
@@ -77,7 +77,7 @@ If manually annotated ROIs are used in the workflow, those ROIs should be saved 
 
 <!-- Exact version -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_version.svg" width="50px"> &nbsp; 
-:open:
+
 
 ````{tab-set}
 
@@ -106,7 +106,7 @@ If the workflow used is published as a version tracked code in a public reposito
 
 <!-- All settings -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_all_settings.svg" width="50px"> &nbsp; All settings
-:open:
+
 
 ````{tab-set}
 
@@ -128,7 +128,7 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 
 <!-- Public example -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_public_example.svg" width="50px"> &nbsp; Public example
-:open:
+
 
 ````{tab-set}
 
@@ -153,7 +153,6 @@ Example data is required for testing the workflow and the outcome, for peers to 
 - [Electron Microscopy Public Image Archive (EMPIAR).](https://www.ebi.ac.uk/empiar/)
 - [A call for public archives for biological image data.](https://doi.org/10.1038/s41592-018-0195-8)
 ```
-
 ````
 ````` 
 
@@ -164,7 +163,7 @@ Example data is required for testing the workflow and the outcome, for peers to 
 
 <!-- Document usage (e.g. screen recording or tutorial) -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_screen_recording.svg" width="50px"> &nbsp; Document usage (e.g. screen recording or tutorial)
-:open:
+
 
 ````{tab-set}
 
@@ -185,10 +184,9 @@ Including screengrabs of key steps in a pipeline, or if the option is available,
 
 <!-- Cloud hosted or container -->
 `````{dropdown} <img src="/analysis_workflows/icons_analysis_workflows/icon_cloud_container.svg" width="50px"> &nbsp; Cloud hosted or container
-:open:
+
 
 ````{tab-set}
-
 
 ```{tab-item} Description
 The method reproducibility is best ensured with a workflow code included in a container (e.g. Docker container) that allows the exact reproduction of the environment for running the workflow code together with the example data. The image of that container can be shared as the reproducible workflow.  Otherwise, a publicly accessible executable environment (e.g. cloud hosted server) can be prepared to let others run the workflow code.
