@@ -1,7 +1,22 @@
 (unit-2_format)=
-# Unit 2: Format
+# Unit 2: Format and annotations
 
-Topics: Foundations of Image Figures. Image to scale-bared image, colors, export
+Topics: Foundations of Image Figures. Crop, resize, rotate, scale-bar
+
+## Motivation
+
+Scientific image figures communicate scientific results in a qualitative manner. It is important that the result is readily apparent in the image figures without distorting or degrading the information. 
+
+Additionally, scientific images capture real world objects that have a physical dimension. These dimensions can cover different magnitudes of scales (e.g., electron microscopy, light microscopy). This physical dimension needs to be communicated using scale bars. 
+
+## Key considerations
+
+- Is the communicated result readily apparent?
+- Are key annotations e.g., scale bar communicate?
+
+## Introduction
+
+
 
 ## Format
 
@@ -21,7 +36,7 @@ Tip: You can save ROI on the image as overlay to easily label origin of crop
 Tip: Use ROI Manager to handle ROIs
 --->
 
-## Annotation
+## Annotations
 
 ### Scale Bar
 
@@ -35,12 +50,6 @@ Tip box: What if my scale is incorrect. Setting scales
 
 Image > Stacks > Label...
 Image > Annotate > Arrow...
-
-## Availability
-
-- Public repository
-- Original images used in figures (lossless compression)
-- If applicable ground truth and manual annotations
 
 <!---
 Tip box: Repository examples

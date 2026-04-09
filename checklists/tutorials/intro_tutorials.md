@@ -1,13 +1,20 @@
 (tutorials)=
 # Introduction to tutorials
 
-This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/). The intention is to go with one example from original image to an image figure, including Figure legend and Methods that were used to created and process the images.  
+This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to go with one example from original image to a complete image figure, including figure legend, and methods that were used to created and process the images. 
 
 For this tutorial you are going to need: 
 
 - Fiji is just ImageJ (Fiji): [https://fiji.sc/](https://fiji.sc/)
+- Inkscape: [https://inkscape.org/](https://inkscape.org/)
 - Image data: [Zenodo repository](https://doi.org/10.5281/zenodo.7642559)
 - [Checklists](https://doi.org/10.1038/s41592-023-01987-9)
+
+:::{note}
+
+We selected these tools because they are free, open source, and familiar to the authors. The underlying principles, however, can be applied to other tools as well.
+
+:::
 
 ## Checklist 
 
@@ -36,7 +43,7 @@ TODO: Explain the checklists and the condensed version. Provide an image. I woul
 
 Cheatsheets for creating image figures
 
-Schmied C and Jambor HK. Effective image visualization for publications – a workflow using open access tools and concepts [version 2]. F1000Research 2021, 9:1373 (doi: 10.12688/f1000research.27140.2)
+Schmied C. and Jambor HK. Effective image visualization for publications – a workflow using open access tools and concepts [version 2]. F1000Research 2021, 9:1373 ([doi: 10.12688/f1000research.27140.2](https://doi.org/10.12688/f1000research.27140.2))
 
 ## Help
 
