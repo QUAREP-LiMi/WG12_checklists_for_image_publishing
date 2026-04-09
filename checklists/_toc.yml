@@ -20,7 +20,10 @@ parts:
     - file: tutorials/unit-1_visibility.md
     - file: tutorials/unit-2_format.md
     - file: tutorials/unit-3_figure_prep.md
-  - caption: 4. Other resources
+  - caption: 4. Tutorials background
+    chapters:
+    - file: background/unit-3_figure_prep_background.md
+  - caption: 5. Other resources
     chapters:
     - file: other_resources/how_to_contribute.md
     - file: other_resources/impact.md
