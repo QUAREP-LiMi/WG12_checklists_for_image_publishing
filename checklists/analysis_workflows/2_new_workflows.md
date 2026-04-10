@@ -156,6 +156,16 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 ```{tab-item} Description
 Publish the workflow code and example data in a public repository such as GitHub or Zenodo. These repositories allow fine-grained version tracking, enable the precise reproducibility of methods, and feedback from others can also be shared in public.  Example image data can also be separately uploaded to curated databases such as [IDR](https://idr.openmicroscopy.org/) or [Bioimage Archive](https://www.ebi.ac.uk/bioimage-archive/). 
 ```
+```{tab-item} Example
+
+```{figure} ../analysis_workflows/figures_analysis_workflows/repositories.png
+:width: 100%
+:align: center
+:class: clickable
+
+Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
+
+```
 ```{tab-item} Resources
 **Tutorials**
 - [How to publish and cite code using GitHub and Zenodo.](https://www.youtube.com/watch?v=HZ6m8oxwvig)

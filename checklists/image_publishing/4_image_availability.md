@@ -40,6 +40,18 @@ Ensure that image files are made freely downloadable by hosting them on an open-
 
 ```
 
+```{tab-item} Example
+
+```{figure} ../image_publishing/example_images/repositories.png
+:width: 100%
+:align: center
+:class: clickable
+
+Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
+
+
+```
+
 ```{tab-item} Resources
 
 **Tutorials**
@@ -64,6 +76,17 @@ Ensure that image files are made freely downloadable by hosting them on an open-
 
 ```{tab-item} Description
 Beyond simply offereing download links for analyzed image data, reusability of image data become maximized as "added value data" when properly curated and added to public image databases. Currently, IDR (Image Data Repository) maintained by open microscopy consortium and Bioimage Archive maintained by (EMBL-EBI) are two popular image databases. 
+
+```
+
+```{tab-item} Example
+
+```{figure} ../image_publishing/example_images/repositories.png
+:width: 100%
+:align: center
+:class: clickable
+
+Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
 
 ```
 
