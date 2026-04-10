@@ -138,6 +138,18 @@ Sharing all settings is fairly straightforward in many cases - where a pipeline 
 Example data is required for testing the workflow and the outcome, for peers to study the behavior of the workflow and evaluate its scientific adequacy. Best is to provide this example data on a public repository.
 
 ```
+
+```{tab-item} Example
+
+```{figure} ../analysis_workflows/figures_analysis_workflows/repositories.png
+:width: 100%
+:align: center
+:class: clickable
+
+Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
+
+```
+
 ```{tab-item} Resources
 
 **Tutorials**

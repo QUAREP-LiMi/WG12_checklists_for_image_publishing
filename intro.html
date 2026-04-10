@@ -65,7 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="image_publishing/intro_image_publishing.html" />
+    <link rel="next" title="Introduction to tutorials" href="tutorials/intro_tutorials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,7 +171,18 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Checklists for image publishing</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Train-the-user tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tutorials/intro_tutorials.html">Introduction to tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/unit-1_visibility.html">Unit 1: Visibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/unit-2_format.html">Unit 2: Format and annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Tutorials background</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Checklists for image publishing</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="image_publishing/intro_image_publishing.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="image_publishing/1_image_format.html">Image format</a></li>
@@ -179,23 +190,12 @@
 <li class="toctree-l1"><a class="reference internal" href="image_publishing/3_image_annotation.html">Image annotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="image_publishing/4_image_availability.html">Image availability</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Checklists for publication of image analysis workflows</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Checklists for publication of image analysis workflows</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="analysis_workflows/intro_analysis_workflows.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis_workflows/1_established_workflows.html">Established workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis_workflows/2_new_workflows.html">New workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis_workflows/3_machine_learning_workflows.html">Machine learning workflows</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Tutorials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="tutorials/intro_tutorials.html">Introduction to tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/unit-1_visibility.html">Unit 1: Visibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/unit-2_format.html">Unit 2: Format and annotations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Tutorials background</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Other resources</span></p>
 <ul class="nav bd-sidenav">
@@ -393,7 +393,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -409,6 +411,15 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cite">Cite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funding">Funding</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -423,7 +434,21 @@
 <p>This JupyterBook is a dynamically updatable companion to the static Nature Methods publication <a class="reference external" href="https://doi.org/10.1038/s41592-023-01987-9">Community-developed checklists for publishing images and image analyses</a><span id="id1">[<a class="reference internal" href="other_resources/bibliography.html#id8" title="Christopher Schmied, Michael S Nelson, Sergiy Avilov, Gert-Jan Bakker, Cristina Bertocchi, Johanna Bischof, Ulrike Boehm, Jan Brocher, Mariana T Carvalho, Catalin Chiritescu, Jana Christopher, Beth A Cimini, Eduardo Conde-Sousa, Michael Ebner, Rupert Ecker, Kevin Eliceiri, Julia Fernandez-Rodriguez, Nathalie Gaudreault, Laurent Gelman, David Grunwald, Tingting Gu, Nadia Halidi, Mathias Hammer, Matthew Hartley, Marie Held, Florian Jug, Varun Kapoor, Ayse Aslihan Koksoy, Judith Lacoste, Sylvia Le Dévédec, Sylvie Le Guyader, Penghuan Liu, Gabriel G Martins, Aastha Mathur, Kota Miura, Paula Montero Llopis, Roland Nitschke, Alison North, Adam C Parslow, Alex Payne-Dwyer, Laure Plantard, Rizwan Ali, Britta Schroth-Diez, Lucas Schütz, Ryan T Scott, Arne Seitz, Olaf Selchow, Ved P Sharma, Martin Spitaler, Sathya Srinivasan, Caterina Strambio-De-Castillia, Douglas Taatjes, Christian Tischer, and Helena Klara Jambor. Community-developed checklists for publishing images and image analyses. Nat. Methods, September 2023.">1</a>]</span>.</p>
 <p>In this paper, members of <a class="reference internal" href="other_resources/whois.html"><span class="std std-doc">QUAREP-LiMi</span></a> have proposed 3 sets of standards for publishing image figures and image analysis - minimal requirements, recommended additions, and ideal comprehensive goals. By following this guidance, we hope to remove some of the stress non-experts may face in determining what they need to do, and we also believe that researchers will find their science more interpretable and more reproducible.</p>
 <p>Alternatively, see the Einstein Foundation video below describing some of our work and goals.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VZ-Y3VMX_Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="toctree-wrapper compound">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VZ-Y3VMX_Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section id="cite">
+<h2>Cite<a class="headerlink" href="#cite" title="Link to this heading">#</a></h2>
+<p>If you used this work please cite:</p>
+<p>Schmied, C., Nelson, M.S., Avilov, S. et al. Community-developed checklists for publishing images and image analyses. Nat Methods 21, 170–181 (2024). <a class="reference external" href="https://doi.org/10.1038/s41592-023-01987-9">https://doi.org/10.1038/s41592-023-01987-9</a></p>
+</section>
+<section id="funding">
+<h2>Funding<a class="headerlink" href="#funding" title="Link to this heading">#</a></h2>
+<p>This work is supported by <a class="reference external" href="https://award.einsteinfoundation.de/">Einstein Foundation</a> <a class="reference external" href="https://award.einsteinfoundation.de/about">Early Career Award</a> 2024 for the project <a class="reference external" href="https://award.einsteinfoundation.de/award-winners-finalists/recipients-2024/pixelquality">PixelQuality</a>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/einstein_foundation.png"><img alt="_images/einstein_foundation.png" src="_images/einstein_foundation.png" style="width: 25%;" />
+</a>
+</figure>
+</section>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -466,11 +491,11 @@
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="image_publishing/intro_image_publishing.html"
+       href="tutorials/intro_tutorials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Introduction to tutorials</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -480,6 +505,24 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cite">Cite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funding">Funding</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

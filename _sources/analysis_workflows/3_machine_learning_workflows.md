@@ -59,6 +59,16 @@ The model used for ML-based processing needs to be publicly accessible. The aim 
 ```{tab-item} Description
 Each machine learning workflow must be accompanied by example image data that is openly accessible, appropriate and sufficient for testing the workflow performance.
 ```
+```{tab-item} Example
+
+```{figure} ../analysis_workflows/figures_analysis_workflows/repositories.png
+:width: 100%
+:align: center
+:class: clickable
+
+Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
+
+```
 ```{tab-item} Resources
 **Examples** 
 - [Zero Cost Deep Learning for microscopy (ZeroCostDL4Mic)](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki#segmentation-networks)
@@ -114,6 +124,16 @@ To enable the reproduction and validation of the results, whether from model tra
 
 ```{tab-item} Description
 The code used for training the model should be provided via public repositories with long-term record (e.g. Zenodo), while also referencing the public datasets.
+
+```
+```{tab-item} Example
+
+```{figure} ../analysis_workflows/figures_analysis_workflows/repositories.png
+:width: 100%
+:align: center
+:class: clickable
+
+Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
 
 ```
 ```{tab-item} Resources

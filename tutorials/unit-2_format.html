@@ -170,7 +170,18 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Checklists for image publishing</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Train-the-user tutorials</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_tutorials.html">Introduction to tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-1_visibility.html">Unit 1: Visibility</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 2: Format and annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Tutorials background</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Checklists for image publishing</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/intro_image_publishing.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/1_image_format.html">Image format</a></li>
@@ -178,23 +189,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/3_image_annotation.html">Image annotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/4_image_availability.html">Image availability</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Checklists for publication of image analysis workflows</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Checklists for publication of image analysis workflows</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/intro_analysis_workflows.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/1_established_workflows.html">Established workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/2_new_workflows.html">New workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/3_machine_learning_workflows.html">Machine learning workflows</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Tutorials</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="intro_tutorials.html">Introduction to tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit-1_visibility.html">Unit 1: Visibility</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 2: Format and annotations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Tutorials background</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Other resources</span></p>
 <ul class="nav bd-sidenav">
@@ -428,6 +428,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-annotations">Further annotations</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result">Result</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-roi-manger-and-overlays">Bonus: ROI Manger and overlays</a></li>
 </ul>
             </nav>
@@ -442,7 +443,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="unit-2-format-and-annotations">
 <span id="unit-2-format"></span><h1>Unit 2: Format and annotations<a class="headerlink" href="#unit-2-format-and-annotations" title="Link to this heading">#</a></h1>
-<p>Topics: Foundations of Image Figures. Crop, resize, rotate, scale-bar</p>
+<p>Topics: Crop, rotate, scale-bar</p>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <p>Scientific image figures communicate scientific results in a qualitative manner. Therefore it is important that the result is readily apparent in the image figure without distorting or degrading the information.</p>
@@ -465,7 +466,7 @@
 <a class="reference internal image-reference" href="../_images/composite.png"><img alt="In" src="../_images/composite.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Composite image</span><a class="headerlink" href="#composite-image-2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Composite image</span><a class="headerlink" href="#composite-image-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The image shows a field of view of many cells. It gives the viewer a good overview and might be an appropriate figure panel if the number of cells, cell density or the overall look of the cellular neighborhood is the actual result. However, if the result is for instance the size, distribution of a specific cellular compartment (e.g., Mitochondria in the magenta channel) this overview alone will be insufficient.</p>
@@ -496,7 +497,7 @@
 <a class="reference internal image-reference" href="../_images/roi.png"><img alt="In" src="../_images/roi.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Rectangle ROI drawn on image.</span><a class="headerlink" href="#roi" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Rectangle ROI drawn on image.</span><a class="headerlink" href="#roi" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -510,7 +511,7 @@
 <a class="reference internal image-reference" href="../_images/crop.png"><img alt="In" src="../_images/crop.png" style="width: 25%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Crop</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Crop</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To create a crop one can also duplication:</p>
@@ -519,7 +520,7 @@
 <a class="reference internal image-reference" href="../_images/duplicate_roi.png"><img alt="In" src="../_images/duplicate_roi.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Cropping via duplication</span><a class="headerlink" href="#duplicate-crop" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Cropping via duplication</span><a class="headerlink" href="#duplicate-crop" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -535,7 +536,7 @@
 <a class="reference internal image-reference" href="../_images/rotation_interpolation.png"><img alt="In" src="../_images/rotation_interpolation.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Interpolation and rotation. Left: 10 x 10 px original, Middle: 90 Degree rotation, Right: 45 Degree rotation bilinear interpolation.</span><a class="headerlink" href="#interpolation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Interpolation and rotation. Left: 10 x 10 px original, Middle: 90 Degree rotation, Right: 45 Degree rotation bilinear interpolation.</span><a class="headerlink" href="#interpolation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Interpolation is needed since in Fiji images are processed as Raster graphics (grid of pixels). The effect of raster graphics, image transformation and interpolation is also discussed here: <a class="reference internal" href="../background/raster_graphics_interpolation.html"><span class="std std-doc">Raster graphics and interpolation</span></a></p>
@@ -549,7 +550,7 @@
 <a class="reference internal image-reference" href="../_images/scale_bar1.png"><img alt="In" src="../_images/scale_bar1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Overview and crop show different scale.</span><a class="headerlink" href="#scale-bar1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Overview and crop show different scale.</span><a class="headerlink" href="#scale-bar1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We need to communicate the scale information as well as other important information (e.g., color) to the viewer such that the image becomes interpretable.</p>
@@ -562,7 +563,7 @@
 <a class="reference internal image-reference" href="../_images/set_scale.png"><img alt="In" src="../_images/set_scale.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 36 </span><span class="caption-text">Verify and set the correct pixel size before creating scale bars</span><a class="headerlink" href="#set-scale" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Verify and set the correct pixel size before creating scale bars</span><a class="headerlink" href="#set-scale" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>After the correct pixel size has been verified the scale bar can be created in Fiji via:</p>
@@ -571,7 +572,7 @@
 <a class="reference internal image-reference" href="../_images/scale_bar2.png"><img alt="In" src="../_images/scale_bar2.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 37 </span><span class="caption-text">Scale added to the overview as overlay.</span><a class="headerlink" href="#scale-bar2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Scale added to the overview as overlay.</span><a class="headerlink" href="#scale-bar2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -583,7 +584,7 @@
 <a class="reference internal image-reference" href="../_images/scale_bar3.png"><img alt="In" src="../_images/scale_bar3.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 38 </span><span class="caption-text">The width of the scale bar should be in relation to the shown object</span><a class="headerlink" href="#scale-bar3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">The width of the scale bar should be in relation to the shown object</span><a class="headerlink" href="#scale-bar3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -598,7 +599,16 @@
 <p>Image &gt; Annotate &gt; Arrow…</p>
 <p>Image &gt; Stacks &gt; Label…</p>
 <p>However, we recommend to create such annotations in a dedicated vector graphics program such as inkscape. We discuss the creation of the publication ready image figure here: <a class="reference internal" href="unit-3_figure_prep.html"><span class="std std-doc">Unit 3: Figure prep and availability</span></a></p>
+<!---
+
+What could be relevant is to dicuss adding timestamps in movies, or frame of movies.
+
+--->
 </section>
+</section>
+<section id="result">
+<h2>Result<a class="headerlink" href="#result" title="Link to this heading">#</a></h2>
+<p>You can download the result of <a class="reference internal" href="#"><span class="std std-doc">Unit 2: Visibility</span></a> here: <a class="reference download internal" download="" href="../_downloads/71f6b4f29a3669d129257bdc99418140/composite_scale.tif"><span class="xref download myst">composite_scale.tif</span></a> and [composite_crop_scale.tif]./unit-2_resources/unit-2_examples/composite_crop_scale.tif).</p>
 </section>
 <section id="bonus-roi-manger-and-overlays">
 <h2>Bonus: ROI Manger and overlays<a class="headerlink" href="#bonus-roi-manger-and-overlays" title="Link to this heading">#</a></h2>
@@ -610,7 +620,7 @@
 <a class="reference internal image-reference" href="../_images/roi_manager.png"><img alt="In" src="../_images/roi_manager.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 39 </span><span class="caption-text">ROI Manager</span><a class="headerlink" href="#roi-manager" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">ROI Manager</span><a class="headerlink" href="#roi-manager" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Scale bars or annotations that exist as overlays can be added to the ROI Manager via:</p>
@@ -619,7 +629,7 @@
 <a class="reference internal image-reference" href="../_images/overlay_roi_manager.png"><img alt="In" src="../_images/overlay_roi_manager.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Overly in ROI Manager</span><a class="headerlink" href="#overlay-roi-manager" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">Overly in ROI Manager</span><a class="headerlink" href="#overlay-roi-manager" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The ROIs can then be saved as an independent file:</p>
@@ -709,6 +719,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-annotations">Further annotations</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result">Result</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-roi-manger-and-overlays">Bonus: ROI Manger and overlays</a></li>
 </ul>
   </nav></div>

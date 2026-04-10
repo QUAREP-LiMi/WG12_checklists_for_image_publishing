@@ -170,7 +170,18 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Checklists for image publishing</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Train-the-user tutorials</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_tutorials.html">Introduction to tutorials</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 1: Visibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-2_format.html">Unit 2: Format and annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Tutorials background</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Checklists for image publishing</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/intro_image_publishing.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/1_image_format.html">Image format</a></li>
@@ -178,23 +189,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/3_image_annotation.html">Image annotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../image_publishing/4_image_availability.html">Image availability</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Checklists for publication of image analysis workflows</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Checklists for publication of image analysis workflows</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/intro_analysis_workflows.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/1_established_workflows.html">Established workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/2_new_workflows.html">New workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/3_machine_learning_workflows.html">Machine learning workflows</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Tutorials</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="intro_tutorials.html">Introduction to tutorials</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 1: Visibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit-2_format.html">Unit 2: Format and annotations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Tutorials background</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Other resources</span></p>
 <ul class="nav bd-sidenav">
@@ -435,7 +435,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="unit-1-visibility">
 <span id="id1"></span><h1>Unit 1: Visibility<a class="headerlink" href="#unit-1-visibility" title="Link to this heading">#</a></h1>
-<p>Topics discussed: Brightness/Contrast, colors, accessibility</p>
+<p>Topics: Brightness/Contrast, colors, accessibility</p>
 <!---
 Topics for background:
 What is an image? 
@@ -445,11 +445,11 @@ Usage of histograms
 -->
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully images typically needs to be processed. This processing can go wrong and the image figure can incorrectly present the image (<a class="reference internal" href="#image-presentation"><span class="std std-numref">Fig. 4</span></a>):</p>
+<p>Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully images typically needs to be processed. This processing can go wrong and the image figure can incorrectly present the image (<a class="reference internal" href="#image-presentation"><span class="std std-numref">Fig. 2</span></a>):</p>
 <figure class="align-center" id="image-presentation">
 <img alt="In" src="../_images/image_presentation.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The same multi channel image visualized in different forms. All fail to communicate the content of the image well. (A) The multichannel image visualized using blue, green, red and yellow look up table. (B) The same multichannel image with all channels visualized in grey scale. (C) Finally, the brightness contrast was processed incorrectly and the image appears dark.</span><a class="headerlink" href="#image-presentation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The same multi channel image visualized in different forms. All fail to communicate the content of the image well. (A) The multichannel image visualized using blue, green, red and yellow look up table. (B) The same multichannel image with all channels visualized in grey scale. (C) Finally, the brightness contrast was processed incorrectly and the image appears dark.</span><a class="headerlink" href="#image-presentation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -473,13 +473,13 @@ Usage of histograms
 </section>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
-<p>This tutorial starts with an multi channel image (<a class="reference internal" href="#multichannel-image"><span class="std std-numref">Fig. 6</span></a>). Download a TIFF of the example image here: <a class="reference download internal" download="" href="../_downloads/176f17fc898cfaff9c3ea879c7193469/multichannel_image.tif"><span class="xref download myst">multichannel_image.tif</span></a>.</p>
+<p>This tutorial starts with an multi channel image (<a class="reference internal" href="#multichannel-image"><span class="std std-numref">Fig. 4</span></a>). Download a TIFF of the example image here: <a class="reference download internal" download="" href="../_downloads/176f17fc898cfaff9c3ea879c7193469/multichannel_image.tif"><span class="xref download myst">multichannel_image.tif</span></a>.</p>
 <p>Open Fiji…</p>
 <figure class="align-center" id="fiji-task-bar">
 <a class="reference internal image-reference" href="../_images/Fiji_task_bar.png"><img alt="In" src="../_images/Fiji_task_bar.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Fiji task bar</span><a class="headerlink" href="#fiji-task-bar" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Fiji task bar</span><a class="headerlink" href="#fiji-task-bar" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Then open the image in Fiji:</p>
@@ -488,7 +488,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/multichannel_image.png"><img alt="In" src="../_images/multichannel_image.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Multichannel image</span><a class="headerlink" href="#multichannel-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Multichannel image</span><a class="headerlink" href="#multichannel-image" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -504,7 +504,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C1.png"><img alt="../_images/C1.png" src="../_images/C1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -513,7 +513,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C2.png"><img alt="../_images/C2.png" src="../_images/C2.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -522,7 +522,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C3.png"><img alt="../_images/C3.png" src="../_images/C3.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -531,7 +531,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C4.png"><img alt="../_images/C4.png" src="../_images/C4.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Channel 4</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Channel 4</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -621,7 +621,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C1-multichannel_image_magenta.png"><img alt="../_images/C1-multichannel_image_magenta.png" src="../_images/C1-multichannel_image_magenta.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -630,7 +630,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C2-multichannel_image_green.png"><img alt="../_images/C2-multichannel_image_green.png" src="../_images/C2-multichannel_image_green.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -639,7 +639,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/C3-multichannel_image_cyan.png"><img alt="../_images/C3-multichannel_image_cyan.png" src="../_images/C3-multichannel_image_cyan.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -668,7 +668,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/C1-multichannel_image_magenta.png"><img alt="../_images/C1-multichannel_image_magenta.png" src="../_images/C1-multichannel_image_magenta.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -677,7 +677,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/C2-multichannel_image_green.png"><img alt="../_images/C2-multichannel_image_green.png" src="../_images/C2-multichannel_image_green.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -686,7 +686,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/C3-multichannel_image_cyan.png"><img alt="../_images/C3-multichannel_image_cyan.png" src="../_images/C3-multichannel_image_cyan.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -698,7 +698,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/brightness_contrast.png"><img alt="In" src="../_images/brightness_contrast.png" style="width: 25%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Brightness/Contrast setting</span><a class="headerlink" href="#brightness-contras" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Brightness/Contrast setting</span><a class="headerlink" href="#brightness-contras" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Brightness/Contrast interface:</p>
@@ -725,7 +725,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/first_auto_setting.png"><img alt="../_images/first_auto_setting.png" src="../_images/first_auto_setting.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text">After first auto setting: 0.35% of image saturated. The objects (mitochondria) are visible and separated. Low intensity information is present.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">After first auto setting: 0.35% of image saturated. The objects (mitochondria) are visible and separated. Low intensity information is present.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -734,7 +734,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/reset_image.png"><img alt="../_images/reset_image.png" src="../_images/reset_image.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 19 </span><span class="caption-text">After pressing reset, the Min &amp; Max sliders are set to the minimum and maximum intensity values. As a result, the objects are not clearly visible.</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">After pressing reset, the Min &amp; Max sliders are set to the minimum and maximum intensity values. As a result, the objects are not clearly visible.</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -743,7 +743,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/saturated.png"><img alt="../_images/saturated.png" src="../_images/saturated.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Saturated image: Note that the objects are completely merged and the low intensity structures appear in the same intensity as the objects.</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Saturated image: Note that the objects are completely merged and the low intensity structures appear in the same intensity as the objects.</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -752,7 +752,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/background_cut.png"><img alt="../_images/background_cut.png" src="../_images/background_cut.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Background cut too much: Note loss of lower intensity information.</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Background cut too much: Note loss of lower intensity information.</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -766,7 +766,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/C1-multichannel_image_bc.png"><img alt="../_images/C1-multichannel_image_bc.png" src="../_images/C1-multichannel_image_bc.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Channel 1: Min = 308; Max = 2484</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Channel 1: Min = 308; Max = 2484</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -775,7 +775,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/C2-multichannel_image_bc.png"><img alt="../_images/C2-multichannel_image_bc.png" src="../_images/C2-multichannel_image_bc.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Channel 2: Min = 84 Max = 2965</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Channel 2: Min = 84 Max = 2965</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -784,7 +784,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/C3-multichannel_image_bc.png"><img alt="../_images/C3-multichannel_image_bc.png" src="../_images/C3-multichannel_image_bc.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Channel 3: Min = 36; Max = 1270</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Channel 3: Min = 36; Max = 1270</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -808,7 +808,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/calibration_bar.png"><img alt="In" src="../_images/calibration_bar.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Calibration bar</span><a class="headerlink" href="#calibration-bar" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Calibration bar</span><a class="headerlink" href="#calibration-bar" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -825,7 +825,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/merge_channels.png"><img alt="In" src="../_images/merge_channels.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Merge channels</span><a class="headerlink" href="#merge-channels" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Merge channels</span><a class="headerlink" href="#merge-channels" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -837,7 +837,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/composite.png"><img alt="In" src="../_images/composite.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Composite image</span><a class="headerlink" href="#composite-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Composite image</span><a class="headerlink" href="#composite-image" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Download a TIFF of the result image here: <a class="reference download internal" download="" href="../_downloads/3d78278d97ec5b09128ee5c24e051858/composite.tif"><span class="xref download myst">composite.tif</span></a>.</p>
@@ -860,7 +860,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/macro_recorder.png"><img alt="In" src="../_images/macro_recorder.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Macro recorder</span><a class="headerlink" href="#macro-recorder" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Macro recorder</span><a class="headerlink" href="#macro-recorder" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -874,7 +874,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <a class="reference internal image-reference" href="../_images/macro_script.png"><img alt="In" src="../_images/macro_script.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The cool thing is then by pressing “Run” one can reproduce the entire processing. Even cooler is then to fully automate the processing on all your images by doing some <a class="reference external" href="https://imagej.net/scripting/macro">simple macro programming</a>. You can download the macro example to test it <a class="reference download internal" download="" href="../_downloads/61845d524be1a276ae3990e79a50c60d/macro_unit-1.ijm"><span class="xref download myst">Macro.ijm</span></a>.</p>
