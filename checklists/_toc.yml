@@ -22,7 +22,7 @@ parts:
     - file: tutorials/unit-3_figure_prep.md
   - caption: 4. Tutorials background
     chapters:
-    - file: background/unit-3_figure_prep_background.md
+    - file: background/raster_graphics_interpolation.md
   - caption: 5. Other resources
     chapters:
     - file: other_resources/how_to_contribute.md

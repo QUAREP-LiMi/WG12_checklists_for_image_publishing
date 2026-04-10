@@ -129,7 +129,7 @@ Rotation by multiple of 90 Degree in Fiji can preserve data. Any other rotation 
 Interpolation and rotation. Left: 10 x 10 px original, Middle: 90 Degree rotation, Right: 45 Degree rotation bilinear interpolation.
 ```
 
-Interpolation is needed since in Fiji images are processed as Raster graphics (grid of pixels). The effect of raster graphics and interpolation is also discussed here: [Background Unit 3](/background/unit-3_figure_prep_background.md) 
+Interpolation is needed since in Fiji images are processed as Raster graphics (grid of pixels). The effect of raster graphics, image transformation and interpolation is also discussed here: [Raster graphics and interpolation](/background/raster_graphics_interpolation.md) 
 
 :::::
 
@@ -255,15 +255,3 @@ ROI Manager > More > Save...
 
 :::
 
-<!---
-## Quantification
-
-- Results of quantifications are better than just visual results
-- Cite software tool and specify version
-- Describe workflow
-- Disclose critical parameters
-
-## Describe images in figures
-
-## Methods description
---->
