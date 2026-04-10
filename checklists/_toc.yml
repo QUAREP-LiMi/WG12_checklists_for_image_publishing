@@ -1,13 +1,13 @@
 format: jb-book
 root: intro
 parts:
-  - caption: 1. Train-the-user tutorials
+  - caption: 1. Train-the-user Course
     chapters:
     - file: tutorials/intro_tutorials.md
     - file: tutorials/unit-1_visibility.md
     - file: tutorials/unit-2_format.md
     - file: tutorials/unit-3_figure_prep.md
-  - caption: 2. Tutorials background
+  - caption: 2. Course background
     chapters:
     - file: background/raster_graphics_interpolation.md
   - caption: 3. Checklists for image publishing
