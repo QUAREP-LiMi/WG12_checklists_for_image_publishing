@@ -1,7 +1,7 @@
-(unit-3_figure_prep_background)=
-# Unit 3: Background figure prep
+(raster_graphics_interpolation)=
+# Raster graphics and interpolation
 
-Topics: Annotation, Legends.
+Topics: Raster graphics, printing resolution, interpolation, vector graphics
 
 After image processing (e.g. image reconstruction, cropping, rotation, adjusting brightness contrast) the actual figure that will be published needs to be created. For creating correct and informative image figures the images need to be properly sized as well as annotated. In this section we would like to explain these tasks, common pitfalls and provide different receipts to solve them.
 
@@ -23,7 +23,6 @@ Typical image processing and analysis software are performing mathematical opera
 
 
 ## Image figures and printing resolution
-
 
 For publishing we need to be able to create a document that can be printed on physical paper. In order for any information to be readable on such a document it needs to be printed in a sufficient enough resolution. This is typically defined by journals at a minimal resolution of 300 dots per inch (dpi). This corresponds to the density of printed dots on the journal paper and it applies to the whole figure, including each individual image. 
 
