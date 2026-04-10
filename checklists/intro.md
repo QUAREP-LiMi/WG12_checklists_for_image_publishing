@@ -7,3 +7,12 @@ In this paper, members of [QUAREP-LiMi](./other_resources/whois.md) have propose
 Alternatively, see the Einstein Foundation video below describing some of our work and goals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VZ-Y3VMX_Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+This work is supported by [Einstein Foundation](https://award.einsteinfoundation.de/) [Early Career Award](https://award.einsteinfoundation.de/about) 2024 for the project [PixelQuality](https://award.einsteinfoundation.de/award-winners-finalists/recipients-2024/pixelquality).
+
+```{figure} einstein_foundation.png
+:align: center
+:width: 25%
+```
+
+

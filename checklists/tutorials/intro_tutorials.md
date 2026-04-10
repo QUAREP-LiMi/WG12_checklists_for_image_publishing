@@ -41,9 +41,13 @@ TODO: Explain the checklists and the condensed version. Provide an image. I woul
 
 ## Further material
 
-Cheatsheets for creating image figures
+Cheatsheets for creating image figures:
 
 Schmied C. and Jambor HK. Effective image visualization for publications – a workflow using open access tools and concepts [version 2]. F1000Research 2021, 9:1373 ([doi: 10.12688/f1000research.27140.2](https://doi.org/10.12688/f1000research.27140.2))
+
+Images for the examples were published here: 
+
+Wolff C. et al. Morphological profiling data resource enables prediction of chemical compound properties. iScience 2025 ([doi: 10.1016/j.isci.2025.112445](https://doi.org/10.1016/j.isci.2025.112445))
 
 ## Help
 

@@ -1,7 +1,7 @@
 (unit-2_format)=
 # Unit 2: Format and annotations
 
-Topics: Foundations of Image Figures. Crop, resize, rotate, scale-bar
+Topics: Crop, rotate, scale-bar
 
 ## Motivation
 
@@ -220,6 +220,9 @@ What could be relevant is to dicuss adding timestamps in movies, or frame of mov
 
 --->
 
+## Result
+
+You can download the result of [Unit 2: Visibility](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif]./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
 
 ## Bonus: ROI Manger and overlays
 
