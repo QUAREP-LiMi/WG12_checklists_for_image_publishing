@@ -399,7 +399,7 @@ Merging more than three color channels into a single image is tricky, as the dif
 
 :::
 
-## Bonus: Document processing with macro recorder
+## Bonus: Macro recorder
 
 The macro recorder allows to document the processing steps that are carried out in the graphical user interface (GUI). 
 
