@@ -33,6 +33,8 @@ jobs:
     - name: Build the book
       run: |
         cd checklists
+        jupyter-book clean .
+        rm -rf _build
         jupyter-book build .
 
     # Deploy the book's HTML to gh-pages branch
