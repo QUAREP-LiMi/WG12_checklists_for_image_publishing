@@ -203,7 +203,6 @@ An acceptable alternative to an scale bar is to specifiy the physical dimension 
 
 :::
 
-
 ### Further annotations
 
 Further annotations can be created in Fiji using the following commands:
@@ -213,6 +212,13 @@ Image > Annotate > Arrow...
 Image > Stacks > Label...
 
 However, we recommend to create such annotations in a dedicated vector graphics program such as inkscape. We discuss the creation of the publication ready image figure here: [Unit 3: Figure prep and availability](./unit-3_figure_prep.md)
+
+
+<!---
+
+What could be relevant is to dicuss adding timestamps in movies, or frame of movies.
+
+--->
 
 
 ## Bonus: ROI Manger and overlays
