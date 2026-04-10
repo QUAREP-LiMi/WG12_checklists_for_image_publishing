@@ -194,7 +194,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Tutorials background</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../background/unit-3_figure_prep_background.html">Unit 3: Background figure prep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../background/raster_graphics_interpolation.html">Raster graphics and interpolation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Other resources</span></p>
 <ul class="nav bd-sidenav">
@@ -421,7 +421,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brightness-and-contrast">Brightness and Contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-merged-image">Create merged image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-document-processing-with-macro-recorder">Bonus: Document processing with macro recorder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-macro-recorder">Bonus: Macro recorder</a></li>
 </ul>
             </nav>
         </div>
@@ -460,6 +460,8 @@ Usage of histograms
 <li><p>What do the colors mean?</p></li>
 <li><p>Is the information accessible to a wide audience?</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image. We need to carefully consider the method of how to choose the image represents the result. Acceptable methods to choose a image for a figure could be:</p>
 <ul class="simple">
 <li><p>Representative image</p></li>
@@ -467,6 +469,7 @@ Usage of histograms
 <li><p>Based on analysis (middle of distribution)</p></li>
 <li><p>Show multiple examples of range of phenotype</p></li>
 </ul>
+</div>
 </section>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
@@ -843,8 +846,8 @@ Image &gt; Color &gt; Invert LUTs</p>
 <p>Merging more than three color channels into a single image is tricky, as the different combined colors might not be easily distinguished anymore by eye. Except the objects are well separated, which is often not the case for biological information. Thus, we in general recommend to visualize more than 3 channels separately, ideally using gray scale images.</p>
 </div>
 </section>
-<section id="bonus-document-processing-with-macro-recorder">
-<h2>Bonus: Document processing with macro recorder<a class="headerlink" href="#bonus-document-processing-with-macro-recorder" title="Link to this heading">#</a></h2>
+<section id="bonus-macro-recorder">
+<h2>Bonus: Macro recorder<a class="headerlink" href="#bonus-macro-recorder" title="Link to this heading">#</a></h2>
 <p>The macro recorder allows to document the processing steps that are carried out in the graphical user interface (GUI).</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -874,7 +877,11 @@ Image &gt; Color &gt; Invert LUTs</p>
 <p><span class="caption-number">Fig. 29 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The cool thing is then by pressing “Run” one can reproduce the entire processing. Even cooler is then to fully automate the processing on all your images by doing some <a class="reference external" href="https://imagej.net/scripting/macro">simple macro programming</a>. You can download the macro example to test it <a class="reference download internal" download="" href="../_downloads/61845d524be1a276ae3990e79a50c60d/macro_unit-1.ijm"><span class="xref download myst">Macro.ijm</span></a>. Note: for this to work the “multichannel_image.tif” image needs to be open under this exact name in Fiji.</p>
+<p>The cool thing is then by pressing “Run” one can reproduce the entire processing. Even cooler is then to fully automate the processing on all your images by doing some <a class="reference external" href="https://imagej.net/scripting/macro">simple macro programming</a>. You can download the macro example to test it <a class="reference download internal" download="" href="../_downloads/61845d524be1a276ae3990e79a50c60d/macro_unit-1.ijm"><span class="xref download myst">Macro.ijm</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the macro to work the “multichannel_image.tif” image needs to be open under this exact name in Fiji.</p>
+</div>
 </section>
 </section>
 
@@ -950,7 +957,7 @@ Image &gt; Color &gt; Invert LUTs</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brightness-and-contrast">Brightness and Contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-merged-image">Create merged image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-document-processing-with-macro-recorder">Bonus: Document processing with macro recorder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-macro-recorder">Bonus: Macro recorder</a></li>
 </ul>
   </nav></div>
 

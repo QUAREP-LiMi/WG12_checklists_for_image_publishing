@@ -28,11 +28,16 @@ The same multi channel image visualized in different forms. All fail to communic
 - What do the colors mean?
 - Is the information accessible to a wide audience?
 
+
+:::{important}
+
 Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image. We need to carefully consider the method of how to choose the image represents the result. Acceptable methods to choose a image for a figure could be:
 - Representative image
 - Random selection
 - Based on analysis (middle of distribution)
 - Show multiple examples of range of phenotype
+
+:::
 
 ## Introduction
 
@@ -394,7 +399,7 @@ Merging more than three color channels into a single image is tricky, as the dif
 
 :::
 
-## Bonus: Document processing with macro recorder
+## Bonus: Macro recorder
 
 The macro recorder allows to document the processing steps that are carried out in the graphical user interface (GUI). 
 
@@ -441,4 +446,11 @@ Save as .ijm Fiji macro.
 Macro script
 ```
 
-The cool thing is then by pressing "Run" one can reproduce the entire processing. Even cooler is then to fully automate the processing on all your images by doing some [simple macro programming](https://imagej.net/scripting/macro). You can download the macro example to test it [Macro.ijm](./unit-1_resources/macro/macro_unit-1.ijm). Note: for this to work the "multichannel_image.tif" image needs to be open under this exact name in Fiji.
+The cool thing is then by pressing "Run" one can reproduce the entire processing. Even cooler is then to fully automate the processing on all your images by doing some [simple macro programming](https://imagej.net/scripting/macro). You can download the macro example to test it [Macro.ijm](./unit-1_resources/macro/macro_unit-1.ijm). 
+
+
+:::{note} 
+
+For the macro to work the "multichannel_image.tif" image needs to be open under this exact name in Fiji.
+
+:::
