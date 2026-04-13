@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><MapOrganelleSettings>
+    <OrgaMapperVersion>2.0.0</OrgaMapperVersion>
+    <kernelSizeNuc>5.0</kernelSizeNuc>
+    <rollingBallRadiusNuc>10.0</rollingBallRadiusNuc>
+    <thresholdNuc>Li</thresholdNuc>
+    <erosionNuc>1</erosionNuc>
+    <minSizeNuc>1.0</minSizeNuc>
+    <maxSizeNuc>750.0</maxSizeNuc>
+    <lowCircNuc>0.0</lowCircNuc>
+    <highCircNuc>1.0</highCircNuc>
+    <invertCellImage>false</invertCellImage>
+    <kernelSizeCellArea>10.0</kernelSizeCellArea>
+    <rollingBallRadiusCellArea>150.0</rollingBallRadiusCellArea>
+    <manualThresholdCellArea>150</manualThresholdCellArea>
+    <sigmaGaussCellSep>9.0</sigmaGaussCellSep>
+    <prominenceCellSep>200.0</prominenceCellSep>
+    <minCellSize>10.0</minCellSize>
+    <maxCellSize>50000.0</maxCellSize>
+    <lowCircCellSize>0.3</lowCircCellSize>
+    <highCircCellSize>1.0</highCircCellSize>
+    <sigmaLoGOrga>2.0</sigmaLoGOrga>
+    <prominenceOrga>40.0</prominenceOrga>
+    <calibrationSettings>false</calibrationSettings>
+    <pxSizeMicron>0.6500002275000796</pxSizeMicron>
+    <membraneDistanceMeasurement>false</membraneDistanceMeasurement>
+    <nucleusChannel>3</nucleusChannel>
+    <cytoplasmChannel>4</cytoplasmChannel>
+    <organelleChannel>1</organelleChannel>
+    <measureChannel>4</measureChannel>
+    <fileFormat>.tif</fileFormat>
+</MapOrganelleSettings>

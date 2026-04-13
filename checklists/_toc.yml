@@ -7,6 +7,7 @@ parts:
     - file: tutorials/unit-1_visibility.md
     - file: tutorials/unit-2_format.md
     - file: tutorials/unit-3_figure_prep.md
+    - file: tutorials/unit-4_analysis.md
   - caption: 2. Course background
     chapters:
     - file: background/raster_graphics_interpolation.md
