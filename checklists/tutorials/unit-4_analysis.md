@@ -5,6 +5,8 @@ Topics:
 
 ## Motivation
 
+Quantitative results are better than qualitative results only. However, it is critical that the performed analysis as well as the used tools and their settings are properly documented in the methods. For custom new analysis the sequence or code of the performed analysis should be shared. 
+
 ## Key considerations
 
 - Quantifications are better than qualitative results
@@ -14,8 +16,7 @@ Topics:
 
 ## Introduction
 
-Quantitative results are better than qualitative results. For our example figure we could easily imagine that we create a quantitative analysis to count the number of living cells vs dead cells. This could either be based on existing tools or writing our own analysis. 
-
+For our example figure we could easily imagine that we create a quantitative analysis to count the number of living cells vs dead cells. This could either be based on existing tools or writing our own analysis. 
 
 ```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
 :alt: In
@@ -140,7 +141,7 @@ Since OrgaMapper provides a settings file this settings file can be shared in a 
 
 ## Analysis based on new workflows
 
-For this analysis we could easily also write a custom code based on an Fiji macro. To properly document such analysis we must include the code and example data in a data repository for review. 
+For this analysis we could easily also write a custom code based on an Fiji macro. To properly document such analysis we should include the code and example data in a data repository for review. 
 
 
 ## Code and example availability
