@@ -223,7 +223,20 @@ For advanced or non-linear methods such as adjustment of gamma, deconvolution, o
 
 ## Methods
 
-The methods should explain the processing that happened to the image figures. They should also explain and cite the image processing platform with it used version. Critical used plugins should also be documented and cited. For instance:
+The methods should explain the key processing that happened to the image figures. They should also explain and cite the image processing platform with it used version as well as any used plugins. 
+
+For Fiji the version can be seen in the taskbar:
+
+```{figure} /tutorials/unit-3_resources/methods/Fiji_version.png
+:alt: In
+:align: center
+:name: Fiji_version
+:width: 100%
+
+Fiji Version in the taskbar.
+```
+
+Based on this a possible methods section could read:
 
 Image figures were processed using Fiji is just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version: 2.16/1.54p. and the BioVoxxel Figure toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2025](https://doi.org/10.1038/s41592-023-01987-9)) images were adjusted for brightness contrast using the same min & max settings over compared channels. 
 
@@ -244,7 +257,7 @@ Citations:
 
 :::{tip}
 
-To make your work easier you can add the macro that we created in [Unit 1: Visibility](./unit-1_visibility.md) together with your the original and processed images as documentation instead of specifying the brightness constast settings. 
+To make your work easier you can add the macro that we created in [Unit 1: Visibility](./unit-1_visibility.md) together with your the original and processed images as documentation instead of specifying the brightness contrast settings. 
 
 :::
 
