@@ -1,7 +1,7 @@
 (unit-4_analysis)=
 # Unit 4: Quantification
 
-Topics: 
+Topics: Image analysis, software versions, code and example availability
 
 ## Motivation
 
