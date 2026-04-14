@@ -103,7 +103,7 @@ Critical is that we can extract the cell area in the "cellMeasurements.csv" file
 ```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_cellarea.png
 :alt: In
 :align: center
-:name: orgamapper_results
+:name: orgamapper_cellarea
 :width: 50%
 
 OrgaMapper cell area results.
