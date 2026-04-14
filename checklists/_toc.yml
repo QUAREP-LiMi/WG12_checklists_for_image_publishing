@@ -10,6 +10,7 @@ parts:
     - file: tutorials/unit-4_analysis.md
   - caption: 2. Course background
     chapters:
+    - file: background/image_ethics.md
     - file: background/raster_graphics_interpolation.md
   - caption: 3. Checklists for image publishing
     chapters:
