@@ -187,6 +187,8 @@ Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO 
 - Explain other information such as color or channels.
 - Metadata allows reproduction of microscopy experiments.
 
+Further reading for microscopy metadata:
+
 - Montero Llopis, P., Senft, R.A., Ross-Elliott, T.J. et al. Best practices and tools for reporting reproducible fluorescence microscopy methods. Nat Methods 18, 1463–1476 (2021). [https://doi.org/10.1038/s41592-021-01156-w](https://doi.org/10.1038/s41592-021-01156-w)
 
 ## Transforming and scaling is problematic
