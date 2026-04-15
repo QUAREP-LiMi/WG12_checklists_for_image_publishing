@@ -101,7 +101,7 @@ Export images as SVG.
 ```
 SVG is a vector graphic format that can be loaded and processed in Inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./unit-3_resources/examples/figure_template.svg)
 
-Open the template inkscape:
+Open the template in Inkscape:
 
 ```{figure} /tutorials/unit-3_resources/figure/inkscape.png
 :alt: In
