@@ -1,7 +1,20 @@
 (tutorials)=
 # Introduction to tutorials
 
-This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to go with one example from original image to a complete image figure, including figure legend, and methods that were used to created and process the images. 
+This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to take one example from the original image and create a complete image figure, including the figure legend and methods used to create and process the images.
+
+The result should be an image figure that truthfully and effectively reports the scientific result that the figure represents:
+
+```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+:alt: In
+:align: center
+:name: annotated_image2
+:width: 100%
+
+Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Enlarged cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at 5 µM concentration shows increased cell death, note the many round small cells (White Arrowheads). (d) Enlarged dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+```
+
+## Materials
 
 For this tutorial you are going to need: 
 
@@ -12,7 +25,7 @@ For this tutorial you are going to need:
 
 :::{note}
 
-We selected these tools because they are free, open source, and familiar to the authors. The underlying principles, however, can be applied to other tools as well.
+We selected these tools because they are free, open source, and familiar to the authors. The underlying principles, however, can be applied to other tools.
 
 :::
 
@@ -27,10 +40,6 @@ To help guide authors to create good image figures we have created a set of [Che
 
 Condensed checklists. 
 ```
-
-<!---
-TODO: Explain the checklists and the condensed version. Provide an image. I would still think we need to modify the checklists in their sequence. 
--->
 
 ## Table of contents
 
