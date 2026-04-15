@@ -46,7 +46,7 @@ Condensed checklists.
 1) [Unit 1: Visibility](./unit-1_visibility.md)
 2) [Unit 2: Format](./unit-2_format.md)
 3) [Unit 3: Figure prep](./unit-3_figure_prep.md)
-
+4) [Unit 4: Quantification](./unit-4_analysis.md)
 
 ## Further material
 
