@@ -468,6 +468,13 @@ Henry Baker - Microscope Made Easy 1742</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>Image processing is an essential step in preparing microscopy data for publication. To ensure that images communicate scientific results accurately and transparently, it is crucial to understand and apply principles that preserve the original information.</p>
+<figure class="align-center" id="comparison">
+<a class="reference internal image-reference" href="../_images/comparison.png"><img alt="In" src="../_images/comparison.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">This is the same image processed with different settings in the Lysosome channel. Left less Lysosomes are visible and they are only close to the Nucleus compared to right.</span><a class="headerlink" href="#comparison" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>This section introduces guiding principles for ethical image processing. It draws on the seminal work of <a class="reference external" href="https://medicine.arizona.edu/person/douglas-w-cromey-ms">Douglas W. Cromey</a>, whose contributions have helped define best practices in the responsible handling of scientific images:</p>
 <ul class="simple">
 <li><p>Cromey DW. Avoiding twisted pixels: ethical guidelines for the appropriate use and manipulation of scientific digital images. Sci Eng Ethics. 2010 Dec;16(4):639-67. doi: <a class="reference external" href="https://doi.org/10.1007/s11948-010-9201-y">10.1007/s11948-010-9201-y</a></p></li>
@@ -480,14 +487,14 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/rawprocessed.png"><img alt="In" src="../_images/rawprocessed.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 60 </span><span class="caption-text">Process copy of image: (Left) Orginal image. (Right) Image processing performed on copy.</span><a class="headerlink" href="#rawprocessed" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Process copy of image: (Left) Orginal image. (Right) Image processing performed on copy.</span><a class="headerlink" href="#rawprocessed" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>Keep unprocessed image data file.</p></li>
 <li><p>Perform manipulations on a copy.</p></li>
-<li><p>Document all processing steps i.e. macro.</p></li>
-<li><p>Fiji macros allow to share your analysis.</p></li>
+<li><p>Document all processing steps.</p></li>
+<li><p>Fiji macros or analysis code allow to share your analysis.</p></li>
 </ul>
 </section>
 <section id="simple-adjustments-to-the-entire-image-are-usually-acceptable">
@@ -496,7 +503,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/adjustments.png"><img alt="In" src="../_images/adjustments.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Image processing: Linear adjustments such as adjustment of brightness contrast on the entire image.</span><a class="headerlink" href="#adjustments" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 63 </span><span class="caption-text">Image processing: Linear adjustments such as adjustment of brightness contrast on the entire image.</span><a class="headerlink" href="#adjustments" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -510,7 +517,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/cropping2.png"><img alt="In" src="../_images/cropping2.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Overview and crop shown side by side.</span><a class="headerlink" href="#cropping" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Overview and crop shown side by side.</span><a class="headerlink" href="#cropping" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -522,15 +529,15 @@ Henry Baker - Microscope Made Easy 1742</p>
 </section>
 <section id="treat-images-the-same-for-comparison">
 <h2>Treat Images the Same for Comparison<a class="headerlink" href="#treat-images-the-same-for-comparison" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="comparison">
+<figure class="align-center" id="ethic-comparison">
 <a class="reference internal image-reference" href="../_images/comparison.png"><img alt="In" src="../_images/comparison.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 63 </span><span class="caption-text">The same image processed with different settings produces different visual results.</span><a class="headerlink" href="#comparison" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 65 </span><span class="caption-text">The same image processed with different settings produces different visual results.</span><a class="headerlink" href="#ethic-comparison" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Acquired under identical conditions.</p></li>
+<li><p>Acquire images under identical conditions.</p></li>
 <li><p>Treat identical in image processing.</p></li>
 </ul>
 </section>
@@ -540,7 +547,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/filtered.png"><img alt="In" src="../_images/filtered.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Filters and extreme brightness contrast adjustments drastically alter images and remove information: (Left) original with acceptable brightness contrast adjustments. (Right) Median filter with Sigma 1 and drastic brightness contrast adjustments that crop low intensities.</span><a class="headerlink" href="#filtered" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 66 </span><span class="caption-text">Filters and extreme brightness contrast adjustments drastically alter images and remove information: (Left) original with acceptable brightness contrast adjustments. (Right) Median filter with Sigma 1 and drastic brightness contrast adjustments that crop low intensities.</span><a class="headerlink" href="#filtered" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -553,7 +560,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <h2>Processing Only Parts of an Image is Bad<a class="headerlink" href="#processing-only-parts-of-an-image-is-bad" title="Link to this heading">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Manipulations specific to one area of an image and are not performed on other areas are questionable.</p>
+<p>Manipulations applied to only one area of an image, and not to others, are questionable.</p>
 </div>
 <figure class="align-center" id="process-part">
 <a class="reference internal image-reference" href="../_images/process_part.png"><img alt="In" src="../_images/process_part.png" style="width: 50%;" />
@@ -570,7 +577,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/duplication1.png"><img alt="In" src="../_images/duplication1.png" style="width: 50%;" />
 </a>
 </figure>
-<p>Indeed image duplication is a big issue:</p>
+<p>Improper image duplication is a big issue in the scientific literature:</p>
 <ul class="simple">
 <li><p>Bik EM, Casadevall A, Fang FC. 2016. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications. mBio 7. doi: [10.1128/mbio.00809-16]
 (<a class="reference external" href="https://doi.org/10.1128/mbio.00809-16">https://doi.org/10.1128/mbio.00809-16</a>)</p></li>
@@ -593,17 +600,17 @@ Henry Baker - Microscope Made Easy 1742</p>
 </section>
 <section id="avoid-the-use-of-lossy-compression">
 <h2>Avoid the Use of Lossy Compression<a class="headerlink" href="#avoid-the-use-of-lossy-compression" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="compression">
 <a class="reference internal image-reference" href="../_images/compression.png"><img alt="In" src="../_images/compression.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 65 </span><span class="caption-text">The effect of lossy compression due to JPEG compression.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 67 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>Lossy compression alters images permanently.</p></li>
-<li><p>Avoid saving to .jpg for scientific images as the use lossy compression.</p></li>
-<li><p>Do not quantify lossy compressed images.</p></li>
+<li><p>Avoid saving scientific images as .jpg, since it uses lossy compression.</p></li>
+<li><p>Do not perform quantitative analysis on lossy-compressed images.</p></li>
 </ul>
 </section>
 <section id="metadata-matters">
@@ -612,14 +619,14 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/annotated_panel.png"><img alt="In" src="../_images/annotated_panel.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 66 </span><span class="caption-text">Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Enlarged cell treated with DMSO. (c) U2-OS treated with Nocodazole at 5 µM concentration induces cell death note the many round cells (White Arrowheads). (d) Enlarged dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#ethics-annotated-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 68 </span><span class="caption-text">Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Enlarged cell treated with DMSO. (c) U2-OS treated with Nocodazole at 5 µM concentration induces cell death note the many round cells (White Arrowheads). (d) Enlarged dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#ethics-annotated-image" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>Imaged objects have real world dimension.</p></li>
 <li><p>Image scale matters.</p></li>
 <li><p>Explain other information such as color or channels.</p></li>
-<li><p>Metadata allows reproduction of microscopy experiments.</p></li>
+<li><p>Providing metadata allows reproduction of microscopy experiments.</p></li>
 </ul>
 <p>Further reading for microscopy metadata:</p>
 <ul class="simple">
@@ -628,19 +635,19 @@ Henry Baker - Microscope Made Easy 1742</p>
 </section>
 <section id="transforming-and-scaling-is-problematic">
 <h2>Transforming and scaling is problematic<a class="headerlink" href="#transforming-and-scaling-is-problematic" title="Link to this heading">#</a></h2>
-<p>Images are typically processed as raster graphics (raster = grid of pixels). Thus, for transformations such as rotations in and resizing interpolation is needed. This interpolation is</p>
+<p>Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90° increments) and resizing require interpolation, which permanently alters the image data.</p>
 <figure class="align-center" id="ethics-interpolation">
 <a class="reference internal image-reference" href="../_images/rotation_interpolation.png"><img alt="In" src="../_images/rotation_interpolation.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 67 </span><span class="caption-text">Interpolation and rotation. Left: 10 x 10 px original, Middle: 90 Degree rotation, Right: 45 Degree rotation bilinear interpolation.</span><a class="headerlink" href="#ethics-interpolation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 69 </span><span class="caption-text">Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation with bilinear interpolation.</span><a class="headerlink" href="#ethics-interpolation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="ethics-resize">
 <a class="reference internal image-reference" href="../_images/DPI_Fig4.png"><img alt="Image resized with different interpolations" src="../_images/DPI_Fig4.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 68 </span><span class="caption-text">Interpolation and rescaling: (A) Original crop from example image (see Figure 1). (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using the bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging (E) Downsampling of the example image crop with nearest neighbor interpolation with averaging.</span><a class="headerlink" href="#ethics-resize" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 70 </span><span class="caption-text">Interpolation and rescaling: (A) Original crop from example image. (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging.</span><a class="headerlink" href="#ethics-resize" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
