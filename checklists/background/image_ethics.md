@@ -25,6 +25,15 @@ Therefore, strict ethical principles must be applied during image processing to 
 
 Image processing is an essential step in preparing microscopy data for publication. To ensure that images communicate scientific results accurately and transparently, it is crucial to understand and apply principles that preserve the original information.
 
+```{figure} /background/resources_image_ethics/comparison.png
+:alt: In
+:align: center
+:name: comparison
+:width: 75%
+
+This is the same image processed with different settings in the Lysosome channel. Left less Lysosomes are visible and they are only close to the Nucleus compared to right. 
+```
+
 This section introduces guiding principles for ethical image processing. It draws on the seminal work of [Douglas W. Cromey](https://medicine.arizona.edu/person/douglas-w-cromey-ms), whose contributions have helped define best practices in the responsible handling of scientific images:
 
 - Cromey DW. Avoiding twisted pixels: ethical guidelines for the appropriate use and manipulation of scientific digital images. Sci Eng Ethics. 2010 Dec;16(4):639-67. doi: [10.1007/s11948-010-9201-y](https://doi.org/10.1007/s11948-010-9201-y)
@@ -44,8 +53,8 @@ Process copy of image: (Left) Orginal image. (Right) Image processing performed 
 
 - Keep unprocessed image data file.
 - Perform manipulations on a copy.
-- Document all processing steps i.e. macro.
-- Fiji macros allow to share your analysis.
+- Document all processing steps.
+- Fiji macros or analysis code allow to share your analysis.
 
 ## Simple Adjustments to the Entire Image are Usually Acceptable
 
@@ -83,13 +92,13 @@ Overview and crop shown side by side.
 ```{figure} /background/resources_image_ethics/comparison.png
 :alt: In
 :align: center
-:name: comparison
+:name: ethic_comparison
 :width: 75%
 
 The same image processed with different settings produces different visual results.
 ```
 
-- Acquired under identical conditions.
+- Acquire images under identical conditions.
 - Treat identical in image processing.
 
 ## Do not Beautify Images
@@ -112,7 +121,7 @@ Filters and extreme brightness contrast adjustments drastically alter images and
 
 :::{warning}
 
-Manipulations specific to one area of an image and are not performed on other areas are questionable.
+Manipulations applied to only one area of an image, and not to others, are questionable.
 
 :::
 
@@ -138,7 +147,7 @@ Cloning or copying objects from other parts of an image or from a different imag
 :width: 50%
 ```
 
-Indeed image duplication is a big issue:
+Improper image duplication is a big issue in the scientific literature:
 - Bik EM, Casadevall A, Fang FC. 2016. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications. mBio 7. doi: [10.1128/mbio.00809-16]
 (https://doi.org/10.1128/mbio.00809-16)
 
@@ -161,15 +170,15 @@ Further reading list for quantitative microscopy:
 ```{figure} /background/resources_image_ethics/compression.png
 :alt: In
 :align: center
-:name: comparison
+:name: compression
 :width: 75%
 
-The effect of lossy compression due to JPEG compression.
+Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg. 
 ```
 
 - Lossy compression alters images permanently.
-- Avoid saving to .jpg for scientific images as the use lossy compression.
-- Do not quantify lossy compressed images.
+- Avoid saving scientific images as .jpg, since it uses lossy compression.
+- Do not perform quantitative analysis on lossy-compressed images.
 
 ## Metadata Matters
 
@@ -185,7 +194,7 @@ Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO 
 - Imaged objects have real world dimension. 
 - Image scale matters.
 - Explain other information such as color or channels.
-- Metadata allows reproduction of microscopy experiments.
+- Providing metadata allows reproduction of microscopy experiments.
 
 Further reading for microscopy metadata:
 
@@ -193,7 +202,7 @@ Further reading for microscopy metadata:
 
 ## Transforming and scaling is problematic
 
-Images are typically processed as raster graphics (raster = grid of pixels). Thus, for transformations such as rotations in and resizing interpolation is needed. This interpolation is 
+Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90° increments) and resizing require interpolation, which permanently alters the image data.
 
 ```{figure} /tutorials/unit-2_resources/crop/rotation_interpolation.png
 :alt: In
@@ -201,7 +210,7 @@ Images are typically processed as raster graphics (raster = grid of pixels). Thu
 :name: ethics_interpolation
 :width: 75%
 
-Interpolation and rotation. Left: 10 x 10 px original, Middle: 90 Degree rotation, Right: 45 Degree rotation bilinear interpolation.
+Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation with bilinear interpolation.
 ```
 
 ```{figure} /background/final_image_figures_resources/DPI_Fig4.png
@@ -209,5 +218,5 @@ Interpolation and rotation. Left: 10 x 10 px original, Middle: 90 Degree rotatio
 :align: center
 :name: ethics_resize
 :width: 75%
-Interpolation and rescaling: (A) Original crop from example image (see Figure 1). (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using the bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging (E) Downsampling of the example image crop with nearest neighbor interpolation with averaging. 
+Interpolation and rescaling: (A) Original crop from example image. (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging. 
 ```
