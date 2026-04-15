@@ -1,11 +1,11 @@
 (unit-3_figure_prep)=
 # Unit 3: Figure and availability
 
-Topics: Create figure with Inkscape, annotation, figure legends, image availability.
+Topics: Create a figure with Inkscape, annotation, figure legends, and image availability.
 
 ## Motivation
 
-After processing the image the final image figure needs to be created. We recommend to do this in vector graphics progam such as inkscape. This facilitates resizing of the image panel and adding labels. 
+After processing the image, the final image figure needs to be created. We recommend doing this in a vector graphics program, such as Inkscape. This facilitates resizing of the image panel and adding labels. 
 
 Some journals even require that additional annotations are provided as vector graphics and not burned into the image.
 
@@ -31,7 +31,7 @@ Processed overview and crop for one panel of an image figure.
 
 You can download the result of [Unit 2: Visibility](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
 
-Typicall we want to present other image panels too to for instance compare wild type versus a treatment. In this case the first image is are U2-OS cells treated with DMSO as control. In our example figure we now want to compare U2-OS cells treated with Nocodazole acquired with the same settings.
+Typically, we want to present other image panels too, for instance, compare wild type versus a treatment. In this case, the first image is of U2-OS cells treated with DMSO as a control. In our example figure, we now want to compare U2-OS cells treated with Nocodazole acquired with the same settings.
 
 ```{figure} /tutorials/unit-3_resources/introduction/treatment_scale.png
 :alt: In
@@ -44,7 +44,7 @@ Processed overview and crop for treatment panel of an image figure.
 
 :::{note}
 
-You can already see one of the challenges with annotations in processed images. Except all settings are the same the different annotations are of different size. We show you how to overcome by modifying and adding annotations in a vector graphics program.
+You can already see one of the challenges with annotations in processed images. Except if all settings are the same, the different annotations are of different font sizes. We will show you how to overcome this issue by modifying and adding annotations in a vector graphics program.
 
 :::
 
@@ -52,7 +52,7 @@ You can download the original image for the treatment here: [multichannel_image_
 
 :::{important}
 
-For an accurate qualitative comparison the images need to be processed with the same settings. 
+For an accurate qualitative comparison, the images need to be processed with the same settings. 
 
 :::
 
@@ -99,7 +99,7 @@ Plugins > BioVoxxel Figure Tools > Export all images as SVG
 
 Export images as SVG.
 ```
-SVG is a vector graphic format that can be loaded and processed in inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./unit-3_resources/examples/figure_template.svg)
+SVG is a vector graphic format that can be loaded and processed in Inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./unit-3_resources/examples/figure_template.svg)
 
 Open the template inkscape:
 
@@ -114,7 +114,7 @@ Figure template in inkscape.
 
 ## Annotations
 
-We are now able to load the images exported as SVG into inkscape. The advantage here is that the images as well as the included annotations are full vector graphics. Annotations such as scale bars can be edited and the images can be [resized without interpolation](/background/raster_graphics_interpolation.md).
+We are now able to load the images exported as SVG into Inkscape. The advantage here is that the images, as well as the included annotations, are full vector graphics. Annotations such as scale bars can be edited, and the images can be [resized without interpolation](/background/raster_graphics_interpolation.md).
 
 
 Drag and drop SVG files into inkscape.
@@ -129,18 +129,15 @@ File > Import...
 
 Import SVG images into inkscape.
 ```
-
 :::{important}
 
-Import images in 300 dpi as this is the required printing resolution of most journals.
+Import images at 300 dpi, as this is the required printing resolution of most journals.
 
 :::
 
-When resizing make sure to lock the aspect ratio and resize the image uniformly. After import the annotations can be edited. 
+The first step is to resize the image to fit the image figure. When resizing make sure to lock the aspect ratio and resize the image uniformly. After import the annotations can be edited. 
 
-Select annotation in Layers and Objects.
-
-Unlock the annotation if locked
+Next you can select annotation in Layers and Objects. Unlock the annotation if locked to modify them. Modify the size and location of the annotation.
 
 :::{important}
 
@@ -157,7 +154,7 @@ Ensure that the annotations are legible. Make sure the annotations do not obscur
 Import SVG images into inkscape.
 ```
 
-Edit height and location of scale bar. Edit the dimension annotation such that is uniform and legible across all images.
+Edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
 
 ```{figure} /tutorials/unit-3_resources/annotations/edited_annotation.png
 :alt: In
@@ -170,9 +167,9 @@ Scale bar adjusted for height and location. The dimension will be specified in t
 
 :::{tip}
 
-To make annotations easier one can specify the physical dimension that the scale bar represents also in the figure legends.
+To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends.
 
-If different image panels have the same scale bar you can put the scale bar in the first image. Critical is that images of different dimensions (e.g., overview and enlarged) show the correct scale. 
+If different image panels have the same scale bar, you can put the scale bar in the first image. Critical is that images of different dimensions (e.g., overview and enlarged) show the correct scale.   
 
 :::
 
@@ -185,9 +182,9 @@ If different image panels have the same scale bar you can put the scale bar in t
 Different examples of annotated scale. 
 ```
 
-In inkscape (or any other vector graphics tool) we can then add other annotations. We recommend to add all important anntations that are needed to easily interprete the image figures directly in the image figure. Specifically for multichannel images an explanation of the colors should be provided. Also the location of the inset or an enlarged crop should be provided in the overview.
+In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend to add all important anntations that are needed to easily interprete the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be provided in the overview.
 
-Consider that other annotations such as cell type and treatment can help the viewer grasp your results faster. 
+Consider that other annotations, such as cell type and treatment, can help the viewer grasp your results faster. 
 
 ```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
 :alt: In
@@ -200,9 +197,9 @@ Example of possible annotations in an image.
 
 ## Figure legends
 
-The figure legends provide further details to explain what the viewer is seeing. They should be focused on the result and provide further critical information to interpret the image e.g., dimension of scale bar or use of other annotations.
+The figure legends provide further details to explain what the viewer is seeing. They should be focused on the result and provide further critical information to interpret the image, e.g., the dimensions of the scale bar or the use of other annotations.
 
-See below a proposal of an image figure legend:
+See below a proposal for an image figure legend:
 
 ```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
 :alt: In
@@ -210,22 +207,23 @@ See below a proposal of an image figure legend:
 :name: annotated_image2
 :width: 100%
 
-Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Enlarged cell treated with DMSO. (c) U2-OS treated with Nocodazole at 5 µM concentration induces cell death note the many round cells (White Arrowheads). (d) Enlarged dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Enlarged cell treated with DMSO. (c) U2-OS treated with Nocodazole at 5 µM concentration induces cell death, note the many round cells (White Arrowheads). (d) Enlarged dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
 ```
 
 :::{important} 
 
-Basic image processing, e.g., linear adjustments such as brightness contrast settings, of images shown in image figures should in general be explained in the methods. 
 
-For advanced or non-linear methods such as adjustment of gamma, deconvolution, or deep learning based image restrotation (e.g., Noise 2 void) that are not readily obvious to the viewer should be specified also in the figure legends. 
 
+Basic image processing, e.g., linear adjustments such as brightness contrast settings, of images shown in image figures should, in general, be explained in the methods. 
+
+For advanced or non-linear methods such as adjustment of gamma, median filter, deconvolution, or deep learning based image restrotation (e.g., [Noise 2 void](https://doi.org/10.48550/arXiv.1811.10980)) that are not readily obvious to the viewer, should be specified also in the figure legends.
 :::
 
 ## Methods
 
-The methods should explain the key processing that happened to the image figures. They should also explain and cite the image processing platform with it used version as well as any used plugins. 
+The methods should explain the key processing that happened to the image figures. They should also explain and cite the image processing platform, with it used version used, as well as any plugins. 
 
-For Fiji the version can be seen in the taskbar:
+For Fiji, the version can be seen in the taskbar:
 
 ```{figure} /tutorials/unit-3_resources/methods/Fiji_version.png
 :alt: In
@@ -238,7 +236,7 @@ Fiji Version in the taskbar.
 
 Based on this a possible methods section could read:
 
-Image figures were processed using Fiji is just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version: 2.16/1.54p. and the BioVoxxel Figure toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2025](https://doi.org/10.1038/s41592-023-01987-9)) images were adjusted for brightness contrast using the same min & max settings over compared channels. 
+Image figures were processed using Fiji is just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version: 2.16/1.54p. and the BioVoxxel Figure toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2025](https://doi.org/10.1038/s41592-023-01987-9)), images were adjusted for brightness contrast using the same min & max settings over compared channels. 
 
 Used brightness and contrast settings:
 | Channel | Channel Label      | Min| Max  | 
@@ -257,7 +255,7 @@ Citations:
 
 :::{tip}
 
-To make your work easier you can add the macro that we created in [Unit 1: Visibility](./unit-1_visibility.md) together with your the original and processed images as documentation instead of specifying the brightness contrast settings. 
+To make your work easier, you can add the macro that we created in [Unit 1: Visibility](./unit-1_visibility.md) together with your original and processed images as documentation instead of specifying the brightness contrast settings. 
 
 :::
 
@@ -271,4 +269,4 @@ To make your work easier you can add the macro that we created in [Unit 1: Visib
 
 Examples of different repositories. Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
 ```
-As long as legally or technically feasible the original images as well as the final processed images should be made available in public repositories. The original images should be provided losslessly compressed. Provided ground truth and manual annotations.
+As long as legally or technically feasible, the original images as well as the final processed images should be made available in public repositories. The original images should be provided losslessly compressed. Provided ground truth and manual annotations.

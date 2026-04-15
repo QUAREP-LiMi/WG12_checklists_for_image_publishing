@@ -1,7 +1,7 @@
 (unit-1_visibility)=
 # Unit 1: Visibility
 
-Topics: Brightness/Contrast, colors, accessibility
+Topics: Brightness and Contrast, colors, accessibility
 
 <!---
 Topics for background:
