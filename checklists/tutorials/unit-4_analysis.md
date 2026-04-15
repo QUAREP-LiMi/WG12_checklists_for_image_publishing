@@ -24,7 +24,7 @@ For our example figure, we could easily imagine that we create a quantitative an
 :name: image_panel
 :width: 100%
 
-Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Enlarged cell treated with DMSO. (c) U2-OS treated with Nocodazole at 5 µM concentration induces cell death, note the many round cells (White Arrowheads). (d) Enlarged dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration show increased cell death. Note the many small round cells (White Arrowheads). (d) Cropped image of a dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
 ```
 
 Download the example images here: 
