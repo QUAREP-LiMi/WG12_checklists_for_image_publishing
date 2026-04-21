@@ -18,7 +18,7 @@ Some journals even require that additional annotations are provided as vector gr
 
 ## Introduction
 
-In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Visibility](./unit-2_format.md) we have processed an image panel to be included in an image figure. 
+In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md) we have processed an image panel to be included in an image figure. 
 
 ```{figure} /tutorials/unit-2_resources/annotate/scale_bar3.png
 :alt: In
@@ -29,7 +29,7 @@ In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Visibility](./unit-
 Processed overview and crop for one panel of an image figure.
 ```
 
-You can download the result of [Unit 2: Visibility](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
+You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
 
 Typically, we want to present other image panels too, for instance, compare wild type versus a treatment. In this case, the first image is of U2-OS cells treated with DMSO as a control. In our example figure, we now want to compare U2-OS cells treated with Nocodazole acquired with the same settings.
 
@@ -44,19 +44,19 @@ Processed overview and crop for treatment panel of an image figure.
 
 :::{note}
 
-You can already see one of the challenges with annotations in processed images. Except if all settings are the same, the different annotations are of different font sizes. We will show you how to overcome this issue by modifying and adding annotations in a vector graphics program.
+You can already see one of the challenges with annotations in processed images. Unless all settings are the same, the different annotations end up with different font sizes. We will show you how to overcome this issue by modifying and adding annotations in a vector graphics program.
 
 :::
 
-You can download the original image for the treatment here: [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif). Then perform the processing described in [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Visibility](./unit-2_format.md).
+You can download the original image for the treatment here: [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif). Then perform the processing described in [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md).
 
 :::{important}
 
-For an accurate qualitative comparison, the images need to be processed with the same settings. 
+For an accurate qualitative comparison, the images need to be processed with the same settings, since differences introduced by the processing itself (e.g., a brighter contrast on the treated condition) would otherwise be indistinguishable from real biological differences. 
 
 :::
 
-You can download the result of here: [composite_treat_scale.tif](./unit-3_resources/examples/composite_treat_scale.tif) and [composite_treat_crop_scale.tif](./unit-3_resources/examples/composite_treat_crop_scale.tif).
+You can download the result here: [composite_treat_scale.tif](./unit-3_resources/examples/composite_treat_scale.tif) and [composite_treat_crop_scale.tif](./unit-3_resources/examples/composite_treat_crop_scale.tif).
 
 
 ## Figure setup
@@ -151,7 +151,7 @@ Ensure that the annotations are legible. Make sure the annotations do not obscur
 :name: edit_annotations
 :width: 100%
 
-Import SVG images into inkscape.
+Edit annotations in Inkscape.
 ```
 
 Edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
@@ -182,7 +182,7 @@ If different image panels have the same scale bar, you can put the scale bar in 
 Different examples of annotated scale. 
 ```
 
-In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend to add all important anntations that are needed to easily interprete the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be provided in the overview.
+In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be marked in the overview.
 
 Consider that other annotations, such as cell type and treatment, can help the viewer grasp your results faster. 
 
@@ -214,14 +214,14 @@ Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO 
 
 
 
-Basic image processing, e.g., linear adjustments such as brightness contrast settings, of images shown in image figures should, in general, be explained in the methods. 
+Basic image processing — e.g., linear adjustments such as brightness/contrast settings — should generally be explained in the methods.
 
-For advanced or non-linear methods such as adjustment of gamma, median filter, deconvolution, or deep learning based image restrotation (e.g., [Noise 2 void](https://doi.org/10.48550/arXiv.1811.10980)) that are not readily obvious to the viewer, should be specified also in the figure legends.
+Advanced or non-linear methods such as gamma adjustment, median filter, deconvolution, or deep-learning-based image restoration (e.g., [Noise2Void](https://doi.org/10.48550/arXiv.1811.10980)) are not readily obvious to the viewer and should additionally be specified in the figure legend, so the reader knows the displayed image has been transformed beyond simple intensity rescaling.
 :::
 
 ## Methods
 
-The methods should explain the key processing that happened to the image figures. They should also explain and cite the image processing platform, with it used version used, as well as any plugins. 
+The methods should explain the key processing that was applied to the image figures. They should also name and cite the image processing platform — including the version used — as well as any plugins. 
 
 For Fiji, the version can be seen in the taskbar:
 
@@ -236,7 +236,7 @@ Fiji Version in the taskbar.
 
 Based on this a possible methods section could read:
 
-Image figures were processed using Fiji is just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version: 2.16/1.54p. and the BioVoxxel Figure toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2025](https://doi.org/10.1038/s41592-023-01987-9)), images were adjusted for brightness contrast using the same min & max settings over compared channels. 
+Image figures were processed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the BioVoxxel Figure Toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2025](https://doi.org/10.1038/s41592-023-01987-9)), images were adjusted for brightness/contrast using the same min and max settings across compared channels. 
 
 Used brightness and contrast settings:
 | Channel | Channel Label      | Min| Max  | 
@@ -269,4 +269,4 @@ To make your work easier, you can add the macro that we created in [Unit 1: Visi
 
 Examples of different repositories. Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
 ```
-As long as legally or technically feasible, the original images as well as the final processed images should be made available in public repositories. The original images should be provided losslessly compressed. Provided ground truth and manual annotations.
+As long as it is legally and technically feasible, the original images as well as the final processed images should be made available in public repositories. The original images should be provided losslessly compressed, along with any ground truth or manual annotations.

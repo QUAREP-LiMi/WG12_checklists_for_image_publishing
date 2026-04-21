@@ -18,7 +18,7 @@ Additionally, scientific images capture real world objects that have a physical 
 
 We start with the result of [Unit 1: Visibility](./unit-1_visibility.md), the composite image with adjusted colors, brightness, and contrast. You can download the image here: [composite.tif](./unit-1_resources/merge/composite.tif).
 
-Open Fiji...
+Open Fiji.
 
 Then open the image in Fiji: 
 
@@ -34,7 +34,7 @@ Composite image.
 ```
 The image shows a field of view of many cells. It gives the viewer a good overview and might be an appropriate figure panel if the number of cells, cell density, or the overall look of the cellular neighborhood is the actual result. However, if the result is, for instance, the size or distribution of a specific cellular compartment (e.g., Mitochondria in the magenta channel), this overview alone will be insufficient. 
 
-Further, the image is missing key annotations. The cells shown are physical objects that have dimensions that can be expressed in specific units. This is not readily apparent to the viewer with the image alone. Particularly if the image figure might also show enlarged views or other images that show results of other imaging modalities (e.g., electron microscopy, light microscopy). Finally, other critical information is also not readily apparent to the viewer, for instance, what cell line is shown (U2-OS) or what the colors mean (Green = Cytoskeleton, Magenta = Mitochondria, Cyan = Nucleus).
+Further, the image is missing key annotations. The cells shown are physical objects that have dimensions that can be expressed in specific units. This is not readily apparent to the viewer with the image alone, particularly if the image figure also shows enlarged views or other images that show results of other imaging modalities (e.g., electron microscopy, light microscopy). Finally, other critical information is also not readily apparent to the viewer, for instance, what cell line is shown (U2-OS) or what the colors mean (Green = Cytoskeleton, Magenta = Mitochondria, Cyan = Nucleus).
 
 To clearly communicate the result, the image needs to be further processed and annotated with key labels (scale bar at a minimum). 
 
@@ -50,7 +50,7 @@ Let's assume our result is discussing the size and distribution of the mitochond
 
 :::{important}
 
-The selection of the object in the image that should be cropped is as important as the selection of the overview. The shown object should be representative. Acceptable methods to choose an image for a figure could be:
+The selection of the object in the image that should be cropped is as important as the selection of the overview, since the chosen crop shapes how the reader perceives the result and an "edge of distribution" example would misrepresent the data. The shown object should be representative. Acceptable methods to choose an image for a figure could be:
 
 - Representative image.
 - Random selection.
@@ -114,13 +114,13 @@ Cropping via duplication of the content of the ROI.
 
 Sometimes the visualization in the images also benefits from rotating the objects. This can be achieved by:
 
-Image > Transform > Rotate 90 Degress...
+Image > Transform > Rotate 90 Degrees...
 
 Image > Transform > Flip...
 
 :::::{important} 
 
-Rotation by multiples of 90 degrees in Fiji can preserve data. Any other rotation performed in Fiji needs to interpolate pixel values and thus can alter the image information.
+Rotation by multiples of 90 degrees in Fiji (or other software manipulating image pixels) can preserve data because each pixel maps cleanly to a new pixel position. Any other rotation needs to interpolate pixel values and thus can alter the image information, which is a problem if the image is later used for quantitative analysis. This applies to any pixel-editing software (Photoshop, GIMP, etc.) — a 45-degree rotation is not "safe" just because it was performed outside Fiji.
 
 ```{figure} /tutorials/unit-2_resources/crop/rotation_interpolation.png
 :alt: In
@@ -152,7 +152,7 @@ We need to communicate the scale information as well as other important informat
 
 ### Scale Bar
 
-The scale bar depends on the pixel size. This is information that is typically deposited in the saved image by the microscope. This information can be wrong. We therefore need to verify this information via your acquisition settings. 
+The scale bar depends on the pixel size. This information is typically deposited in the saved image by the microscope, but it can be wrong. We therefore need to verify it against the acquisition settings. 
 
 The correct pixel size can be verified and changed in Fiji via: 
 
@@ -186,7 +186,7 @@ Tick the "Overlay" setting. This adds the scale bar to the image as a non-destru
 
 :::
 
-The width of the scale bar should be done in a size that relates to the actual size of the shown objects (e.g., size of a cell, size of the nucleus). 
+The width of the scale bar should relate to the actual size of the shown objects (e.g., size of a cell, size of the nucleus). 
 
 ```{figure} /tutorials/unit-2_resources/annotate/scale_bar3.png
 :alt: In
@@ -201,7 +201,7 @@ The width of the scale bar should be in relation to the shown object.
 
 The size of the scale bar can also be specified in the figure legend. 
 
-An acceptable alternative to a scale bar is to specify the physical dimension of the entire image. However, just stating the magnification of the detection lens is not sufficient, as the pixel size can also depend on other factors such as sampling rate or binning.
+An acceptable alternative to a scale bar is to specify the physical dimension of the entire image. However, just stating the magnification of the detection lens is not sufficient, as the actual pixel size also depends on the objective's numerical aperture and detector-side factors such as camera pixel size, additional optics, sampling rate, or binning — two images at the same nominal magnification can therefore cover very different physical fields of view (see [Image Brightness](https://evidentscientific.com/en/microscope-resource/tutorials/imagebrightness) for more on how numerical aperture and magnification interact).
 
 :::
 
@@ -224,9 +224,9 @@ What could be relevant is to dicuss adding timestamps in movies, or frame of mov
 
 ## Result
 
-You can download the result of [Unit 2: Visibility](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
+You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
 
-## Bonus: ROI Manger and overlays
+## Bonus: ROI Manager and overlays
 
 You can manage multiple ROIs and also annotations via the ROI Manager. Just open the ROI Manager:
 
@@ -234,7 +234,7 @@ Analyze > Tools > ROI Manager...
 
 To add ROIs press Add [t]
 
-Alternatively pressing "t" on the keyboard will also open the ROI Manager and add the current active ROI.
+Alternatively, pressing "t" on the keyboard will also open the ROI Manager and add the currently active ROI.
 
 ```{figure} /tutorials/unit-2_resources/roi_manager/roi_manager.png
 :alt: In

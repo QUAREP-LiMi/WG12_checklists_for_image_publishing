@@ -447,11 +447,11 @@ Usage of histograms
 -->
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully, images typically needs to be processed. This processing can go wrong, and the image figure can incorrectly present the image (<a class="reference internal" href="#image-presentation"><span class="std std-numref">Fig. 3</span></a>):</p>
+<p>Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully, images typically need to be processed. This processing can go wrong, and the image figure can then fail to clearly and correctly communicate the underlying data (<a class="reference internal" href="#image-presentation"><span class="std std-numref">Fig. 3</span></a>):</p>
 <figure class="align-center" id="image-presentation">
 <img alt="In" src="../_images/image_presentation.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The same multi-channel image is visualized in different forms. All fail to communicate the content of the image well. (A) The multichannel image visualized using blue, green, red, and yellow Look-up-table. (B) The same multichannel image with all channels visualized in a gray scale. (C) Finally, the brightness contrast was processed incorrectly, and the image appears dark.</span><a class="headerlink" href="#image-presentation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The same multi-channel image visualized in different forms, all failing to communicate its content. (A) Blue, green, red, and yellow look-up tables overlap and blend, obscuring individual channels. (B) All channels rendered in grayscale, making them indistinguishable. (C) Brightness and contrast processed incorrectly, leaving the image too dark.</span><a class="headerlink" href="#image-presentation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -464,7 +464,7 @@ Usage of histograms
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image. We need to carefully consider the method of choosing an image that represents the result. Acceptable methods to choose an image for a figure could be:</p>
+<p>Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an “edge of distribution” image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:</p>
 <ul class="simple">
 <li><p>Representative image</p></li>
 <li><p>Random selection</p></li>
@@ -475,8 +475,8 @@ Usage of histograms
 </section>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
-<p>This tutorial starts with an multi-channel image (<a class="reference internal" href="#multichannel-image"><span class="std std-numref">Fig. 5</span></a>). Download a TIFF of the example image here: <a class="reference download internal" download="" href="../_downloads/176f17fc898cfaff9c3ea879c7193469/multichannel_image.tif"><span class="xref download myst">multichannel_image.tif</span></a>.</p>
-<p>Open Fiji…</p>
+<p>This tutorial starts with a multi-channel image (<a class="reference internal" href="#multichannel-image"><span class="std std-numref">Fig. 5</span></a>). Download a TIFF of the example image here: <a class="reference download internal" download="" href="../_downloads/176f17fc898cfaff9c3ea879c7193469/multichannel_image.tif"><span class="xref download myst">multichannel_image.tif</span></a>.</p>
+<p>Open Fiji.</p>
 <figure class="align-center" id="fiji-task-bar">
 <a class="reference internal image-reference" href="../_images/Fiji_task_bar.png"><img alt="In" src="../_images/Fiji_task_bar.png" style="width: 100%;" />
 </a>
@@ -554,7 +554,7 @@ Usage of histograms
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>C2-multichannel_image.tif</p></td>
-<td><p>F-actin cytoskeleton, Glogi, plasma membrane</p></td>
+<td><p>F-actin cytoskeleton, Golgi, plasma membrane</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>C3-multichannel_image.tif</p></td>
@@ -597,19 +597,19 @@ Usage of histograms
 <td><p>Magenta</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>F-actin cytoskeleton, Glogi, plasma membrane</p></td>
+<td><p>F-actin cytoskeleton, Golgi, plasma membrane</p></td>
 <td><p>Green</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>C3-multichannel_image.tif</p></td>
 <td><p>Nucleus</p></td>
+<td><p>Cyan</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>For color choice, consider that a part of the population is color blind (e.g., red - green bindness). Also consider the different visibility of different colors on different backgrounds, for instance, dark blue is hard to perceive on a black background; a cyan LUT would be better. Thus, LUTs combinations should be used that visualize images well and for a broad audience. In our experience, the combination of magenta, green, and cyan works well.</p>
+<p>For color choice, consider that a part of the population is color blind (e.g., red - green blindness) — pairing red and green channels makes the figure unreadable for them and erases the very contrast you intended to show. Also consider the different visibility of different colors on different backgrounds, for instance, dark blue is hard to perceive on a black background; a cyan LUT would be better. Thus, LUTs combinations should be used that visualize images well and for a broad audience. In our experience, the combination of magenta, green, and cyan works well.</p>
 </div>
 <p>Channel 2 presents already in the green color LUT, defined by in the microscope settings and part of the image metadata. To channels 1 and 3, we can apply the color LUT:</p>
 <p>Select image: C1-multichannel_image.tif</p>
@@ -661,7 +661,7 @@ Usage of histograms
 </section>
 <section id="brightness-and-contrast">
 <h2>Brightness and Contrast<a class="headerlink" href="#brightness-and-contrast" title="Link to this heading">#</a></h2>
-<p>Images vary in visibility depending on their brightness and contrast settings. This is because the intensity range (i.e., pixel or gray values) of images typically acquired using microscopes (e.g., 16-bit images have  65,536 unique values) is much larger than the intensity range that can be displayed on computer screens or even the intensity range that the human eye can perceive (i.e., closer to 8-bit or 256 unique values). Thus, the available intensity range must be adjusted. In Fiji, this is achieved using the Brightness/Contrast setting.</p>
+<p>Images vary in visibility depending on their brightness and contrast settings. This is because the intensity range (i.e., pixel or gray values) of images typically acquired using microscopes (e.g., 16-bit images have 65,536 unique values) is much larger than the intensity range that can be displayed on computer screens or even the intensity range that the human eye can perceive (i.e., closer to 8-bit or 256 unique values). Thus, the available intensity range must be adjusted. In Fiji, this is achieved using the Brightness/Contrast setting.</p>
 <p>As you can see in our example images, in some panels, the information is not well visible.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
@@ -761,7 +761,7 @@ Usage of histograms
 </div>
 </div>
 </div>
-<p>Adjust the maximum slider or press “Auto” until the objects are well visible and still clearly separated, as overstaturation leads to a loss of resolution.</p>
+<p>Adjust the maximum slider or press “Auto” until the objects are well visible and still clearly separated. Oversaturation collapses neighboring high-intensity structures into a single bright blob, effectively losing spatial resolution and the ability to distinguish individual objects.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
@@ -846,7 +846,7 @@ Usage of histograms
 <p>Download a TIFF of the result image here: <a class="reference download internal" download="" href="../_downloads/3d78278d97ec5b09128ee5c24e051858/composite.tif"><span class="xref download myst">composite.tif</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Merging more than three color channels into a single image is tricky, as the different combined colors might not be easily distinguished anymore by eye. Except that the objects are well separated, which is often not the case for biological information. Thus, we in general recommend to visualize more than 3 channels separately, ideally using gray scale images.</p>
+<p>Merging more than three color channels into a single image is tricky, as the different combined colors might not be easily distinguished anymore by eye — additive color mixing produces intermediate hues that the eye cannot reliably trace back to individual channels, so channel-specific information is effectively lost. This is only tolerable when the objects in different channels are well separated, which is often not the case for biological information. Thus, we in general recommend to visualize more than 3 channels separately, ideally using gray scale images.</p>
 </div>
 </section>
 <section id="bonus-macro-recorder">
@@ -854,7 +854,7 @@ Usage of histograms
 <p>The macro recorder allows for documenting the processing steps that are carried out in the graphical user interface (GUI).</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Some GUI interactions are not recorded! For instance, adjusting the minimum or maximum slider is will not present in the recorded macro. This would only be present if done via the “Set” button.</p>
+<p>Some GUI interactions are not recorded — for instance, dragging the minimum or maximum slider in Brightness/Contrast does not appear in the recorded macro. To capture those values, enter them via the “Set” button instead.</p>
 </div>
 <p>The recorder can be started:</p>
 <p>Plugins &gt; Macros &gt; Record…</p>
