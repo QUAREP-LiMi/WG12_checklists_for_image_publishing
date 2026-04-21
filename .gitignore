@@ -1,2 +1,6 @@
 checklists_for_image_publishing/_build/**
 **/.DS_Store
+
+# Claude Code local files
+CLAUDE.md
+.claude/

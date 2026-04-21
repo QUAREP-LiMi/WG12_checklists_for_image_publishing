@@ -5,13 +5,13 @@ Topics: Image analysis, software versions, code, and example availability
 
 ## Motivation
 
-Quantitative results are better than qualitative results only. However, it is critical that the performed analysis, as well as the used tools and their settings, are properly documented in the methods. For a custom new analysis, the sequence or code of the performed analysis should be shared. 
+Quantitative results are stronger than qualitative results alone. However, it is critical that the analysis, the tools used, and their settings are all properly documented in the methods. For a custom analysis, the workflow or code itself should be shared so others can reproduce it. 
 
 ## Key considerations
 
-- Quantifications are better than qualitative results.
-- Cite software tool and specify version.
-- Describe workflow.
+- Provide quantifications, not only qualitative results.
+- Cite the software tool and specify the version.
+- Describe the workflow.
 - Disclose critical parameters.
 
 ## Introduction
@@ -55,7 +55,7 @@ Press: Manage update site
 
 Select Cellular Imaging Facility
 
-Press ok and restart Fiji
+Press OK and restart Fiji.
 
 Save the example images in an input folder (e.g., test). OrgaMapper documents the analysis settings using an .xml file. Please download the settings: [settings .xml](./unit-4_resources/existing_workflow/2026-04-13T175308-settings.xml) and put it into the input folder. Create an output folder (e.g., test_out). 
 
@@ -63,7 +63,7 @@ Start OrgaMapper:
 
 Plugins > CellularImaging > Map Organelle
 
-Specify the location of the input folder, output folder, and the settings file. Then press ok to start OrgaMapper. 
+Specify the location of the input folder, output folder, and the settings file. Then press OK to start OrgaMapper. 
 
 ```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_start.png
 :alt: In
@@ -74,7 +74,7 @@ Specify the location of the input folder, output folder, and the settings file. 
 Start OrgaMapper.
 ```
 
-OrgaMapper then allows you to perform a simple watershed-based image segmentation and perform a basic analysis of each cell over the control and treatment. For more information about the analysis performed, you can go to the [documentation of OrgaMapper](https://schmiedc.github.io/OrgaMapper/). 
+OrgaMapper then performs a simple watershed-based image segmentation and a basic per-cell analysis on both the control and treatment images. For more information about the analysis performed, you can go to the [documentation of OrgaMapper](https://schmiedc.github.io/OrgaMapper/). 
 
 OrgaMapper visualizes this on the example images using the "Preview" button:
 
@@ -84,7 +84,7 @@ OrgaMapper visualizes this on the example images using the "Preview" button:
 :name: orgamapper
 :width: 50%
 
-Start OrgaMapper.
+OrgaMapper preview of the segmentation.
 ```
 
 To execute the analysis, press the "Batch Process" button. OrgaMapper then performs the analysis based on the loaded settings and will save the results in the output folder. 
@@ -109,7 +109,7 @@ Critical is that we can extract the cell area in the "cellMeasurements.csv" file
 OrgaMapper cell area results.
 ```
 
-I then performed a simple threshold, asking how many cells in the control image, as well as in the Nocodazole treated image, are above or below 1000 µm². As a proxy for assessing cell death. Which yields the following result:
+I then applied a simple threshold to ask how many cells in the control and Nocodazole-treated images had an area above or below 1000 µm² as a proxy for cell death, yielding the following result:
 
 
 Treatment |Cells with area <1000 µm² |Cells with area >1000 µm² |Total cells  |% dead cells|
@@ -126,7 +126,7 @@ This example was quickly created to illustrate the point. It does not claim to b
 This quantification could now be in the result of your manuscript. It is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions:
 
 
-Image analysis was performed using Fiji is just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version: 2.16/1.54p. and the OrgaMapper plugin version 2.0.0 ([Schmied et al. 2024](https://doi.org/10.1186/s12915-024-02015-8)). Nuclei were segemented using an intensity based segmentation using the Li automatic threshold after filtering with a median filter with size 5 pixels and a rolling ball background subtraction with radius of 10 pixels. After thresholding, an erosion of 1 was applied to the Nuclei masks, and the segmented nuclei were filtered based on size, with nuclei kept between 1 µm² and 750 µm². The cell area was segemented using an intensity based threshold with a manual threshold of 150 Fluorescent Intensity (A.U.) after a median filter was applied with a filter size of 10 pixels and a rolling ball background subtraction with a radius of 150 pixels. For the watershed-based cell segmentation, the centers of cells were detected using a summed nuclei and cytoplasm channel. To detect the cell centers, a Laplacian-of-Gaussian filter was applied with a sigma of 2 and peak values with a prominence of 40 Fluorescent Intensity (A.U.). Separated cells were then filtered by keeping cells above 10 µm² and a circularity above 0.3. For each cell, the cell area was further analyzed. Dead cells were defined with a threshold below 1000 µm².
+Image analysis was performed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the OrgaMapper plugin version 2.0.0 ([Schmied et al. 2024](https://doi.org/10.1186/s12915-024-02015-8)). Nuclei were segmented using an intensity-based segmentation with the Li automatic threshold after filtering with a median filter (size 5 pixels) and a rolling-ball background subtraction (radius 10 pixels). After thresholding, an erosion of 1 was applied to the nuclei masks, and the segmented nuclei were filtered by size, keeping those between 1 µm² and 750 µm². The cell area was segmented using a manual intensity threshold of 150 fluorescent intensity (A.U.) after a median filter (size 10 pixels) and a rolling-ball background subtraction (radius 150 pixels). For the watershed-based cell segmentation, cell centers were detected using a summed nuclei and cytoplasm channel: a Laplacian-of-Gaussian filter was applied with a sigma of 2, and peaks with a prominence of 40 fluorescent intensity (A.U.) were retained. Separated cells were then filtered by keeping cells above 10 µm² with a circularity above 0.3. For each cell, the cell area was further analyzed. Dead cells were defined as those with an area below 1000 µm².
 
 - Schindelin, J., Arganda-Carreras, I., Frise, E. et al. Fiji: an open-source platform for biological-image analysis. Nat Methods 9, 676–682 (2012). https://doi.org/10.1038/nmeth.2019
 
@@ -141,7 +141,7 @@ Since OrgaMapper provides a settings file, this settings file can be shared in a
 
 ## Analysis based on new workflows
 
-For this analysis, we could easily also write a custom code based on a Fiji macro. To properly document such an analysis, we should include the code and example data in a data repository for review. 
+For this analysis, we could just as easily write a custom Fiji macro instead of using an existing plugin. In that case, the code is itself the analysis, so the macro and a small example dataset should be deposited in a data or code repository — without these, neither reviewers nor future readers can verify or reproduce what was done. 
 
 ## Code and example availability
 

@@ -13,14 +13,14 @@ Usage of histograms
 
 ## Motivation
 
-Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully, images typically needs to be processed. This processing can go wrong, and the image figure can incorrectly present the image ({numref}`image_presentation`):
+Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully, images typically need to be processed. This processing can go wrong, and the image figure can then fail to clearly and correctly communicate the underlying data ({numref}`image_presentation`):
 
 ```{figure} /tutorials/unit-1_resources/image_presentation.png
 :alt: In
 :align: center
 :name: image_presentation
 
-The same multi-channel image is visualized in different forms. All fail to communicate the content of the image well. (A) The multichannel image visualized using blue, green, red, and yellow Look-up-table. (B) The same multichannel image with all channels visualized in a gray scale. (C) Finally, the brightness contrast was processed incorrectly, and the image appears dark. 
+The same multi-channel image visualized in different forms, all failing to communicate its content. (A) Blue, green, red, and yellow look-up tables overlap and blend, obscuring individual channels. (B) All channels rendered in grayscale, making them indistinguishable. (C) Brightness and contrast processed incorrectly, leaving the image too dark.
 ```
 ## Key considerations
 
@@ -31,7 +31,7 @@ The same multi-channel image is visualized in different forms. All fail to commu
 
 :::{important}
 
-Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image. We need to carefully consider the method of choosing an image that represents the result. Acceptable methods to choose an image for a figure could be:
+Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an "edge of distribution" image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:
 - Representative image
 - Random selection
 - Based on analysis (middle of distribution)
@@ -41,9 +41,9 @@ Another important aspect that we should also consider at this stage is the choic
 
 ## Introduction
 
-This tutorial starts with an multi-channel image ({numref}`multichannel_image`). Download a TIFF of the example image here: [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
+This tutorial starts with a multi-channel image ({numref}`multichannel_image`). Download a TIFF of the example image here: [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
 
-Open Fiji...
+Open Fiji.
 
 ```{figure} /tutorials/unit-1_resources/Fiji_task_bar.png
 :alt: In
@@ -113,7 +113,7 @@ Each of the channels encodes different cellular compartments.
 | Channel | Image Name               | Cellular Compartment                              | 
 |---------|--------------------------|---------------------------------------------------|
 |1        |C1-multichannel_image.tif | Mitochondria                                      |
-|2        |C2-multichannel_image.tif | F-actin cytoskeleton, Glogi, plasma membrane      |
+|2        |C2-multichannel_image.tif | F-actin cytoskeleton, Golgi, plasma membrane      |
 |3        |C3-multichannel_image.tif | Nucleus                                           |
 |4        |C4-multichannel_image.tif | Endoplasmic reticulum, Nucleoli, cytoplasmic RNA  |
 
@@ -146,12 +146,12 @@ For the image figure of the example image, we want to visualize channel 1 (mitoc
 |Channel  |Cellular Compartment                               |LUT    |
 |---------|---------------------------------------------------|-------|
 |1        |Mitochondria                                       |Magenta|
-|2        |F-actin cytoskeleton, Glogi, plasma membrane       |Green  |
-|3        |C3-multichannel_image.tif | Nucleus                |Cyan   |
+|2        |F-actin cytoskeleton, Golgi, plasma membrane       |Green  |
+|3        |Nucleus                                            |Cyan   |
 
 :::{Important}
 
-For color choice, consider that a part of the population is color blind (e.g., red - green bindness). Also consider the different visibility of different colors on different backgrounds, for instance, dark blue is hard to perceive on a black background; a cyan LUT would be better. Thus, LUTs combinations should be used that visualize images well and for a broad audience. In our experience, the combination of magenta, green, and cyan works well. 
+For color choice, consider that a part of the population is color blind (e.g., red - green blindness) — pairing red and green channels makes the figure unreadable for them and erases the very contrast you intended to show. Also consider the different visibility of different colors on different backgrounds, for instance, dark blue is hard to perceive on a black background; a cyan LUT would be better. Thus, LUTs combinations should be used that visualize images well and for a broad audience. In our experience, the combination of magenta, green, and cyan works well. 
 
 :::
 
@@ -211,7 +211,7 @@ Image > Color > Invert LUTs
 
 ## Brightness and Contrast
 
-Images vary in visibility depending on their brightness and contrast settings. This is because the intensity range (i.e., pixel or gray values) of images typically acquired using microscopes (e.g., 16-bit images have  65,536 unique values) is much larger than the intensity range that can be displayed on computer screens or even the intensity range that the human eye can perceive (i.e., closer to 8-bit or 256 unique values). Thus, the available intensity range must be adjusted. In Fiji, this is achieved using the Brightness/Contrast setting. 
+Images vary in visibility depending on their brightness and contrast settings. This is because the intensity range (i.e., pixel or gray values) of images typically acquired using microscopes (e.g., 16-bit images have 65,536 unique values) is much larger than the intensity range that can be displayed on computer screens or even the intensity range that the human eye can perceive (i.e., closer to 8-bit or 256 unique values). Thus, the available intensity range must be adjusted. In Fiji, this is achieved using the Brightness/Contrast setting. 
 
 As you can see in our example images, in some panels, the information is not well visible. 
 
@@ -305,7 +305,7 @@ Background cut too much: Note loss of lower intensity information.
 
 ::::
 
-Adjust the maximum slider or press "Auto" until the objects are well visible and still clearly separated, as overstaturation leads to a loss of resolution.
+Adjust the maximum slider or press "Auto" until the objects are well visible and still clearly separated. Oversaturation collapses neighboring high-intensity structures into a single bright blob, effectively losing spatial resolution and the ability to distinguish individual objects.
 
 ::::{grid} 3
 :gutter: 2
@@ -400,7 +400,7 @@ Download a TIFF of the result image here: [composite.tif](./unit-1_resources/mer
 
 :::{note}
 
-Merging more than three color channels into a single image is tricky, as the different combined colors might not be easily distinguished anymore by eye. Except that the objects are well separated, which is often not the case for biological information. Thus, we in general recommend to visualize more than 3 channels separately, ideally using gray scale images. 
+Merging more than three color channels into a single image is tricky, as the different combined colors might not be easily distinguished anymore by eye — additive color mixing produces intermediate hues that the eye cannot reliably trace back to individual channels, so channel-specific information is effectively lost. This is only tolerable when the objects in different channels are well separated, which is often not the case for biological information. Thus, we in general recommend to visualize more than 3 channels separately, ideally using gray scale images. 
 
 :::
 
@@ -410,7 +410,7 @@ The macro recorder allows for documenting the processing steps that are carried 
 
 :::{important}
 
-Some GUI interactions are not recorded! For instance, adjusting the minimum or maximum slider is will not present in the recorded macro. This would only be present if done via the "Set" button.
+Some GUI interactions are not recorded — for instance, dragging the minimum or maximum slider in Brightness/Contrast does not appear in the recorded macro. To capture those values, enter them via the "Set" button instead.
 
 :::
 
