@@ -112,10 +112,10 @@ OrgaMapper cell area results.
 We then applied a simple threshold to ask how many cells in the control and Nocodazole-treated images had an area above or below 1000 µm², yielding the following result:
 
 
-Treatment |Cells with area <1000 µm² |Cells with area >1000 µm² |Total cells  |% dead cells|
-----------|--------------------------|--------------------------|-------------|------------|
-DMSO      |0	                     |63	                    |63           |0           |
-Nocodazole|23	                     |6	                        |29           |79          |
+Treatment |Cells with area <1000 µm² |Cells with area >1000 µm² |Total cells  |% small cells|
+----------|--------------------------|--------------------------|-------------|-------------|
+DMSO      |0	                     |63	                    |63           |0            |
+Nocodazole|23	                     |6	                        |29           |79           |
 
 
 This quantification could now be in the result of your manuscript. It is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions:
