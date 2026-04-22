@@ -236,13 +236,13 @@ Fiji Version in the taskbar.
 
 Based on this a possible methods section could read:
 
-Image figures were processed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the BioVoxxel Figure Toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2025](https://doi.org/10.1038/s41592-023-01987-9)), images were adjusted for brightness/contrast using the same min and max settings across compared channels. 
+Image figures were processed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the BioVoxxel Figure Toolbox ([Brocher and Mutterer 2026](https://doi.org/10.5281/zenodo.18656531)). Following figure publication guidelines ([Schmied et al. 2024](https://doi.org/10.1038/s41592-023-01987-9)), images were adjusted for brightness/contrast using the same min and max settings across compared channels. 
 
 Used brightness and contrast settings:
 | Channel | Channel Label      | Min| Max  | 
 |---------|--------------------|----|------|
 |1        |Mitochondria        |308 | 2484 |
-|2        |Actin               |4   | 2965 |
+|2        |Actin               |84  | 2965 |
 |3        |Nucleus             |36  | 1270 |
 
 Citations:

@@ -33,7 +33,7 @@ Download the example images here:
 
 ## Analysis based on existing workflows
 
-For our example images, I was able to adopt one of my own published tools, OrgaMapper:
+For our example images, we were able to adopt a published tool, OrgaMapper:
 
 Schmied, C., Ebner, M., Samsó, P. et al. OrgaMapper: a robust and easy-to-use workflow for analyzing organelle positioning. BMC Biol 22, 220 (2024). [https://doi.org/10.1186/s12915-024-02015-8](https://doi.org/10.1186/s12915-024-02015-8)
 
@@ -109,7 +109,7 @@ Critical is that we can extract the cell area in the "cellMeasurements.csv" file
 OrgaMapper cell area results.
 ```
 
-I then applied a simple threshold to ask how many cells in the control and Nocodazole-treated images had an area above or below 1000 µm² as a proxy for cell death, yielding the following result:
+We then applied a simple threshold to ask how many cells in the control and Nocodazole-treated images had an area above or below 1000 µm² as a proxy for cell death, yielding the following result:
 
 
 Treatment |Cells with area <1000 µm² |Cells with area >1000 µm² |Total cells  |% dead cells|
@@ -126,7 +126,7 @@ This example was quickly created to illustrate the point. It does not claim to b
 This quantification could now be in the result of your manuscript. It is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions:
 
 
-Image analysis was performed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the OrgaMapper plugin version 2.0.0 ([Schmied et al. 2024](https://doi.org/10.1186/s12915-024-02015-8)). Nuclei were segmented using an intensity-based segmentation with the Li automatic threshold after filtering with a median filter (size 5 pixels) and a rolling-ball background subtraction (radius 10 pixels). After thresholding, an erosion of 1 was applied to the nuclei masks, and the segmented nuclei were filtered by size, keeping those between 1 µm² and 750 µm². The cell area was segmented using a manual intensity threshold of 150 fluorescent intensity (A.U.) after a median filter (size 10 pixels) and a rolling-ball background subtraction (radius 150 pixels). For the watershed-based cell segmentation, cell centers were detected using a summed nuclei and cytoplasm channel: a Laplacian-of-Gaussian filter was applied with a sigma of 2, and peaks with a prominence of 40 fluorescent intensity (A.U.) were retained. Separated cells were then filtered by keeping cells above 10 µm² with a circularity above 0.3. For each cell, the cell area was further analyzed. Dead cells were defined as those with an area below 1000 µm².
+Image analysis was performed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the OrgaMapper plugin version 2.0.0 ([Schmied et al. 2024](https://doi.org/10.1186/s12915-024-02015-8)). Nuclei were segmented using an intensity-based segmentation with the Li automatic threshold after filtering with a median filter (size 5 pixels) and a rolling-ball background subtraction (radius 10 pixels). After thresholding, an erosion of 1 pixel was applied to the nuclei masks, and the segmented nuclei were filtered by size, keeping those between 1 µm² and 750 µm². The cell area was segmented using a manual intensity threshold of 150 fluorescent intensity (A.U.) after a median filter (size 10 pixels) and a rolling-ball background subtraction (radius 150 pixels). For the watershed-based cell segmentation, cell centers were detected using a summed nuclei and cytoplasm channel: a Laplacian-of-Gaussian filter was applied with a sigma of 2 pixels, and peaks with a prominence of 40 fluorescent intensity (A.U.) were retained. Separated cells were then filtered by keeping cells above 10 µm² with a circularity above 0.3. For each cell, the cell area was further analyzed. Dead cells were defined as those with an area below 1000 µm².
 
 - Schindelin, J., Arganda-Carreras, I., Frise, E. et al. Fiji: an open-source platform for biological-image analysis. Nat Methods 9, 676–682 (2012). https://doi.org/10.1038/nmeth.2019
 
@@ -136,6 +136,12 @@ Image analysis was performed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al
 :::{tip} 
 
 Since OrgaMapper provides a settings file, this settings file can be shared in a data repository. 
+
+:::
+
+:::{note}
+
+Manual intensity based thresholds based on fluorescent intensity (A.U.) are image data specific. Thus, are not directly transferable to other data. 
 
 :::
 
