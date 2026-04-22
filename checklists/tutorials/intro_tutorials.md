@@ -8,10 +8,10 @@ The result should be an image figure that truthfully and effectively reports the
 ```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
 :alt: In
 :align: center
-:name: annotated_image2
+:name: annotated_image_result
 :width: 100%
 
-Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration show increased cell death. Note the many small round cells (White Arrowheads). (d) Cropped image of a dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+Example of an image figure with key annotations provided, such as a scale bar and content including the shown image colors. An enlarged crop is shown next to the overview to focus the viewer on a key result. The origin of the crop is annotated in the overview. Additional annotations, such as white arrowheads, are used to further guide the viewer.
 ```
 
 ## Materials

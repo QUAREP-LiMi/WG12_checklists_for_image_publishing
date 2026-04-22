@@ -207,7 +207,7 @@ See below a proposal for an image figure legend:
 :name: annotated_image2
 :width: 100%
 
-Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration show increased cell death. Note the many small round cells (White Arrowheads). (d) Cropped image of a dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cells. Scale bar represents 100 µm (a) and 20 µm (b). 
 ```
 
 :::{important} 
