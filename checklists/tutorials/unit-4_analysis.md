@@ -14,6 +14,14 @@ Quantitative results are stronger than qualitative results alone. However, it is
 - Describe the workflow.
 - Disclose critical parameters.
 
+## Learning objective
+
+By the end of this unit, learners will be able to describe how quantitative image analysis should be documented to ensure transparency and reproducibility.
+
+<!---
+TODO: Specify time for unit
+-->
+
 ## Introduction
 
 For our example figure, we could easily imagine that we create a quantitative analysis to count the number of small rounded cells. This could either be based on existing tools or writing our own analysis. 
