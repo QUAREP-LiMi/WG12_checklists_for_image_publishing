@@ -22,6 +22,14 @@ Microscopy images are data that document a scientific result. To communicate the
 
 The same multi-channel image visualized in different forms, all failing to communicate its content. (a) Blue, green, red, and yellow look-up tables overlap and blend, obscuring individual channels. (b) All channels rendered in grayscale, making them indistinguishable. (c) Brightness and contrast processed incorrectly, leaving the image too dark.
 ```
+## Learning objective
+
+By the end of this unit, learners will be able to process microscopy images in Fiji to clearly and accurately represent the underlying image content.
+
+<!---
+TODO: Specify time for unit
+-->
+
 ## Key considerations
 
 - Is the information visible?
