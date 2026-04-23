@@ -14,6 +14,15 @@ Additionally, scientific images capture real world objects that have a physical 
 - Is the communicated result readily apparent?
 - Are key annotations, e.g., scale bar, present?
 
+## Learning objective
+
+By the end of this unit, learners will be able to format microscopy images in Fiji (e.g., cropping and rotating) and add key annotations (e.g., scale bars) to clearly and accurately present scientific results.
+
+<!---
+TODO: Specify time needed for unit
+-->
+
+
 ## Introduction
 
 We start with the result of [Unit 1: Visibility](./unit-1_visibility.md), the composite image with adjusted colors, brightness, and contrast. You can download the image here: [composite.tif](./unit-1_resources/merge/composite.tif).

@@ -16,6 +16,14 @@ Some journals even require that additional annotations are provided as vector gr
 - Do annotations not obscure image information?
 - Figure legends document important information (e.g., dimension of scale bar)?
 
+## Learning objective
+
+Learners will be able to create a complete scientific image figure using vector graphics software, adding legible annotations, figure legends, and method descriptions that accurately document and communicate the underlying data and image processing.
+
+<!---
+TODO: Specify time for unit
+-->
+
 ## Introduction
 
 In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md) we have processed an image panel to be included in an image figure. 
