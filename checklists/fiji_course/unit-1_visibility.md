@@ -15,7 +15,7 @@ Usage of histograms
 
 Microscopy images are data that document a scientific result. To communicate the scientific result in an image figure effectively and truthfully, images typically need to be processed. This processing can go wrong, and the image figure can then fail to clearly and correctly communicate the underlying data ({numref}`image_presentation`):
 
-```{figure} /tutorials/unit-1_resources/image_presentation.png
+```{figure} ./resources_unit-1/image_presentation.png
 :alt: In
 :align: center
 :name: image_presentation
@@ -49,11 +49,11 @@ Another important aspect that we should also consider at this stage is the choic
 
 ## Introduction
 
-This tutorial starts with a multi-channel image ({numref}`multichannel_image`). Download a TIFF of the example image here: [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
+This tutorial starts with a multi-channel image ({numref}`multichannel_image`). Download a TIFF of the example image here: [multichannel_image.tif](./resources_unit-1/unit-1_examples/multichannel_image.tif).
 
 Open Fiji.
 
-```{figure} /tutorials/unit-1_resources/Fiji_task_bar.png
+```{figure} ./resources_unit-1/Fiji_task_bar.png
 :alt: In
 :align: center
 :name: Fiji task bar
@@ -66,7 +66,7 @@ Then open the image in Fiji:
 
 File > Open... (or drag and drop image into Fiji task bar)
 
-```{figure} /tutorials/unit-1_resources/multichannel_image.png
+```{figure} ./resources_unit-1/multichannel_image.png
 :alt: In
 :align: center
 :name: multichannel_image
@@ -89,28 +89,28 @@ Image > Color > Split Channels
 :gutter: 2
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/C1.png
+```{figure} ./resources_unit-1/C1.png
 :width: 100%
 Channel 1
 :::
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/C2.png
+```{figure} ./resources_unit-1/C2.png
 :width: 100%
 Channel 2
 :::
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/C3.png
+```{figure} ./resources_unit-1/C3.png
 :width: 100%
 Channel 3
 :::
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/C4.png
+```{figure} ./resources_unit-1/C4.png
 :width: 100%
 Channel 4
 :::
@@ -177,21 +177,21 @@ Image > Lookup Tables > Cyan
 :gutter: 2
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/colors/C1-multichannel_image_magenta.png
+```{figure} ./resources_unit-1/colors/C1-multichannel_image_magenta.png
 :width: 100%
 Channel 1
 :::
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/colors/C2-multichannel_image_green.png
+```{figure} ./resources_unit-1/colors/C2-multichannel_image_green.png
 :width: 100%
 Channel 2
 :::
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/colors/C3-multichannel_image_cyan.png
+```{figure} ./resources_unit-1/colors/C3-multichannel_image_cyan.png
 :width: 100%
 Channel 3
 :::
@@ -227,19 +227,19 @@ As you can see in our example images, in some panels, the information is not wel
 :gutter: 2
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/colors/C1-multichannel_image_magenta.png
+```{figure} ./resources_unit-1/colors/C1-multichannel_image_magenta.png
 :width: 100%
 Channel 1
 :::
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/colors/C2-multichannel_image_green.png
+```{figure} ./resources_unit-1/colors/C2-multichannel_image_green.png
 :width: 100%
 Channel 2
 :::
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/colors/C3-multichannel_image_cyan.png
+```{figure} ./resources_unit-1/colors/C3-multichannel_image_cyan.png
 :width: 100%
 Channel 3
 :::
@@ -250,7 +250,7 @@ Select one of the channels: C1-multichannel_image.tif
 
 Image > Adjust > Brightness/Contrast... (Ctrl + Shift + C)
 
-```{figure} /tutorials/unit-1_resources/brightness_contrast.png
+```{figure} ./resources_unit-1/brightness_contrast.png
 :alt: In
 :align: center
 :name: brightness_contras
@@ -283,14 +283,14 @@ The Brightness/Contrast setting is a powerful setting that can drastically alter
 :gutter: 2
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/brightness_contrast/first_auto_setting.png
+```{figure} ./resources_unit-1/brightness_contrast/first_auto_setting.png
 :width: 100%
 After the first auto setting, 0.35% of the image is saturated. The objects (mitochondria) are visible and separated. Low-intensity information is present. 
 :::
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/brightness_contrast/reset_image.png
+```{figure} ./resources_unit-1/brightness_contrast/reset_image.png
 :width: 100%
 
 After pressing reset, the Min & Max sliders are set to the minimum and maximum intensity values. As a result, the objects are not clearly visible.
@@ -298,14 +298,14 @@ After pressing reset, the Min & Max sliders are set to the minimum and maximum i
 
 :::{grid-item}
 
-```{figure} /tutorials/unit-1_resources/brightness_contrast/saturated.png
+```{figure} ./resources_unit-1/brightness_contrast/saturated.png
 :width: 100%
 
 Saturated image: Note that the objects are completely merged, and the low intensity structures appear in the same intensity as the objects.
 :::
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/brightness_contrast/background_cut.png
+```{figure} ./resources_unit-1/brightness_contrast/background_cut.png
 :width: 100%
 
 Background cut too much: Note loss of lower intensity information.
@@ -319,19 +319,19 @@ Adjust the maximum slider or press "Auto" until the objects are well visible and
 :gutter: 2
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/brightness_contrast/C1-multichannel_image_bc.png
+```{figure} ./resources_unit-1/brightness_contrast/C1-multichannel_image_bc.png
 :width: 100%
 Channel 1: Min = 308; Max = 2484
 :::
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/brightness_contrast/C2-multichannel_image_bc.png
+```{figure} ./resources_unit-1/brightness_contrast/C2-multichannel_image_bc.png
 :width: 100%
 Channel 2: Min = 84 Max = 2965
 :::
 
 :::{grid-item}
-```{figure} /tutorials/unit-1_resources/brightness_contrast/C3-multichannel_image_bc.png
+```{figure} ./resources_unit-1/brightness_contrast/C3-multichannel_image_bc.png
 :width: 100%
 Channel 3: Min = 36; Max = 1270
 :::
@@ -357,7 +357,7 @@ Select image one of the channels: C1-multichannel_image.tif
 Provide calibration bar: Analyze > Tools > Calibration Bar…
 
 
-```{figure} /tutorials/unit-1_resources/brightness_contrast/calibration_bar.png
+```{figure} ./resources_unit-1/brightness_contrast/calibration_bar.png
 :alt: In
 :align: center
 :name: Calibration bar
@@ -379,7 +379,7 @@ Image > Color > Merge Channels...
 
 Assign then the correct channels and LUTs select "Create composite" and then press OK.
 
-```{figure} /tutorials/unit-1_resources/merge/merge_channels.png
+```{figure} ./resources_unit-1/merge/merge_channels.png
 :alt: In
 :align: center
 :name: Merge channels
@@ -395,7 +395,7 @@ As you can see, you can also use the merge channels tool to assign the LUTs. Her
 The image then gets merged into a composite image (i.e., all channels are still separate images). Note the slider at the bottom of the image that still allows you to select different channels. 
 
 
-```{figure} /tutorials/unit-1_resources/merge/composite.png
+```{figure} ./resources_unit-1/merge/composite.png
 :alt: In
 :align: center
 :name: Composite image
@@ -404,7 +404,7 @@ The image then gets merged into a composite image (i.e., all channels are still 
 Composite image
 ```
 
-Download a TIFF of the result image here: [composite.tif](./unit-1_resources/merge/composite.tif).
+Download a TIFF of the result image here: [composite.tif](./resources_unit-1/merge/composite.tif).
 
 :::{note}
 
@@ -428,7 +428,7 @@ Plugins > Macros > Record…
 
 A text window appears that now documents most GUI adjustments. 
 
-```{figure} /tutorials/unit-1_resources/macro/macro_recorder.png
+```{figure} ./resources_unit-1/macro/macro_recorder.png
 :alt: In
 :align: center
 :name: Macro recorder
@@ -450,7 +450,7 @@ File > Save As...
 Save as .ijm Fiji macro. 
 
 
-```{figure} /tutorials/unit-1_resources/macro/macro_script.png
+```{figure} ./resources_unit-1/macro/macro_script.png
 :alt: In
 :align: center
 :name: Macro script
@@ -459,7 +459,7 @@ Save as .ijm Fiji macro.
 Macro script
 ```
 
-The cool thing is that by pressing “Run” one can reproduce the entire processing. Even cooler is to fully automate the processing of all your images by doing some [simple macro programming](https://imagej.net/scripting/macro). You can download the macro example to test it [Macro.ijm](./unit-1_resources/macro/macro_unit-1.ijm).
+The cool thing is that by pressing “Run” one can reproduce the entire processing. Even cooler is to fully automate the processing of all your images by doing some [simple macro programming](https://imagej.net/scripting/macro). You can download the macro example to test it [Macro.ijm](./resources_unit-1/macro/macro_unit-1.ijm).
 
 :::{note} 
 

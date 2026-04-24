@@ -28,7 +28,7 @@ TODO: Specify time for unit
 
 In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md) we have processed an image panel to be included in an image figure. 
 
-```{figure} /tutorials/unit-2_resources/annotate/scale_bar3.png
+```{figure} ./resources_unit-2/annotate/scale_bar3.png
 :alt: In
 :align: center
 :name: intro_unit3
@@ -37,11 +37,11 @@ In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotati
 Processed overview and crop for one panel of an image figure.
 ```
 
-You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
+You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./resources_unit-2/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./resources_unit-2/unit-2_examples/composite_crop_scale.tif).
 
 Typically, we want to present other image panels too, for instance, compare wild type versus a treatment. In this case, the first image is of U2-OS cells treated with DMSO as a control. In our example figure, we now want to compare U2-OS cells treated with Nocodazole acquired with the same settings.
 
-```{figure} /tutorials/unit-3_resources/introduction/treatment_scale.png
+```{figure} ./resources_unit-3/introduction/treatment_scale.png
 :alt: In
 :align: center
 :name: treatment_intro
@@ -56,7 +56,7 @@ You can already see one of the challenges with annotations in processed images. 
 
 :::
 
-You can download the original image for the treatment here: [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif). Then perform the processing described in [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md).
+You can download the original image for the treatment here: [multichannel_image_treat.tif](./resources_unit-3/examples/multichannel_image_treat.tif). Then perform the processing described in [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md).
 
 :::{important}
 
@@ -64,7 +64,7 @@ For an accurate qualitative comparison, the images need to be processed with the
 
 :::
 
-You can download the result here: [composite_treat_scale.tif](./unit-3_resources/examples/composite_treat_scale.tif) and [composite_treat_crop_scale.tif](./unit-3_resources/examples/composite_treat_crop_scale.tif).
+You can download the result here: [composite_treat_scale.tif](./resources_unit-3/examples/composite_treat_scale.tif) and [composite_treat_crop_scale.tif](./resources_unit-3/examples/composite_treat_crop_scale.tif).
 
 
 ## Figure setup
@@ -72,7 +72,7 @@ You can download the result here: [composite_treat_scale.tif](./unit-3_resources
 Help > Update...
 
 
-```{figure} /tutorials/unit-3_resources/figure/imagej_updater.png
+```{figure} ./resources_unit-3/figure/imagej_updater.png
 :alt: In
 :align: center
 :name: imagej_updater
@@ -85,7 +85,7 @@ Press: Manage update site
 
 Select Biovoxxel Figure tools
 
-```{figure} /tutorials/unit-3_resources/figure/biovoxxel_tool_box.png
+```{figure} ./resources_unit-3/figure/biovoxxel_tool_box.png
 :alt: In
 :align: center
 :name: figure_tools
@@ -99,7 +99,7 @@ Restart Fiji and reopen all images for export. You can then export all the image
 
 Plugins > BioVoxxel Figure Tools > Export all images as SVG
 
-```{figure} /tutorials/unit-3_resources/figure/export_all_svg.png
+```{figure} ./resources_unit-3/figure/export_all_svg.png
 :alt: In
 :align: center
 :name: image_svg
@@ -107,11 +107,11 @@ Plugins > BioVoxxel Figure Tools > Export all images as SVG
 
 Export images as SVG.
 ```
-SVG is a vector graphic format that can be loaded and processed in Inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./unit-3_resources/examples/figure_template.svg)
+SVG is a vector graphic format that can be loaded and processed in Inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./resources_unit-3/examples/figure_template.svg)
 
 Open the template in Inkscape:
 
-```{figure} /tutorials/unit-3_resources/figure/inkscape.png
+```{figure} ./resources_unit-3/figure/inkscape.png
 :alt: In
 :align: center
 :name: Figure_template
@@ -122,14 +122,14 @@ Figure template in inkscape.
 
 ## Annotations
 
-We are now able to load the images exported as SVG into Inkscape. The advantage here is that the images, as well as the included annotations, are full vector graphics. Annotations such as scale bars can be edited, and the images can be [resized without interpolation](/background/raster_graphics_interpolation.md).
+We are now able to load the images exported as SVG into Inkscape. The advantage here is that the images, as well as the included annotations, are full vector graphics. Annotations such as scale bars can be edited, and the images can be [resized without interpolation](./background_interpolation.md).
 
 
 Drag and drop SVG files into inkscape.
 
 File > Import...
 
-```{figure} /tutorials/unit-3_resources/annotations/inkscape_import.png
+```{figure} ./resources_unit-3/annotations/inkscape_import.png
 :alt: In
 :align: center
 :name: inkscape_import
@@ -153,7 +153,7 @@ Ensure that the annotations are legible. Make sure the annotations do not obscur
 
 :::
 
-```{figure} /tutorials/unit-3_resources/annotations/edit_annotations.png
+```{figure} ./resources_unit-3/annotations/edit_annotations.png
 :alt: In
 :align: center
 :name: edit_annotations
@@ -164,7 +164,7 @@ Edit annotations in Inkscape.
 
 Edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
 
-```{figure} /tutorials/unit-3_resources/annotations/edited_annotation.png
+```{figure} ./resources_unit-3/annotations/edited_annotation.png
 :alt: In
 :align: center
 :name: edited_annotations
@@ -181,7 +181,7 @@ If different image panels have the same scale bar, you can put the scale bar in 
 
 :::
 
-```{figure} /tutorials/unit-3_resources/annotations/edited_annotation2.png
+```{figure} ./resources_unit-3/annotations/edited_annotation2.png
 :alt: In
 :align: center
 :name: edited_annotations2
@@ -194,7 +194,7 @@ In Inkscape (or any other vector graphics tool), we can then add other annotatio
 
 Consider that other annotations, such as cell type and treatment, can help the viewer grasp your results faster. 
 
-```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+```{figure} ./resources_unit-3/annotations/annotated_panel.png
 :alt: In
 :align: center
 :name: annotated_image
@@ -209,7 +209,7 @@ The figure legends provide further details to explain what the viewer is seeing.
 
 See below a proposal for an image figure legend:
 
-```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+```{figure} ./resources_unit-3/annotations/annotated_panel.png
 :alt: In
 :align: center
 :name: annotated_image2
@@ -233,7 +233,7 @@ The methods should explain the key processing that was applied to the image figu
 
 For Fiji, the version can be seen in the taskbar:
 
-```{figure} /tutorials/unit-3_resources/methods/Fiji_version.png
+```{figure} ./resources_unit-3/methods/Fiji_version.png
 :alt: In
 :align: center
 :name: Fiji_version
@@ -269,7 +269,7 @@ To make your work easier, you can add the macro that we created in [Unit 1: Visi
 
 ## Availability
 
-```{figure} /tutorials/unit-3_resources/availability/repositories.png
+```{figure} ./resources_unit-3/availability/repositories.png
 :alt: In
 :align: center
 :name: repositories

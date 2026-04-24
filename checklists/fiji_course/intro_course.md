@@ -47,6 +47,7 @@ Condensed checklists.
 2) [Unit 2: Format and annotations](./unit-2_format.md)
 3) [Unit 3: Figure and availability](./unit-3_figure_prep.md)
 4) [Unit 4: Quantification](./unit-4_analysis.md)
+5) [Background information](./intro_background.md)
 
 ## Further material
 

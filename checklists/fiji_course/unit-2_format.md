@@ -25,7 +25,7 @@ TODO: Specify time needed for unit
 
 ## Introduction
 
-We start with the result of [Unit 1: Visibility](./unit-1_visibility.md), the composite image with adjusted colors, brightness, and contrast. You can download the image here: [composite.tif](./unit-1_resources/merge/composite.tif).
+We start with the result of [Unit 1: Visibility](./unit-1_visibility.md), the composite image with adjusted colors, brightness, and contrast. You can download the image here: [composite.tif](./resources_unit-1/merge/composite.tif).
 
 Open Fiji.
 
@@ -33,7 +33,7 @@ Then open the image in Fiji:
 
 File > Open... (or drag and drop image into Fiji task bar)
 
-```{figure} /tutorials/unit-1_resources/merge/composite.png
+```{figure} ./resources_unit-1/merge/composite.png
 :alt: In
 :align: center
 :name: Composite image 2
@@ -74,7 +74,7 @@ Since the selection of the cropped example is so critical, it is best to always 
 
 Draw a region of interest (ROI) by selecting a ROI tool in the Fiji task bar, for instance, using the rectangle. 
 
-```{figure} /tutorials/unit-2_resources/crop/roi.png
+```{figure} ./resources_unit-2/crop/roi.png
 :alt: In
 :align: center
 :name: roi
@@ -97,7 +97,7 @@ The part of the image within the ROI can now be cropped using:
 Image > Crop... (Ctrl + Shift + X)
 
 
-```{figure} /tutorials/unit-2_resources/crop/crop.png
+```{figure} ./resources_unit-2/crop/crop.png
 :alt: In
 :align: center
 :name: crop
@@ -110,7 +110,7 @@ To create a crop, one can also use the duplicate command:
 
 Image > Duplicate (Ctrl + Shift + D)
 
-```{figure} /tutorials/unit-2_resources/crop/duplicate_roi.png
+```{figure} ./resources_unit-2/crop/duplicate_roi.png
 :alt: In
 :align: center
 :name: duplicate_crop
@@ -131,16 +131,16 @@ Image > Transform > Flip...
 
 Rotation by multiples of 90 degrees in Fiji (or other software manipulating image pixels) can preserve data because each pixel maps cleanly to a new pixel position. Any other rotation needs to interpolate pixel values and thus can alter the image information, which is a problem if the image is later used for quantitative analysis. This applies to any pixel-editing software (Photoshop, GIMP, etc.) — a 45-degree rotation is not "safe" just because it was performed outside Fiji.
 
-```{figure} /tutorials/unit-2_resources/crop/rotation_interpolation.png
+```{figure} ./resources_unit-2/crop/rotation_interpolation.png
 :alt: In
 :align: center
-:name: interpolation
+:name: rotation
 :width: 100%
 
 Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation bilinear interpolation.
 ```
 
-Interpolation is needed since in Fiji, images are processed as Raster graphics (grid of pixels). The effect of raster graphics, image transformation, and interpolation is also discussed here: [Raster graphics and interpolation](/background/raster_graphics_interpolation.md) 
+Interpolation is needed since in Fiji, images are processed as Raster graphics (grid of pixels). The effect of raster graphics, image transformation, and interpolation is also discussed here: [Raster graphics and interpolation](./background_interpolation.md) 
 
 :::::
 
@@ -148,7 +148,7 @@ Interpolation is needed since in Fiji, images are processed as Raster graphics (
 
 We now have the overview image as well as the crop that shows the details of one representative cell. 
 
-```{figure} /tutorials/unit-2_resources/annotate/scale_bar1.png
+```{figure} ./resources_unit-2/annotate/scale_bar1.png
 :alt: In
 :align: center
 :name: scale_bar1
@@ -167,7 +167,7 @@ The correct pixel size can be verified and changed in Fiji via:
 
 Analyze > Set Scale...
 
-```{figure} /tutorials/unit-2_resources/annotate/set_scale.png
+```{figure} ./resources_unit-2/annotate/set_scale.png
 :alt: In
 :align: center
 :name: set_scale
@@ -180,7 +180,7 @@ After the correct pixel size has been verified, the scale bar can be created in 
 
 Analyze > Tools > Scale Bar...
 
-```{figure} /tutorials/unit-2_resources/annotate/scale_bar2.png
+```{figure} ./resources_unit-2/annotate/scale_bar2.png
 :alt: In
 :align: center
 :name: scale_bar2
@@ -197,7 +197,7 @@ Tick the "Overlay" setting. This adds the scale bar to the image as a non-destru
 
 The width of the scale bar should relate to the actual size of the shown objects (e.g., size of a cell, size of the nucleus). 
 
-```{figure} /tutorials/unit-2_resources/annotate/scale_bar3.png
+```{figure} ./resources_unit-2/annotate/scale_bar3.png
 :alt: In
 :align: center
 :name: scale_bar3
@@ -233,7 +233,7 @@ What could be relevant is to dicuss adding timestamps in movies, or frame of mov
 
 ## Result
 
-You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
+You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./resources_unit-2/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./resources_unit-2/unit-2_examples/composite_crop_scale.tif).
 
 ## Bonus: ROI Manager and overlays
 
@@ -245,7 +245,7 @@ To add ROIs press Add [t]
 
 Alternatively, pressing "t" on the keyboard will also open the ROI Manager and add the currently active ROI.
 
-```{figure} /tutorials/unit-2_resources/roi_manager/roi_manager.png
+```{figure} ./resources_unit-2/roi_manager/roi_manager.png
 :alt: In
 :align: center
 :name: roi_manager
@@ -258,7 +258,7 @@ Scale bars or annotations that exist as overlays can be added to the ROI Manager
 
 Image > Overlay > To ROI Manager
 
-```{figure} /tutorials/unit-2_resources/roi_manager/overlay_roi_manager.png
+```{figure} ./resources_unit-2/roi_manager/overlay_roi_manager.png
 :alt: In
 :align: center
 :name: overlay_roi_manager

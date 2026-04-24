@@ -26,7 +26,7 @@ TODO: Specify time for unit
 
 For our example figure, we could easily imagine that we create a quantitative analysis to count the number of small rounded cells. This could either be based on existing tools or writing our own analysis. 
 
-```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+```{figure} ./resources_unit-3/annotations/annotated_panel.png
 :alt: In
 :align: center
 :name: image_panel
@@ -36,8 +36,8 @@ Nocodazole treatment results in the appearance of small rounded cells in U2-OS c
 ```
 
 Download the example images here: 
-- [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
-- [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif).
+- [multichannel_image.tif](./resources_unit-1/unit-1_examples/multichannel_image.tif).
+- [multichannel_image_treat.tif](./resources_unit-3/examples/multichannel_image_treat.tif).
 
 ## Analysis based on existing workflows
 
@@ -50,7 +50,7 @@ To reproduce the analysis, you will need to get the plugin in Fiji:
 Help > Update...
 
 
-```{figure} /tutorials/unit-3_resources/figure/imagej_updater.png
+```{figure} ./resources_unit-3/figure/imagej_updater.png
 :alt: In
 :align: center
 :name: orgamapper_updater
@@ -65,7 +65,7 @@ Select Cellular Imaging Facility
 
 Press OK and restart Fiji.
 
-Save the example images in an input folder (e.g., test). OrgaMapper documents the analysis settings using an .xml file. Please download the settings: [settings .xml](./unit-4_resources/existing_workflow/2026-04-13T175308-settings.xml) and put it into the input folder. Create an output folder (e.g., test_out). 
+Save the example images in an input folder (e.g., test). OrgaMapper documents the analysis settings using an .xml file. Please download the settings: [settings .xml](./resources_unit-4/existing_workflow/2026-04-13T175308-settings.xml) and put it into the input folder. Create an output folder (e.g., test_out). 
 
 Start OrgaMapper:
 
@@ -73,7 +73,7 @@ Plugins > CellularImaging > Map Organelle
 
 Specify the location of the input folder, output folder, and the settings file. Then press OK to start OrgaMapper. 
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_start.png
+```{figure} ./resources_unit-4/existing_workflow/orgamapper_start.png
 :alt: In
 :align: center
 :name: orgamapper_start
@@ -86,7 +86,7 @@ OrgaMapper then performs a simple watershed-based image segmentation and a basic
 
 OrgaMapper visualizes this on the example images using the "Preview" button:
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper.png
+```{figure} ./resources_unit-4/existing_workflow/orgamapper.png
 :alt: In
 :align: center
 :name: orgamapper
@@ -97,7 +97,7 @@ OrgaMapper preview of the segmentation.
 
 To execute the analysis, press the "Batch Process" button. OrgaMapper then performs the analysis based on the loaded settings and will save the results in the output folder. 
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_results.png
+```{figure} ./resources_unit-4/existing_workflow/orgamapper_results.png
 :alt: In
 :align: center
 :name: orgamapper_results
@@ -108,7 +108,7 @@ OrgaMapper Results.
 
 Critical is that we can extract the cell area in the "cellMeasurements.csv" file:
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_cellarea.png
+```{figure} ./resources_unit-4/existing_workflow/orgamapper_cellarea.png
 :alt: In
 :align: center
 :name: orgamapper_cellarea
@@ -155,7 +155,7 @@ For this analysis, we could just as easily write a custom Fiji macro instead of 
 ## Code and example availability
 
 
-```{figure} /tutorials/unit-3_resources/availability/repositories.png
+```{figure} ./resources_unit-3/availability/repositories.png
 :alt: In
 :align: center
 :name: data_repositories
