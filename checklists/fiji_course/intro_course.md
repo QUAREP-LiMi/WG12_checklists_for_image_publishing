@@ -1,5 +1,5 @@
 (tutorials)=
-# Introduction to tutorials
+# Train-the-User course
 
 This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to take one example from the original image and create a complete image figure, including the figure legend and methods used to create and process the images.
 

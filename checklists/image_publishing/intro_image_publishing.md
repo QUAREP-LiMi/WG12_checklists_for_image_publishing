@@ -15,7 +15,7 @@ We’ve defined three tiers of standards – **Minimal** (essential requirements
 
 By following this friendly guidance, you can remove the guesswork (and stress!) of figuring out what’s needed, and ensure your images are **more interpretable and reproducible** in the long run. Ultimately, **better-presented images mean better science** – your findings will be clearer, more credible, and easier for others to build upon.
 
-For practical instructions on how to implement these guidelines go to our [tutorials section](/tutorials/intro_tutorials.md)
+For practical instructions on how to implement these guidelines go to our [course section](/fiji_course/intro_course.md)
 
 ## Join the Community and Contribute
 
