@@ -25,7 +25,7 @@ Therefore, strict ethical principles must be applied during image processing to 
 
 Image processing is an essential step in preparing microscopy data for publication. To ensure that images communicate scientific results accurately and transparently, it is crucial to understand and apply principles that preserve the original information.
 
-```{figure} /background/resources_image_ethics/comparison.png
+```{figure} ./resources_image_ethics/comparison.png
 :alt: In
 :align: center
 :name: comparison
@@ -42,7 +42,7 @@ This section introduces guiding principles for ethical image processing. It draw
 
 ## Keep Original Data File Safe and Unchanged
 
-```{figure} /background/resources_image_ethics/rawprocessed.png
+```{figure} ./resources_image_ethics/rawprocessed.png
 :alt: In
 :align: center
 :name: rawprocessed
@@ -58,7 +58,7 @@ Process copy of image: (Left) Orginal image. (Right) Image processing performed 
 
 ## Simple Adjustments to the Entire Image are Usually Acceptable
 
-```{figure} /background/resources_image_ethics/adjustments.png
+```{figure} ./resources_image_ethics/adjustments.png
 :alt: In
 :align: center
 :name: adjustments
@@ -72,7 +72,7 @@ Image processing: Linear adjustments such as adjustment of brightness contrast o
 
 ## Cropping an Image is Usually Acceptable
 
-```{figure} /background/resources_image_ethics/cropping2.png
+```{figure} ./resources_image_ethics/cropping2.png
 :alt: In
 :align: center
 :name: cropping
@@ -89,7 +89,7 @@ Overview and crop shown side by side.
 ## Treat Images the Same for Comparison
 
 
-```{figure} /background/resources_image_ethics/comparison.png
+```{figure} ./resources_image_ethics/comparison.png
 :alt: In
 :align: center
 :name: ethic_comparison
@@ -104,7 +104,7 @@ The same image processed with different settings produces different visual resul
 ## Do not Beautify Images
 
 
-```{figure} /background/resources_image_ethics/filtered.png
+```{figure} ./resources_image_ethics/filtered.png
 :alt: In
 :align: center
 :name: filtered
@@ -125,7 +125,7 @@ Manipulations applied to only one area of an image, and not to others, are quest
 
 :::
 
-```{figure} /background/resources_image_ethics/process_part.png
+```{figure} ./resources_image_ethics/process_part.png
 :alt: In
 :align: center
 :name: process_part
@@ -140,7 +140,7 @@ Cloning or copying objects from other parts of an image or from a different imag
 
 :::
 
-```{figure} /background/resources_image_ethics/duplication1.png
+```{figure} ./resources_image_ethics/duplication1.png
 :alt: In
 :align: center
 :name: duplicate
@@ -167,7 +167,7 @@ Further reading list for quantitative microscopy:
 
 ## Avoid the Use of Lossy Compression
 
-```{figure} /background/resources_image_ethics/compression.png
+```{figure} ./resources_image_ethics/compression.png
 :alt: In
 :align: center
 :name: compression
@@ -182,7 +182,7 @@ Effect of lossy compression due to JPEG compression: (Left) Unprocessed example.
 
 ## Metadata Matters
 
-```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+```{figure} ./resources_unit-3/annotations/annotated_panel.png
 :alt: In
 :align: center
 :name: ethics_annotated_image
@@ -204,7 +204,7 @@ Further reading for microscopy metadata:
 
 Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90° increments) and resizing require interpolation, which permanently alters the image data.
 
-```{figure} /tutorials/unit-2_resources/crop/rotation_interpolation.png
+```{figure} ./resources_unit-2/crop/rotation_interpolation.png
 :alt: In
 :align: center
 :name: ethics_interpolation
@@ -213,7 +213,7 @@ Images are typically processed as raster graphics (a grid of pixels). Therefore,
 Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation with bilinear interpolation.
 ```
 
-```{figure} /background/final_image_figures_resources/DPI_Fig4.png
+```{figure} ./resources_interpolation/DPI_Fig4.png
 :alt: Image resized with different interpolations
 :align: center
 :name: ethics_resize
