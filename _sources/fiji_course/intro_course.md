@@ -1,11 +1,11 @@
 (tutorials)=
-# Introduction to tutorials
+# Train-the-User course
 
 This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to take one example from the original image and create a complete image figure, including the figure legend and methods used to create and process the images.
 
 The result should be an image figure that truthfully and effectively reports the scientific result that the figure represents:
 
-```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+```{figure} ./unit-3_resources/annotations/annotated_panel.png
 :alt: In
 :align: center
 :name: annotated_image_result
@@ -33,7 +33,7 @@ We selected these tools because they are free, open source, and familiar to the 
 
 To help guide authors to create good image figures we have created a set of [Checklists](https://doi.org/10.1038/s41592-023-01987-9). This tutorial is based on a condensed version of the checklist (see {ref}`figure-checklist`).
 
-```{figure} /tutorials/unit-1_resources/condensed_checklist2.png
+```{figure} ./unit-1_resources/condensed_checklist2.png
 :alt: In
 :align: center
 :name: figure-checklist
@@ -47,6 +47,7 @@ Condensed checklists.
 2) [Unit 2: Format and annotations](./unit-2_format.md)
 3) [Unit 3: Figure and availability](./unit-3_figure_prep.md)
 4) [Unit 4: Quantification](./unit-4_analysis.md)
+5) [Background information](./intro_background.md)
 
 ## Further material
 
