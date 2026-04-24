@@ -26,7 +26,7 @@ TODO: Specify time for unit
 
 For our example figure, we could easily imagine that we create a quantitative analysis to count the number of small rounded cells. This could either be based on existing tools or writing our own analysis. 
 
-```{figure} /tutorials/unit-3_resources/annotations/annotated_panel.png
+```{figure} ./unit-3_resources/annotations/annotated_panel.png
 :alt: In
 :align: center
 :name: image_panel
@@ -50,7 +50,7 @@ To reproduce the analysis, you will need to get the plugin in Fiji:
 Help > Update...
 
 
-```{figure} /tutorials/unit-3_resources/figure/imagej_updater.png
+```{figure} ./unit-3_resources/figure/imagej_updater.png
 :alt: In
 :align: center
 :name: orgamapper_updater
@@ -73,7 +73,7 @@ Plugins > CellularImaging > Map Organelle
 
 Specify the location of the input folder, output folder, and the settings file. Then press OK to start OrgaMapper. 
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_start.png
+```{figure} ./unit-4_resources/existing_workflow/orgamapper_start.png
 :alt: In
 :align: center
 :name: orgamapper_start
@@ -86,7 +86,7 @@ OrgaMapper then performs a simple watershed-based image segmentation and a basic
 
 OrgaMapper visualizes this on the example images using the "Preview" button:
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper.png
+```{figure} ./unit-4_resources/existing_workflow/orgamapper.png
 :alt: In
 :align: center
 :name: orgamapper
@@ -97,7 +97,7 @@ OrgaMapper preview of the segmentation.
 
 To execute the analysis, press the "Batch Process" button. OrgaMapper then performs the analysis based on the loaded settings and will save the results in the output folder. 
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_results.png
+```{figure} ./unit-4_resources/existing_workflow/orgamapper_results.png
 :alt: In
 :align: center
 :name: orgamapper_results
@@ -108,7 +108,7 @@ OrgaMapper Results.
 
 Critical is that we can extract the cell area in the "cellMeasurements.csv" file:
 
-```{figure} /tutorials/unit-4_resources/existing_workflow/orgamapper_cellarea.png
+```{figure} ./unit-4_resources/existing_workflow/orgamapper_cellarea.png
 :alt: In
 :align: center
 :name: orgamapper_cellarea
@@ -155,7 +155,7 @@ For this analysis, we could just as easily write a custom Fiji macro instead of 
 ## Code and example availability
 
 
-```{figure} /tutorials/unit-3_resources/availability/repositories.png
+```{figure} ./unit-3_resources/availability/repositories.png
 :alt: In
 :align: center
 :name: data_repositories
