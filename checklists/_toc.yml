@@ -16,15 +16,15 @@ parts:
     - file: analysis_workflows/3_machine_learning_workflows.md
   - caption: 3. Train-the-User Course
     chapters:
-    - file: tutorials/intro_tutorials.md
-    - file: tutorials/unit-1_visibility.md
-    - file: tutorials/unit-2_format.md
-    - file: tutorials/unit-3_figure_prep.md
-    - file: tutorials/unit-4_analysis.md
-    - file: tutorials/intro_background.md
+    - file: fiji_course/intro_tutorials.md
+    - file: fiji_course/unit-1_visibility.md
+    - file: fiji_course/unit-2_format.md
+    - file: fiji_course/unit-3_figure_prep.md
+    - file: fiji_course/unit-4_analysis.md
+    - file: fiji_course/intro_background.md
     sections:
-      - file: tutorials/image_ethics.md
-      - file: tutorials/raster_graphics_interpolation.md
+      - file: fiji_course/image_ethics.md
+      - file: fiji_course/interpolation.md
   - caption: 5. Other resources
     chapters:
     - file: other_resources/how_to_contribute.md
