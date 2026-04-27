@@ -511,10 +511,15 @@ TODO: Specify time needed for unit
 <p><span class="caption-number">Fig. 38 </span><span class="caption-text">Rectangle ROI drawn on image.</span><a class="headerlink" href="#roi" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<p>You can save the exact ROI on the image as a non-destructive overlay to easily label the origin of the crop. First we need to add the ROI to the overlay:</p>
+<p>Image &gt; Overlay &gt; Add Selection…</p>
+<p>The image and the overlay can then be saved as TIFF image:</p>
+<p>File &gt; Save As &gt; Tiff…</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can save the exact ROI on the image as a non-destructive overlay to easily label the origin of the crop. This is done by saving the image with an active ROI as a TIFF image.</p>
-<p>File &gt; Save As &gt; Tiff…</p>
+<p>In a TIFF image, the overlay will be saved as an additional layer (i.e., header of a TIFF file), independent of the actual image content. Thus, any overlays will be added non-destructively. The scale information, as well as other basic metadata, is also saved in this additional information layer. You can access this metadata via:</p>
+<p>Image &gt; Show Info (Ctrl + I)</p>
+<p>This is in contrast to other image formats such as PNG. Here, the overlay will be burned into the image itself.</p>
 </div>
 <p>The part of the image within the ROI can now be cropped using:</p>
 <p>Image &gt; Crop… (Ctrl + Shift + X)</p>
@@ -623,29 +628,31 @@ What could be relevant is to dicuss adding timestamps in movies, or frame of mov
 </section>
 <section id="bonus-roi-manager-and-overlays">
 <h2>Bonus: ROI Manager and overlays<a class="headerlink" href="#bonus-roi-manager-and-overlays" title="Link to this heading">#</a></h2>
-<p>You can manage multiple ROIs and also annotations via the ROI Manager. Just open the ROI Manager:</p>
-<p>Analyze &gt; Tools &gt; ROI Manager…</p>
-<p>To add ROIs press Add [t]</p>
-<p>Alternatively, pressing “t” on the keyboard will also open the ROI Manager and add the currently active ROI.</p>
-<figure class="align-center" id="roi-manager">
-<a class="reference internal image-reference" href="../_images/roi_manager.png"><img alt="In" src="../_images/roi_manager.png" style="width: 75%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 46 </span><span class="caption-text">ROI Manager window.</span><a class="headerlink" href="#roi-manager" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p>You can manage multiple ROIs and also annotations via the ROI Manager. First we need to make sure that any ROIs (or selections) are available in the overlay:</p>
+<p>Image &gt; Overlay &gt; Add Selection…</p>
 <p>Scale bars or annotations that exist as overlays can be added to the ROI Manager via:</p>
 <p>Image &gt; Overlay &gt; To ROI Manager</p>
 <figure class="align-center" id="overlay-roi-manager">
 <a class="reference internal image-reference" href="../_images/overlay_roi_manager.png"><img alt="In" src="../_images/overlay_roi_manager.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 47 </span><span class="caption-text">Overlay in ROI Manager.</span><a class="headerlink" href="#overlay-roi-manager" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 46 </span><span class="caption-text">Overlay in ROI Manager.</span><a class="headerlink" href="#overlay-roi-manager" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The ROIs can then be saved as an independent file:</p>
 <p>ROI Manager &gt; Deselect (This selects all ROIs)</p>
 <p>ROI Manager &gt; More &gt; Save…</p>
+<p>The ROI manager can also be used independently of the overlay. For instance to add any active ROIs into the ROI manager. First open the ROI Manager:</p>
+<p>Analyze &gt; Tools &gt; ROI Manager…</p>
+<p>To add active ROIs press Add [t]</p>
+<p>Alternatively, pressing “t” on the keyboard will also open the ROI Manager and add the currently active ROI.</p>
+<figure class="align-center" id="roi-manager">
+<a class="reference internal image-reference" href="../_images/roi_manager.png"><img alt="In" src="../_images/roi_manager.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 47 </span><span class="caption-text">ROI Manager window.</span><a class="headerlink" href="#roi-manager" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="docutils">
 </div>
 </section>

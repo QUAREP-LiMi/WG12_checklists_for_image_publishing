@@ -203,6 +203,8 @@ Consider that other annotations, such as cell type and treatment, can help the v
 Example of possible annotations in an image.
 ```
 
+You can download the result here: [figure_example.svg](./unit-3_resources/examples/figure_example.svg)
+
 ## Figure legends
 
 The figure legends provide further details to explain what the viewer is seeing. They should be focused on the result and provide further critical information to interpret the image, e.g., the dimensions of the scale bar or the use of other annotations.
@@ -219,8 +221,6 @@ Nocodazole treatment results in the appearance of small rounded cells in U2-OS c
 ```
 
 :::{important} 
-
-
 
 Basic image processing — e.g., linear adjustments such as brightness/contrast settings — should generally be explained in the methods.
 
