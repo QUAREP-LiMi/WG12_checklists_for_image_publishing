@@ -33,7 +33,7 @@ We selected these tools because they are free, open source, and familiar to the 
 
 To help guide authors to create good image figures we have created a set of [Checklists](https://doi.org/10.1038/s41592-023-01987-9). This tutorial is based on a condensed version of the checklist (see {ref}`figure-checklist`).
 
-```{figure} ./unit-1_resources/condensed_checklist2.png
+```{figure} ./intro_resources/condensed_checklist.png
 :alt: In
 :align: center
 :name: figure-checklist

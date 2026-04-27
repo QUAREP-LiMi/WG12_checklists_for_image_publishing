@@ -83,14 +83,23 @@ Draw a region of interest (ROI) by selecting a ROI tool in the Fiji task bar, fo
 Rectangle ROI drawn on image.
 ```
 
-:::{tip}
+You can save the exact ROI on the image as a non-destructive overlay to easily label the origin of the crop. First we need to add the ROI to the overlay:
 
-You can save the exact ROI on the image as a non-destructive overlay to easily label the origin of the crop. This is done by saving the image with an active ROI as a TIFF image.  
+Image > Overlay > Add Selection...
+
+The image and the overlay can then be saved as TIFF image:
 
 File > Save As > Tiff...
 
-:::
+:::{tip}
 
+In a TIFF image, the overlay will be saved as an additional layer (i.e., header of a TIFF file), independent of the actual image content. Thus, any overlays will be added non-destructively. The scale information, as well as other basic metadata, is also saved in this additional information layer. You can access this metadata via:
+
+Image > Show Info (Ctrl + I)
+
+This is in contrast to other image formats such as PNG. Here, the overlay will be burned into the image itself.
+
+:::
 
 The part of the image within the ROI can now be cropped using: 
 
@@ -237,22 +246,10 @@ You can download the result of [Unit 2: Format and annotations](./unit-2_format.
 
 ## Bonus: ROI Manager and overlays
 
-You can manage multiple ROIs and also annotations via the ROI Manager. Just open the ROI Manager:
 
-Analyze > Tools > ROI Manager...
+You can manage multiple ROIs and also annotations via the ROI Manager. First we need to make sure that any ROIs (or selections) are available in the overlay: 
 
-To add ROIs press Add [t]
-
-Alternatively, pressing "t" on the keyboard will also open the ROI Manager and add the currently active ROI.
-
-```{figure} ./unit-2_resources/roi_manager/roi_manager.png
-:alt: In
-:align: center
-:name: roi_manager
-:width: 75%
-
-ROI Manager window.
-```
+Image > Overlay > Add Selection...
 
 Scale bars or annotations that exist as overlays can be added to the ROI Manager via:
 
@@ -272,6 +269,25 @@ The ROIs can then be saved as an independent file:
 ROI Manager > Deselect (This selects all ROIs)
 
 ROI Manager > More > Save...
+
+
+The ROI manager can also be used independently of the overlay. For instance to add any active ROIs into the ROI manager. First open the ROI Manager:
+
+Analyze > Tools > ROI Manager...
+
+To add active ROIs press Add [t]
+
+Alternatively, pressing "t" on the keyboard will also open the ROI Manager and add the currently active ROI.
+
+```{figure} ./unit-2_resources/roi_manager/roi_manager.png
+:alt: In
+:align: center
+:name: roi_manager
+:width: 75%
+
+ROI Manager window.
+```
+
 
 :::
 
