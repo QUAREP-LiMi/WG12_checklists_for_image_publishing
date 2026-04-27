@@ -107,6 +107,13 @@ Plugins > BioVoxxel Figure Tools > Export all images as SVG
 
 Export images as SVG.
 ```
+
+You can download the examples here: 
+- [01_composite_crop_scale.svg](./unit-3_resources/examples/01_composite_crop_scale.svg)
+- [02_composite_scale.svg](./unit-3_resources/examples/02_composite_scale.svg)
+- [03_composite_treat_crop_scale.svg](./unit-3_resources/examples/03_composite_treat_crop_scale.svg)
+- [04_composite_treat_scale.svg](./unit-3_resources/examples/04_composite_treat_scale.svg)
+
 SVG is a vector graphic format that can be loaded and processed in Inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./unit-3_resources/examples/figure_template.svg)
 
 Open the template in Inkscape:
