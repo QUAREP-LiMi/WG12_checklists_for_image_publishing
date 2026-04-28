@@ -152,7 +152,27 @@ Import images at 300 dpi, as this is the required printing resolution of most jo
 
 The first step is to resize the image to fit the image figure. When resizing make sure to lock the aspect ratio and resize the image uniformly. After import the annotations can be edited. 
 
+```{figure} ./unit-3_resources/annotations/inkscape_resize.png
+:alt: In
+:align: center
+:name: inkscape_resize
+:width: 100%
+
+Resize image panel to fit the figure. Note: the lock on the aspect ration to resize the image uniformly.
+```
+
 Next you can select annotation in Layers and Objects. Unlock the annotation if locked to modify them. Modify the size and location of the annotation.
+
+Layer > Layers and Objects...
+
+```{figure} ./unit-3_resources/annotations/inkscape_layers_objects.png
+:alt: In
+:align: center
+:name: inkscape_layers_objects
+:width: 100%
+
+Layers and objects allow to select the different annotations.
+```
 
 :::{important}
 
@@ -160,16 +180,17 @@ Ensure that the annotations are legible. Make sure the annotations do not obscur
 
 :::
 
-```{figure} ./unit-3_resources/annotations/edit_annotations.png
+
+```{figure} ./unit-3_resources/annotations/inkscape_annotations.png
 :alt: In
 :align: center
-:name: edit_annotations
+:name: inkscape_annotations
 :width: 100%
 
-Edit annotations in Inkscape.
+The ROI - 0001-0510-0498, the scale bar and scale bar text - |SB|, and the image - 02_composite_scale.tif (RGB) is shown. Note: the scale bars are locked.
 ```
 
-Edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
+Select the annotation you want to modify in the layers and objects interface. Then edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
 
 ```{figure} ./unit-3_resources/annotations/edited_annotation.png
 :alt: In
@@ -182,7 +203,7 @@ Scale bar adjusted for height and location. The dimension will be specified in t
 
 :::{tip}
 
-To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends.
+To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends. To easily retrieve this information one can drag the scale bar text outside the canvas. 
 
 If different image panels have the same scale bar, you can put the scale bar in the first image. Critical is that images of different dimensions (e.g., overview and enlarged) show the correct scale.   
 
@@ -197,9 +218,61 @@ If different image panels have the same scale bar, you can put the scale bar in 
 Different examples of annotated scale. 
 ```
 
-In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be marked in the overview.
+In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be marked in the overview. Select the ROI in the layers panel:
 
-Consider that other annotations, such as cell type and treatment, can help the viewer grasp your results faster. 
+```{figure} ./unit-3_resources/annotations/inkscape_roi.png
+:alt: In
+:align: center
+:name: inkscape_roi
+:width: 100%
+
+The ROI when added as an overlay can also be exported in the SVG and imported in inkscape. You can then modify the color and thickness of the ROI.
+```
+
+The appearance of the ROI can then be modified via:"
+Object > Fill and Stroke...
+
+For changing the color select the Stroke tab. In the Fill and Stroke interface select the "Stroke Paint" tab.
+
+```{figure} ./unit-3_resources/annotations/inkscape_stroke_color.png
+:alt: In
+:align: center
+:name: inkscape_stroke_color
+:width: 50%
+
+In the Fill and Stroke interface select the "Stroke Paint" tab.
+```
+
+Modify the color of the ROI. Via the color settings in the Stroke paint panel.
+
+:::{note}
+
+Chose the color of the annotation such that there is good contrast with the image content. In a grayscale image you can use a color (e.g. yellow, magenta green). In a color image use a color that is not present in one of the channels (in this example, white or yellow work well).  
+
+:::
+
+```{figure} ./unit-3_resources/annotations/inkscape_stroke_color_adjust.png
+:alt: In
+:align: center
+:name: inkscape_stroke_color_adjust
+:width: 100%
+
+Adjust the color of the ROI.
+```
+
+After the color has been adjusted, modify the line width of the ROI. Select the Stroke style tab in the Fill and Stroke interface, then adjust the Width setting:"
+
+
+```{figure} ./unit-3_resources/annotations/inkscape_stroke_width.png
+:alt: In
+:align: center
+:name: inkscape_stroke_width
+:width: 100%
+
+Adjust the width of the ROI lines so that the ROI is clearly visible.
+```
+
+Consider adding annotations, such as cell type and treatment, to help the viewer interpret your results more quickly. You can also use arrows or other symbols to highlight specific areas of interest within the data.
 
 ```{figure} ./unit-3_resources/annotations/annotated_panel.png
 :alt: In
