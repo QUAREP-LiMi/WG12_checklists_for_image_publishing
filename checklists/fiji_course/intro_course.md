@@ -1,7 +1,7 @@
 (tutorials)=
 # Introduction to course
 
-This tutorial shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to take one example from the original image and create a complete image figure, including the figure legend and methods used to create and process the images.
+This course shows in practice how to create an image figure for publication using [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/). The intention is to take one example from the original image and create a complete image figure, including the figure legend and methods used to create and process the images.
 
 The result should be an image figure that truthfully and effectively reports the scientific result that the figure represents:
 
@@ -20,8 +20,9 @@ For this tutorial you are going to need:
 
 - Fiji is just ImageJ (Fiji): [https://fiji.sc/](https://fiji.sc/)
 - Inkscape: [https://inkscape.org/](https://inkscape.org/)
-- Image data: [Zenodo repository](https://doi.org/10.5281/zenodo.7642559)
 - [Checklists](https://doi.org/10.1038/s41592-023-01987-9)
+
+The course shown here contains all necessary image data as a download. Alternatively, the input, processed, and result images can also be downloaded from a [Zenodo repository](https://doi.org/10.5281/zenodo.19852464).
 
 :::{note}
 
