@@ -220,6 +220,16 @@ Different examples of annotated scale.
 
 In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be marked in the overview.
 
+```{figure} ./unit-3_resources/annotations/inkscape_roi.png
+:alt: In
+:align: center
+:name: inkscape_roi
+:width: 100%
+
+The ROI when added as an overlay can also be exported in the SVG and imported in inkscape. You can then modify the color and thickness of the ROI.
+```
+
+
 Consider that other annotations, such as cell type and treatment, can help the viewer grasp your results faster. 
 
 ```{figure} ./unit-3_resources/annotations/annotated_panel.png
