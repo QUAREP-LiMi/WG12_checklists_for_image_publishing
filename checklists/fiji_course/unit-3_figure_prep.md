@@ -218,7 +218,7 @@ If different image panels have the same scale bar, you can put the scale bar in 
 Different examples of annotated scale. 
 ```
 
-In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be marked in the overview.
+In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. Also, the location of the inset or an enlarged crop should be marked in the overview. Select the ROI in the layers panel:
 
 ```{figure} ./unit-3_resources/annotations/inkscape_roi.png
 :alt: In
@@ -229,8 +229,50 @@ In Inkscape (or any other vector graphics tool), we can then add other annotatio
 The ROI when added as an overlay can also be exported in the SVG and imported in inkscape. You can then modify the color and thickness of the ROI.
 ```
 
+The appearance of the ROI can then be modified via:"
+Object > Fill and Stroke...
 
-Consider that other annotations, such as cell type and treatment, can help the viewer grasp your results faster. 
+For changing the color select the Stroke tab. In the Fill and Stroke interface select the "Stroke Paint" tab.
+
+```{figure} ./unit-3_resources/annotations/inkscape_stroke_color.png
+:alt: In
+:align: center
+:name: inkscape_stroke_color
+:width: 50%
+
+In the Fill and Stroke interface select the "Stroke Paint" tab.
+```
+
+Modify the color of the ROI. Via the color settings in the Stroke paint panel.
+
+:::{note}
+
+Chose the color of the annotation such that there is good contrast with the image content. In a grayscale image you can use a color (e.g. yellow, magenta green). In a color image use a color that is not present in one of the channels (in this example, white or yellow work well).  
+
+:::
+
+```{figure} ./unit-3_resources/annotations/inkscape_stroke_color_adjust.png
+:alt: In
+:align: center
+:name: inkscape_stroke_color_adjust
+:width: 100%
+
+Adjust the color of the ROI.
+```
+
+After the color has been adjusted, modify the line width of the ROI. Select the Stroke style tab in the Fill and Stroke interface, then adjust the Width setting:"
+
+
+```{figure} ./unit-3_resources/annotations/inkscape_stroke_width.png
+:alt: In
+:align: center
+:name: inkscape_stroke_width
+:width: 100%
+
+Adjust the width of the ROI lines so that the ROI is clearly visible.
+```
+
+Consider adding annotations, such as cell type and treatment, to help the viewer interpret your results more quickly. You can also use arrows or other symbols to highlight specific areas of interest within the data.
 
 ```{figure} ./unit-3_resources/annotations/annotated_panel.png
 :alt: In
