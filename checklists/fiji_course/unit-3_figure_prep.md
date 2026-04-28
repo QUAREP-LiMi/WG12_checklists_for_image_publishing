@@ -152,7 +152,27 @@ Import images at 300 dpi, as this is the required printing resolution of most jo
 
 The first step is to resize the image to fit the image figure. When resizing make sure to lock the aspect ratio and resize the image uniformly. After import the annotations can be edited. 
 
+```{figure} ./unit-3_resources/annotations/inkscape_resize.png
+:alt: In
+:align: center
+:name: inkscape_resize
+:width: 100%
+
+Resize image panel to fit the figure. Note: the lock on the aspect ration to resize the image uniformly.
+```
+
 Next you can select annotation in Layers and Objects. Unlock the annotation if locked to modify them. Modify the size and location of the annotation.
+
+Layer > Layers and Objects...
+
+```{figure} ./unit-3_resources/annotations/inkscape_layers_objects.png
+:alt: In
+:align: center
+:name: inkscape_layers_objects
+:width: 100%
+
+Layers and objects allow to select the different annotations.
+```
 
 :::{important}
 
@@ -160,16 +180,17 @@ Ensure that the annotations are legible. Make sure the annotations do not obscur
 
 :::
 
-```{figure} ./unit-3_resources/annotations/edit_annotations.png
+
+```{figure} ./unit-3_resources/annotations/inkscape_annotations.png
 :alt: In
 :align: center
-:name: edit_annotations
+:name: inkscape_annotations
 :width: 100%
 
-Edit annotations in Inkscape.
+The ROI - 0001-0510-0498, the scale bar and scale bar text - |SB|, and the image - 02_composite_scale.tif (RGB) is shown. Note: the scale bars are locked.
 ```
 
-Edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
+Select the annotation you want to modify in the layers and objects interface. Then edit height and location of scale bar. Edit the dimension annotation such that it is uniform and legible across all images.
 
 ```{figure} ./unit-3_resources/annotations/edited_annotation.png
 :alt: In
@@ -182,7 +203,7 @@ Scale bar adjusted for height and location. The dimension will be specified in t
 
 :::{tip}
 
-To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends.
+To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends. To easily retrieve this information one can drag the scale bar text outside the canvas. 
 
 If different image panels have the same scale bar, you can put the scale bar in the first image. Critical is that images of different dimensions (e.g., overview and enlarged) show the correct scale.   
 
