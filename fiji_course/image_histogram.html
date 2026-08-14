@@ -1,0 +1,850 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Image quality: Image histogram &#8212; Checklists for Image Publishing</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2325c395" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script data-domain="quarep-limi.github.io/wg12-checklists-for-image-publishing" defer="defer" src="https://plausible.io/js/script.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'fiji_course/image_histogram';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Raster graphics and interpolation" href="interpolation.html" />
+    <link rel="prev" title="Ethical image processing" href="image_ethics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-light" alt="Checklists for Image Publishing - Home"/>
+    <img src="../_static/QUAREP_logo_icon.svg" class="logo__image only-dark pst-js-only" alt="Checklists for Image Publishing - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Community-developed checklists for publishing images and image analyses
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Checklists for image publishing</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../image_publishing/intro_image_publishing.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image_publishing/1_image_format.html">Image format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image_publishing/2_image_colors_channels.html">Image colors and channels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image_publishing/3_image_annotation.html">Image annotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image_publishing/4_image_availability.html">Image availability</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Checklists for publication of image analysis workflows</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/intro_analysis_workflows.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/1_established_workflows.html">Established workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/2_new_workflows.html">New workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/3_machine_learning_workflows.html">Machine learning workflows</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Course: How to publish images</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_course.html">Introduction to course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-1_visibility.html">Unit 1: Visibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-2_format.html">Unit 2: Format and annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-4_analysis.html">Unit 4: Quantification</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro_background.html">Further information</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="image_ethics.html">Ethical image processing</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Image quality: Image histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interpolation.html">Raster graphics and interpolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visual_illusions.html">Visual Illusions</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Other resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/how_to_contribute.html">How to contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/impact.html">Impact and Recognition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/teaching_outreach.html">Teaching and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/whois.html">Who are QUAREP-LiMi and WG12?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_resources/bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/QUAREP-LiMi/WG12_checklists_for_image_publishing" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/QUAREP-LiMi/WG12_checklists_for_image_publishing/edit/main/checklists/fiji_course/image_histogram.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/QUAREP-LiMi/WG12_checklists_for_image_publishing/issues/new?title=Issue%20on%20page%20%2Ffiji_course/image_histogram.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/fiji_course/image_histogram.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Image quality: Image histogram</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">Learning objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Image Histogram</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intensity-artifacts-in-histograms">Intensity artifacts in Histograms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-contrast">Low contrast</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-intensity-cut">Low intensity cut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-intensity-clipped">High intensity clipped</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-rescaled">Histogram rescaled</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="image-quality-image-histogram">
+<span id="image-histogram"></span><h1>Image quality: Image histogram<a class="headerlink" href="#image-quality-image-histogram" title="Link to this heading">#</a></h1>
+<p>Topics: intensity sampling, image quality, image histogram</p>
+<section id="learning-objective">
+<h2>Learning objective<a class="headerlink" href="#learning-objective" title="Link to this heading">#</a></h2>
+<p>The learner should be able to use image histograms to identify intensity sampling artifacts in images.</p>
+<p>Time needed: 25 min</p>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>A digital light microscopy image is a measurement of a biological object including its light intensity. Intensity measurement can be performed incorrectly and thus degrade the captured information.</p>
+<p>In this mini tutorial, we discuss how to use image histograms to check whether a digital image has sufficient intensity-measurement quality for visualization.</p>
+</section>
+<section id="key-considerations">
+<h2>Key considerations<a class="headerlink" href="#key-considerations" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Is oversaturation or clipping present at maximum intensity?</p></li>
+<li><p>Is the minimum signal properly sampled?</p></li>
+<li><p>Are there any intensity sampling artifacts?</p></li>
+</ul>
+</section>
+<section id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
+<p>This brief tutorial uses Fiji (Fiji Is Just ImageJ). All images can be downloaded on the page.</p>
+<p>Fiji download: <a class="reference external" href="https://fiji.sc/">https://fiji.sc/</a> tested with Version ImageJ 2.18.0/1.54p; Java 21.0.7 (64-bit)</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>Light microscopy images in life sciences represent a measurement of a biological object, for instance, a cell. In light microscopy, or more specifically for the example we use, fluorescent light microscopy, the cell is measured over:</p>
+<ul class="simple">
+<li><p>Space</p></li>
+<li><p>Time</p></li>
+<li><p>Fluorescent labels</p></li>
+<li><p>Intensity</p></li>
+</ul>
+<p>The spatial dimension is represented as pixels in 2D or voxels in 3D volumes. The time dimension is present either as a single timepoint or as multiple frames in a timelapse. The fluorescent labels are represented as different channels.</p>
+<p>Finally, the light intensity that the microscope captures is represented as different shades of gray of each pixel or voxel. This sampling is illustrated in <a class="reference internal" href="#sampling"><span class="std std-numref">Fig. 87</span></a>.</p>
+<figure class="align-center" id="sampling">
+<a class="reference internal image-reference" href="../_images/sampling.png"><img alt="In" src="../_images/sampling.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Illustration demonstrating digital sampling in space and intensity. (A) Illustration of a real object, e.g., a cell, with a smooth, continuous outline and continuous intensity within. (B) A modern microscope samples this signal (yellow grid lines) and transforms (quantizes) it into a digital representation, thus quantizing the continuous analog information into discrete pixels and gray values. (C) The sampled cell as a digital image; note the clear loss of information due to this digital sampling.</span><a class="headerlink" href="#sampling" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">Think about it</p>
+<p>The above example is extreme to illustrate a point. However, image acquisition always means some loss of information. Can you think of why this is unavoidable?</p>
+</div>
+<p>Intensity signals are continuous information and thus have infinite fine detail. In order to store such information, we need to convert this information into a different form. In the past, we used analog storage media such as film for images.</p>
+<p>Now we use digital storage media. The continuous and “infinite” information is converted to discrete and thus finite gray value.</p>
+<p>Why should you care about that? See below how different numbers of gray values influence how well we can differentiate detail in an image <a class="reference internal" href="#bit-depth"><span class="std std-numref">Fig. 88</span></a>:</p>
+<figure class="align-center" id="bit-depth">
+<a class="reference internal image-reference" href="../_images/bitdepth.png"><img alt="In" src="../_images/bitdepth.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 88 </span><span class="caption-text">Visualization of different intensity sampling on a Fiji sample image. (A) Two gray levels are available. (B) Four gray levels. (C) Sixteen gray levels. (D) 256 gray levels.</span><a class="headerlink" href="#bit-depth" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">Think about it</p>
+<p>The 1-bit image looks bad, and the face is very hard to recognize. The 2-bit image is better, and the 4-bit image is already quite good, but there are still clear stepping artifacts. The 8-bit image and the gradient below appear continuous.</p>
+<p>Would 8-bit therefore be sufficient in terms of gray levels for all applications? Can you think of cases when this would be sufficient, and when it would be a problem?</p>
+</div>
+<p>The conversion of the continuous signal into gray levels via intensity sampling can also be performed incorrectly, or the images can be processed incorrectly afterward, negatively impacting analysis and image visualization. For instance:</p>
+<ul class="simple">
+<li><p>The image can be oversaturated, clipping high intensities.</p></li>
+<li><p>The offset can be set incorrectly, cutting off minimum intensities.</p></li>
+<li><p>Image intensity can be resampled (e.g., converted to a lower bit depth), changing the intensity distribution.</p></li>
+</ul>
+<p>We can check these artifacts using the image itself, but often they are not easily visible. See <a class="reference internal" href="#sampling-errors"><span class="std std-numref">Fig. 89</span></a>:</p>
+<figure class="align-center" id="sampling-errors">
+<a class="reference internal image-reference" href="../_images/sampling_errors.png"><img alt="In" src="../_images/sampling_errors.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Images demonstrating different intensity sampling problems. (A) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (B–E) Different intensity sampling problems introduced into the same image.</span><a class="headerlink" href="#sampling-errors" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">Exercise</p>
+<p>Can you identify the intensity sampling problems in each of B–E? You can find the solution at the end of the tutorial, or work through the exercise yourself using histograms.</p>
+</div>
+</section>
+<section id="id1">
+<h2>Image Histogram<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>We can use tools such as image histograms to easily spot intensity sampling problems.</p>
+<p>Download the first test image here <a class="reference download internal" download="" href="../_downloads/4b64a008e436eb4193793047be54b85c/a_image.png"><span class="xref download myst">a_image.png</span></a> (right-click and select “Save Link As…”) .</p>
+<p>Open Fiji.</p>
+<figure class="align-center" id="fiji-task-bar-image-histogram">
+<a class="reference internal image-reference" href="../_images/Fiji_task_bar.png"><img alt="In" src="../_images/Fiji_task_bar.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 90 </span><span class="caption-text">Fiji task bar</span><a class="headerlink" href="#fiji-task-bar-image-histogram" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>File &gt; Open… (or drag and drop image into Fiji task bar).</p>
+<p>You can then create the image histogram of this image here:</p>
+<p>Analyze &gt; Histogram (Ctrl + H; Mac: ⌘ + H)</p>
+<p>The image histogram shows the intensity distributions over all pixels (black plots), with the x-axis plotting the gray values and the y-axis plotting the number of pixels <a class="reference internal" href="#histogram-good"><span class="std std-numref">Fig. 91</span></a>.</p>
+<figure class="align-center" id="histogram-good">
+<a class="reference internal image-reference" href="../_images/histogram_good.png"><img alt="In" src="../_images/histogram_good.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 91 </span><span class="caption-text">Image Histogram</span><a class="headerlink" href="#histogram-good" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There are two peaks, see <a class="reference internal" href="#histogram-annotated"><span class="std std-numref">Fig. 92</span></a>. (A) The first sharp peak has many pixels with low gray values. These values correspond mostly to the background of the image (e.g., dark pixels). (B) The second flatter peak shows pixels with a wide distribution over different larger gray values. These correspond to the signal from the imaged object. (C) Below you will find a calibration bar that shows the minimum and maximum values displayed and their corresponding displayed gray value.</p>
+<p>Additionally, the histogram window shows basic intensity statistics from this specific image such as the total number of pixels (N), mean (Mean), standard deviation (StdDev), minimum value (Min), and maximum value (Max). For more information, please look into the <a class="reference external" href="https://imagej.net/ij/docs/menus/analyze.html#hist">ImageJ documentation</a>.</p>
+<figure class="align-center" id="histogram-annotated">
+<a class="reference internal image-reference" href="../_images/histogram_annotated.png"><img alt="In" src="../_images/histogram_annotated.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 92 </span><span class="caption-text">Information in the histogram</span><a class="headerlink" href="#histogram-annotated" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The second peak is often not easily visible. Thus, we can apply a log scale on the y-axis to better visualize the less abundant gray values. The intensity distribution using the log scale is overlaid as gray plots, see <a class="reference internal" href="#histogram-good-log"><span class="std std-numref">Fig. 93</span></a>:</p>
+<figure class="align-center" id="histogram-good-log">
+<a class="reference internal image-reference" href="../_images/histogram_good_log.png"><img alt="In" src="../_images/histogram_good_log.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 93 </span><span class="caption-text">Histogram with log scale</span><a class="headerlink" href="#histogram-good-log" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Now we would like to understand what constitutes a well-acquired image based on its histogram. In general, good original microscopy images (i.e., unprocessed) preserve both the low and high intensity values and show an unprocessed varying signal. We can see this clearly in <a class="reference internal" href="#histogram-demonstrated"><span class="std std-numref">Fig. 94</span></a>:</p>
+<p>(A) Low values do not start at 0; there is a clear “offset” present in the image, with low intensity varying around a low gray value.
+(B) The signal is continuous but not smooth; variation is present along the intensity distribution due to variation in the signal and noise.
+(C) The high values end before the highest possible value, rather than reaching it.</p>
+<figure class="align-center" id="histogram-demonstrated">
+<a class="reference internal image-reference" href="../_images/histogram_good_demonstrated.png"><img alt="In" src="../_images/histogram_good_demonstrated.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 94 </span><span class="caption-text">Histogram with log scale</span><a class="headerlink" href="#histogram-demonstrated" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Variation and noise are often seen as something bad that should be suppressed or removed before analysis. However, in the physical world, variation is normal and noise cannot be avoided when performing measurements, as the measurement itself will introduce it. Thus, the absence of variation or noise, i.e., smooth distributions, is generally an indication that some processing has occurred.</p>
+</div>
+</section>
+<section id="intensity-artifacts-in-histograms">
+<h2>Intensity artifacts in Histograms<a class="headerlink" href="#intensity-artifacts-in-histograms" title="Link to this heading">#</a></h2>
+<p>Since we now understand how a regular histogram should look, we can study different intensity sampling problems. Download the example images (B-E) from the example figure <a class="reference internal" href="#sampling-errors"><span class="std std-numref">Fig. 89</span></a> here (right-click and select “Save Link As…”):</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="../_downloads/c42099d6201e87f66045b3c205fddf47/b_image.png"><span class="xref download myst">b_image.png</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/99407ab55edd308e2c274d308fb0fa5e/c_image.png"><span class="xref download myst">c_image.png</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/0f944cf6960c7459955e837fc7e65c0e/d_image.png"><span class="xref download myst">d_image.png</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/ba893e0d8da9a839886687ac2b952872/e_image.png"><span class="xref download myst">e_image.png</span></a></p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Exercise</p>
+<p>Open the images, create a histogram and then compare it to the starting image (A_image.png). Try to identify the differences between the images and the image histograms.</p>
+<p>Also think how these artifacts impact your visualization and analysis downstream.</p>
+</div>
+<section id="low-contrast">
+<h3>Low contrast<a class="headerlink" href="#low-contrast" title="Link to this heading">#</a></h3>
+<p>The <a class="reference download internal" download="" href="../_downloads/c42099d6201e87f66045b3c205fddf47/b_image.png"><span class="xref download myst">b_image.png</span></a> (right-click and select “Save Link As…”) shows an image that appears faint or dim. Looking at its histogram, we can see that the intensity values are clustered in a narrow band, leaving much of the available range unused (red arrow). Thus, the image is not exploiting the full dynamic range of the display or detector. We say the image is low contrast.</p>
+<p>This is not necessarily a corrupted or unusable image. Under certain conditions, a narrow intensity range can be entirely correct, for instance, when comparing different treatments that genuinely produce different signal strengths, forcing the range to match would misrepresent the biology. However, a narrow, underused histogram can also indicate suboptimal image acquisition (e.g., insufficient exposure time, laser power, or gain), and it’s worth checking the acquisition settings before assuming the signal itself is simply weak.</p>
+<figure class="align-center" id="histogram-low-contrast">
+<a class="reference internal image-reference" href="../_images/histogram_low_contrast.png"><img alt="In" src="../_images/histogram_low_contrast.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 95 </span><span class="caption-text">Low contrast</span><a class="headerlink" href="#histogram-low-contrast" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="low-intensity-cut">
+<h3>Low intensity cut<a class="headerlink" href="#low-intensity-cut" title="Link to this heading">#</a></h3>
+<p>The <a class="reference download internal" download="" href="../_downloads/99407ab55edd308e2c274d308fb0fa5e/c_image.png"><span class="xref download myst">c_image.png</span></a> (right-click and select “Save Link As…”) now shows a clear intensity sampling error. Unlike the previous example, there is no offset present in the image, and the low intensities have been clipped. At the lowest possible value (0), we can see a sharp peak in the histogram (red arrow). This spike indicates that many pixels have been pushed down to the same minimum value, meaning the true low-intensity information has been lost and cannot be recovered.</p>
+<p>This can severely impact image measurements. When measuring object size, dim edges or faint structures near the clipping point may be missed entirely, leading to underestimated object size. Signal intensity measurements are also affected, since clipped pixels no longer reflect their true value, biasing any quantification that relies on them.</p>
+<figure class="align-center" id="histogram-low-cut">
+<a class="reference internal image-reference" href="../_images/histogram_low_cut.png"><img alt="In" src="../_images/histogram_low_cut.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 96 </span><span class="caption-text">Low intensity values cut, no offset</span><a class="headerlink" href="#histogram-low-cut" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="high-intensity-clipped">
+<h3>High intensity clipped<a class="headerlink" href="#high-intensity-clipped" title="Link to this heading">#</a></h3>
+<p>The <a class="reference download internal" download="" href="../_downloads/0f944cf6960c7459955e837fc7e65c0e/d_image.png"><span class="xref download myst">d_image.png</span></a> (right-click and select “Save Link As…”) shows another clear intensity sampling error. Here, the high signals have been clipped, also referred to as oversaturation. At the highest possible value, we can see a sharp peak in the histogram (red arrow). Many pixels have been pushed up to the same maximum value, so the true high-intensity values are lost and cannot be measured accurately.</p>
+<p>This severely impacts the resolution of different structures, since details in the image are now merging together. Accurate signal intensity measurements become entirely impossible.</p>
+<figure class="align-center" id="histogram-high-cut">
+<a class="reference internal image-reference" href="../_images/histogram_high_cut.png"><img alt="In" src="../_images/histogram_high_cut.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 97 </span><span class="caption-text">High intensity values cut, i.e., clipped. Oversaturation</span><a class="headerlink" href="#histogram-high-cut" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For an effective image visualization, it might be required to oversaturate the image, as otherwise the image content might not be visible in the medium of visualization (projector, computer screen, or printed paper).</p>
+<p>This is permissible for display of images as long as ethical image processing is respected (see <a class="reference internal" href="image_ethics.html"><span class="std std-doc">Ethical image processing</span></a>). However, such images are in general not useful for downstream quantitative analysis. Thus, quantitative image analysis should be performed on the original, unprocessed image.</p>
+</div>
+</section>
+<section id="histogram-rescaled">
+<h3>Histogram rescaled<a class="headerlink" href="#histogram-rescaled" title="Link to this heading">#</a></h3>
+<p>The <a class="reference download internal" download="" href="../_downloads/ba893e0d8da9a839886687ac2b952872/e_image.png"><span class="xref download myst">e_image.png</span></a> (right-click and select “Save Link As…”) finally shows an image processing artifact. The intensity has been rescaled such that the continuity of the intensity distribution is interrupted. Instead of a continuous histogram, we see gaps or comb-like spikes at regular intervals, where certain intensity values are missing or overrepresented. This pattern indicates that the image has been resampled or converted (e.g., to a lower bit depth) after acquisition, rather than reflecting the original measurement.</p>
+<p>As with the previous examples, this makes accurate quantitative comparison unreliable, since the recorded values no longer correspond directly to the original signal.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/histogram_rescaled.png"><img alt="In" src="../_images/histogram_rescaled.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 98 </span><span class="caption-text">Histogram rescaled non-continuous intensity distribution.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="sampling-errors-solution">
+<a class="reference internal image-reference" href="../_images/sampling_errors.png"><img alt="In" src="../_images/sampling_errors.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 99 </span><span class="caption-text">Images demonstrating different intensity sampling errors. (A) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (B) Low contrast image. (C) Low intensities cut off. (D) Oversaturated image with high intensities clipped. (E) Histogram resampled.</span><a class="headerlink" href="#sampling-errors-solution" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./fiji_course"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="image_ethics.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Ethical image processing</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="interpolation.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Raster graphics and interpolation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">Learning objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Image Histogram</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intensity-artifacts-in-histograms">Intensity artifacts in Histograms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-contrast">Low contrast</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-intensity-cut">Low intensity cut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-intensity-clipped">High intensity clipped</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-rescaled">Histogram rescaled</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By QUAREP WG 12
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

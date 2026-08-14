@@ -3,9 +3,17 @@
 
 Topics: Image analysis, software versions, code, and example availability
 
+## Learning objective
+
+Learners should be able to perform a basic quantitative image analysis using an existing tool, document the software, tool versions, and analysis settings used, and identify what needs to be shared (code, settings files, example data) so that custom or existing analyses are transparent and reproducible by others.
+
+Time needed: 10 min
+
 ## Motivation
 
-Quantitative results are stronger than qualitative results alone. However, it is critical that the analysis, the tools used, and their settings are all properly documented in the methods. For a custom analysis, the workflow or code itself should be shared so others can reproduce it. 
+Quantitative results are stronger than qualitative results alone. Additionally, human vision is not quantitative and is subject to visual illusions and biases: {ref}`visual_illusions`. 
+
+To make the applied analysis reproducible, it is critical that the analysis, the tools used, and their settings are all properly documented in the methods. For a custom analysis, the workflow or code itself should be shared so others can reproduce it. 
 
 ## Key considerations
 
@@ -13,14 +21,6 @@ Quantitative results are stronger than qualitative results alone. However, it is
 - Cite the software tool and specify the version.
 - Describe the workflow.
 - Disclose critical parameters.
-
-## Learning objective
-
-By the end of this unit, learners will be able to describe how quantitative image analysis should be documented to ensure transparency and reproducibility.
-
-<!---
-TODO: Specify time for unit
--->
 
 ## Introduction
 
@@ -32,7 +32,7 @@ For our example figure, we could easily imagine that we create a quantitative an
 :name: image_panel
 :width: 100%
 
-Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cells. Scale bar represents 100 µm (a) and 20 µm (b). 
+Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b). 
 ```
 
 Download the example images here: 
@@ -53,19 +53,21 @@ Help > Update...
 ```{figure} ./unit-3_resources/figure/imagej_updater.png
 :alt: In
 :align: center
+
 :name: orgamapper_updater
 :width: 50%
 
 Update Fiji.
 ```
 
-Press: Manage update site
+Press: Manage update site and add 2 update sites:
 
-Select Cellular Imaging Facility
+- Select: Cellular Imaging Facility
+- Select: ImageScience
 
 Press OK and restart Fiji.
 
-Save the example images in an input folder (e.g., test). OrgaMapper documents the analysis settings using an .xml file. Please download the settings: [settings .xml](./unit-4_resources/existing_workflow/2026-04-13T175308-settings.xml) and put it into the input folder. Create an output folder (e.g., test_out). 
+Save the example images in an input folder (e.g., test). OrgaMapper documents the analysis settings using an .xml file. Please download the settings: [settings .xml](./unit-4_resources/existing_workflow/2026-04-13T175308-settings.xml) (right-click and select "Save Link As...") and put it into the input folder. Create an output folder (e.g., test_out). 
 
 Start OrgaMapper:
 
@@ -106,7 +108,7 @@ To execute the analysis, press the "Batch Process" button. OrgaMapper then perfo
 OrgaMapper Results.
 ```
 
-Critical is that we can extract the cell area in the "cellMeasurements.csv" file:
+It is critical that we can extract the cell area in the "cellMeasurements.csv" file:
 
 ```{figure} ./unit-4_resources/existing_workflow/orgamapper_cellarea.png
 :alt: In
@@ -128,7 +130,6 @@ Nocodazole|23	                     |6	                        |29           |79 
 
 This quantification could now be in the result of your manuscript. It is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions:
 
-
 Image analysis was performed using Fiji Is Just ImageJ (Fiji) ([Schindelin et al. 2012](https://doi.org/10.1038/nmeth.2019)) version 2.16/1.54p and the OrgaMapper plugin version 2.0.0 ([Schmied et al. 2024](https://doi.org/10.1186/s12915-024-02015-8)). Nuclei were segmented using an intensity-based segmentation with the Li automatic threshold after filtering with a median filter (size 5 pixels) and a rolling-ball background subtraction (radius 10 pixels). After thresholding, an erosion of 1 pixel was applied to the nuclei masks, and the segmented nuclei were filtered by size, keeping those between 1 µm² and 750 µm². The cell area was segmented using a manual intensity threshold of 150 fluorescent intensity (A.U.) after a median filter (size 10 pixels) and a rolling-ball background subtraction (radius 150 pixels). For the watershed-based cell segmentation, cell centers were detected using a summed nuclei and cytoplasm channel: a Laplacian-of-Gaussian filter was applied with a sigma of 2 pixels, and peaks with a prominence of 40 fluorescent intensity (A.U.) were retained. Separated cells were then filtered by keeping cells above 10 µm² with a circularity above 0.3. For each cell, the cell area was further analyzed. Small cells were defined as those with an area below 1000 µm².
 
 - Schindelin, J., Arganda-Carreras, I., Frise, E. et al. Fiji: an open-source platform for biological-image analysis. Nat Methods 9, 676–682 (2012). https://doi.org/10.1038/nmeth.2019
@@ -144,7 +145,7 @@ Since OrgaMapper provides a settings file, this settings file can be shared in a
 
 :::{note}
 
-Manual intensity based thresholds based on fluorescent intensity (A.U.) are image data specific. Thus, are not directly transferable to other data. 
+Manual thresholds based on fluorescent intensity (A.U.) are image-data specific. Thus, they are not directly transferable to other data. 
 
 :::
 

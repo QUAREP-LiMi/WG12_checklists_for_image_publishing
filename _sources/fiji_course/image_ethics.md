@@ -1,7 +1,13 @@
 (image_ethics)=
 # Ethical image processing
 
-Topcis: image processing, ethics
+Topics: image processing, ethics
+
+## Learning objective
+
+Learners should be able to distinguish acceptable image processing practices (e.g., linear adjustments, cropping) from unethical image manipulation (e.g., selective processing, cloning, inappropriate compression), and apply best practices for data preservation, comparison, and metadata documentation to preserve the scientific integrity of microscopy images.
+
+Time needed: 15 min
 
 ## Motivation
 
@@ -31,7 +37,7 @@ Image processing is an essential step in preparing microscopy data for publicati
 :name: comparison
 :width: 75%
 
-This is the same image processed with different settings in the Lysosome channel. Left less Lysosomes are visible and they are only close to the Nucleus compared to right. 
+This is the same image processed with different settings in the Lysosome channel. Left, fewer Lysosomes are visible and they are only close to the Nucleus compared to right. 
 ```
 
 This section introduces guiding principles for ethical image processing. It draws on the seminal work of [Douglas W. Cromey](https://medicine.arizona.edu/person/douglas-w-cromey-ms), whose contributions have helped define best practices in the responsible handling of scientific images:
@@ -48,13 +54,13 @@ This section introduces guiding principles for ethical image processing. It draw
 :name: rawprocessed
 :width: 50%
 
-Process copy of image: (Left) Orginal image. (Right) Image processing performed on copy.
+Process copy of image: (Left) Original image. (Right) Image processing performed on copy.
 ```
 
 - Keep unprocessed image data file.
 - Perform manipulations on a copy.
 - Document all processing steps.
-- Fiji macros or analysis code allow to share your analysis.
+- Fiji macros or analysis code allow your analysis to be shared.
 
 ## Simple Adjustments to the Entire Image are Usually Acceptable
 
@@ -67,8 +73,8 @@ Process copy of image: (Left) Orginal image. (Right) Image processing performed 
 Image processing: Linear adjustments such as adjustment of brightness contrast on the entire image.
 ```
 
-- Linear adjustments on entire image are fine: e.g. brightness and contrast.
-- For comparison treat all images the same.
+- Linear adjustments on the entire image are fine, e.g., brightness and contrast.
+- For comparison, treat all images in the same way.
 
 ## Cropping an Image is Usually Acceptable
 
@@ -99,7 +105,7 @@ The same image processed with different settings produces different visual resul
 ```
 
 - Acquire images under identical conditions.
-- Treat identical in image processing.
+- Treat images identically in image processing.
 
 ## Do not Beautify Images
 
@@ -113,8 +119,8 @@ The same image processed with different settings produces different visual resul
 Filters and extreme brightness contrast adjustments drastically alter images and remove information: (Left) original with acceptable brightness contrast adjustments. (Right) Median filter with Sigma 1 and drastic brightness contrast adjustments that crop low intensities.
 ```
 
-- Filters to beautify images is usually not recommended.
-- Beautiful images have background and noise!
+- Filters to beautify images are usually not recommended.
+- Authentic images have background and noise!
 - If you use software filters disclose them in the methods or figure legends.
 
 ## Processing Only Parts of an Image is Bad
@@ -136,7 +142,7 @@ Manipulations applied to only one area of an image, and not to others, are quest
 
 :::{warning}
 
-Cloning or copying objects from other parts of an image or from a different image, is very questionable.
+Cloning or copying objects from other parts of an image or from a different image is very questionable.
 
 :::
 
@@ -148,8 +154,7 @@ Cloning or copying objects from other parts of an image or from a different imag
 ```
 
 Improper image duplication is a big issue in the scientific literature:
-- Bik EM, Casadevall A, Fang FC. 2016. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications. mBio 7. doi: [10.1128/mbio.00809-16]
-(https://doi.org/10.1128/mbio.00809-16)
+- Bik EM, Casadevall A, Fang FC. 2016. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications. mBio 7. doi: [10.1128/mbio.00809-16](https://doi.org/10.1128/mbio.00809-16)
 
 ## Intensity Measurements are Difficult
 
@@ -164,7 +169,7 @@ Further reading list for quantitative microscopy:
 - North AJ. Seeing is believing? A beginners' guide to practical pitfalls in image acquisition. J Cell Biol. 2006 Jan 2;172(1):9-18. doi: [10.1083/jcb.200507103](https://doi.org/10.1083/jcb.200507103)
 - Waters JC. Accuracy and precision in quantitative fluorescence microscopy. J Cell Biol. 2009 Jun 29;185(7):1135-48. doi: [10.1083/jcb.200903097](https://doi.org/10.1083/jcb.200903097)
 
-
+(lossy_compression)=
 ## Avoid the Use of Lossy Compression
 
 ```{figure} ./image_ethics_resources/compression.png
@@ -200,9 +205,9 @@ Further reading for microscopy metadata:
 
 - Montero Llopis, P., Senft, R.A., Ross-Elliott, T.J. et al. Best practices and tools for reporting reproducible fluorescence microscopy methods. Nat Methods 18, 1463–1476 (2021). [https://doi.org/10.1038/s41592-021-01156-w](https://doi.org/10.1038/s41592-021-01156-w)
 
-## Transforming and scaling is problematic
+## Transforming and Scaling is Problematic
 
-Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90° increments) and resizing require interpolation, which permanently alters the image data.
+Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90-degree increments) and resizing require interpolation, which permanently alters the image data.
 
 ```{figure} ./unit-2_resources/crop/rotation_interpolation.png
 :alt: In
@@ -210,7 +215,7 @@ Images are typically processed as raster graphics (a grid of pixels). Therefore,
 :name: ethics_interpolation
 :width: 75%
 
-Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation with bilinear interpolation.
+Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90-degree rotation. (Right) 45-degree rotation with bilinear interpolation.
 ```
 
 ```{figure} ./interpolation_resources/DPI_Fig4.png
@@ -218,5 +223,5 @@ Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotat
 :align: center
 :name: ethics_resize
 :width: 75%
-Interpolation and rescaling: (A) Original crop from example image. (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging. 
+Interpolation and rescaling: (A) Original crop from example image. (B–E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging. 
 ```

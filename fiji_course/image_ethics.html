@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
@@ -40,10 +40,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2325c395" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -63,27 +63,34 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'fiji_course/image_ethics';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Raster graphics and interpolation" href="interpolation.html" />
-    <link rel="prev" title="Background information" href="intro_background.html" />
+    <link rel="next" title="Image quality: Image histogram" href="image_histogram.html" />
+    <link rel="prev" title="Further information" href="intro_background.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -109,7 +116,51 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -185,20 +236,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/2_new_workflows.html">New workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis_workflows/3_machine_learning_workflows.html">Machine learning workflows</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Train-the-User Course</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Course: How to publish images</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="intro_course.html">Introduction to course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit-1_visibility.html">Unit 1: Visibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit-2_format.html">Unit 2: Format and annotations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit-3_figure_prep.html">Unit 3: Figure and availability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit-4_analysis.html">Unit 4: Quantification</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro_background.html">Background information</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro_background.html">Further information</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Ethical image processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_histogram.html">Image quality: Image histogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="interpolation.html">Raster graphics and interpolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visual_illusions.html">Visual Illusions</a></li>
 </ul>
 </details></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Other resources</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Other resources</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../other_resources/how_to_contribute.html">How to contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../other_resources/impact.html">Impact and Recognition</a></li>
@@ -416,7 +469,8 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">Learning objective</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
@@ -430,7 +484,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intensity-measurements-are-difficult">Intensity Measurements are Difficult</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avoid-the-use-of-lossy-compression">Avoid the Use of Lossy Compression</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-matters">Metadata Matters</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transforming-and-scaling-is-problematic">Transforming and scaling is problematic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transforming-and-scaling-is-problematic">Transforming and Scaling is Problematic</a></li>
 </ul>
             </nav>
         </div>
@@ -444,7 +498,12 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ethical-image-processing">
 <span id="image-ethics"></span><h1>Ethical image processing<a class="headerlink" href="#ethical-image-processing" title="Link to this heading">#</a></h1>
-<p>Topcis: image processing, ethics</p>
+<p>Topics: image processing, ethics</p>
+<section id="learning-objective">
+<h2>Learning objective<a class="headerlink" href="#learning-objective" title="Link to this heading">#</a></h2>
+<p>Learners should be able to distinguish acceptable image processing practices (e.g., linear adjustments, cropping) from unethical image manipulation (e.g., selective processing, cloning, inappropriate compression), and apply best practices for data preservation, comparison, and metadata documentation to preserve the scientific integrity of microscopy images.</p>
+<p>Time needed: 15 min</p>
+</section>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <blockquote>
@@ -472,7 +531,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/comparison.png"><img alt="In" src="../_images/comparison.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 75 </span><span class="caption-text">This is the same image processed with different settings in the Lysosome channel. Left less Lysosomes are visible and they are only close to the Nucleus compared to right.</span><a class="headerlink" href="#comparison" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 77 </span><span class="caption-text">This is the same image processed with different settings in the Lysosome channel. Left, fewer Lysosomes are visible and they are only close to the Nucleus compared to right.</span><a class="headerlink" href="#comparison" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This section introduces guiding principles for ethical image processing. It draws on the seminal work of <a class="reference external" href="https://medicine.arizona.edu/person/douglas-w-cromey-ms">Douglas W. Cromey</a>, whose contributions have helped define best practices in the responsible handling of scientific images:</p>
@@ -487,14 +546,14 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/rawprocessed.png"><img alt="In" src="../_images/rawprocessed.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Process copy of image: (Left) Orginal image. (Right) Image processing performed on copy.</span><a class="headerlink" href="#rawprocessed" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 78 </span><span class="caption-text">Process copy of image: (Left) Original image. (Right) Image processing performed on copy.</span><a class="headerlink" href="#rawprocessed" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>Keep unprocessed image data file.</p></li>
 <li><p>Perform manipulations on a copy.</p></li>
 <li><p>Document all processing steps.</p></li>
-<li><p>Fiji macros or analysis code allow to share your analysis.</p></li>
+<li><p>Fiji macros or analysis code allow your analysis to be shared.</p></li>
 </ul>
 </section>
 <section id="simple-adjustments-to-the-entire-image-are-usually-acceptable">
@@ -503,12 +562,12 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/adjustments.png"><img alt="In" src="../_images/adjustments.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 77 </span><span class="caption-text">Image processing: Linear adjustments such as adjustment of brightness contrast on the entire image.</span><a class="headerlink" href="#adjustments" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 79 </span><span class="caption-text">Image processing: Linear adjustments such as adjustment of brightness contrast on the entire image.</span><a class="headerlink" href="#adjustments" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Linear adjustments on entire image are fine: e.g. brightness and contrast.</p></li>
-<li><p>For comparison treat all images the same.</p></li>
+<li><p>Linear adjustments on the entire image are fine, e.g., brightness and contrast.</p></li>
+<li><p>For comparison, treat all images in the same way.</p></li>
 </ul>
 </section>
 <section id="cropping-an-image-is-usually-acceptable">
@@ -517,7 +576,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/cropping2.png"><img alt="In" src="../_images/cropping2.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 78 </span><span class="caption-text">Overview and crop shown side by side.</span><a class="headerlink" href="#cropping" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 80 </span><span class="caption-text">Overview and crop shown side by side.</span><a class="headerlink" href="#cropping" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -533,12 +592,12 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/comparison.png"><img alt="In" src="../_images/comparison.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 79 </span><span class="caption-text">The same image processed with different settings produces different visual results.</span><a class="headerlink" href="#ethic-comparison" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 81 </span><span class="caption-text">The same image processed with different settings produces different visual results.</span><a class="headerlink" href="#ethic-comparison" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>Acquire images under identical conditions.</p></li>
-<li><p>Treat identical in image processing.</p></li>
+<li><p>Treat images identically in image processing.</p></li>
 </ul>
 </section>
 <section id="do-not-beautify-images">
@@ -547,12 +606,12 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/filtered.png"><img alt="In" src="../_images/filtered.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 80 </span><span class="caption-text">Filters and extreme brightness contrast adjustments drastically alter images and remove information: (Left) original with acceptable brightness contrast adjustments. (Right) Median filter with Sigma 1 and drastic brightness contrast adjustments that crop low intensities.</span><a class="headerlink" href="#filtered" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Filters and extreme brightness contrast adjustments drastically alter images and remove information: (Left) original with acceptable brightness contrast adjustments. (Right) Median filter with Sigma 1 and drastic brightness contrast adjustments that crop low intensities.</span><a class="headerlink" href="#filtered" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Filters to beautify images is usually not recommended.</p></li>
-<li><p>Beautiful images have background and noise!</p></li>
+<li><p>Filters to beautify images are usually not recommended.</p></li>
+<li><p>Authentic images have background and noise!</p></li>
 <li><p>If you use software filters disclose them in the methods or figure legends.</p></li>
 </ul>
 </section>
@@ -571,7 +630,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <h2>Cloning and Copying Parts of an Image into Another is Really Bad<a class="headerlink" href="#cloning-and-copying-parts-of-an-image-into-another-is-really-bad" title="Link to this heading">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Cloning or copying objects from other parts of an image or from a different image, is very questionable.</p>
+<p>Cloning or copying objects from other parts of an image or from a different image is very questionable.</p>
 </div>
 <figure class="align-center" id="duplicate">
 <a class="reference internal image-reference" href="../_images/duplication1.png"><img alt="In" src="../_images/duplication1.png" style="width: 50%;" />
@@ -579,8 +638,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 </figure>
 <p>Improper image duplication is a big issue in the scientific literature:</p>
 <ul class="simple">
-<li><p>Bik EM, Casadevall A, Fang FC. 2016. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications. mBio 7. doi: [10.1128/mbio.00809-16]
-(<a class="reference external" href="https://doi.org/10.1128/mbio.00809-16">https://doi.org/10.1128/mbio.00809-16</a>)</p></li>
+<li><p>Bik EM, Casadevall A, Fang FC. 2016. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications. mBio 7. doi: <a class="reference external" href="https://doi.org/10.1128/mbio.00809-16">10.1128/mbio.00809-16</a></p></li>
 </ul>
 </section>
 <section id="intensity-measurements-are-difficult">
@@ -599,12 +657,12 @@ Henry Baker - Microscope Made Easy 1742</p>
 </ul>
 </section>
 <section id="avoid-the-use-of-lossy-compression">
-<h2>Avoid the Use of Lossy Compression<a class="headerlink" href="#avoid-the-use-of-lossy-compression" title="Link to this heading">#</a></h2>
+<span id="lossy-compression"></span><h2>Avoid the Use of Lossy Compression<a class="headerlink" href="#avoid-the-use-of-lossy-compression" title="Link to this heading">#</a></h2>
 <figure class="align-center" id="compression">
 <a class="reference internal image-reference" href="../_images/compression.png"><img alt="In" src="../_images/compression.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 81 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -619,7 +677,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <a class="reference internal image-reference" href="../_images/annotated_panel.png"><img alt="In" src="../_images/annotated_panel.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration show increased cell death. Note the many small round cells (White Arrowheads). (d) Cropped image of a dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#ethics-annotated-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration show increased cell death. Note the many small round cells (White Arrowheads). (d) Cropped image of a dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#ethics-annotated-image" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -634,20 +692,20 @@ Henry Baker - Microscope Made Easy 1742</p>
 </ul>
 </section>
 <section id="transforming-and-scaling-is-problematic">
-<h2>Transforming and scaling is problematic<a class="headerlink" href="#transforming-and-scaling-is-problematic" title="Link to this heading">#</a></h2>
-<p>Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90° increments) and resizing require interpolation, which permanently alters the image data.</p>
+<h2>Transforming and Scaling is Problematic<a class="headerlink" href="#transforming-and-scaling-is-problematic" title="Link to this heading">#</a></h2>
+<p>Images are typically processed as raster graphics (a grid of pixels). Therefore, transformations such as rotation (other than 90-degree increments) and resizing require interpolation, which permanently alters the image data.</p>
 <figure class="align-center" id="ethics-interpolation">
 <a class="reference internal image-reference" href="../_images/rotation_interpolation.png"><img alt="In" src="../_images/rotation_interpolation.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation with bilinear interpolation.</span><a class="headerlink" href="#ethics-interpolation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 85 </span><span class="caption-text">Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90-degree rotation. (Right) 45-degree rotation with bilinear interpolation.</span><a class="headerlink" href="#ethics-interpolation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="ethics-resize">
 <a class="reference internal image-reference" href="../_images/DPI_Fig4.png"><img alt="Image resized with different interpolations" src="../_images/DPI_Fig4.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Interpolation and rescaling: (A) Original crop from example image. (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging.</span><a class="headerlink" href="#ethics-resize" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 86 </span><span class="caption-text">Interpolation and rescaling: (A) Original crop from example image. (B–E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging.</span><a class="headerlink" href="#ethics-resize" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -689,15 +747,15 @@ Henry Baker - Microscope Made Easy 1742</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Background information</p>
+        <p class="prev-next-title">Further information</p>
       </div>
     </a>
     <a class="right-next"
-       href="interpolation.html"
+       href="image_histogram.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Raster graphics and interpolation</p>
+        <p class="prev-next-title">Image quality: Image histogram</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -718,7 +776,8 @@ Henry Baker - Microscope Made Easy 1742</p>
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">Learning objective</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
@@ -732,7 +791,7 @@ Henry Baker - Microscope Made Easy 1742</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intensity-measurements-are-difficult">Intensity Measurements are Difficult</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avoid-the-use-of-lossy-compression">Avoid the Use of Lossy Compression</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-matters">Metadata Matters</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transforming-and-scaling-is-problematic">Transforming and scaling is problematic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transforming-and-scaling-is-problematic">Transforming and Scaling is Problematic</a></li>
 </ul>
   </nav></div>
 
@@ -781,8 +840,8 @@ By QUAREP WG 12
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>
