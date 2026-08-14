@@ -145,7 +145,7 @@ Rotation by multiples of 90 degrees in Fiji (or other software manipulating imag
 :name: interpolation
 :width: 100%
 
-Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90 Degree rotation. (Right) 45 Degree rotation bilinear interpolation.
+Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90-degree rotation. (Right) 45-degree rotation bilinear interpolation.
 ```
 
 Interpolation is needed since in Fiji, images are processed as Raster graphics (grid of pixels). The effect of raster graphics, image transformation, and interpolation is also discussed here: [Raster graphics and interpolation](./interpolation.md) 

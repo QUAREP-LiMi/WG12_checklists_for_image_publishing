@@ -53,7 +53,6 @@ Help > Update...
 ```{figure} ./unit-3_resources/figure/imagej_updater.png
 :alt: In
 :align: center
-
 :name: orgamapper_updater
 :width: 50%
 

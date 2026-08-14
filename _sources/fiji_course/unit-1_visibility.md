@@ -147,7 +147,7 @@ Further, each channel also has different brightness and contrast settings, thus 
 
 :::{tip}
 
-Fiji allows you to record most processing steps that are carried out, including the settings, using the macro recorder. This can be used to create a script to automatically process multiple images,but can also be used to document the processing. 
+Fiji allows you to record most processing steps that are carried out, including the settings, using the macro recorder. This can be used to create a script to automatically process multiple images, but can also be used to document the processing. 
 
 Record the functions and settings used: Plugins > Macros > Record...
 
