@@ -46,7 +46,7 @@ Finally, the light intensity that the microscope captures is represented as diff
 :name: sampling
 :width: 100%
 
-Illustration demonstrating digital sampling in space and intensity. (A) Illustration of a real object, e.g., a cell, with a smooth, continuous outline and continuous intensity within. (B) A modern microscope samples this signal (yellow grid lines) and transforms (quantizes) it into a digital representation, thus quantizing the continuous analog information into discrete pixels and gray values. (C) The sampled cell as a digital image; note the clear loss of information due to this digital sampling.
+Illustration demonstrating digital sampling in space and intensity. (a) Illustration of a real object, e.g., a cell, with a smooth, continuous outline and continuous intensity within. (b) A modern microscope samples this signal (yellow grid lines) and transforms (quantizes) it into a digital representation, thus quantizing the continuous analog information into discrete pixels and gray values. (c) The sampled cell as a digital image; note the clear loss of information due to this digital sampling.
 ```
 
 ```{admonition} Think about it
@@ -68,7 +68,7 @@ Why should you care about that? See below how different numbers of gray values i
 :name: bit_depth
 :width: 100%
 
-Visualization of different intensity sampling on a Fiji sample image. (A) Two gray levels are available. (B) Four gray levels. (C) Sixteen gray levels. (D) 256 gray levels.
+Visualization of different intensity sampling on a Fiji sample image. (a) Two gray values are available. (b) Four gray values. (c) Sixteen gray values. (d) 256 gray values.
 ```
 
 ```{admonition} Think about it
@@ -76,11 +76,11 @@ Visualization of different intensity sampling on a Fiji sample image. (A) Two gr
 
 The 1-bit image looks bad, and the face is very hard to recognize. The 2-bit image is better, and the 4-bit image is already quite good, but there are still clear stepping artifacts. The 8-bit image and the gradient below appear continuous.
 
-Would 8-bit therefore be sufficient in terms of gray levels for all applications? Can you think of cases when this would be sufficient, and when it would be a problem?
+Would 8-bit therefore be sufficient in terms of gray values for all applications? Can you think of cases when this would be sufficient, and when it would be a problem?
 
 ```
 
-The conversion of the continuous signal into gray levels via intensity sampling can also be performed incorrectly, or the images can be processed incorrectly afterward, negatively impacting analysis and image visualization. For instance:
+The conversion of the continuous signal into gray values via intensity sampling can also be performed incorrectly, or the images can be processed incorrectly afterward, negatively impacting analysis and image visualization. For instance:
 
 - The image can be oversaturated, clipping high intensities.
 - The offset can be set incorrectly, cutting off minimum intensities.
@@ -95,19 +95,19 @@ We can check these artifacts using the image itself, but often they are not easi
 :name: sampling_errors
 :width: 100%
 
-Images demonstrating different intensity sampling problems. (A) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (B–E) Different intensity sampling problems introduced into the same image. 
+Images demonstrating different intensity sampling problems. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b-e) Different intensity sampling problems introduced into the same image. 
 ```
 
 ```{admonition} Exercise
 :class: tip
-Can you identify the intensity sampling problems in each of B–E? You can find the solution at the end of the tutorial, or work through the exercise yourself using histograms.
+Can you identify the intensity sampling problems in each of b-e? You can find the solution at the end of the tutorial, or work through the exercise yourself using histograms.
 ```
 
-## Image Histogram
+## Creating an Image Histogram
 
 We can use tools such as image histograms to easily spot intensity sampling problems. 
 
-Download the first test image here [a_image.png](./image_histogram_resources/a_image.png) (right-click and select "Save Link As...") .
+Download the first test image here [a_image.png](./image_histogram_resources/a_image.png) (right-click and select "Save Link As...").
 
 Open Fiji.
 
@@ -126,29 +126,31 @@ You can then create the image histogram of this image here:
 
 Analyze > Histogram (Ctrl + H; Mac: ⌘ + H)
 
-The image histogram shows the intensity distributions over all pixels (black plots), with the x-axis plotting the gray values and the y-axis plotting the number of pixels {numref}`histogram_good`. 
-
 ```{figure} ./image_histogram_resources/histogram_good.png
 :alt: In
 :align: center
 :name: histogram_good
 :width: 75%
 
-Image Histogram
+Image Histogram: the number of pixels (y-axis) is plotted over the gray values (x-axis).
 ```
 
-There are two peaks, see {numref}`histogram_annotated`. (A) The first sharp peak has many pixels with low gray values. These values correspond mostly to the background of the image (e.g., dark pixels). (B) The second flatter peak shows pixels with a wide distribution over different larger gray values. These correspond to the signal from the imaged object. (C) Below you will find a calibration bar that shows the minimum and maximum values displayed and their corresponding displayed gray value. 
+The image histogram shows the intensity distributions over all pixels (black plots), with the x-axis plotting the gray values and the y-axis plotting the number of pixels {numref}`histogram_good`. 
 
-Additionally, the histogram window shows basic intensity statistics from this specific image such as the total number of pixels (N), mean (Mean), standard deviation (StdDev), minimum value (Min), and maximum value (Max). For more information, please look into the [ImageJ documentation](https://imagej.net/ij/docs/menus/analyze.html#hist).
 
 ```{figure} ./image_histogram_resources/histogram_annotated.png
 :alt: In
 :align: center
 :name: histogram_annotated
-:width: 50%
+:width: 75%
 
-Information in the histogram
+Information in the histogram: (a) The dark pixels of the background (note the offset). (b) The higher gray values of the signal that are distributed over a larger gray value range. (c) The entire range of gray values currently visualized in the display. Since it is an 8-bit image, the entire bit range of the image is displayed. 
 ```
+
+There are two peaks, see {numref}`histogram_annotated`. (a) The first sharp peak has many pixels with low gray values. These values correspond mostly to the background of the image (e.g., dark pixels). (b) The second flatter peak shows pixels with a wide distribution over different larger gray values. These correspond to the signal from the imaged object. (c) Below you will find a calibration bar that shows the minimum and maximum values displayed and their corresponding displayed gray value. 
+
+Additionally, the histogram window shows basic intensity statistics from this specific image such as the total number of pixels (N), mean (Mean), standard deviation (StdDev), minimum value (Min), and maximum value (Max). For more information, please look into the [ImageJ documentation](https://imagej.net/ij/docs/menus/analyze.html#hist).
+
 
 The second peak is often not easily visible. Thus, we can apply a log scale on the y-axis to better visualize the less abundant gray values. The intensity distribution using the log scale is overlaid as gray plots, see {numref}`histogram_good_log`:
 
@@ -161,11 +163,7 @@ The second peak is often not easily visible. Thus, we can apply a log scale on t
 Histogram with log scale
 ```
 
-Now we would like to understand what constitutes a well-acquired image based on its histogram. In general, good original microscopy images (i.e., unprocessed) preserve both the low and high intensity values and show an unprocessed varying signal. We can see this clearly in {numref}`histogram_demonstrated`:
-
-(A) Low values do not start at 0; there is a clear "offset" present in the image, with low intensity varying around a low gray value.
-(B) The signal is continuous but not smooth; variation is present along the intensity distribution due to variation in the signal and noise.
-(C) The high values end before the highest possible value, rather than reaching it.
+Now we would like to understand what constitutes a well-acquired image based on its histogram. In general, good original microscopy images preserve both the low and high intensity values and show a varying signal. We can see this clearly in {numref}`histogram_demonstrated`:
 
 ```{figure} ./image_histogram_resources/histogram_good_demonstrated.png
 :alt: In
@@ -173,8 +171,12 @@ Now we would like to understand what constitutes a well-acquired image based on 
 :name: histogram_demonstrated
 :width: 50%
 
-Histogram with log scale
+An example showing the hallmarks of a well-acquired image: (a) Offset. (b) Varying signal with more or less continuous signal distribution. (c) The highest signal falls within the upper third of the gray value range but does not reach the maximum value.
 ```
+
+(a) Low values do not start at 0; there is a clear "offset" present in the image, with low intensity varying around a low gray value.
+(b) The signal is continuous but not smooth; variation is present along the intensity distribution due to variation in the signal and noise.
+(c) The high values end before the highest possible value, rather than reaching it.
 
 :::{note}
 
@@ -184,7 +186,7 @@ Variation and noise are often seen as something bad that should be suppressed or
 
 ## Intensity artifacts in Histograms
 
-Since we now understand how a regular histogram should look, we can study different intensity sampling problems. Download the example images (B-E) from the example figure {numref}`sampling_errors` here (right-click and select "Save Link As..."): 
+Since we now understand how a regular histogram should look, we can study different intensity sampling problems. Download the example images (b-e) from the example figure {numref}`sampling_errors` here (right-click and select "Save Link As..."): 
 
 - [b_image.png](./image_histogram_resources/b_image.png) 
 - [c_image.png](./image_histogram_resources/c_image.png)
@@ -194,7 +196,7 @@ Since we now understand how a regular histogram should look, we can study differ
 ```{admonition} Exercise
 :class: tip
 
-Open the images, create a histogram and then compare it to the starting image (A_image.png). Try to identify the differences between the images and the image histograms.
+Open the images, create a histogram and then compare it to the starting image (a_image.png). Try to identify the differences between the images and the image histograms.
 
 Also think how these artifacts impact your visualization and analysis downstream.
 
@@ -277,5 +279,5 @@ Histogram rescaled non-continuous intensity distribution.
 :name: sampling_errors_solution
 :width: 100%
 
-Images demonstrating different intensity sampling errors. (A) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (B) Low contrast image. (C) Low intensities cut off. (D) Oversaturated image with high intensities clipped. (E) Histogram resampled. 
+Images demonstrating different intensity sampling errors. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b) Low contrast image. (c) Low intensities cut off. (d) Oversaturated image with high intensities clipped. (e) Histogram resampled. 
 ```
