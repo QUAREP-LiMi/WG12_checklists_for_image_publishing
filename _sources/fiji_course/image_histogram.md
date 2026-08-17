@@ -214,7 +214,7 @@ This is not necessarily a corrupted or unusable image. Under certain conditions,
 :name: histogram_low_contrast
 :width: 75%
 
-Low contrast
+Low contrast. The full range of the histogram is not utilized.
 ```
 
 ### Low intensity cut
@@ -229,7 +229,7 @@ This can severely impact image measurements. When measuring object size, dim edg
 :name: histogram_low_cut
 :width: 75%
 
-Low intensity values cut, no offset
+Low intensity values cut, no offset. Note the peak at the lowest gray value, indicating that the low signal is pushed down to the same minimum value.
 ```
 
 ### High intensity clipped
@@ -244,7 +244,7 @@ This severely impacts the resolution of different structures, since details in t
 :name: histogram_high_cut
 :width: 75%
 
-High intensity values cut, i.e., clipped. Oversaturation
+High intensity values cut, i.e., clipped. The image is oversaturated. Note the peak at the highest gray value, indicating that the high signal is pushed to the same maximum value.
 ```
 
 :::{note}
