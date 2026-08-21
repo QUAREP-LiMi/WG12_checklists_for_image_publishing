@@ -473,9 +473,15 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">Learning objective</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-and-prepare-example-images">Load and prepare example images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-beyond-this-course">Considerations beyond this course</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-example-images">Load example images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-channels">Split channels</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-grayscale-images-at-least-in-supplements">Provide grayscale images at least in supplements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brightness-and-contrast">Brightness and Contrast</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitfalls-of-brightness-contrast-adjustments">Pitfalls of brightness/contrast adjustments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-brightness-contrast">Adjust brightness/contrast</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-color-scales">Provide color scales</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-merged-image">Create merged image</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result-and-next-unit">Result and next unit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-macro-recorder">Bonus: Macro recorder</a></li>
@@ -523,24 +529,21 @@ Usage of histograms
 <li><p>What do the colors mean?</p></li>
 <li><p>Is the information accessible to a wide audience?</p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A further foundational consideration is also that the image used for visualization is of sufficient quality. For further information on how to assess intensity quality in images using image histograms, please see: <a class="reference internal" href="image_histogram.html#image-histogram"><span class="std std-ref">Image quality: Image histogram</span></a>.</p>
+</section>
+<section id="considerations-beyond-this-course">
+<h2>Considerations beyond this course<a class="headerlink" href="#considerations-beyond-this-course" title="Link to this heading">#</a></h2>
+<p>It’s also important that the image used for visualization is of sufficient quality. For further information on how to assess intensity quality in images using image histograms, please see: <a class="reference internal" href="image_histogram.html#image-histogram"><span class="std std-ref">Image quality: Image histogram</span></a>.</p>
 <p>We have also collected material concerning correct image acquisition here: <a class="reference internal" href="intro_course.html#further-material-acquisition"><span class="std std-ref">Further material: Image acquisition</span></a>.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an “edge of distribution” image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:</p>
+<p>Another aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an “edge of distribution” image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:</p>
 <ul class="simple">
 <li><p>Representative image</p></li>
 <li><p>Random selection</p></li>
 <li><p>Based on analysis (middle of distribution)</p></li>
 <li><p>Show multiple examples of the range of phenotypes</p></li>
 </ul>
-</div>
 </section>
-<section id="load-and-prepare-example-images">
-<h2>Load and prepare example images<a class="headerlink" href="#load-and-prepare-example-images" title="Link to this heading">#</a></h2>
+<section id="load-example-images">
+<h2>Load example images<a class="headerlink" href="#load-example-images" title="Link to this heading">#</a></h2>
 <p>This tutorial starts with a multi-channel image (<a class="reference internal" href="#multichannel-image"><span class="std std-numref">Fig. 13</span></a>). Download a TIFF of the example image here: <a class="reference download internal" download="" href="../_downloads/be5bdf4a4946739e50333f8ae20886a4/multichannel_image.tif"><span class="xref download myst">multichannel_image.tif</span></a>.</p>
 <p>Open Fiji.</p>
 <figure class="align-center" id="fiji-task-bar">
@@ -563,6 +566,9 @@ Usage of histograms
 <p class="admonition-title">Tip</p>
 <p>Work on a copy of the image: Image &gt; Duplicate… (Ctrl + Shift + D; Mac: ⌘ + Shift + D)</p>
 </div>
+</section>
+<section id="split-channels">
+<h2>Split channels<a class="headerlink" href="#split-channels" title="Link to this heading">#</a></h2>
 <p>In order to process individual channels, we need to first split the multi-channel image into single channels.</p>
 <p>Image &gt; Color &gt; Split Channels</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -682,7 +688,7 @@ Usage of histograms
 <p class="admonition-title">Note</p>
 <p>For the visualization of a merged color image, we generally recommend using only up to three channels, since three channels can still be easily differentiated using standard LUT choices.</p>
 <p>For visualizing more than three channels, we recommend presenting the individual channels in grayscale side by side.</p>
-<p>Thus, channel 4 will not be further processed.</p>
+<p>Thus, channel 4 will not be further processed in the merged visualization.</p>
 </div>
 <p>To change the LUT, select the image showing a specific channel and then select the LUT using:</p>
 <p>Image &gt; Lookup Tables &gt; [Select LUT]</p>
@@ -722,10 +728,6 @@ Usage of histograms
 </div>
 </div>
 </div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements.</p>
-</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>For these grayscale microscopy images, it is important to choose appropriate color LUTs (e.g., linear color range) that communicate the image information effectively (e.g., good visibility).</p>
@@ -734,15 +736,22 @@ Usage of histograms
 <p>Image &gt; Color &gt; Invert LUTs</p>
 </div>
 </section>
-<section id="brightness-and-contrast">
-<span id="brightness-contrast"></span><h2>Brightness and Contrast<a class="headerlink" href="#brightness-and-contrast" title="Link to this heading">#</a></h2>
-<p>Images vary in visibility depending on their brightness and contrast settings. This is because the intensity range (i.e., pixel or gray values) of images typically acquired using microscopes (e.g., 16-bit images have 65,536 unique values) is much larger than the intensity range that can be displayed on computer screens or even the intensity range that the human eye can perceive (i.e., closer to 8-bit or 256 unique values). Thus, the available intensity range must be adjusted. In Fiji, this is achieved using the Brightness/Contrast setting.</p>
-<p>As you can see in our example single-channel images, in some panels, the information is not well visible.</p>
+<section id="provide-grayscale-images-at-least-in-supplements">
+<h2>Provide grayscale images at least in supplements<a class="headerlink" href="#provide-grayscale-images-at-least-in-supplements" title="Link to this heading">#</a></h2>
+<p>Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements.</p>
+<p>Select image: C1-multichannel_image.tif
+Image &gt; Lookup Tables &gt; Grays</p>
+<p>Select image: C3-multichannel_image.tif
+Image &gt; Lookup Tables &gt; Grays</p>
+<p>Select image: C3-multichannel_image.tif
+Image &gt; Lookup Tables &gt; Grays</p>
+<p>Select image: C4-multichannel_image.tif
+Image &gt; Lookup Tables &gt; Grays</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id10">
-<a class="reference internal image-reference" href="../_images/C1-multichannel_image_magenta.png"><img alt="../_images/C1-multichannel_image_magenta.png" src="../_images/C1-multichannel_image_magenta.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/C1-multichannel_image_grays.png"><img alt="../_images/C1-multichannel_image_grays.png" src="../_images/C1-multichannel_image_grays.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 21 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
@@ -751,7 +760,7 @@ Usage of histograms
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id11">
-<a class="reference internal image-reference" href="../_images/C2-multichannel_image_green.png"><img alt="../_images/C2-multichannel_image_green.png" src="../_images/C2-multichannel_image_green.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/C2-multichannel_image_grays.png"><img alt="../_images/C2-multichannel_image_grays.png" src="../_images/C2-multichannel_image_grays.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 22 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
@@ -760,10 +769,57 @@ Usage of histograms
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id12">
-<a class="reference internal image-reference" href="../_images/C3-multichannel_image_cyan.png"><img alt="../_images/C3-multichannel_image_cyan.png" src="../_images/C3-multichannel_image_cyan.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/C3-multichannel_image_grays.png"><img alt="../_images/C3-multichannel_image_grays.png" src="../_images/C3-multichannel_image_grays.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 23 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="../_images/C4-multichannel_image_grays.png"><img alt="../_images/C4-multichannel_image_grays.png" src="../_images/C4-multichannel_image_grays.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Channel 4</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Save these images for further sharing:
+File &gt; Save As &gt; Tiff…</p>
+</section>
+<section id="brightness-and-contrast">
+<span id="brightness-contrast"></span><h2>Brightness and Contrast<a class="headerlink" href="#brightness-and-contrast" title="Link to this heading">#</a></h2>
+<p>Images vary in visibility depending on their brightness and contrast settings. This is because the intensity range (i.e., pixel or gray values) of images typically acquired using microscopes (e.g., 16-bit images have 65,536 unique values) is much larger than the intensity range that can be displayed on computer screens or even the intensity range that the human eye can perceive (i.e., closer to 8-bit or 256 unique values). Thus, the available intensity range must be adjusted. In Fiji, this is achieved using the Brightness/Contrast setting.</p>
+<p>As you can see in our example single-channel images, in some panels, the information is not well visible.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="../_images/C1-multichannel_image_magenta.png"><img alt="../_images/C1-multichannel_image_magenta.png" src="../_images/C1-multichannel_image_magenta.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id15">
+<a class="reference internal image-reference" href="../_images/C2-multichannel_image_green.png"><img alt="../_images/C2-multichannel_image_green.png" src="../_images/C2-multichannel_image_green.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id16">
+<a class="reference internal image-reference" href="../_images/C3-multichannel_image_cyan.png"><img alt="../_images/C3-multichannel_image_cyan.png" src="../_images/C3-multichannel_image_cyan.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -775,7 +831,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/brightness_contrast.png"><img alt="In" src="../_images/brightness_contrast.png" style="width: 25%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Brightness/Contrast setting</span><a class="headerlink" href="#brightness-contras" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Brightness/Contrast setting</span><a class="headerlink" href="#brightness-contras" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Brightness/Contrast interface:</p>
@@ -791,79 +847,85 @@ Usage of histograms
 </ul>
 <p>In our experience, the only setting that needs to be regularly adjusted is the maximum intensity slider to make the information in the image more visible. Often cycling through a number of “Auto” settings and observing the effect on the visualization can generate good display settings. Typically, the default minimum setting is set to the lowest intensity value present in the image and is good enough.</p>
 <p>In the figure processing we demonstrate how the full image information (i.e., full resolution with full 16-bit) is preserved until the final step. Thus, hitting the “Apply” button is not needed at any point in this course.</p>
+</section>
+<section id="pitfalls-of-brightness-contrast-adjustments">
+<h2>Pitfalls of brightness/contrast adjustments<a class="headerlink" href="#pitfalls-of-brightness-contrast-adjustments" title="Link to this heading">#</a></h2>
+<p>The Brightness/Contrast setting is a powerful setting that can drastically alter the visualized information of the image. For demonstration purposes, here are a couple of examples of how the same content can be visualized.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Do not cut off information in the lower intensities, e.g., removing structures close to the background to make the images prettier.</p>
 <p>Avoid oversaturation of large parts of the image. You can see the effect of this very easily when different objects start to merge.</p>
 </div>
-<p>The Brightness/Contrast setting is a powerful setting that can drastically alter the visualized information of the image. For demonstration purposes, here are a couple of examples of how the same content can be visualized.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id13">
+<figure class="align-default" id="id17">
 <a class="reference internal image-reference" href="../_images/first_auto_setting.png"><img alt="../_images/first_auto_setting.png" src="../_images/first_auto_setting.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">After the first auto setting, 0.35% of the image is saturated. The objects (mitochondria) are visible and separated. Low-intensity information is present.</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id14">
-<a class="reference internal image-reference" href="../_images/reset_image.png"><img alt="../_images/reset_image.png" src="../_images/reset_image.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">After pressing reset, the Min &amp; Max sliders are set to the minimum and maximum intensity values. As a result, the objects are not clearly visible.</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id15">
-<a class="reference internal image-reference" href="../_images/saturated.png"><img alt="../_images/saturated.png" src="../_images/saturated.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Saturated image: Note that the objects are completely merged, and the low intensity structures appear in the same intensity as the objects.</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id16">
-<a class="reference internal image-reference" href="../_images/background_cut.png"><img alt="../_images/background_cut.png" src="../_images/background_cut.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Background cut too much: Note loss of lower intensity information.</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>Adjust the maximum slider or press “Auto” until the objects are well visible and still clearly separated. Oversaturation collapses neighboring high-intensity structures into a single bright blob, effectively losing spatial resolution and the ability to distinguish individual objects.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id17">
-<a class="reference internal image-reference" href="../_images/C1-multichannel_image_bc.png"><img alt="../_images/C1-multichannel_image_bc.png" src="../_images/C1-multichannel_image_bc.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Channel 1: Min = 308; Max = 2484</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">After the first auto setting, 0.35% of the image is saturated. The objects (mitochondria) are visible and separated. Low-intensity information is present.</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id18">
-<a class="reference internal image-reference" href="../_images/C2-multichannel_image_bc.png"><img alt="../_images/C2-multichannel_image_bc.png" src="../_images/C2-multichannel_image_bc.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/reset_image.png"><img alt="../_images/reset_image.png" src="../_images/reset_image.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Channel 2: Min = 84 Max = 2965</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">After pressing reset, the Min &amp; Max sliders are set to the minimum and maximum intensity values. As a result, the objects are not clearly visible.</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id19">
+<a class="reference internal image-reference" href="../_images/saturated.png"><img alt="../_images/saturated.png" src="../_images/saturated.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Saturated image: Note that the objects are completely merged, and the low intensity structures appear in the same intensity as the objects.</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id20">
+<a class="reference internal image-reference" href="../_images/background_cut.png"><img alt="../_images/background_cut.png" src="../_images/background_cut.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Background cut too much: Note loss of lower intensity information.</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="adjust-brightness-contrast">
+<h2>Adjust brightness/contrast<a class="headerlink" href="#adjust-brightness-contrast" title="Link to this heading">#</a></h2>
+<p>Adjust the maximum slider or press “Auto” until the objects are well visible and still clearly separated. Oversaturation collapses neighboring high-intensity structures into a single bright blob, effectively losing spatial resolution and the ability to distinguish individual objects.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id21">
+<a class="reference internal image-reference" href="../_images/C1-multichannel_image_bc.png"><img alt="../_images/C1-multichannel_image_bc.png" src="../_images/C1-multichannel_image_bc.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Channel 1: Min = 308; Max = 2484</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id22">
+<a class="reference internal image-reference" href="../_images/C2-multichannel_image_bc.png"><img alt="../_images/C2-multichannel_image_bc.png" src="../_images/C2-multichannel_image_bc.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Channel 2: Min = 84; Max = 2965</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id23">
 <a class="reference internal image-reference" href="../_images/C3-multichannel_image_bc.png"><img alt="../_images/C3-multichannel_image_bc.png" src="../_images/C3-multichannel_image_bc.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Channel 3: Min = 36; Max = 1270</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Channel 3: Min = 36; Max = 1270</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -880,6 +942,9 @@ Usage of histograms
 <li><p>Original images are provided for image figures (i.e., via image repository).</p></li>
 <li><p>Minimum and maximum settings are recorded in the methods.</p></li>
 </ul>
+</section>
+<section id="provide-color-scales">
+<h2>Provide color scales<a class="headerlink" href="#provide-color-scales" title="Link to this heading">#</a></h2>
 <p>One can also provide a calibration bar next to the image. This is particularly useful if the intensity values are calibrated (i.e., photon count, not arbitrary units). In Fiji, a calibration bar can be produced like so:</p>
 <p>Select an image, e.g., one of the channels: C1-multichannel_image.tif</p>
 <p>Provide calibration bar: Analyze &gt; Tools &gt; Calibration Bar…</p>
@@ -887,7 +952,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/calibration_bar.png"><img alt="In" src="../_images/calibration_bar.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Calibration bar</span><a class="headerlink" href="#calibration-bar" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">Calibration bar</span><a class="headerlink" href="#calibration-bar" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In this course, we provide the minimum and maximum settings in the methods for each channel and the original image used for the image figure in a Zenodo repository. Since our example does not use calibrated intensity values, an additional calibration bar is not needed.</p>
@@ -905,7 +970,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/merge_channels.png"><img alt="In" src="../_images/merge_channels.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Merge channels</span><a class="headerlink" href="#merge-channels" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">Merge channels</span><a class="headerlink" href="#merge-channels" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -917,7 +982,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/composite.png"><img alt="In" src="../_images/composite.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Composite image</span><a class="headerlink" href="#composite-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">Composite image</span><a class="headerlink" href="#composite-image" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -945,7 +1010,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/macro_recorder.png"><img alt="In" src="../_images/macro_recorder.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Macro recorder</span><a class="headerlink" href="#macro-recorder" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Macro recorder</span><a class="headerlink" href="#macro-recorder" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -959,7 +1024,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/macro_script.png"><img alt="In" src="../_images/macro_script.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 36 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The cool thing is that by pressing “Run,” one can reproduce the entire processing. Even cooler is to fully automate the processing of all your images by doing some <a class="reference external" href="https://imagej.net/scripting/macro">simple macro programming</a>. You can download the macro example to test it <a class="reference download internal" download="" href="../_downloads/14de0046d43673b26749a9f06543d560/macro_unit-1.ijm"><span class="xref download myst">Macro.ijm</span></a> (right-click and select “Save Link As…”).</p>
@@ -979,7 +1044,7 @@ Usage of histograms
 <a class="reference internal image-reference" href="../_images/compression.png"><img alt="In" src="../_images/compression.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 37 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression-visibility" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression-visibility" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1055,9 +1120,15 @@ Usage of histograms
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">Learning objective</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-and-prepare-example-images">Load and prepare example images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-beyond-this-course">Considerations beyond this course</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-example-images">Load example images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-channels">Split channels</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-grayscale-images-at-least-in-supplements">Provide grayscale images at least in supplements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brightness-and-contrast">Brightness and Contrast</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitfalls-of-brightness-contrast-adjustments">Pitfalls of brightness/contrast adjustments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-brightness-contrast">Adjust brightness/contrast</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-color-scales">Provide color scales</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-merged-image">Create merged image</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result-and-next-unit">Result and next unit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-macro-recorder">Bonus: Macro recorder</a></li>

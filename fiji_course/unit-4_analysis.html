@@ -475,6 +475,11 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-based-on-existing-workflows">Analysis based on existing workflows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-orgamapper">Start OrgaMapper</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-analysis">Image analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-analysis-results">Image analysis results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-document-methods">Exercise: Document methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-proposed-methods">Solution: Proposed methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-based-on-new-workflows">Analysis based on new workflows</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-and-example-availability">Code and example availability</a></li>
 </ul>
@@ -504,10 +509,10 @@
 <section id="key-considerations">
 <h2>Key considerations<a class="headerlink" href="#key-considerations" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Provide quantifications, not only qualitative results.</p></li>
-<li><p>Cite the software tool and specify the version.</p></li>
-<li><p>Describe the workflow.</p></li>
-<li><p>Disclose critical parameters.</p></li>
+<li><p>Is the software tool named and cited?</p></li>
+<li><p>Are the software versions documented?</p></li>
+<li><p>Is the workflow with the different processing steps described?</p></li>
+<li><p>Are critical parameters disclosed?</p></li>
 </ul>
 </section>
 <section id="introduction">
@@ -517,7 +522,7 @@
 <a class="reference internal image-reference" href="../_images/annotated_panel.png"><img alt="In" src="../_images/annotated_panel.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 70 </span><span class="caption-text">Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#image-panel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 74 </span><span class="caption-text">Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#image-panel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Download the example images here:</p>
@@ -536,7 +541,7 @@
 <a class="reference internal image-reference" href="../_images/imagej_updater.png"><img alt="In" src="../_images/imagej_updater.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 71 </span><span class="caption-text">Update Fiji.</span><a class="headerlink" href="#orgamapper-updater" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 75 </span><span class="caption-text">Update Fiji.</span><a class="headerlink" href="#orgamapper-updater" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Press: Manage update site and add 2 update sites:</p>
@@ -546,39 +551,47 @@
 </ul>
 <p>Press OK and restart Fiji.</p>
 <p>Save the example images in an input folder (e.g., test). OrgaMapper documents the analysis settings using an .xml file. Please download the settings: <a class="reference download internal" download="" href="../_downloads/7b2bb178941afade49f861eadd0763bb/2026-04-13T175308-settings.xml"><span class="xref download myst">settings .xml</span></a> (right-click and select “Save Link As…”) and put it into the input folder. Create an output folder (e.g., test_out).</p>
-<p>Start OrgaMapper:</p>
+</section>
+<section id="start-orgamapper">
+<h2>Start OrgaMapper<a class="headerlink" href="#start-orgamapper" title="Link to this heading">#</a></h2>
 <p>Plugins &gt; CellularImaging &gt; Map Organelle</p>
 <p>Specify the location of the input folder, output folder, and the settings file. Then press OK to start OrgaMapper.</p>
 <figure class="align-center" id="orgamapper-start">
 <a class="reference internal image-reference" href="../_images/orgamapper_start.png"><img alt="In" src="../_images/orgamapper_start.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 72 </span><span class="caption-text">Start OrgaMapper.</span><a class="headerlink" href="#orgamapper-start" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Start OrgaMapper.</span><a class="headerlink" href="#orgamapper-start" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+<section id="image-analysis">
+<h2>Image analysis<a class="headerlink" href="#image-analysis" title="Link to this heading">#</a></h2>
 <p>OrgaMapper then performs a simple watershed-based image segmentation and a basic per-cell analysis on both the control and treatment images. For more information about the analysis performed, you can go to the <a class="reference external" href="https://schmiedc.github.io/OrgaMapper/">documentation of OrgaMapper</a>.</p>
 <p>OrgaMapper visualizes this on the example images using the “Preview” button:</p>
 <figure class="align-center" id="orgamapper">
 <a class="reference internal image-reference" href="../_images/orgamapper.png"><img alt="In" src="../_images/orgamapper.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 73 </span><span class="caption-text">OrgaMapper preview of the segmentation.</span><a class="headerlink" href="#orgamapper" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 77 </span><span class="caption-text">OrgaMapper preview of the segmentation.</span><a class="headerlink" href="#orgamapper" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To execute the analysis, press the “Batch Process” button. OrgaMapper then performs the analysis based on the loaded settings and will save the results in the output folder.</p>
 <figure class="align-center" id="orgamapper-results">
-<a class="reference internal image-reference" href="../_images/orgamapper_results.png"><img alt="In" src="../_images/orgamapper_results.png" style="width: 50%;" />
+<a class="reference internal image-reference" href="../_images/orgamapper_results.png"><img alt="In" src="../_images/orgamapper_results.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 74 </span><span class="caption-text">OrgaMapper Results.</span><a class="headerlink" href="#orgamapper-results" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 78 </span><span class="caption-text">OrgaMapper Results.</span><a class="headerlink" href="#orgamapper-results" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+<section id="image-analysis-results">
+<h2>Image analysis results<a class="headerlink" href="#image-analysis-results" title="Link to this heading">#</a></h2>
 <p>It is critical that we can extract the cell area in the “cellMeasurements.csv” file:</p>
 <figure class="align-center" id="orgamapper-cellarea">
-<a class="reference internal image-reference" href="../_images/orgamapper_cellarea.png"><img alt="In" src="../_images/orgamapper_cellarea.png" style="width: 50%;" />
+<a class="reference internal image-reference" href="../_images/orgamapper_cellarea.png"><img alt="In" src="../_images/orgamapper_cellarea.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 75 </span><span class="caption-text">OrgaMapper cell area results.</span><a class="headerlink" href="#orgamapper-cellarea" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 79 </span><span class="caption-text">OrgaMapper cell area results.</span><a class="headerlink" href="#orgamapper-cellarea" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We then applied a simple threshold to ask how many cells in the control and Nocodazole-treated images had an area above or below 1000 µm², yielding the following result:</p>
@@ -607,8 +620,35 @@
 </tbody>
 </table>
 </div>
-<p>This quantification could now be in the result of your manuscript. It is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions:</p>
-<p>Image analysis was performed using Fiji Is Just ImageJ (Fiji) (<a class="reference external" href="https://doi.org/10.1038/nmeth.2019">Schindelin et al. 2012</a>) version 2.16/1.54p and the OrgaMapper plugin version 2.0.0 (<a class="reference external" href="https://doi.org/10.1186/s12915-024-02015-8">Schmied et al. 2024</a>). Nuclei were segmented using an intensity-based segmentation with the Li automatic threshold after filtering with a median filter (size 5 pixels) and a rolling-ball background subtraction (radius 10 pixels). After thresholding, an erosion of 1 pixel was applied to the nuclei masks, and the segmented nuclei were filtered by size, keeping those between 1 µm² and 750 µm². The cell area was segmented using a manual intensity threshold of 150 fluorescent intensity (A.U.) after a median filter (size 10 pixels) and a rolling-ball background subtraction (radius 150 pixels). For the watershed-based cell segmentation, cell centers were detected using a summed nuclei and cytoplasm channel: a Laplacian-of-Gaussian filter was applied with a sigma of 2 pixels, and peaks with a prominence of 40 fluorescent intensity (A.U.) were retained. Separated cells were then filtered by keeping cells above 10 µm² with a circularity above 0.3. For each cell, the cell area was further analyzed. Small cells were defined as those with an area below 1000 µm².</p>
+<p>This quantification could now be in the result of your manuscript.</p>
+</section>
+<section id="exercise-document-methods">
+<h2>Exercise: Document methods<a class="headerlink" href="#exercise-document-methods" title="Link to this heading">#</a></h2>
+<p>Applied scientific methods need to be transparent and reproducible. Thus, it is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions.</p>
+<div class="admonition-think-about-it admonition">
+<p class="admonition-title">Think about it</p>
+<p>What are key parts that you need to document for others to reproduce the analysis?</p>
+<p>Imagine yourself years later and you have new data and want to repeat an analysis. What would you need?</p>
+</div>
+<p>Material for creating this documentation:</p>
+<ul class="simple">
+<li><p>Fiji, Plugin interface, settings file</p></li>
+<li><p>Documentation: <a class="reference external" href="https://schmiedc.github.io/OrgaMapper/">https://schmiedc.github.io/OrgaMapper/</a></p></li>
+</ul>
+</section>
+<section id="solution-proposed-methods">
+<h2>Solution: Proposed methods<a class="headerlink" href="#solution-proposed-methods" title="Link to this heading">#</a></h2>
+<p>We have outlined the critical aspects in the key considerations:</p>
+<ul class="simple">
+<li><p>Is the software tool named and cited?</p></li>
+<li><p>Are the software versions documented?</p></li>
+<li><p>Is the workflow with the different processing steps described?</p></li>
+<li><p>Are critical parameters disclosed?</p></li>
+</ul>
+<p>A potential methods section could look like this:</p>
+<p>Image analysis was performed using Fiji Is Just ImageJ (Fiji) (<a class="reference external" href="https://doi.org/10.1038/nmeth.2019">Schindelin et al. 2012</a>) version 2.16/1.54p and the OrgaMapper plugin version 3.0.0 (<a class="reference external" href="https://doi.org/10.1186/s12915-024-02015-8">Schmied et al. 2024</a>).</p>
+<p>Nuclei were segmented using an intensity-based segmentation with the Li automatic threshold after filtering with a median filter (size 5 pixels) and a rolling-ball background subtraction (radius 10 pixels). After thresholding, an erosion of 1 pixel was applied to the nuclei masks, and the segmented nuclei were filtered by size, keeping those between 1 µm² and 750 µm². The cell area was segmented using a manual intensity threshold of 150 fluorescent intensity (A.U.) after a median filter (size 10 pixels) and a rolling-ball background subtraction (radius 150 pixels). For the watershed-based cell segmentation, cell centers were detected using a summed nuclei and cytoplasm channel: a Laplacian-of-Gaussian filter was applied with a sigma of 2 pixels, and peaks with a prominence of 40 fluorescent intensity (A.U.) were retained. Separated cells were then filtered by keeping cells above 10 µm² with a circularity above 0.3. For each cell, the cell area was further analyzed. Small cells were defined as those with an area below 1000 µm².</p>
+<p>References:</p>
 <ul class="simple">
 <li><p>Schindelin, J., Arganda-Carreras, I., Frise, E. et al. Fiji: an open-source platform for biological-image analysis. Nat Methods 9, 676–682 (2012). <a class="reference external" href="https://doi.org/10.1038/nmeth.2019">https://doi.org/10.1038/nmeth.2019</a></p></li>
 <li><p>Schmied, C., Ebner, M., Samsó, P. et al. OrgaMapper: a robust and easy-to-use workflow for analyzing organelle positioning. BMC Biol 22, 220 (2024). <a class="reference external" href="https://doi.org/10.1186/s12915-024-02015-8">https://doi.org/10.1186/s12915-024-02015-8</a></p></li>
@@ -617,14 +657,11 @@
 <p class="admonition-title">Tip</p>
 <p>Since OrgaMapper provides a settings file, this settings file can be shared in a data repository.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Manual thresholds based on fluorescent intensity (A.U.) are image-data specific. Thus, they are not directly transferable to other data.</p>
-</div>
 </section>
 <section id="analysis-based-on-new-workflows">
 <h2>Analysis based on new workflows<a class="headerlink" href="#analysis-based-on-new-workflows" title="Link to this heading">#</a></h2>
 <p>For this analysis, we could just as easily write a custom Fiji macro instead of using an existing plugin. In that case, the code is itself the analysis, so the macro and a small example dataset should be deposited in a data or code repository — without these, neither reviewers nor future readers can verify or reproduce what was done.</p>
+<p>See also: Miura K, Nørrelykke SF. Reproducible image handling and analysis. EMBO J. 2021 <a class="reference external" href="https://doi.org/10.15252/embj.2020105889">https://doi.org/10.15252/embj.2020105889</a></p>
 </section>
 <section id="code-and-example-availability">
 <h2>Code and example availability<a class="headerlink" href="#code-and-example-availability" title="Link to this heading">#</a></h2>
@@ -632,7 +669,7 @@
 <a class="reference internal image-reference" href="../_images/repositories1.png"><img alt="In" src="../_images/repositories1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Examples of different repositories. Overview provided by <a class="reference external" href="https://doi.org/10.5281/zenodo.7628604">Cimini 2023</a>.</span><a class="headerlink" href="#data-repositories" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 80 </span><span class="caption-text">Examples of different repositories. Overview provided by <a class="reference external" href="https://doi.org/10.5281/zenodo.7628604">Cimini 2023</a>.</span><a class="headerlink" href="#data-repositories" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -709,6 +746,11 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-considerations">Key considerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-based-on-existing-workflows">Analysis based on existing workflows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-orgamapper">Start OrgaMapper</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-analysis">Image analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#image-analysis-results">Image analysis results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-document-methods">Exercise: Document methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-proposed-methods">Solution: Proposed methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-based-on-new-workflows">Analysis based on new workflows</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-and-example-availability">Code and example availability</a></li>
 </ul>

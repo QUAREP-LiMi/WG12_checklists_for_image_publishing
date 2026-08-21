@@ -531,12 +531,12 @@
 <li><p>Intensity</p></li>
 </ul>
 <p>The spatial dimension is represented as pixels in 2D or voxels in 3D volumes. The time dimension is present either as a single timepoint or as multiple frames in a timelapse. The fluorescent labels are represented as different channels.</p>
-<p>Finally, the light intensity that the microscope captures is represented as different shades of gray of each pixel or voxel. This sampling is illustrated in <a class="reference internal" href="#sampling"><span class="std std-numref">Fig. 87</span></a>.</p>
+<p>Finally, the light intensity that the microscope captures is represented as different shades of gray of each pixel or voxel. This sampling is illustrated in <a class="reference internal" href="#sampling"><span class="std std-numref">Fig. 91</span></a>.</p>
 <figure class="align-center" id="sampling">
 <a class="reference internal image-reference" href="../_images/sampling.png"><img alt="In" src="../_images/sampling.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Illustration demonstrating digital sampling in space and intensity. (a) Illustration of a real object, e.g., a cell, with a smooth, continuous outline and continuous intensity within. (b) A modern microscope samples this signal (yellow grid lines) and transforms (quantizes) it into a digital representation, thus quantizing the continuous analog information into discrete pixels and gray values. (c) The sampled cell as a digital image; note the clear loss of information due to this digital sampling.</span><a class="headerlink" href="#sampling" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 91 </span><span class="caption-text">Illustration demonstrating digital sampling in space and intensity. (a) Illustration of a real object, e.g., a cell, with a smooth, continuous outline and continuous intensity within. (b) A modern microscope samples this signal (yellow grid lines) and transforms (quantizes) it into a digital representation, thus quantizing the continuous analog information into discrete pixels and gray values. (c) The sampled cell as a digital image; note the clear loss of information due to this digital sampling.</span><a class="headerlink" href="#sampling" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
@@ -545,12 +545,12 @@
 </div>
 <p>Intensity signals are continuous information and thus have infinite fine detail. In order to store such information, we need to convert this information into a different form. In the past, we used analog storage media such as film for images.</p>
 <p>Now we use digital storage media. The continuous and “infinite” information is converted to discrete and thus finite gray value.</p>
-<p>Why should you care about that? See below how different numbers of gray values influence how well we can differentiate detail in an image <a class="reference internal" href="#bit-depth"><span class="std std-numref">Fig. 88</span></a>:</p>
+<p>Why should you care about that? See below how different numbers of gray values influence how well we can differentiate detail in an image <a class="reference internal" href="#bit-depth"><span class="std std-numref">Fig. 92</span></a>:</p>
 <figure class="align-center" id="bit-depth">
 <a class="reference internal image-reference" href="../_images/bitdepth.png"><img alt="In" src="../_images/bitdepth.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 88 </span><span class="caption-text">Visualization of different intensity sampling on a Fiji sample image. (a) Two gray values are available. (b) Four gray values. (c) Sixteen gray values. (d) 256 gray values.</span><a class="headerlink" href="#bit-depth" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 92 </span><span class="caption-text">Visualization of different intensity sampling on a Fiji sample image. (a) Two gray values are available. (b) Four gray values. (c) Sixteen gray values. (d) 256 gray values.</span><a class="headerlink" href="#bit-depth" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
@@ -564,12 +564,12 @@
 <li><p>The offset can be set incorrectly, cutting off minimum intensities.</p></li>
 <li><p>Image intensity can be resampled (e.g., converted to a lower bit depth), changing the intensity distribution.</p></li>
 </ul>
-<p>We can check these artifacts using the image itself, but often they are not easily visible. See <a class="reference internal" href="#sampling-errors"><span class="std std-numref">Fig. 89</span></a>:</p>
+<p>We can check these artifacts using the image itself, but often they are not easily visible. See <a class="reference internal" href="#sampling-errors"><span class="std std-numref">Fig. 93</span></a>:</p>
 <figure class="align-center" id="sampling-errors">
 <a class="reference internal image-reference" href="../_images/sampling_errors.png"><img alt="In" src="../_images/sampling_errors.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Images demonstrating different intensity sampling problems. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b-e) Different intensity sampling problems introduced into the same image.</span><a class="headerlink" href="#sampling-errors" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 93 </span><span class="caption-text">Images demonstrating different intensity sampling problems. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b-e) Different intensity sampling problems introduced into the same image.</span><a class="headerlink" href="#sampling-errors" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
@@ -586,7 +586,7 @@
 <a class="reference internal image-reference" href="../_images/Fiji_task_bar.png"><img alt="In" src="../_images/Fiji_task_bar.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 90 </span><span class="caption-text">Fiji task bar</span><a class="headerlink" href="#fiji-task-bar-image-histogram" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 94 </span><span class="caption-text">Fiji task bar</span><a class="headerlink" href="#fiji-task-bar-image-histogram" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>File &gt; Open… (or drag and drop image into Fiji task bar).</p>
@@ -596,33 +596,33 @@
 <a class="reference internal image-reference" href="../_images/histogram_good.png"><img alt="In" src="../_images/histogram_good.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 91 </span><span class="caption-text">Image Histogram: the number of pixels (y-axis) is plotted over the gray values (x-axis).</span><a class="headerlink" href="#histogram-good" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 95 </span><span class="caption-text">Image Histogram: the number of pixels (y-axis) is plotted over the gray values (x-axis).</span><a class="headerlink" href="#histogram-good" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The image histogram shows the intensity distributions over all pixels (black plots), with the x-axis plotting the gray values and the y-axis plotting the number of pixels <a class="reference internal" href="#histogram-good"><span class="std std-numref">Fig. 91</span></a>.</p>
+<p>The image histogram shows the intensity distributions over all pixels (black plots), with the x-axis plotting the gray values and the y-axis plotting the number of pixels <a class="reference internal" href="#histogram-good"><span class="std std-numref">Fig. 95</span></a>.</p>
 <figure class="align-center" id="histogram-annotated">
 <a class="reference internal image-reference" href="../_images/histogram_annotated.png"><img alt="In" src="../_images/histogram_annotated.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 92 </span><span class="caption-text">Information in the histogram: (a) The dark pixels of the background (note the offset). (b) The higher gray values of the signal that are distributed over a larger gray value range. (c) The entire range of gray values currently visualized in the display. Since it is an 8-bit image, the entire bit range of the image is displayed.</span><a class="headerlink" href="#histogram-annotated" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 96 </span><span class="caption-text">Information in the histogram: (a) The dark pixels of the background (note the offset). (b) The higher gray values of the signal that are distributed over a larger gray value range. (c) The entire range of gray values currently visualized in the display. Since it is an 8-bit image, the entire bit range of the image is displayed.</span><a class="headerlink" href="#histogram-annotated" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>There are two peaks, see <a class="reference internal" href="#histogram-annotated"><span class="std std-numref">Fig. 92</span></a>. (a) The first sharp peak has many pixels with low gray values. These values correspond mostly to the background of the image (e.g., dark pixels). (b) The second flatter peak shows pixels with a wide distribution over different larger gray values. These correspond to the signal from the imaged object. (c) Below you will find a calibration bar that shows the minimum and maximum values displayed and their corresponding displayed gray value.</p>
+<p>There are two peaks, see <a class="reference internal" href="#histogram-annotated"><span class="std std-numref">Fig. 96</span></a>. (a) The first sharp peak has many pixels with low gray values. These values correspond mostly to the background of the image (e.g., dark pixels). (b) The second flatter peak shows pixels with a wide distribution over different larger gray values. These correspond to the signal from the imaged object. (c) Below you will find a calibration bar that shows the minimum and maximum values displayed and their corresponding displayed gray value.</p>
 <p>Additionally, the histogram window shows basic intensity statistics from this specific image such as the total number of pixels (N), mean (Mean), standard deviation (StdDev), minimum value (Min), and maximum value (Max). For more information, please look into the <a class="reference external" href="https://imagej.net/ij/docs/menus/analyze.html#hist">ImageJ documentation</a>.</p>
-<p>The second peak is often not easily visible. Thus, we can apply a log scale on the y-axis to better visualize the less abundant gray values. The intensity distribution using the log scale is overlaid as gray plots, see <a class="reference internal" href="#histogram-good-log"><span class="std std-numref">Fig. 93</span></a>:</p>
+<p>The second peak is often not easily visible. Thus, we can apply a log scale on the y-axis to better visualize the less abundant gray values. The intensity distribution using the log scale is overlaid as gray plots, see <a class="reference internal" href="#histogram-good-log"><span class="std std-numref">Fig. 97</span></a>:</p>
 <figure class="align-center" id="histogram-good-log">
 <a class="reference internal image-reference" href="../_images/histogram_good_log.png"><img alt="In" src="../_images/histogram_good_log.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 93 </span><span class="caption-text">Histogram with log scale</span><a class="headerlink" href="#histogram-good-log" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 97 </span><span class="caption-text">Histogram with log scale</span><a class="headerlink" href="#histogram-good-log" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Now we would like to understand what constitutes a well-acquired image based on its histogram. In general, good original microscopy images preserve both the low and high intensity values and show a varying signal. We can see this clearly in <a class="reference internal" href="#histogram-demonstrated"><span class="std std-numref">Fig. 94</span></a>:</p>
+<p>Now we would like to understand what constitutes a well-acquired image based on its histogram. In general, good original microscopy images preserve both the low and high intensity values and show a varying signal. We can see this clearly in <a class="reference internal" href="#histogram-demonstrated"><span class="std std-numref">Fig. 98</span></a>:</p>
 <figure class="align-center" id="histogram-demonstrated">
 <a class="reference internal image-reference" href="../_images/histogram_good_demonstrated.png"><img alt="In" src="../_images/histogram_good_demonstrated.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 94 </span><span class="caption-text">An example showing the hallmarks of a well-acquired image: (a) Offset. (b) Varying signal with more or less continuous signal distribution. (c) The highest signal falls within the upper third of the gray value range but does not reach the maximum value.</span><a class="headerlink" href="#histogram-demonstrated" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 98 </span><span class="caption-text">An example showing the hallmarks of a well-acquired image: (a) Offset. (b) Varying signal with more or less continuous signal distribution. (c) The highest signal falls within the upper third of the gray value range but does not reach the maximum value.</span><a class="headerlink" href="#histogram-demonstrated" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>(a) Low values do not start at 0; there is a clear “offset” present in the image, with low intensity varying around a low gray value.
@@ -635,7 +635,7 @@
 </section>
 <section id="intensity-artifacts-in-histograms">
 <h2>Intensity artifacts in Histograms<a class="headerlink" href="#intensity-artifacts-in-histograms" title="Link to this heading">#</a></h2>
-<p>Since we now understand how a regular histogram should look, we can study different intensity sampling problems. Download the example images (b-e) from the example figure <a class="reference internal" href="#sampling-errors"><span class="std std-numref">Fig. 89</span></a> here (right-click and select “Save Link As…”):</p>
+<p>Since we now understand how a regular histogram should look, we can study different intensity sampling problems. Download the example images (b-e) from the example figure <a class="reference internal" href="#sampling-errors"><span class="std std-numref">Fig. 93</span></a> here (right-click and select “Save Link As…”):</p>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="../_downloads/c42099d6201e87f66045b3c205fddf47/b_image.png"><span class="xref download myst">b_image.png</span></a></p></li>
 <li><p><a class="reference download internal" download="" href="../_downloads/99407ab55edd308e2c274d308fb0fa5e/c_image.png"><span class="xref download myst">c_image.png</span></a></p></li>
@@ -655,7 +655,7 @@
 <a class="reference internal image-reference" href="../_images/histogram_low_contrast.png"><img alt="In" src="../_images/histogram_low_contrast.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 95 </span><span class="caption-text">Low contrast. The full range of the histogram is not utilized.</span><a class="headerlink" href="#histogram-low-contrast" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 99 </span><span class="caption-text">Low contrast. The full range of the histogram is not utilized.</span><a class="headerlink" href="#histogram-low-contrast" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -667,7 +667,7 @@
 <a class="reference internal image-reference" href="../_images/histogram_low_cut.png"><img alt="In" src="../_images/histogram_low_cut.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 96 </span><span class="caption-text">Low intensity values cut, no offset. Note the peak at the lowest gray value, indicating that the low signal is pushed down to the same minimum value.</span><a class="headerlink" href="#histogram-low-cut" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 100 </span><span class="caption-text">Low intensity values cut, no offset. Note the peak at the lowest gray value, indicating that the low signal is pushed down to the same minimum value.</span><a class="headerlink" href="#histogram-low-cut" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -679,7 +679,7 @@
 <a class="reference internal image-reference" href="../_images/histogram_high_cut.png"><img alt="In" src="../_images/histogram_high_cut.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 97 </span><span class="caption-text">High intensity values cut, i.e., clipped. The image is oversaturated. Note the peak at the highest gray value, indicating that the high signal is pushed to the same maximum value.</span><a class="headerlink" href="#histogram-high-cut" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 101 </span><span class="caption-text">High intensity values cut, i.e., clipped. The image is oversaturated. Note the peak at the highest gray value, indicating that the high signal is pushed to the same maximum value.</span><a class="headerlink" href="#histogram-high-cut" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -696,7 +696,7 @@
 <a class="reference internal image-reference" href="../_images/histogram_rescaled.png"><img alt="In" src="../_images/histogram_rescaled.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 98 </span><span class="caption-text">Histogram rescaled non-continuous intensity distribution.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 102 </span><span class="caption-text">Histogram rescaled non-continuous intensity distribution.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -707,7 +707,7 @@
 <a class="reference internal image-reference" href="../_images/sampling_errors.png"><img alt="In" src="../_images/sampling_errors.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 99 </span><span class="caption-text">Images demonstrating different intensity sampling errors. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b) Low contrast image. (c) Low intensities cut off. (d) Oversaturated image with high intensities clipped. (e) Histogram resampled.</span><a class="headerlink" href="#sampling-errors-solution" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 103 </span><span class="caption-text">Images demonstrating different intensity sampling errors. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b) Low contrast image. (c) Low intensities cut off. (d) Oversaturated image with high intensities clipped. (e) Histogram resampled.</span><a class="headerlink" href="#sampling-errors-solution" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

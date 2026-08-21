@@ -35,29 +35,19 @@ The same multi-channel image visualized in different forms, all failing to commu
 - What do the colors mean?
 - Is the information accessible to a wide audience?
 
-:::{note}
+## Considerations beyond this course
 
-A further foundational consideration is also that the image used for visualization is of sufficient quality. For further information on how to assess intensity quality in images using image histograms, please see: {ref}`image_histogram`. 
+It's also important that the image used for visualization is of sufficient quality. For further information on how to assess intensity quality in images using image histograms, please see: {ref}`image_histogram`. 
 
 We have also collected material concerning correct image acquisition here: {ref}`further-material-acquisition`.
 
-:::
-
-:::{important}
-
-Another important aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an "edge of distribution" image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:
+Another aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an "edge of distribution" image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:
 - Representative image
 - Random selection
 - Based on analysis (middle of distribution)
 - Show multiple examples of the range of phenotypes
 
-:::
-
-
-
-
-
-## Load and prepare example images
+## Load example images
 
 This tutorial starts with a multi-channel image ({numref}`multichannel_image`). Download a TIFF of the example image here: [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
 
@@ -90,6 +80,8 @@ Multichannel image
 Work on a copy of the image: Image > Duplicate... (Ctrl + Shift + D; Mac: ⌘ + Shift + D)
 
 :::
+
+## Split channels
 
 In order to process individual channels, we need to first split the multi-channel image into single channels.
 
@@ -181,7 +173,7 @@ For the visualization of a merged color image, we generally recommend using only
 
 For visualizing more than three channels, we recommend presenting the individual channels in grayscale side by side. 
 
-Thus, channel 4 will not be further processed.
+Thus, channel 4 will not be further processed in the merged visualization.
 
 :::
 
@@ -224,13 +216,6 @@ Channel 3
 
 ::::
 
-
-:::{important}
-
-Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements. 
-
-:::
-
 :::{tip}
 
 For these grayscale microscopy images, it is important to choose appropriate color LUTs (e.g., linear color range) that communicate the image information effectively (e.g., good visibility). 
@@ -242,6 +227,57 @@ The color LUT can also be inverted to visualize the information better:
 Image > Color > Invert LUTs
 
 :::
+
+## Provide grayscale images at least in supplements
+
+Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements.
+
+Select image: C1-multichannel_image.tif
+Image > Lookup Tables > Grays
+
+Select image: C3-multichannel_image.tif
+Image > Lookup Tables > Grays
+
+Select image: C3-multichannel_image.tif
+Image > Lookup Tables > Grays
+
+Select image: C4-multichannel_image.tif
+Image > Lookup Tables > Grays
+
+::::{grid} 4
+:gutter: 2
+
+:::{grid-item}
+```{figure} ./unit-1_resources/colors/C1-multichannel_image_grays.png
+:width: 100%
+Channel 1
+:::
+
+:::{grid-item}
+
+```{figure} ./unit-1_resources/colors/C2-multichannel_image_grays.png
+:width: 100%
+Channel 2
+:::
+
+:::{grid-item}
+
+```{figure} ./unit-1_resources/colors/C3-multichannel_image_grays.png
+:width: 100%
+Channel 3
+:::
+
+:::{grid-item}
+
+```{figure} ./unit-1_resources/colors/C4-multichannel_image_grays.png
+:width: 100%
+Channel 4
+:::
+
+::::
+
+Save these images for further sharing:
+File > Save As > Tiff...
 
 (brightness-contrast)=
 ## Brightness and Contrast
@@ -300,13 +336,15 @@ In our experience, the only setting that needs to be regularly adjusted is the m
 
 In the figure processing we demonstrate how the full image information (i.e., full resolution with full 16-bit) is preserved until the final step. Thus, hitting the "Apply" button is not needed at any point in this course. 
 
+## Pitfalls of brightness/contrast adjustments
+
+The Brightness/Contrast setting is a powerful setting that can drastically alter the visualized information of the image. For demonstration purposes, here are a couple of examples of how the same content can be visualized. 
+
 :::{important}
 Do not cut off information in the lower intensities, e.g., removing structures close to the background to make the images prettier. 
 
 Avoid oversaturation of large parts of the image. You can see the effect of this very easily when different objects start to merge. 
 :::
-
-The Brightness/Contrast setting is a powerful setting that can drastically alter the visualized information of the image. For demonstration purposes, here are a couple of examples of how the same content can be visualized. 
 
 ::::{grid} 2
 :gutter: 2
@@ -342,6 +380,8 @@ Background cut too much: Note loss of lower intensity information.
 
 ::::
 
+## Adjust brightness/contrast
+
 Adjust the maximum slider or press "Auto" until the objects are well visible and still clearly separated. Oversaturation collapses neighboring high-intensity structures into a single bright blob, effectively losing spatial resolution and the ability to distinguish individual objects.
 
 ::::{grid} 3
@@ -356,7 +396,7 @@ Channel 1: Min = 308; Max = 2484
 :::{grid-item}
 ```{figure} ./unit-1_resources/brightness_contrast/C2-multichannel_image_bc.png
 :width: 100%
-Channel 2: Min = 84 Max = 2965
+Channel 2: Min = 84; Max = 2965
 :::
 
 :::{grid-item}
@@ -378,6 +418,8 @@ For multi-channel images, the same settings across the channels might not be fea
 Since the Brightness/Contrast setting can alter the visualized information so drastically, we recommend:
 - Original images are provided for image figures (i.e., via image repository). 
 - Minimum and maximum settings are recorded in the methods. 
+
+## Provide color scales
 
 One can also provide a calibration bar next to the image. This is particularly useful if the intensity values are calibrated (i.e., photon count, not arbitrary units). In Fiji, a calibration bar can be produced like so:
 

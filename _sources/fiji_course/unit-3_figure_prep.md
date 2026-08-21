@@ -67,7 +67,7 @@ For an accurate qualitative comparison, the images need to be processed with the
 You can download the result here: [composite_treat_scale.tif](./unit-3_resources/examples/composite_treat_scale.tif) and [composite_treat_crop_scale.tif](./unit-3_resources/examples/composite_treat_crop_scale.tif).
 
 
-## Figure setup
+## Figure setup with BioVoxxel Figure Tools
 
 The final image figure will be created in a vector graphics program (i.e., Inkscape). For exporting the raster graphics images as vector graphics files, we are going to use the BioVoxxel Figure Tools plugin. 
 
@@ -101,7 +101,11 @@ Add BioVoxxel Figure Tools plugin.
 ```
 Press: Apply and Close.
 
-Restart Fiji and reopen all images for export. You can then export all the images as .svg files:
+Restart Fiji.
+
+## Export images as SVG
+
+Open all images for export. You can then export all the images as .svg files:
 
 Plugins > BioVoxxel Figure Tools > Export all images as SVG
 
@@ -120,6 +124,9 @@ You can download the examples here (right-click and select "Save Link As..."):
 - [03_composite_treat_crop_scale.svg](./unit-3_resources/examples/03_composite_treat_crop_scale.svg)
 - [04_composite_treat_scale.svg](./unit-3_resources/examples/04_composite_treat_scale.svg)
 
+
+## Figures in Inkscape
+
 SVG is a vector graphic format that can be loaded and processed in Inkscape. We have prepared a figure template based on an A4 page that includes guides to leave page margins: [figure_template.svg](./unit-3_resources/examples/figure_template.svg) (right-click and select "Save Link As...").
 
 Open the template in Inkscape:
@@ -133,7 +140,7 @@ Open the template in Inkscape:
 Figure template in inkscape.
 ```
 
-## Annotations
+## Import images into inkscape
 
 We are now able to load the images exported as SVG into Inkscape. The advantage here is that the images, as well as the included annotations, are full vector graphics. Annotations such as scale bars can be edited, and the images can be [resized without interpolation](./interpolation.md).
 
@@ -156,6 +163,8 @@ Import images at 300 dpi, as this is the required printing resolution of most jo
 
 :::
 
+## Resize images
+
 The first step is to resize the image to fit the image figure. When resizing, make sure to lock the aspect ratio and resize the image uniformly. After import, the annotations can be edited. 
 
 ```{figure} ./unit-3_resources/annotations/inkscape_resize_arrow.png
@@ -166,6 +175,8 @@ The first step is to resize the image to fit the image figure. When resizing, ma
 
 Resize image panel to fit the figure. Note the lock on the aspect ratio, used to resize the image uniformly.
 ```
+
+## Modify scale bar
 
 Next, you can select an annotation in Layers and Objects. Modify the size and location of the annotation.
 
@@ -207,13 +218,9 @@ Select the annotation you want to modify in the layers and objects interface. Th
 Scale bar adjusted for height and location. The dimension will be specified in the figure legends.
 ```
 
-:::{tip}
+## Examples of scale bars
 
-To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends. To easily retrieve this information, one can drag the scale bar text outside the canvas. 
-
-If different image panels have the same scale bar, you can put the scale bar in the first image. It is critical that images of different dimensions (e.g., overview and enlarged) show the correct scale.   
-
-:::
+Scale bars can be presented in different forms and location. Make sure that they do not obscure data and any writing is legible.
 
 ```{figure} ./unit-3_resources/annotations/edited_annotation2.png
 :alt: In
@@ -223,6 +230,16 @@ If different image panels have the same scale bar, you can put the scale bar in 
 
 Different examples of annotated scale. 
 ```
+:::{tip}
+
+To make annotations simpler in the image, one can specify the physical dimension that the scale bar represents also in the figure legends. To easily retrieve this information, one can drag the scale bar text outside the canvas. 
+
+If different image panels have the same scale bar, you can put the scale bar in the first image. It is critical that images of different dimensions (e.g., overview and enlarged) show the correct scale.   
+
+:::
+
+
+## Modify ROIs
 
 In Inkscape (or any other vector graphics tool), we can then add other annotations. We recommend adding all important annotations that are needed to easily interpret the image figures directly in the image figure. Specifically for multichannel images, an explanation of the colors should be provided. 
 
@@ -280,6 +297,8 @@ After the color has been adjusted, modify the line width of the ROI. Select the 
 
 Adjust the width of the ROI lines so that the ROI is clearly visible.
 ```
+
+## Further annotations: Arrows, labels etc
 
 Consider adding annotations, such as cell type and treatment, to help the viewer interpret your results more quickly. You can also use arrows or other symbols to highlight specific areas of interest within the data.
 
@@ -369,6 +388,7 @@ To make your work easier, you can add the macro that we created in {ref}`bonus-m
 Examples of different repositories. Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
 ```
 As long as it is legally and technically feasible, the original images as well as the final processed images should be made available in public repositories. The original images should be provided in a losslessly compressed format along with any ground truth or manual annotations.
+
 
 ## Next unit
 
