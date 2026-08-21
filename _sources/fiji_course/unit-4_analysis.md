@@ -5,7 +5,7 @@ Topics: Image analysis, software versions, code, and example availability
 
 ## Learning objective
 
-Learners should be able to perform a basic quantitative image analysis using an existing tool, document the software, tool versions, and analysis settings used, and identify what needs to be shared (code, settings files, example data) so that custom or existing analyses are transparent and reproducible by others.
+Learners should be able to perform a basic quantitative image analysis using an existing tool, document the software, tool versions, and analysis settings used, and identify what needs to be shared (code, settings files, example data) so that custom or existing analyses are transparent and reproducible.
 
 Time needed: 10 min
 
@@ -40,7 +40,7 @@ Download the example images here:
 - [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
 - [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif).
 
-## Analysis based on existing workflows
+## Analysis based on existing workflow
 
 For our example images, we were able to adopt a published tool, OrgaMapper:
 
@@ -136,7 +136,7 @@ This quantification could now be in the result of your manuscript.
 
 ## Exercise: Document methods
 
-Applied scientific methods need to be transparent and reproducible. Thus, it is important to properly document the performed analysis. For this, it is again critical to document the used software platform as well as the tools and their versions.
+Applied scientific methods need to be transparent and reproducible. Thus, it is important to properly document the performed analysis. For this, it is critical to document the used software platform as well as the tools and their versions.
 
 ```{admonition}  Think about it
 
@@ -148,6 +148,8 @@ Imagine yourself years later and you have new data and want to repeat an analysi
 Material for creating this documentation:
 - Fiji, Plugin interface, settings file
 - Documentation: [https://schmiedc.github.io/OrgaMapper/](https://schmiedc.github.io/OrgaMapper/)
+- Publication: Schmied C. et al. BMC Biol (2024). [https://doi.org/10.1186/s12915-024-02015-8](https://doi.org/10.1186/s12915-024-02015-8)
+
 
 
 ## Solution: Proposed methods
@@ -180,7 +182,7 @@ Since OrgaMapper provides a settings file, this settings file can be shared in a
 
 ## Analysis based on new workflows
 
-For this analysis, we could just as easily write a custom Fiji macro instead of using an existing plugin. In that case, the code is itself the analysis, so the macro and a small example dataset should be deposited in a data or code repository — without these, neither reviewers nor future readers can verify or reproduce what was done. 
+For this analysis, we could write a custom Fiji macro instead of using an existing plugin. In that case, the code is itself the analysis, so the macro and a small example dataset should be deposited in a data or code repository. Without these, neither reviewers nor future readers can verify or reproduce what was done. 
 
 See also: Miura K, Nørrelykke SF. Reproducible image handling and analysis. EMBO J. 2021 [https://doi.org/10.15252/embj.2020105889](https://doi.org/10.15252/embj.2020105889)
 

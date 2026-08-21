@@ -477,15 +477,15 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-example-images">Load example images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-channels">Split channels</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-grayscale-images-at-least-in-supplements">Provide grayscale images at least in supplements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-grayscale-images">Provide grayscale images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brightness-and-contrast">Brightness and Contrast</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitfalls-of-brightness-contrast-adjustments">Pitfalls of brightness/contrast adjustments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitfalls-of-brightness-contrast">Pitfalls of brightness/contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-brightness-contrast">Adjust brightness/contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-color-scales">Provide color scales</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-merged-image">Create merged image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-result">Save result</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result-and-next-unit">Result and next unit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-macro-recorder">Bonus: Macro recorder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-result">Save result</a></li>
 </ul>
             </nav>
         </div>
@@ -736,8 +736,8 @@ Usage of histograms
 <p>Image &gt; Color &gt; Invert LUTs</p>
 </div>
 </section>
-<section id="provide-grayscale-images-at-least-in-supplements">
-<h2>Provide grayscale images at least in supplements<a class="headerlink" href="#provide-grayscale-images-at-least-in-supplements" title="Link to this heading">#</a></h2>
+<section id="provide-grayscale-images">
+<h2>Provide grayscale images<a class="headerlink" href="#provide-grayscale-images" title="Link to this heading">#</a></h2>
 <p>Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements.</p>
 <p>Select image: C1-multichannel_image.tif
 Image &gt; Lookup Tables &gt; Grays</p>
@@ -848,8 +848,8 @@ File &gt; Save As &gt; Tiff…</p>
 <p>In our experience, the only setting that needs to be regularly adjusted is the maximum intensity slider to make the information in the image more visible. Often cycling through a number of “Auto” settings and observing the effect on the visualization can generate good display settings. Typically, the default minimum setting is set to the lowest intensity value present in the image and is good enough.</p>
 <p>In the figure processing we demonstrate how the full image information (i.e., full resolution with full 16-bit) is preserved until the final step. Thus, hitting the “Apply” button is not needed at any point in this course.</p>
 </section>
-<section id="pitfalls-of-brightness-contrast-adjustments">
-<h2>Pitfalls of brightness/contrast adjustments<a class="headerlink" href="#pitfalls-of-brightness-contrast-adjustments" title="Link to this heading">#</a></h2>
+<section id="pitfalls-of-brightness-contrast">
+<h2>Pitfalls of brightness/contrast<a class="headerlink" href="#pitfalls-of-brightness-contrast" title="Link to this heading">#</a></h2>
 <p>The Brightness/Contrast setting is a powerful setting that can drastically alter the visualized information of the image. For demonstration purposes, here are a couple of examples of how the same content can be visualized.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -986,6 +986,22 @@ File &gt; Save As &gt; Tiff…</p>
 </figcaption>
 </figure>
 </section>
+<section id="save-result">
+<h2>Save result<a class="headerlink" href="#save-result" title="Link to this heading">#</a></h2>
+<p>If you want to save the intermediate results, save them as TIFF, as this format preserves the image information and any additional layers:</p>
+<p>File &gt; Save As &gt; Tiff…</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>In general, when saving images, use formats that preserve the image information. Do not use file formats that use lossy compression (see example below):</p>
+<figure class="align-center" id="compression-visibility">
+<a class="reference internal image-reference" href="../_images/compression.png"><img alt="In" src="../_images/compression.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression-visibility" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
 <section id="result-and-next-unit">
 <h2>Result and next unit<a class="headerlink" href="#result-and-next-unit" title="Link to this heading">#</a></h2>
 <p>Download a TIFF of the result image here: <a class="reference download internal" download="" href="../_downloads/f352f6961ad7d53c6aa0e252183b719c/composite.tif"><span class="xref download myst">composite.tif</span></a>.</p>
@@ -1010,7 +1026,7 @@ File &gt; Save As &gt; Tiff…</p>
 <a class="reference internal image-reference" href="../_images/macro_recorder.png"><img alt="In" src="../_images/macro_recorder.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Macro recorder</span><a class="headerlink" href="#macro-recorder" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Macro recorder</span><a class="headerlink" href="#macro-recorder" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -1024,29 +1040,13 @@ File &gt; Save As &gt; Tiff…</p>
 <a class="reference internal image-reference" href="../_images/macro_script.png"><img alt="In" src="../_images/macro_script.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Macro script</span><a class="headerlink" href="#macro-script" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The cool thing is that by pressing “Run,” one can reproduce the entire processing. Even cooler is to fully automate the processing of all your images by doing some <a class="reference external" href="https://imagej.net/scripting/macro">simple macro programming</a>. You can download the macro example to test it <a class="reference download internal" download="" href="../_downloads/14de0046d43673b26749a9f06543d560/macro_unit-1.ijm"><span class="xref download myst">Macro.ijm</span></a> (right-click and select “Save Link As…”).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For the macro to work, the “multichannel_image.tif” image needs to be open under this exact name in Fiji.</p>
-</div>
-</section>
-<section id="save-result">
-<h2>Save result<a class="headerlink" href="#save-result" title="Link to this heading">#</a></h2>
-<p>If you want to save the intermediate results, save them as TIFF, as this format preserves the image information and any additional layers:</p>
-<p>File &gt; Save As &gt; Tiff…</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>In general, when saving images, use formats that preserve the image information. Do not use file formats that use lossy compression (see example below):</p>
-<figure class="align-center" id="compression-visibility">
-<a class="reference internal image-reference" href="../_images/compression.png"><img alt="In" src="../_images/compression.png" style="width: 50%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression-visibility" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
 </div>
 </section>
 </section>
@@ -1124,15 +1124,15 @@ File &gt; Save As &gt; Tiff…</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-example-images">Load example images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-channels">Split channels</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-grayscale-images-at-least-in-supplements">Provide grayscale images at least in supplements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-grayscale-images">Provide grayscale images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brightness-and-contrast">Brightness and Contrast</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitfalls-of-brightness-contrast-adjustments">Pitfalls of brightness/contrast adjustments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitfalls-of-brightness-contrast">Pitfalls of brightness/contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-brightness-contrast">Adjust brightness/contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-color-scales">Provide color scales</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-merged-image">Create merged image</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-result">Save result</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result-and-next-unit">Result and next unit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-macro-recorder">Bonus: Macro recorder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-result">Save result</a></li>
 </ul>
   </nav></div>
 

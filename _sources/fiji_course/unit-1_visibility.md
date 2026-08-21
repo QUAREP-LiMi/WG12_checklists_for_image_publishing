@@ -228,7 +228,7 @@ Image > Color > Invert LUTs
 
 :::
 
-## Provide grayscale images at least in supplements
+## Provide grayscale images
 
 Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements.
 
@@ -336,7 +336,7 @@ In our experience, the only setting that needs to be regularly adjusted is the m
 
 In the figure processing we demonstrate how the full image information (i.e., full resolution with full 16-bit) is preserved until the final step. Thus, hitting the "Apply" button is not needed at any point in this course. 
 
-## Pitfalls of brightness/contrast adjustments
+## Pitfalls of brightness/contrast
 
 The Brightness/Contrast setting is a powerful setting that can drastically alter the visualized information of the image. For demonstration purposes, here are a couple of examples of how the same content can be visualized. 
 
@@ -476,6 +476,26 @@ The individual channels then get merged into a composite image (i.e., all channe
 Composite image
 ```
 
+## Save result
+
+If you want to save the intermediate results, save them as TIFF, as this format preserves the image information and any additional layers:
+
+File > Save As > Tiff...
+
+:::{important}
+
+In general, when saving images, use formats that preserve the image information. Do not use file formats that use lossy compression (see example below):
+
+```{figure} ./image_ethics_resources/compression.png
+:alt: In
+:align: center
+:name: compression_visibility
+:width: 50%
+
+Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg. 
+```
+:::
+
 ## Result and next unit
 
 Download a TIFF of the result image here: [composite.tif](./unit-1_resources/merge/composite.tif).
@@ -546,22 +566,3 @@ For the macro to work, the "multichannel_image.tif" image needs to be open under
 
 :::
 
-## Save result
-
-If you want to save the intermediate results, save them as TIFF, as this format preserves the image information and any additional layers:
-
-File > Save As > Tiff...
-
-:::{important}
-
-In general, when saving images, use formats that preserve the image information. Do not use file formats that use lossy compression (see example below):
-
-```{figure} ./image_ethics_resources/compression.png
-:alt: In
-:align: center
-:name: compression_visibility
-:width: 50%
-
-Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg. 
-```
-:::
