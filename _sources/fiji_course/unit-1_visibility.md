@@ -41,11 +41,57 @@ It's also important that the image used for visualization is of sufficient quali
 
 We have also collected material concerning correct image acquisition here: {ref}`further-material-acquisition`.
 
+## Before creating an image figure
+
+The image figure should visualize a specific scientific result. For our course example we have U-2 OS cells treated with a negative control, DMSO, and the treatment Nocodazole. The treatment results in the appearance of small rounded cells (see below). 
+
+We have also quantified this using an area threshold of 1000 µm² and found 0% small rounded cells in the negative control and 79% small rounded cells in the treated cells. We want to create an image figure to visualize this. 
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item}
+```{figure} ./unit-1_resources/conceptual/multichannel_image.png
+:width: 100%
+Negative control DMSO treated U-2 OS cells.
+:::
+
+:::{grid-item}
+
+```{figure} ./unit-1_resources/conceptual/multichannel_image_treat.png
+:width: 100%
+Nocodazole treated U-2 OS cells. 
+:::
+
+::::
+
+```{admonition}  Think about it
+
+What are the critical aspects that we need to show to visualize these results? 
+
+```
+
+For this example we want to show the overview images to give the viewer an idea about the difference in the treatments. We also will show crops of cells to better visualize the overall difference in morphology. 
+
+The acquired images have four channels for the major cellular compartments (Nucleus, Mitochondria, Cytoskeleton and ER). The image figure focuses the overall morphology and not the different cellular compartment thus we will only visualize three channels. See final result below: 
+
+```{figure} ./unit-3_resources/annotations/annotated_panel.png
+:alt: In
+:align: center
+:name: final result
+:width: 100%
+
+Final result of course example.
+```
+
+## Selecting images for visualization
+
 Another aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an "edge of distribution" image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:
 - Representative image
 - Random selection
 - Based on analysis (middle of distribution)
 - Show multiple examples of the range of phenotypes
+
 
 ## Load example images
 
@@ -230,7 +276,16 @@ Image > Color > Invert LUTs
 
 ## Provide grayscale images
 
-Since the perception of the information in an image is influenced by the color choice, we recommend including grayscale images at least in the supplements.
+Since the perception of the information in an image is influenced by the color choice (see demonstration below), we recommend including grayscale images at least in the supplements.
+
+```{figure} ./unit-1_resources/colors/Color_LUT_Grayscale.png
+:alt: In
+:align: center
+:name: grayscale_vs_color
+:width: 100%
+
+Effect of different LUTs on the visualization of the image data. Same image crop with the same brightness/contrast settings. The blue channel gives the worst visualization as almost none of the detail is visible. This is closely followed by red. Green is better, though some details are still harder to see than in the grayscale version.
+```
 
 Select image: C1-multichannel_image.tif
 Image > Lookup Tables > Grays
