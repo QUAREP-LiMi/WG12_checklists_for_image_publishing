@@ -71,9 +71,9 @@ What are the critical aspects that we need to show to visualize these results?
 
 ```
 
-For this example we want to show the overview images to give the viewer an idea about the difference in the treatments. We also will show crops of cells to better visualize the overall difference in morphology. 
+For this example we want to show the overview images to give the viewer an idea about the difference in the treatments in terms of overall number of cells affected. We also will show crops of cells to better visualize the overall difference in cell shape and size. 
 
-The acquired images have four channels for the major cellular compartments (Nucleus, Mitochondria, Cytoskeleton and ER). The image figure focuses the overall morphology and not the different cellular compartment thus we will only visualize three channels. See final result below: 
+The acquired images have four channels for the major cellular compartments (Nucleus, Mitochondria, Cytoskeleton and Endoplasmic reticulum). The image figure focuses on the overall cell shape and size and not the different cellular compartments. Thus, we will only visualize three channels. See final result below:
 
 ```{figure} ./unit-3_resources/annotations/annotated_panel.png
 :alt: In
@@ -86,7 +86,9 @@ Final result of course example.
 
 ## Selecting images for visualization
 
-Another aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result — picking an unusually striking or atypical example (an "edge of distribution" image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:
+Another aspect that we should also consider at this stage is the choice of images. Typically, an image dataset is acquired instead of just a single image, and the chosen image shapes how the reader perceives the result.
+
+For instance picking an unusually striking or atypical example (an "edge of distribution" image) misrepresents the data and overstates the science. Acceptable methods to choose an image for a figure could be:
 - Representative image
 - Random selection
 - Based on analysis (middle of distribution)
