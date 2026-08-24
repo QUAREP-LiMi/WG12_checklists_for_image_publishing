@@ -1,7 +1,26 @@
 (tutorials)=
 # Introduction to course
 
-This course shows in practice how to create a scientific image figure. It focuses on only the most critical items that affect whether a figure is legible and truthful. The condensed checklist below shows the covered items. 
+This course shows in practice how to create a scientific image figure and how to document it in figure legends and methods. 
+
+## Course learning objectives
+
+The overall course objective is to walk through creating one complete image figure from raw data, including the figure legend and the methods used to create, process and analyze the images.
+
+After the course, the learner will be able to produce an image figure from an original microscopy image that truthfully and effectively reports the scientific result that the figure represents (see below).
+
+```{figure} ./unit-3_resources/annotations/annotated_panel.png
+:alt: In
+:align: center
+:name: annotated_image_result
+:width: 100%
+
+Example of an image figure with key annotations provided, such as a scale bar and content including the shown image colors. An enlarged crop is shown next to the overview to focus the viewer on a key result. The origin of the crop is annotated in the overview. Additional annotations, such as white arrowheads, are used to further guide the viewer.
+```
+
+##  Scope of course
+
+It focuses on only the most critical items that affect whether a figure is legible and truthful. The condensed checklist below shows the covered items. 
 
 For the complete set of recommendations, see the full set of [checklists](https://doi.org/10.1038/s41592-023-01987-9). 
 
@@ -32,22 +51,7 @@ This is a hands-on course providing examples that students can implement themsel
 It uses the freely accessible, open-source tools [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/).
 
 
-## Course learning objectives
-
-The overall course objective is to walk through creating one complete image figure from raw data, including the figure legend and the methods used to create, process and analyze the images.
-
-After the course, the learner will be able to produce an image figure from an original microscopy image that truthfully and effectively reports the scientific result that the figure represents (see below).
-
-```{figure} ./unit-3_resources/annotations/annotated_panel.png
-:alt: In
-:align: center
-:name: annotated_image_result
-:width: 100%
-
-Example of an image figure with key annotations provided, such as a scale bar and content including the shown image colors. An enlarged crop is shown next to the overview to focus the viewer on a key result. The origin of the crop is annotated in the overview. Additional annotations, such as white arrowheads, are used to further guide the viewer.
-```
-
-### Overview of teaching units
+## Overview of teaching units
 
 The units follow the image processing workflow step by step: adjusting visibility and formatting in Fiji, preparing the figure in Inkscape, and finally describing the methods used for image processing and analysis. 
 
