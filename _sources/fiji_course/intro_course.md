@@ -42,7 +42,7 @@ The content is created with microscopy images, specifically light microscopy in 
 
 :::
 
-## Course prerequisites:
+## Course prerequisites
 
 This course assumes prior knowledge of microscopy and image acquisition. There should be a basic understanding of what a digital microscopy image is. Specifically, you know what pixels, gray values, and different channels are.
 
@@ -52,6 +52,7 @@ This course assumes prior knowledge of microscopy and image acquisition. There s
 This is a hands-on course with examples you can implement yourself. The principles and instructions apply to your own images.
 
 It uses the freely accessible, open-source tools [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/).
+
 ## Overview of teaching units
 
 The units follow the image processing workflow step by step: adjusting visibility and formatting in Fiji, preparing the figure in Inkscape, and finally describing the methods used for image processing and analysis. 
