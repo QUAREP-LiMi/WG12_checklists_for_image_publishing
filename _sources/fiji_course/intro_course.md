@@ -34,7 +34,7 @@ Condensed checklist.
 
 ## Who this course is for
 
-This course is for anyone who wants to process scientific images for visualization in scientific articles, posters or presentations. We assume that you are at a point where you have a suitable image for visualization available. We will not cover image acquisition questions.
+This course is for anyone who wants to process scientific images, particularly light microscopy images, for visualization in scientific articles, posters, or presentations. We assume you already have a suitable image for visualization. We will not cover image acquisition.
 
 :::{note}
 
@@ -42,15 +42,16 @@ The content is created with microscopy images, specifically light microscopy in 
 
 :::
 
-Course prerequisites:
-- Unit-1 to Unit-3 focus on image visualization. They assume no prior knowledge of image processing. 
-- Unit-4 focuses on documentation of image analysis. Basic image processing and analysis knowledge is beneficial. 
+## Course prerequisites:
 
-This is a hands-on course providing examples that students can implement themselves. The principles and instructions can be applied to your own images.
+This course assumes prior knowledge of microscopy and image acquisition. There should be a basic understanding of what a digital microscopy image is. Specifically, you know what pixels, gray values, and different channels are.
+
+- Unit 1 to Unit 3 focus on image visualization. They assume no prior knowledge of image processing.
+- Unit 4 focuses on documentation of image analysis. Basic image processing and analysis knowledge is needed (e.g., segmentation, thresholding, image filters).
+
+This is a hands-on course with examples you can implement yourself. The principles and instructions apply to your own images.
 
 It uses the freely accessible, open-source tools [Fiji](https://fiji.sc/) and [Inkscape](https://inkscape.org/).
-
-
 ## Overview of teaching units
 
 The units follow the image processing workflow step by step: adjusting visibility and formatting in Fiji, preparing the figure in Inkscape, and finally describing the methods used for image processing and analysis. 
