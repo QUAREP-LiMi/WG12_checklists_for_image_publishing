@@ -87,6 +87,15 @@ We recommend using the latest versions of these programs.
 
 ## Further material: Image publication
 
+BioImaging North America: Figure Making Best Practices
+
+```{raw} html
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe src="https://www.youtube.com/embed/CgfnlcxbjuI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+```
+
 Cheatsheets for creating image figures:
 
 - Schmied C. and Jambor HK. Effective image visualization for publications – a workflow using open access tools and concepts [version 2]. F1000Research 2021, 9:1373 ([doi: 10.12688/f1000research.27140.2](https://doi.org/10.12688/f1000research.27140.2))
