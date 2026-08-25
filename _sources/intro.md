@@ -6,7 +6,12 @@ In this paper, members of [QUAREP-LiMi](./other_resources/whois.md) have propose
 
 Alternatively, see the Einstein Foundation video below describing some of our work and goals.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VZ-Y3VMX_Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```{raw} html
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe src="https://www.youtube.com/embed/VZ-Y3VMX_Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+```
 
 ## Cite 
 
