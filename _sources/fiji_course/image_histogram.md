@@ -178,12 +178,6 @@ An example showing the hallmarks of a well-acquired image: (a) Offset. (b) Varyi
 (b) The signal is continuous but not smooth; variation is present along the intensity distribution due to variation in the signal and noise.
 (c) The high values end before the highest possible value, rather than reaching it.
 
-:::{note}
-
-Variation and noise are often seen as something bad that should be suppressed or removed before analysis. However, in the physical world, variation is normal and noise cannot be avoided when performing measurements, as the measurement itself will introduce it. Thus, the absence of variation or noise, i.e., smooth distributions, is generally an indication that some processing has occurred.
-
-:::
-
 ## Intensity artifacts in Histograms
 
 Since we now understand how a regular histogram should look, we can study different intensity sampling problems. Download the example images (b-e) from the example figure {numref}`sampling_errors` here (right-click and select "Save Link As..."): 
