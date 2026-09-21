@@ -1,0 +1,23 @@
+[
+    {
+        "question": "A figure has a complete, well-written legend. What else is needed for the figure to be considered fully documented?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Nothing else, the legend covers it",
+                "correct": false,
+                "feedback": "A legend describes what's shown, but it doesn't make the underlying data or processing available to others."
+            },
+            {
+                "answer": "The underlying image data and processing steps need to be available/documented too",
+                "correct": true,
+                "feedback": "Correct. Reproducibility requires that the data and the processing behind the figure are also accessible, not just described."
+            },
+            {
+                "answer": "A higher-resolution export",
+                "correct": false,
+                "feedback": "Resolution affects image quality, not whether the figure is reproducible or fully documented."
+            }
+        ]
+    }
+]

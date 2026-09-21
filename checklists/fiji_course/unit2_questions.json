@@ -1,0 +1,23 @@
+[
+    {
+        "question": "For a scale bar to be trustworthy, it must:",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Be a round number for readability",
+                "correct": false,
+                "feedback": "A round number is convenient to read but isn't what makes a scale bar trustworthy."
+            },
+            {
+                "answer": "Be calibrated to the image's actual pixel size, with value and units stated",
+                "correct": true,
+                "feedback": "Correct. A scale bar's only job is accuracy; it must match the image's real calibration, with its value and units clearly given."
+            },
+            {
+                "answer": "Be placed in the same corner in every figure",
+                "correct": false,
+                "feedback": "Placement is a stylistic consistency choice, not what makes the scale bar accurate."
+            }
+        ]
+    }
+]

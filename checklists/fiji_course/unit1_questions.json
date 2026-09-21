@@ -1,0 +1,23 @@
+[
+    {
+        "question": "You raise the brightness on a channel until a faint real signal disappears from view. What's the problem?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "It's fine, brightness doesn't change the underlying data",
+                "correct": false,
+                "feedback": "Brightness/contrast don't alter the pixel values themselves, but they do change what a reader sees, which is what matters for a figure."
+            },
+            {
+                "answer": "The adjustment now misrepresents what's actually in the image",
+                "correct": true,
+                "feedback": "Correct. If a real signal becomes invisible, the figure no longer truthfully represents what was measured."
+            },
+            {
+                "answer": "It's only a problem if you also crop the image",
+                "correct": false,
+                "feedback": "Cropping is a separate issue; this problem exists with brightness/contrast alone."
+            }
+        ]
+    }
+]

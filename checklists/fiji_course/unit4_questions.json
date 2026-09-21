@@ -1,0 +1,23 @@
+[
+    {
+        "question": "You used Fiji's default threshold tool to quantify signal area. What must you report for someone else to reproduce this?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Nothing, default settings don't need reporting",
+                "correct": false,
+                "feedback": "\"Default settings\" are still settings; without naming them, no one else can reproduce the analysis."
+            },
+            {
+                "answer": "The tool, version, and exact settings/threshold method used",
+                "correct": true,
+                "feedback": "Correct. Reproducing a quantitative analysis requires knowing exactly which tool, version, and settings were used, defaults included."
+            },
+            {
+                "answer": "Just the final numeric result",
+                "correct": false,
+                "feedback": "The result alone doesn't tell anyone how it was obtained, so it can't be checked or reproduced."
+            }
+        ]
+    }
+]
