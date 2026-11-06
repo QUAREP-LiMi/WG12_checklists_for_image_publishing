@@ -485,6 +485,7 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result-and-next-unit">Result and next unit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-test">Self test</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-roi-manager-and-overlays">Bonus: ROI Manager and overlays</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-result">Save result</a></li>
 </ul>
@@ -675,6 +676,42 @@
 <p>You can download the result of <a class="reference internal" href="#"><span class="std std-doc">Unit 2: Format and annotations</span></a> here: <a class="reference download internal" download="" href="../_downloads/b8ada1fa529e63bf946259371ef055e4/composite_scale.tif"><span class="xref download myst">composite_scale.tif</span></a> and <a class="reference download internal" download="" href="../_downloads/e61ae4f866945b8845229411ade98f73/composite_crop_scale.tif"><span class="xref download myst">composite_crop_scale.tif</span></a>.</p>
 <p>The result images will be used in <a class="reference internal" href="unit-3_figure_prep.html"><span class="std std-doc">Unit 3: Figure and availability</span></a>, where we will create a complete scientific image figure using vector graphics software, adding legible annotations, figure legends, and method descriptions, and make the underlying image data available in a public repository.</p>
 </section>
+<section id="self-test">
+<h2>Self test<a class="headerlink" href="#self-test" title="Link to this heading">#</a></h2>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">jupyterquiz</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"./unit2_questions.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="n">display_quiz</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">jupyterquiz</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"./unit2_questions.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">questions</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named 'jupyterquiz'
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 <section id="bonus-roi-manager-and-overlays">
 <h2>Bonus: ROI Manager and overlays<a class="headerlink" href="#bonus-roi-manager-and-overlays" title="Link to this heading">#</a></h2>
 <p>You can manage multiple ROIs and also annotations via the ROI Manager. First, we need to make sure that any ROIs (or selections) are available in the overlay:</p>
@@ -802,6 +839,7 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result-and-next-unit">Result and next unit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-test">Self test</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-roi-manager-and-overlays">Bonus: ROI Manager and overlays</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-result">Save result</a></li>
 </ul>

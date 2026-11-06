@@ -488,6 +488,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#availability">Availability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-unit">Next unit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-test">Self test</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-grayscale-figure">Bonus: Grayscale figure</a></li>
 </ul>
             </nav>
@@ -836,6 +837,42 @@
 <h2>Next unit<a class="headerlink" href="#next-unit" title="Link to this heading">#</a></h2>
 <p>In the final <a class="reference internal" href="unit-4_analysis.html"><span class="std std-doc">Unit 4: Quantification</span></a>, we will complete the course by performing a basic quantitative image analysis using an existing tool, documenting the software, tool versions, and analysis settings used, and identifying what needs to be shared (code, settings files, example data).</p>
 </section>
+<section id="self-test">
+<h2>Self test<a class="headerlink" href="#self-test" title="Link to this heading">#</a></h2>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">jupyterquiz</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"./unit3_questions.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">questions</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="n">display_quiz</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">jupyterquiz</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_quiz</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"./unit3_questions.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">questions</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named 'jupyterquiz'
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 <section id="bonus-grayscale-figure">
 <h2>Bonus: Grayscale figure<a class="headerlink" href="#bonus-grayscale-figure" title="Link to this heading">#</a></h2>
 <p>Providing the individual grayscale channels provides much better visualization of the image content. This is beneficial if you talk about structures in a specific channel for instance. Also the image information is much better to view in grayscale.</p>
@@ -1028,6 +1065,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#availability">Availability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-unit">Next unit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-test">Self test</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-grayscale-figure">Bonus: Grayscale figure</a></li>
 </ul>
   </nav></div>
