@@ -1,6 +1,16 @@
+---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
 (unit-1_visibility)=
 # Unit 1: Visibility
-
 Topics: Brightness and Contrast, colors, accessibility
 
 <!---
@@ -566,6 +576,20 @@ Merging more than three color channels into a single image for visualization is 
 More than three channels can be tolerable when the objects in different channels are well separated. However, this is often not the case for biological information. Thus, we generally recommend visualizing more than three channels separately, ideally using grayscale images. 
 
 :::
+
+## Self test
+
+```{code-cell} ipython3
+:tags: [hide-input]
+
+import json
+from jupyterquiz import display_quiz
+
+with open("./unit1_questions.json") as f:
+    questions = json.load(f)
+
+display_quiz(questions)
+```
 
 (bonus-macro-recorder)=
 ## Bonus: Macro recorder

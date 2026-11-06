@@ -1,3 +1,14 @@
+---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
 (unit-4_analysis)=
 # Unit 4: Quantification
 
@@ -196,4 +207,19 @@ See also: Miura K, Nørrelykke SF. Reproducible image handling and analysis. EMB
 :width: 100%
 
 Examples of different repositories. Overview provided by [Cimini 2023](https://doi.org/10.5281/zenodo.7628604).
+```
+
+
+## Self test
+
+```{code-cell} ipython3
+:tags: [hide-input]
+
+import json
+from jupyterquiz import display_quiz
+
+with open("./unit4_questions.json") as f:
+    questions = json.load(f)
+
+display_quiz(questions)
 ```

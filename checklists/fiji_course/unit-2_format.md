@@ -1,3 +1,14 @@
+---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
 (unit-2_format)=
 # Unit 2: Format and annotations
 
@@ -237,6 +248,20 @@ However, we recommend creating such annotations in a dedicated vector graphics p
 You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif). 
 
 The result images will be used in [Unit 3: Figure and availability](./unit-3_figure_prep.md), where we will create a complete scientific image figure using vector graphics software, adding legible annotations, figure legends, and method descriptions, and make the underlying image data available in a public repository.
+
+## Self test
+
+```{code-cell} ipython3
+:tags: [hide-input]
+
+import json
+from jupyterquiz import display_quiz
+
+with open("./unit2_questions.json") as f:
+    questions = json.load(f)
+
+display_quiz(questions)
+```
 
 ## Bonus: ROI Manager and overlays
 

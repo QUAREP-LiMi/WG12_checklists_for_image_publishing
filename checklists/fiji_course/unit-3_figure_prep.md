@@ -1,3 +1,14 @@
+---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
 (unit-3_figure_prep)=
 # Unit 3: Figure and availability
 
@@ -414,6 +425,20 @@ As long as it is legally and technically feasible, the original images as well a
 ## Next unit
 
 In the final [Unit 4: Quantification](./unit-4_analysis.md), we will complete the course by performing a basic quantitative image analysis using an existing tool, documenting the software, tool versions, and analysis settings used, and identifying what needs to be shared (code, settings files, example data).
+
+## Self test
+
+```{code-cell} ipython3
+:tags: [hide-input]
+
+import json
+from jupyterquiz import display_quiz
+
+with open("./unit3_questions.json") as f:
+    questions = json.load(f)
+
+display_quiz(questions)
+```
 
 ## Bonus: Grayscale figure
 
