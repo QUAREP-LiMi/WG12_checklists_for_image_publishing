@@ -385,7 +385,6 @@ Consider adding annotations, such as cell type and treatment, to help the viewer
 Add text annotations.
 ```
 
-
 ### Text labels
 
 Add text with the *text tool* (A|) and then modify fonts and font size using: 
