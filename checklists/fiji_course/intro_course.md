@@ -78,18 +78,30 @@ For more content on image processing ethics and image interpolation, see: [Furth
 
 [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+## License
+
 Unless otherwise noted, all text, images, figures, videos and other media in this
 repository (in particular the contents of `fiji_course/`) are licensed under the
-[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) (CC BY 4.0). 
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) (CC BY 4.0).
 
-Suggested attribution:
-"How to publish images" by QUAREP-LiMi WG12, [https://quarep-limi.github.io/WG12_checklists_for_image_publishing/](https://quarep-limi.github.io/WG12_checklists_for_image_publishing/), CC BY 4.0
+**Attribution when reusing material from this course:**
+QUAREP-LiMi WG12, *How to publish images*,
+[https://quarep-limi.github.io/WG12_checklists_for_image_publishing/](https://quarep-limi.github.io/WG12_checklists_for_image_publishing/), CC BY 4.0
 
 Third-party material (e.g. images reused from publications) is excluded and remains
 under its original license, as indicated in its caption.
 
 Source code (e.g. Python, JavaScript, configuration and build files) is licensed
 under the BSD 3-Clause License, see LICENSE.
+
+## How to cite
+
+This course builds on the community checklists for publishing images and image analyses.
+If you use it in teaching, training or publications, please cite:
+
+> Schmied, C., Nelson, M.S., Avilov, S. et al. Community-developed checklists for
+> publishing images and image analyses. *Nat Methods* **21**, 170–181 (2024).
+> [https://doi.org/10.1038/s41592-023-01987-9](https://doi.org/10.1038/s41592-023-01987-9)
 ```
 
 ## Materials
