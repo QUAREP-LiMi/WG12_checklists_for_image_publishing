@@ -88,11 +88,10 @@ repository (in particular the contents of `fiji_course/`) are licensed under the
 QUAREP-LiMi WG12, *How to publish images*,
 [https://quarep-limi.github.io/WG12_checklists_for_image_publishing/](https://quarep-limi.github.io/WG12_checklists_for_image_publishing/), CC BY 4.0
 
-Third-party material (e.g. images reused from publications) is excluded and remains
-under its original license, as indicated in its caption.
-
 Source code (e.g. Python, JavaScript, configuration and build files) is licensed
 under the BSD 3-Clause License, see LICENSE.
+
+Third-party material (e.g. images reused from publications) is not covered by these licenses and keeps its original license, as noted in its caption.
 
 ## How to cite
 
