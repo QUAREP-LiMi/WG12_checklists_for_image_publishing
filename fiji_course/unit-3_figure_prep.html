@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2325c395" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=74012282" />
   
   <!-- So that users can add custom icons -->
   <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
@@ -56,7 +56,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
     <script data-domain="quarep-limi.github.io/wg12-checklists-for-image-publishing" defer="defer" src="https://plausible.io/js/script.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
@@ -477,12 +477,18 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biovoxxel-figure-tools">BioVoxxel Figure Tools</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-images-as-svg">Export images as SVG</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figures-in-inkscape">Figures in Inkscape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-over-core-inkscape-interface">Overview over core inkscape interface</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-images-into-inkscape">Import images into inkscape</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resize-images">Resize images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-scale-bar">Modify scale bar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-scale-bars">Examples of scale bars</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-rois">Modify ROIs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-annotations">Additional annotations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-annotations">Additional annotations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text-labels">Text labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arrows">Arrows</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-structure-multiple-objects">Quickly structure multiple objects</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-image-figure">Export image figure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-legends">Figure legends</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
@@ -531,15 +537,24 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 58 </span><span class="caption-text">Processed overview and crop for one panel of an image figure.</span><a class="headerlink" href="#intro-unit3" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>You can download the result of <a class="reference internal" href="unit-2_format.html"><span class="std std-doc">Unit 2: Format and annotations</span></a> here: <a class="reference download internal" download="" href="../_downloads/b8ada1fa529e63bf946259371ef055e4/composite_scale.tif"><span class="xref download myst">composite_scale.tif</span></a> and <a class="reference download internal" download="" href="../_downloads/e61ae4f866945b8845229411ade98f73/composite_crop_scale.tif"><span class="xref download myst">composite_crop_scale.tif</span></a>.</p>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated.</p>
+</div>
 <p>Typically, we want to present other image panels too, for instance, compare wild type versus a treatment. In this case, the first image is of U2-OS cells treated with DMSO as a control. In our example figure, we now want to compare U2-OS cells treated with Nocodazole acquired with the same settings.</p>
 <figure class="align-center" id="treatment-intro">
 <a class="reference internal image-reference" href="../_images/treatment_scale.png"><img alt="In" src="../_images/treatment_scale.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 59 </span><span class="caption-text">Processed overview and crop for treatment panel of an image figure.</span><a class="headerlink" href="#treatment-intro" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -547,11 +562,17 @@
 <p>You can already see one of the challenges with annotations in processed images. Unless all settings are the same, the different annotations end up with different font sizes. We will show you how to overcome this issue by modifying and adding annotations in a vector graphics program.</p>
 </div>
 <p>You can download the original image for the treatment here: <a class="reference download internal" download="" href="../_downloads/6b0d140a483f7292d8370d7bdc469b2e/multichannel_image_treat.tif"><span class="xref download myst">multichannel_image_treat.tif</span></a>. Then perform the processing described in <a class="reference internal" href="unit-1_visibility.html"><span class="std std-doc">Unit 1: Visibility</span></a> and <a class="reference internal" href="unit-2_format.html"><span class="std std-doc">Unit 2: Format and annotations</span></a>.</p>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>For an accurate qualitative comparison, the images need to be processed with the same settings, since differences introduced by the processing itself (e.g., a brighter contrast on the treated condition) would otherwise be indistinguishable from real biological differences.</p>
 </div>
 <p>You can download the result here: <a class="reference download internal" download="" href="../_downloads/b1ab3ff02855fa01ab6ab99a97cad8f0/composite_treat_scale.tif"><span class="xref download myst">composite_treat_scale.tif</span></a> and <a class="reference download internal" download="" href="../_downloads/3f539d2591230a56d5e5fca2f837ee30/composite_treat_crop_scale.tif"><span class="xref download myst">composite_treat_crop_scale.tif</span></a>.</p>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated.</p>
+</div>
 </section>
 <section id="biovoxxel-figure-tools">
 <h2>BioVoxxel Figure Tools<a class="headerlink" href="#biovoxxel-figure-tools" title="Link to this heading">#</a></h2>
@@ -582,6 +603,7 @@
 <h2>Export images as SVG<a class="headerlink" href="#export-images-as-svg" title="Link to this heading">#</a></h2>
 <p>Open all images for export. You can then export all the images as .svg files:</p>
 <p>Plugins &gt; BioVoxxel Figure Tools &gt; Export all images as SVG</p>
+<p>Select a Target folder and press ok. You may also selecte “Keep multichannel composite”.</p>
 <figure class="align-center" id="image-svg">
 <a class="reference internal image-reference" href="../_images/export_all_svg.png"><img alt="In" src="../_images/export_all_svg.png" style="width: 50%;" />
 </a>
@@ -596,6 +618,9 @@
 <li><p><a class="reference download internal" download="" href="../_downloads/6c94ec8453ab5f37d70e90f700cea179/03_composite_treat_crop_scale.svg"><span class="xref download myst">03_composite_treat_crop_scale.svg</span></a></p></li>
 <li><p><a class="reference download internal" download="" href="../_downloads/4829b28c02ce23e5d57d44bab24f1bb9/04_composite_treat_scale.svg"><span class="xref download myst">04_composite_treat_scale.svg</span></a></p></li>
 </ul>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated.</p>
+</div>
 </section>
 <section id="figures-in-inkscape">
 <h2>Figures in Inkscape<a class="headerlink" href="#figures-in-inkscape" title="Link to this heading">#</a></h2>
@@ -609,6 +634,35 @@
 </figcaption>
 </figure>
 </section>
+<section id="overview-over-core-inkscape-interface">
+<h2>Overview over core inkscape interface<a class="headerlink" href="#overview-over-core-inkscape-interface" title="Link to this heading">#</a></h2>
+<p>An official tutorial you find here: <a class="reference external" href="https://inkscape-manuals.readthedocs.io/en/latest/">Inkscape Beginners’ Guide</a>.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/inkscape_interface_overview.png"><img alt="In" src="../_images/inkscape_interface_overview.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Overview of the main Inkscape interface: (a) Menu bar. (b) Tool Controls bar: its options change depending on the active tool. (c) Toolbox: tools for creating and editing objects. In this course we only use the Selector (arrow) and the Text tool (A|). (d) Canvas and page: the white page is your figure; only what lies on the page is exported. (e) Docked dialogs: where most of the work happens (here the Export dialog is open). (f) Color palette and status bar.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Important docked dialogs (most explained in more detail later):</p>
+<ul class="simple">
+<li><p>Document Properties (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+D</span></code>): page size and units - already set with template.</p></li>
+<li><p>Layers and Objects (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+L</span></code>): organize and find the elements of your figure.</p></li>
+<li><p>Fill and Stroke (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+F</span></code>): colors of objects and their outlines.</p></li>
+<li><p>Text and Font (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+T</span></code>): font family, size and style.</p></li>
+<li><p>Align and Distribute (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+A</span></code>): line up panels and labels precisely.</p></li>
+<li><p>Export (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+E</span></code>): save the figure as PNG, PDF or SVG.</p></li>
+</ul>
+<p>Dialogs open as tabs in the docked area (e). Click a tab to switch, or close it with the x. If a dialog disappears, reopen it via the menu or its shortcut.</p>
+<p>Navigation:</p>
+<ul class="simple">
+<li><p>Pan (move around the canvas): hold the middle mouse button and drag, or hold Space and drag</p></li>
+<li><p>Scroll up &amp; down: mouse wheel</p></li>
+<li><p>Scroll left &amp; right: Shift + mouse wheel</p></li>
+<li><p>Zoom: Ctrl + mouse wheel</p></li>
+<li><p>Shortcuts: <code class="docutils literal notranslate"><span class="pre">1</span></code> zoom to 100%, <code class="docutils literal notranslate"><span class="pre">3</span></code> zoom to selection, <code class="docutils literal notranslate"><span class="pre">5</span></code> fit page</p></li>
+</ul>
+</section>
 <section id="import-images-into-inkscape">
 <h2>Import images into inkscape<a class="headerlink" href="#import-images-into-inkscape" title="Link to this heading">#</a></h2>
 <p>We are now able to load the images exported as SVG into Inkscape. The advantage here is that the images, as well as the included annotations, are full vector graphics. Annotations such as scale bars can be edited, and the images can be <a class="reference internal" href="interpolation.html"><span class="std std-doc">resized without interpolation</span></a>.</p>
@@ -618,7 +672,7 @@
 <a class="reference internal image-reference" href="../_images/inkscape_import.png"><img alt="In" src="../_images/inkscape_import.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Import SVG images into inkscape.</span><a class="headerlink" href="#inkscape-import" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 65 </span><span class="caption-text">Import SVG images into inkscape.</span><a class="headerlink" href="#inkscape-import" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -633,19 +687,26 @@
 <a class="reference internal image-reference" href="../_images/inkscape_resize_arrow.png"><img alt="In" src="../_images/inkscape_resize_arrow.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 65 </span><span class="caption-text">Resize image panel to fit the figure. Note the lock on the aspect ratio, used to resize the image uniformly.</span><a class="headerlink" href="#inkscape-resize" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 66 </span><span class="caption-text">Resize image panel to fit the figure. Note the lock on the aspect ratio, used to resize the image uniformly.</span><a class="headerlink" href="#inkscape-resize" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
+<p>To move different objects on the canvas/page use the selector (cursor in the tool bar) and then select the object and drag on the canvas.</p>
 </section>
 <section id="modify-scale-bar">
 <h2>Modify scale bar<a class="headerlink" href="#modify-scale-bar" title="Link to this heading">#</a></h2>
 <p>Next, you can select an annotation in Layers and Objects. Modify the size and location of the annotation.</p>
-<p>Layer &gt; Layers and Objects…</p>
+<p>Layer &gt; Layers and Objects… (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+L</span></code>)</p>
 <figure class="align-center" id="inkscape-layers-objects">
 <a class="reference internal image-reference" href="../_images/inkscape_layers_objects.png"><img alt="In" src="../_images/inkscape_layers_objects.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 66 </span><span class="caption-text">Layers and objects allow for selecting the different annotations.</span><a class="headerlink" href="#inkscape-layers-objects" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 67 </span><span class="caption-text">Layers and objects allow for selecting the different annotations.</span><a class="headerlink" href="#inkscape-layers-objects" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -656,7 +717,7 @@
 <a class="reference internal image-reference" href="../_images/inkscape_annotations.png"><img alt="In" src="../_images/inkscape_annotations.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 67 </span><span class="caption-text">The ROI - 0001-0510-0498, the scale bar and scale bar text - |SB|, and the image - 02_composite_scale.tif (RGB) is shown.</span><a class="headerlink" href="#inkscape-annotations" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 68 </span><span class="caption-text">The ROI - 0001-0510-0498, the scale bar and scale bar text - |SB|, and the image - 02_composite_scale.tif (RGB) is shown.</span><a class="headerlink" href="#inkscape-annotations" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Select the annotation you want to modify in the layers and objects interface. Then edit height and location of the scale bar. Edit the dimension annotation such that it is uniform and legible across all images.</p>
@@ -664,7 +725,7 @@
 <a class="reference internal image-reference" href="../_images/edited_annotation.png"><img alt="In" src="../_images/edited_annotation.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 68 </span><span class="caption-text">Scale bar adjusted for height and location. The dimension will be specified in the figure legends.</span><a class="headerlink" href="#edited-annotations" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 69 </span><span class="caption-text">Scale bar adjusted for height and location. The dimension will be specified in the figure legends.</span><a class="headerlink" href="#edited-annotations" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -675,7 +736,10 @@
 <a class="reference internal image-reference" href="../_images/edited_annotation2.png"><img alt="In" src="../_images/edited_annotation2.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 69 </span><span class="caption-text">Different examples of annotated scale.</span><a class="headerlink" href="#edited-annotations2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 70 </span><span class="caption-text">Different examples of annotated scale.</span><a class="headerlink" href="#edited-annotations2" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -692,17 +756,20 @@
 <a class="reference internal image-reference" href="../_images/inkscape_roi.png"><img alt="In" src="../_images/inkscape_roi.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 70 </span><span class="caption-text">The ROI when added as an overlay can also be exported in the SVG and imported in inkscape. You can then modify the color and thickness of the ROI.</span><a class="headerlink" href="#inkscape-roi" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 71 </span><span class="caption-text">The ROI when added as an overlay can also be exported in the SVG and imported in inkscape. You can then modify the color and thickness of the ROI.</span><a class="headerlink" href="#inkscape-roi" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>The appearance of the ROI can then be modified via:</p>
-<p>Object &gt; Fill and Stroke…</p>
+<p>Object &gt; Fill and Stroke… (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+F</span></code>)</p>
 <p>For changing the color, select the Stroke tab. In the Fill and Stroke interface select the “Stroke Paint” tab.</p>
 <figure class="align-center" id="inkscape-stroke-color">
 <a class="reference internal image-reference" href="../_images/inkscape_stroke_color-1.png"><img alt="In" src="../_images/inkscape_stroke_color-1.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 71 </span><span class="caption-text">In the Fill and Stroke interface select the “Stroke Paint” tab.</span><a class="headerlink" href="#inkscape-stroke-color" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 72 </span><span class="caption-text">In the Fill and Stroke interface select the “Stroke Paint” tab.</span><a class="headerlink" href="#inkscape-stroke-color" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Modify the color of the ROI via the color settings in the Stroke Paint panel.</p>
@@ -714,7 +781,10 @@
 <a class="reference internal image-reference" href="../_images/inkscape_stroke_color_adjust.png"><img alt="In" src="../_images/inkscape_stroke_color_adjust.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 72 </span><span class="caption-text">Adjust the color of the ROI.</span><a class="headerlink" href="#inkscape-stroke-color-adjust" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 73 </span><span class="caption-text">Adjust the color of the ROI.</span><a class="headerlink" href="#inkscape-stroke-color-adjust" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>After the color has been adjusted, modify the line width of the ROI. Select the Stroke style tab in the Fill and Stroke interface, then adjust the Width setting:</p>
@@ -722,20 +792,71 @@
 <a class="reference internal image-reference" href="../_images/inkscape_stroke_width-1.png"><img alt="In" src="../_images/inkscape_stroke_width-1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 73 </span><span class="caption-text">Adjust the width of the ROI lines so that the ROI is clearly visible.</span><a class="headerlink" href="#inkscape-stroke-width" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 74 </span><span class="caption-text">Adjust the width of the ROI lines so that the ROI is clearly visible.</span><a class="headerlink" href="#inkscape-stroke-width" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 </section>
 <section id="additional-annotations">
 <h2>Additional annotations<a class="headerlink" href="#additional-annotations" title="Link to this heading">#</a></h2>
 <p>Consider adding annotations, such as cell type and treatment, to help the viewer interpret your results more quickly. You can also use arrows or other symbols to highlight specific areas of interest within the data.</p>
-<figure class="align-center" id="annotated-image">
+<figure class="align-center" id="text-and-font">
 <a class="reference internal image-reference" href="../_images/annotated_panel.png"><img alt="In" src="../_images/annotated_panel.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 74 </span><span class="caption-text">Example of possible annotations in an image.</span><a class="headerlink" href="#annotated-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 75 </span><span class="caption-text">Add text annotations.</span><a class="headerlink" href="#text-and-font" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="text-labels">
+<h3>Text labels<a class="headerlink" href="#text-labels" title="Link to this heading">#</a></h3>
+<p>Add text with the <em>text tool</em> (A|) and then modify fonts and font size using:</p>
+<p>Text and Font: Text &gt; Text and Font… (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+T</span></code>)</p>
+<figure class="align-center" id="annotated-image">
+<a class="reference internal image-reference" href="../_images/text_and_font.png"><img alt="In" src="../_images/text_and_font.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Example of possible annotations in an image.</span><a class="headerlink" href="#annotated-image" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="arrows">
+<h3>Arrows<a class="headerlink" href="#arrows" title="Link to this heading">#</a></h3>
+<p>Draw a line: Select the Pen (Bezier) tool (B)</p>
+<p>Add the arrowhead via Fill and Stroke: Object &gt; Fill and Stroke… (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+F</span></code>)</p>
+<p>Adjust look: Set the stroke width, change the size of the line if you only want the arrow head. Change color via stroke paint.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/arrows.png"><img alt="In" src="../_images/arrows.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 77 </span><span class="caption-text">Example of possible annotations in an image.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="quickly-structure-multiple-objects">
+<h3>Quickly structure multiple objects<a class="headerlink" href="#quickly-structure-multiple-objects" title="Link to this heading">#</a></h3>
+<p>You can align multiple objects using:</p>
+<p>Align and Distribute: Object &gt; Align and Distribute… (<code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+A</span></code>)</p>
+<figure class="align-center" id="align-distribute">
+<a class="reference internal image-reference" href="../_images/align_distribute.png"><img alt="In" src="../_images/align_distribute.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 78 </span><span class="caption-text">Align and distribute different objects.</span><a class="headerlink" href="#align-distribute" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When moving objects, you may notice that they sometimes jump to or “cling” to other objects, the page border or grid lines. This behaviour is called snapping and helps you align objects precisely. You can toggle it with the snapping icon in the top right corner or with the <code class="docutils literal notranslate"><span class="pre">%</span></code> key.</p>
+<figure class="align-center" id="snapping">
+<a class="reference internal image-reference" href="../_images/snapping.png"><img alt="In" src="../_images/snapping.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 79 </span><span class="caption-text">Toggle the snapping behaviour.</span><a class="headerlink" href="#snapping" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="export-image-figure">
 <h2>Export image figure<a class="headerlink" href="#export-image-figure" title="Link to this heading">#</a></h2>
@@ -747,7 +868,10 @@
 <a class="reference internal image-reference" href="../_images/export_figure.png"><img alt="In" src="../_images/export_figure.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 75 </span><span class="caption-text">Example of possible annotations in an image.</span><a class="headerlink" href="#export-figure" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 80 </span><span class="caption-text">Example of possible annotations in an image.</span><a class="headerlink" href="#export-figure" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>You can download the intermediate result of the tutorial here: <a class="reference download internal" download="" href="../_downloads/40938e8f7b3fee096162471a3f65d833/figure_example.svg"><span class="xref download myst">figure_example.svg</span></a> (right-click and select “Save Link As…”).</p>
@@ -760,7 +884,10 @@
 <a class="reference internal image-reference" href="../_images/annotated_panel.png"><img alt="In" src="../_images/annotated_panel.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#annotated-image2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 81 </span><span class="caption-text">Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b).</span><a class="headerlink" href="#annotated-image2" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -777,7 +904,7 @@
 <a class="reference internal image-reference" href="../_images/Fiji_version.png"><img alt="In" src="../_images/Fiji_version.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 77 </span><span class="caption-text">Fiji version in the taskbar.</span><a class="headerlink" href="#fiji-version" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Fiji version in the taskbar.</span><a class="headerlink" href="#fiji-version" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Based on this, a possible methods section could read:</p>
@@ -828,7 +955,7 @@
 <a class="reference internal image-reference" href="../_images/repositories1.png"><img alt="In" src="../_images/repositories1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 78 </span><span class="caption-text">Examples of different repositories. Overview provided by <a class="reference external" href="https://doi.org/10.5281/zenodo.7628604">Cimini 2023</a>.</span><a class="headerlink" href="#repositories" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Examples of different repositories. Overview provided by <a class="reference external" href="https://doi.org/10.5281/zenodo.7628604">Cimini 2023</a>.</span><a class="headerlink" href="#repositories" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>As long as it is legally and technically feasible, the original images as well as the final processed images should be made available in public repositories. The original images should be provided in a losslessly compressed format along with any ground truth or manual annotations.</p>
@@ -858,8 +985,8 @@
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="BBjWBXxaHerd" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#BBjWBXxaHerd {
+<div class="output text_html"><div id="lGNgAPSWVamt" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#lGNgAPSWVamt {
    --jq-multiple-choice-bg: #392061;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1082,7 +1209,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsBBjWBXxaHerd=[{"question": "A figure has a complete, well-written legend. What else is needed for the figure to be considered fully documented?", "type": "many_choice", "answers": [{"answer": "Nothing else, the legend covers it", "correct": false, "feedback": "A legend describes what's shown, but it doesn't make the underlying data or processing available to others."}, {"answer": "The underlying image data and processing steps need to be available/documented too", "correct": true, "feedback": "Correct. Reproducibility requires that the data and the processing behind the figure are also accessible, not just described."}, {"answer": "A higher-resolution export", "correct": false, "feedback": "Resolution affects image quality, not whether the figure is reproducible or fully documented."}]}];
+</style></div><script type="application/javascript">var questionslGNgAPSWVamt=[{"question": "A figure has a complete, well-written legend. What else is needed for the figure to be considered fully documented?", "type": "many_choice", "answers": [{"answer": "Nothing else, the legend covers it", "correct": false, "feedback": "A legend describes what's shown, but it doesn't make the underlying data or processing available to others."}, {"answer": "The underlying image data and processing steps need to be available/documented too", "correct": true, "feedback": "Correct. Reproducibility requires that the data and the processing behind the figure are also accessible, not just described."}, {"answer": "A higher-resolution export", "correct": false, "feedback": "Resolution affects image quality, not whether the figure is reproducible or fully documented."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -2144,8 +2271,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("BBjWBXxaHerd")) {
-    show_questions(questionsBBjWBXxaHerd, BBjWBXxaHerd);
+  if (document.getElementById("lGNgAPSWVamt")) {
+    show_questions(questionslGNgAPSWVamt, lGNgAPSWVamt);
   } else {
     setTimeout(try_show, 200);
   }
@@ -2165,42 +2292,45 @@ function try_show() {
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id1">
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../_images/C1-multichannel_image_grays.png"><img alt="../_images/C1-multichannel_image_grays.png" src="../_images/C1-multichannel_image_grays.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 79 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/C2-multichannel_image_grays.png"><img alt="../_images/C2-multichannel_image_grays.png" src="../_images/C2-multichannel_image_grays.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 80 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/C3-multichannel_image_grays.png"><img alt="../_images/C3-multichannel_image_grays.png" src="../_images/C3-multichannel_image_grays.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 81 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Channel 1</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/C2-multichannel_image_grays.png"><img alt="../_images/C2-multichannel_image_grays.png" src="../_images/C2-multichannel_image_grays.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 85 </span><span class="caption-text">Channel 2</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/C3-multichannel_image_grays.png"><img alt="../_images/C3-multichannel_image_grays.png" src="../_images/C3-multichannel_image_grays.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 86 </span><span class="caption-text">Channel 3</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../_images/C4-multichannel_image_grays.png"><img alt="../_images/C4-multichannel_image_grays.png" src="../_images/C4-multichannel_image_grays.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Channel 4</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Channel 4</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
+</div>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted.</p>
 </div>
 <p>This bonus exercise will show an example of doing this. In Unit-1 I have asked you to create and save the grayscale color images. You can download the examples also here:</p>
 <p>You can download the examples grayscale images here (right-click and select “Save Link As…”):</p>
@@ -2215,42 +2345,45 @@ function try_show() {
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id5">
+<figure class="align-default" id="id7">
 <a class="reference internal image-reference" href="../_images/C1-multichannel_image_grays1.png"><img alt="../_images/C1-multichannel_image_grays1.png" src="../_images/C1-multichannel_image_grays1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Channel 1: Min = 308; Max = 2484</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/C2-multichannel_image_grays1.png"><img alt="../_images/C2-multichannel_image_grays1.png" src="../_images/C2-multichannel_image_grays1.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Channel 2: Min = 84; Max = 2965</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/C3-multichannel_image_grays1.png"><img alt="../_images/C3-multichannel_image_grays1.png" src="../_images/C3-multichannel_image_grays1.png" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 85 </span><span class="caption-text">Channel 3: Min = 36; Max = 1270</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 88 </span><span class="caption-text">Channel 1: Min = 308; Max = 2484</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/C2-multichannel_image_grays1.png"><img alt="../_images/C2-multichannel_image_grays1.png" src="../_images/C2-multichannel_image_grays1.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Channel 2: Min = 84; Max = 2965</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/C3-multichannel_image_grays1.png"><img alt="../_images/C3-multichannel_image_grays1.png" src="../_images/C3-multichannel_image_grays1.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 90 </span><span class="caption-text">Channel 3: Min = 36; Max = 1270</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="../_images/C4-multichannel_image_grays1.png"><img alt="../_images/C4-multichannel_image_grays1.png" src="../_images/C4-multichannel_image_grays1.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 86 </span><span class="caption-text">Channel 3: Min = 64; Max = 3195</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 91 </span><span class="caption-text">Channel 3: Min = 64; Max = 3195</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
+</div>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted.</p>
 </div>
 <p>Export the images as SVG and import them into Inkscape</p>
 <p>Plugins &gt; BioVoxxel Figure Tools &gt; Export all images as SVG</p>
@@ -2259,7 +2392,10 @@ function try_show() {
 <a class="reference internal image-reference" href="../_images/result.png"><img alt="In" src="../_images/result.png" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Merge multichannel image provided with grayscale single channel. (a) merge image. (b) Nucleus channel. (c) Actin channel. (d) Mitochondria channel. (e) ER channel.</span><a class="headerlink" href="#grayscale-image" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 92 </span><span class="caption-text">Merge multichannel image provided with grayscale single channel. (a) merge image. (b) Nucleus channel. (c) Actin channel. (d) Mitochondria channel. (e) ER channel.</span><a class="headerlink" href="#grayscale-image" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>I like to provide the merged color image with annotated colors for an overview, placed next to the grayscale single-channel images with their respective channel information annotated.</p>
@@ -2339,12 +2475,18 @@ function try_show() {
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biovoxxel-figure-tools">BioVoxxel Figure Tools</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-images-as-svg">Export images as SVG</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figures-in-inkscape">Figures in Inkscape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-over-core-inkscape-interface">Overview over core inkscape interface</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-images-into-inkscape">Import images into inkscape</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resize-images">Resize images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-scale-bar">Modify scale bar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-scale-bars">Examples of scale bars</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-rois">Modify ROIs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-annotations">Additional annotations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-annotations">Additional annotations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text-labels">Text labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arrows">Arrows</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-structure-multiple-objects">Quickly structure multiple objects</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-image-figure">Export image figure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-legends">Figure legends</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>

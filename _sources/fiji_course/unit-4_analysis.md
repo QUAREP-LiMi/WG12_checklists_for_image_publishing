@@ -45,11 +45,17 @@ For our example figure, we could easily imagine that we create a quantitative an
 :width: 100%
 
 Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 Download the example images here: 
 - [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
 - [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif).
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445).
+:::
 
 ## Analysis based on existing workflow
 
@@ -108,6 +114,8 @@ OrgaMapper visualizes this on the example images using the "Preview" button:
 :width: 50%
 
 OrgaMapper preview of the segmentation.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 To execute the analysis, press the "Batch Process" button. OrgaMapper then performs the analysis based on the loaded settings and will save the results in the output folder. 

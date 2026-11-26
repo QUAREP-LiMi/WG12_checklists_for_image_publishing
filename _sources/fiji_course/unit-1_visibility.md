@@ -37,6 +37,8 @@ Microscopy images are data that document a scientific result. To communicate the
 :name: image_presentation
 
 The same multi-channel image visualized in different forms, all failing to communicate its content. (a) Blue, green, red, and yellow look-up tables overlap and blend, obscuring individual channels. (b) All channels rendered in grayscale, making them indistinguishable. (c) Brightness and contrast processed incorrectly, leaving the image too dark.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ## Key considerations
@@ -75,6 +77,10 @@ Nocodazole treated U-2 OS cells.
 
 ::::
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445).
+:::
+
 ```{admonition}  Think about it
 
 What are the critical aspects that we need to show to visualize these results? 
@@ -92,6 +98,8 @@ The acquired images have four channels for the major cellular compartments (Nucl
 :width: 100%
 
 Final result of course example.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ## Selecting images for visualization
@@ -108,6 +116,10 @@ For instance picking an unusually striking or atypical example (an "edge of dist
 ## Load example images
 
 This tutorial starts with a multi-channel image ({numref}`multichannel_image`). Download a TIFF of the example image here: [multichannel_image.tif](./unit-1_resources/unit-1_examples/multichannel_image.tif).
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445).
+:::
 
 Open Fiji.
 
@@ -131,6 +143,8 @@ File > Open... (or drag and drop image into Fiji task bar)
 :width: 50%
 
 Multichannel image
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445).
 ```
 
 :::{tip}
@@ -175,6 +189,10 @@ Channel 3
 Channel 4
 :::
 ::::
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445).
+:::
 
 Each of the channels encodes different cellular compartments. 
 
@@ -274,6 +292,10 @@ Channel 3
 
 ::::
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped.
+:::
+
 :::{tip}
 
 For these grayscale microscopy images, it is important to choose appropriate color LUTs (e.g., linear color range) that communicate the image information effectively (e.g., good visibility). 
@@ -297,6 +319,8 @@ Since the perception of the information in an image is influenced by the color c
 :width: 100%
 
 Effect of different LUTs on the visualization of the image data. Same image crop with the same brightness/contrast settings. The blue channel gives the worst visualization as almost none of the detail is visible. This is closely followed by red. Green is better, though some details are still harder to see than in the grayscale version.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 Select image: C1-multichannel_image.tif
@@ -343,6 +367,10 @@ Channel 4
 
 ::::
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted. 
+:::
+
 Save these images for further sharing:
 File > Save As > Tiff...
 
@@ -375,6 +403,10 @@ Channel 3
 :::
 
 ::::
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted.
+:::
 
 Select one of the channels: C1-multichannel_image.tif
 
@@ -447,6 +479,10 @@ Background cut too much: Note loss of lower intensity information.
 
 ::::
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted. Figure(s): Figure: Composed by Christopher Schmied, CC BY 4.0.
+:::
+
 ## Adjust brightness/contrast
 
 Adjust the maximum slider or press "Auto" until the objects are well visible and still clearly separated. Oversaturation collapses neighboring high-intensity structures into a single bright blob, effectively losing spatial resolution and the ability to distinguish individual objects.
@@ -473,6 +509,10 @@ Channel 3: Min = 36; Max = 1270
 :::
 
 ::::
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted.
+:::
 
 The information in the single-channel image is now clearly visible in the display without large loss of data (i.e., loss of low intensity information or oversaturation).
 
@@ -501,6 +541,8 @@ Provide calibration bar: Analyze > Tools > Calibration Bar…
 :width: 50%
 
 Calibration bar
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted. Figure(s): Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 In this course, we provide the minimum and maximum settings in the methods for each channel and the original image used for the image figure in a Zenodo repository. Since our example does not use calibrated intensity values, an additional calibration bar is not needed.
@@ -541,6 +583,8 @@ The individual channels then get merged into a composite image (i.e., all channe
 :width: 50%
 
 Composite image
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted. 
 ```
 
 ## Save result
@@ -560,6 +604,8 @@ In general, when saving images, use formats that preserve the image information.
 :width: 50%
 
 Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 :::
 

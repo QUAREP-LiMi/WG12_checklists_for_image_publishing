@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2325c395" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=74012282" />
   
   <!-- So that users can add custom icons -->
   <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
@@ -56,7 +56,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
     <script data-domain="quarep-limi.github.io/wg12-checklists-for-image-publishing" defer="defer" src="https://plausible.io/js/script.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
@@ -522,6 +522,9 @@
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>We start with the result of <a class="reference internal" href="unit-1_visibility.html"><span class="std std-doc">Unit 1: Visibility</span></a>, the composite image with adjusted colors, brightness, and contrast. You can download the image here: <a class="reference download internal" download="" href="../_downloads/f352f6961ad7d53c6aa0e252183b719c/composite.tif"><span class="xref download myst">composite.tif</span></a>.</p>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped.</p>
+</div>
 <p>If you came directly from Unit 1, you can also use your own processed composite.tif as the starting point for this unit.</p>
 <p>Open Fiji.</p>
 <p>Then open the image in Fiji:</p>
@@ -531,6 +534,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 46 </span><span class="caption-text">Composite image.</span><a class="headerlink" href="#composite-image-2" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted.</p>
+</div>
 </figcaption>
 </figure>
 <p>The image shows a field of view of many cells. It gives the viewer a good overview and might be an appropriate figure panel if the number of cells, cell density, or the overall look of the cellular neighborhood is the actual result. However, if the result is, for instance, the size or distribution of a specific cellular compartment (e.g., Mitochondria in the magenta channel), this overview alone will be insufficient.</p>
@@ -563,6 +569,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 47 </span><span class="caption-text">Rectangle ROI drawn on image.</span><a class="headerlink" href="#roi" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>You can save the exact ROI on the image as a non-destructive overlay to easily label the origin of the crop. First, we need to add the ROI to the overlay:</p>
@@ -582,6 +591,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 48 </span><span class="caption-text">Cropped image.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped.</p>
+</div>
 </figcaption>
 </figure>
 <p>To create a crop, one can also use the duplicate command:</p>
@@ -591,6 +603,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 49 </span><span class="caption-text">Cropping via duplication of the content of the ROI.</span><a class="headerlink" href="#duplicate-crop" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 </section>
@@ -607,6 +622,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 50 </span><span class="caption-text">Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90-degree rotation. (Right) 45-degree rotation bilinear interpolation.</span><a class="headerlink" href="#interpolation" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Image: Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>Interpolation is needed since in Fiji, images are processed as Raster graphics (grid of pixels). The effect of raster graphics, image transformation, and interpolation is also discussed here: <a class="reference internal" href="interpolation.html"><span class="std std-doc">Raster graphics and interpolation</span></a></p>
@@ -621,6 +639,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 51 </span><span class="caption-text">Overview and crop show different scale.</span><a class="headerlink" href="#scale-bar1" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>We need to communicate the scale information as well as other important information (e.g., color) to the viewer such that the image becomes interpretable.</p>
@@ -628,12 +649,33 @@
 <h3>Scale Bar<a class="headerlink" href="#scale-bar" title="Link to this heading">#</a></h3>
 <p>The scale bar depends on the pixel size. This information is typically deposited in the saved image by the microscope, but it can be wrong. We therefore need to verify it against the acquisition settings.</p>
 <p>The correct pixel size can be verified and changed in Fiji via:</p>
-<p>Analyze &gt; Set Scale…</p>
+<!---
+# One can set the scale like this. But it is complicated. Better via  Image > Properties > Adjust pixel width
+
+
+Analyze > Set Scale...
+
+```{figure} ./unit-2_resources/annotate/set_scale.png
+:alt: In
+:align: center
+:name: set_scale
+:width: 100%
+
+Verify and set the correct pixel size before creating scale bars.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
+```
+-->
+<p>Image &gt; Properties…</p>
+<p>Then you can verify and if needed adjust <em>Pixel width</em> and <em>Pixel height</em> for 2D images. For 3D stacks adjust also <em>Voxel depth</em>.</p>
 <figure class="align-center" id="set-scale">
-<a class="reference internal image-reference" href="../_images/set_scale.png"><img alt="In" src="../_images/set_scale.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/set_scale2.png"><img alt="In" src="../_images/set_scale2.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 52 </span><span class="caption-text">Verify and set the correct pixel size before creating scale bars.</span><a class="headerlink" href="#set-scale" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>After the correct pixel size has been verified, the scale bar can be created in Fiji via:</p>
@@ -643,6 +685,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 53 </span><span class="caption-text">Scale bar added to the overview as an overlay.</span><a class="headerlink" href="#scale-bar2" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -655,6 +700,9 @@
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 54 </span><span class="caption-text">The width of the scale bar should be in relation to the shown object.</span><a class="headerlink" href="#scale-bar3" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -674,6 +722,9 @@
 <section id="result-and-next-unit">
 <h2>Result and next unit<a class="headerlink" href="#result-and-next-unit" title="Link to this heading">#</a></h2>
 <p>You can download the result of <a class="reference internal" href="#"><span class="std std-doc">Unit 2: Format and annotations</span></a> here: <a class="reference download internal" download="" href="../_downloads/b8ada1fa529e63bf946259371ef055e4/composite_scale.tif"><span class="xref download myst">composite_scale.tif</span></a> and <a class="reference download internal" download="" href="../_downloads/e61ae4f866945b8845229411ade98f73/composite_crop_scale.tif"><span class="xref download myst">composite_crop_scale.tif</span></a>.</p>
+<div class="figure-legend docutils">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated.</p>
+</div>
 <p>The result images will be used in <a class="reference internal" href="unit-3_figure_prep.html"><span class="std std-doc">Unit 3: Figure and availability</span></a>, where we will create a complete scientific image figure using vector graphics software, adding legible annotations, figure legends, and method descriptions, and make the underlying image data available in a public repository.</p>
 </section>
 <section id="self-test">
@@ -697,8 +748,8 @@
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="blTnnxwvwZZm" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#blTnnxwvwZZm {
+<div class="output text_html"><div id="VdRCGfjIjlAZ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#VdRCGfjIjlAZ {
    --jq-multiple-choice-bg: #392061;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -921,7 +972,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsblTnnxwvwZZm=[{"question": "For a scale bar to be trustworthy, it must:", "type": "many_choice", "answers": [{"answer": "Be a round number for readability", "correct": false, "feedback": "A round number is convenient to read but isn't what makes a scale bar trustworthy."}, {"answer": "Be calibrated to the image's actual pixel size, with value and units stated", "correct": true, "feedback": "Correct. A scale bar's only job is accuracy; it must match the image's real calibration, with its value and units clearly given."}, {"answer": "Be placed in the same corner in every figure", "correct": false, "feedback": "Placement is a stylistic consistency choice, not what makes the scale bar accurate."}]}];
+</style></div><script type="application/javascript">var questionsVdRCGfjIjlAZ=[{"question": "For a scale bar to be trustworthy, it must:", "type": "many_choice", "answers": [{"answer": "Be a round number for readability", "correct": false, "feedback": "A round number is convenient to read but isn't what makes a scale bar trustworthy."}, {"answer": "Be calibrated to the image's actual pixel size, with value and units stated", "correct": true, "feedback": "Correct. A scale bar's only job is accuracy; it must match the image's real calibration, with its value and units clearly given."}, {"answer": "Be placed in the same corner in every figure", "correct": false, "feedback": "Placement is a stylistic consistency choice, not what makes the scale bar accurate."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1983,8 +2034,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("blTnnxwvwZZm")) {
-    show_questions(questionsblTnnxwvwZZm, blTnnxwvwZZm);
+  if (document.getElementById("VdRCGfjIjlAZ")) {
+    show_questions(questionsVdRCGfjIjlAZ, VdRCGfjIjlAZ);
   } else {
     setTimeout(try_show, 200);
   }
@@ -2008,6 +2059,9 @@ function try_show() {
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 55 </span><span class="caption-text">Overlay in ROI Manager.</span><a class="headerlink" href="#overlay-roi-manager" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 <p>The ROIs can then be saved as an independent file:</p>
@@ -2022,6 +2076,9 @@ function try_show() {
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 56 </span><span class="caption-text">ROI Manager window.</span><a class="headerlink" href="#roi-manager" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Original image(s): Christopher Wolff (CC0), from <a class="reference external" href="https://doi.org/10.1016/j.isci.2025.112445">Wolff et al. 2025, iScience</a>. Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 </section>
@@ -2037,6 +2094,9 @@ function try_show() {
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 57 </span><span class="caption-text">Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg.</span><a class="headerlink" href="#compression-format" title="Link to this image">#</a></p>
+<div class="legend">
+<p>Image: Christopher Schmied, CC BY 4.0.</p>
+</div>
 </figcaption>
 </figure>
 </div>

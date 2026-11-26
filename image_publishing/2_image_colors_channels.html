@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2325c395" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=74012282" />
   
   <!-- So that users can add custom icons -->
   <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
@@ -56,7 +56,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
     <script data-domain="quarep-limi.github.io/wg12-checklists-for-image-publishing" defer="defer" src="https://plausible.io/js/script.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
@@ -478,18 +478,18 @@
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_1.png"><img alt="../_images/ImageColors_1.png" src="../_images/ImageColors_1.png" style="height: 50px;" /></a>   Annotation of channels (staining, marker etc.) visible</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-0">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Clearly annotate the channels with specific information, including staining (brightfield, e.g. H&amp;E) or labelled molecules (e.g. CD4(Cyan) ) using text or text and colour for merged multi-label images.</p>
+<label aria-controls="sd-tab-item-0-content" class="sd-tab-label" for="sd-tab-item-0">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-0-content">
+<p>Clearly annotate the channels with specific information, including staining (brightfield, e.g. H&amp;E) or labelled molecules (e.g. CD4(Cyan) ) using text or text and colour for merged multi-label images.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-1-content" class="sd-tab-label" for="sd-tab-item-1">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-1-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/5OQgB9fWqSI?t=308">Global BioImaging: Using OMERO.figure to add channel labels</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">See the creation of a panel of images using InkScape with imports from Fiji</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/5OQgB9fWqSI?t=308">Global BioImaging: Using OMERO.figure to add channel labels</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/CgfnlcxbjuI?t=3579">See the creation of a panel of images using InkScape with imports from Fiji</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/9Crg-FAOHmc?t=386">QuickFigures plugin in Fiji</a></p></li>
 </ul>
 </div>
 </div>
@@ -500,24 +500,24 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_2.png"><img alt="../_images/ImageColors_2.png" src="../_images/ImageColors_2.png" style="height: 50px;" /></a>   Adjust brightness/contrast, report adjustments, use uniform color-scales</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Intensity range adjustments should be monitored with the image histogram and done with care: a too wide intensity range results in ‘faded’ images that lack details, while a too narrow intensity range removes data.
+<label aria-controls="sd-tab-item-2-content" class="sd-tab-label" for="sd-tab-item-2">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-2-content">
+<p>Intensity range adjustments should be monitored with the image histogram and done with care: a too wide intensity range results in ‘faded’ images that lack details, while a too narrow intensity range removes data.
 Use a range indicator LUT (e.g. HiLo in Fiji) to highlight pixels where data was removed due to a too narrow intensity range.</p>
-<p class="sd-card-text">Plain brightness adjustments can increase background or decrease signal, without improving distinction between different objects, structures or intensities. Contrast increases bright and decreases dark intensities and can lead to a better distinguishability of signals. However, it also increases perceived intensity differences and may overemphasize real changes. Contrast adjustments directly applied on RGB color images changes color tones of stains. Therefore, only the brightness component of a color image should be adjusted in the most optimal case. Signal should not be clipped and intensity cutoff values should be reported in Materials and Methods to ensure transparency and reproducibility. Data clipping leads to information loss and over- or under-saturation, which both should be avoided to prevent misinterpretation of published images.</p>
+<p>Plain brightness adjustments can increase background or decrease signal, without improving distinction between different objects, structures or intensities. Contrast increases bright and decreases dark intensities and can lead to a better distinguishability of signals. However, it also increases perceived intensity differences and may overemphasize real changes. Contrast adjustments directly applied on RGB color images changes color tones of stains. Therefore, only the brightness component of a color image should be adjusted in the most optimal case. Signal should not be clipped and intensity cutoff values should be reported in Materials and Methods to ensure transparency and reproducibility. Data clipping leads to information loss and over- or under-saturation, which both should be avoided to prevent misinterpretation of published images.</p>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
-Example</label><div class="sd-tab-content docutils">
+<label aria-controls="sd-tab-item-3-content" class="sd-tab-label" for="sd-tab-item-3">
+Example</label><div class="sd-tab-content docutils" id="sd-tab-item-3-content">
 <img alt="../_images/Contrast_adjustment.png" src="../_images/Contrast_adjustment.png" />
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-4-content" class="sd-tab-label" for="sd-tab-item-4">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-4-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">One quick possibility to adjust the contrast of multiple imaghould be compared in one figure can be achieved <a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=liPCwE-PmWGFgM9Y&amp;amp;t=930">as shown here.</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">Omero.figure.</a></p></li>
+<li><p>One quick possibility to adjust the contrast of multiple imaghould be compared in one figure can be achieved <a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=liPCwE-PmWGFgM9Y&amp;amp;t=930">as shown here.</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">Omero.figure.</a></p></li>
 </ul>
 </div>
 </div>
@@ -528,17 +528,17 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_3.png"><img alt="../_images/ImageColors_3.png" src="../_images/ImageColors_3.png" style="height: 50px;" /></a>   Image comparison: use same adjustments</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Any adjustments to the image, such as brightness/contrast must be consistent across all images within an experiment that might be directly compared.</p>
-<p class="sd-card-text">Changes such as contrast adjustment, background subtractions, pseudo-coloring etc. should be kept strictly the same if different images are being shown for comparison. The same holds for the imaging settings before any image editing.</p>
+<label aria-controls="sd-tab-item-5-content" class="sd-tab-label" for="sd-tab-item-5">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-5-content">
+<p>Any adjustments to the image, such as brightness/contrast must be consistent across all images within an experiment that might be directly compared.</p>
+<p>Changes such as contrast adjustment, background subtractions, pseudo-coloring etc. should be kept strictly the same if different images are being shown for comparison. The same holds for the imaging settings before any image editing.</p>
 </div>
 <input id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-6">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-6-content" class="sd-tab-label" for="sd-tab-item-6">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-6-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">One quick possibility to adjust the contrast of multiple imaghould be compared in one figure can be achieved <a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=liPCwE-PmWGFgM9Y&amp;amp;t=930">as shown here.</a></p></li>
+<li><p>One quick possibility to adjust the contrast of multiple imaghould be compared in one figure can be achieved <a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=liPCwE-PmWGFgM9Y&amp;amp;t=930">as shown here.</a></p></li>
 </ul>
 </div>
 </div>
@@ -549,26 +549,26 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_4.png"><img alt="../_images/ImageColors_4.png" src="../_images/ImageColors_4.png" style="height: 50px;" /></a>   Channel colors high visibility on background. Best visibility: grayscale</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-7">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Ensure the use of high contrast colors when choosing Look Up Tables (LUTs) for visualizing individual microscopy channels. The best visibility is always grayscale for single channel images as applying a color LUT (pseudocolour) onto any image makes the displayed pixels seem darker.</p>
-<p class="sd-card-text">Sometimes inverting the intensity scale can positively impact visibility.</p>
-<p class="sd-card-text">For color LUTs darker colors, like blue, are less visible against a black background while lighter colors, like yellow, are highly visible against a black background. Keep in mind that the inverse is true for white background brightfield images. Image colors must be interpretable and accessible to readers, while not being misleading.</p>
+<label aria-controls="sd-tab-item-7-content" class="sd-tab-label" for="sd-tab-item-7">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-7-content">
+<p>Ensure the use of high contrast colors when choosing Look Up Tables (LUTs) for visualizing individual microscopy channels. The best visibility is always grayscale for single channel images as applying a color LUT (pseudocolour) onto any image makes the displayed pixels seem darker.</p>
+<p>Sometimes inverting the intensity scale can positively impact visibility.</p>
+<p>For color LUTs darker colors, like blue, are less visible against a black background while lighter colors, like yellow, are highly visible against a black background. Keep in mind that the inverse is true for white background brightfield images. Image colors must be interpretable and accessible to readers, while not being misleading.</p>
 </div>
 <input id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-8">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-8-content" class="sd-tab-label" for="sd-tab-item-8">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-8-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001161">See figures within</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://twitter.com/christlet/status/1126919664880291840">Inverted Look Up Tables in Fiji: Single tweet tutorial by Christophe Leterrier</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://didyouknowimageanalysis.wordpress.com/2023/03/17/including-visual-content-in-presentations-and-documents-without-breaking-the-file-size-bank-part-2/">Did you know – Image Analysis Style</a></p></li>
+<li><p><a class="reference external" href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001161">See figures within</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/christlet/status/1126919664880291840">Inverted Look Up Tables in Fiji: Single tweet tutorial by Christophe Leterrier</a></p></li>
+<li><p><a class="reference external" href="https://didyouknowimageanalysis.wordpress.com/2023/03/17/including-visual-content-in-presentations-and-documents-without-breaking-the-file-size-bank-part-2/">Did you know – Image Analysis Style</a></p></li>
 </ul>
-<p class="sd-card-text"><strong>References</strong></p>
+<p><strong>References</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1007%2F978-1-62703-056-4_1">Accurate representation.</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://doi.org/10.1371/journal.pbio.3001161">High visibility and accessibility.</a></p></li>
-<li><p class="sd-card-text">Katsnelson 2021: <a class="reference external" href="https://www.nature.com/articles/d41586-021-02696-z">Colour me better: fixing figures for colour blindness</a></p></li>
+<li><p><a class="reference external" href="https://doi.org/10.1007%2F978-1-62703-056-4_1">Accurate representation.</a></p></li>
+<li><p><a class="reference external" href="https://doi.org/10.1371/journal.pbio.3001161">High visibility and accessibility.</a></p></li>
+<li><p>Katsnelson 2021: <a class="reference external" href="https://www.nature.com/articles/d41586-021-02696-z">Colour me better: fixing figures for colour blindness</a></p></li>
 </ul>
 </div>
 </div>
@@ -579,23 +579,23 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_5.png"><img alt="../_images/ImageColors_5.png" src="../_images/ImageColors_5.png" style="height: 50px;" /></a>   Multi-color: provide grayscale for each color channel</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-9">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Our intensity perception is best when using grayscale (black to white). Thus, for fluorescent images the channels relevant for understanding the conclusion and analysis must be also shown as separate grayscale images.</p>
+<label aria-controls="sd-tab-item-9-content" class="sd-tab-label" for="sd-tab-item-9">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-9-content">
+<p>Our intensity perception is best when using grayscale (black to white). Thus, for fluorescent images the channels relevant for understanding the conclusion and analysis must be also shown as separate grayscale images.</p>
 </div>
 <input id="sd-tab-item-10" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-10">
-Example</label><div class="sd-tab-content docutils">
+<label aria-controls="sd-tab-item-10-content" class="sd-tab-label" for="sd-tab-item-10">
+Example</label><div class="sd-tab-content docutils" id="sd-tab-item-10-content">
 <img alt="../_images/GrayscaleChannelsPlusMerge.png" src="../_images/GrayscaleChannelsPlusMerge.png" />
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/843b499ebca19f8962a5e88a04abdf52/GrayscaleChannelsPlusMerge.svg"><span class="xref download myst">Download SVG</span></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/843b499ebca19f8962a5e88a04abdf52/GrayscaleChannelsPlusMerge.svg"><span class="xref download myst">Download SVG</span></a></p>
 </div>
 <input id="sd-tab-item-11" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-11">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-11-content" class="sd-tab-label" for="sd-tab-item-11">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-11-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=ot8oPgYVQ9yh8Pwo&amp;amp;t=1504">Exporting merge images and grayscale images from Fiji and aligning them in Inkscape.</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/Mty7_382kMM?si=FQmHvPx5xLjbeqPt&amp;amp;t=542">Adding grayscale channels in OMERO.figures.</a>
+<li><p><a class="reference external" href="https://youtu.be/F6ll37NOgXc?si=ot8oPgYVQ9yh8Pwo&amp;amp;t=1504">Exporting merge images and grayscale images from Fiji and aligning them in Inkscape.</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/Mty7_382kMM?si=FQmHvPx5xLjbeqPt&amp;amp;t=542">Adding grayscale channels in OMERO.figures.</a>
 -<a class="reference external" href="https://physics.stackexchange.com/questions/519202/spectral-sensitivity-of-the-human-eye">Spectral sensitivity of the human eye.</a></p></li>
 </ul>
 </div>
@@ -607,24 +607,24 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_6.png"><img alt="../_images/ImageColors_6.png" src="../_images/ImageColors_6.png" style="height: 50px;" /></a>   Multi-color: if channels are merged, make accessible to color blind</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-12" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-12">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Maximally merge up to 3 channels in one composite image. Better are 2 only. For 2 channels the best color combination is green/magenta. For 3 channels cyan/magenta/yellow can be used. The latter might lead to optical oversaturation perception and might be negative in case of very bright signal.</p>
-<p class="sd-card-text">Example:
+<label aria-controls="sd-tab-item-12-content" class="sd-tab-label" for="sd-tab-item-12">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-12-content">
+<p>Maximally merge up to 3 channels in one composite image. Better are 2 only. For 2 channels the best color combination is green/magenta. For 3 channels cyan/magenta/yellow can be used. The latter might lead to optical oversaturation perception and might be negative in case of very bright signal.</p>
+<p>Example:
 Pseudo colors can be added to individual channels in Fiji via the &gt;Image &gt;Lookup Tables menu OR via the BioVoxxel Figure Tools LUT Channels Tool plugin. The latter offers a CDV (color deficient vision) test option to check if color combinations are “color-blind” friendly</p>
 </div>
 <input id="sd-tab-item-13" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-13">
-Example</label><div class="sd-tab-content docutils">
+<label aria-controls="sd-tab-item-13-content" class="sd-tab-label" for="sd-tab-item-13">
+Example</label><div class="sd-tab-content docutils" id="sd-tab-item-13-content">
 <img alt="../_images/Pseudo_color_choice_and_CDV.png" src="../_images/Pseudo_color_choice_and_CDV.png" />
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/3e4b74d03a6d9b2037703c0a9600fc30/Pseudo_color_choice_and_CDV.svg"><span class="xref download myst">Download SVG</span></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/3e4b74d03a6d9b2037703c0a9600fc30/Pseudo_color_choice_and_CDV.svg"><span class="xref download myst">Download SVG</span></a></p>
 </div>
 <input id="sd-tab-item-14" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-14">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-14-content" class="sd-tab-label" for="sd-tab-item-14">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-14-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://www.nki.nl/about-us/responsible-research/guidelines-color-blind-friendly-figures/">Color blind friendly figures.</a></p></li>
+<li><p><a class="reference external" href="https://www.nki.nl/about-us/responsible-research/guidelines-color-blind-friendly-figures/">Color blind friendly figures.</a></p></li>
 </ul>
 </div>
 </div>
@@ -638,17 +638,17 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_7.png"><img alt="../_images/ImageColors_7.png" src="../_images/ImageColors_7.png" style="height: 50px;" /></a>   Provide intensity scales (calibration bar) for grayscale, color, pseudocolor</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-15" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-15">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Intensity calibration bars (or scales) should be provided for better interpretablility of intensity values, ranges and distributions. They can also serve to more quantitatively highlight differences seen by eye. Calibration bars are absolutely necessary if multi-pseudo-colors are used to provide the information about the relation between different colors and actual pixel intensities. While such bars can be placed within images to save space provided they are sufficiently visible, it is often easier to utilize and interpret color scales when placed outside of the image.</p>
-<p class="sd-card-text">Example:
+<label aria-controls="sd-tab-item-15-content" class="sd-tab-label" for="sd-tab-item-15">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-15-content">
+<p>Intensity calibration bars (or scales) should be provided for better interpretablility of intensity values, ranges and distributions. They can also serve to more quantitatively highlight differences seen by eye. Calibration bars are absolutely necessary if multi-pseudo-colors are used to provide the information about the relation between different colors and actual pixel intensities. While such bars can be placed within images to save space provided they are sufficiently visible, it is often easier to utilize and interpret color scales when placed outside of the image.</p>
+<p>Example:
 In Fiji / ImageJ use &gt;Analyze &gt;Tools &gt;Calibration Bar…</p>
 </div>
 <input id="sd-tab-item-16" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-16">
-Example</label><div class="sd-tab-content docutils">
+<label aria-controls="sd-tab-item-16-content" class="sd-tab-label" for="sd-tab-item-16">
+Example</label><div class="sd-tab-content docutils" id="sd-tab-item-16-content">
 <img alt="../_images/Calibration_bar_24042901.png" src="../_images/Calibration_bar_24042901.png" />
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/d760fe1a3e0afcbeaef63d837e1ae9dc/Calibration_bar_24042901.svg"><span class="xref download myst">Download SVG</span></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/d760fe1a3e0afcbeaef63d837e1ae9dc/Calibration_bar_24042901.svg"><span class="xref download myst">Download SVG</span></a></p>
 </div>
 </div>
 </div>
@@ -661,23 +661,23 @@ Example</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_8.png"><img alt="../_images/ImageColors_8.png" src="../_images/ImageColors_8.png" style="height: 50px;" /></a>   Pseudo-colored images: additionally provide grayscale version for comparison</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-17" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-17">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Greyscale provides the best and usually “fairest” contrast for a single channel. LookUp Tables can emphasize certain pixel value ranges that are relevant to a particular study. For instance color LUTs can be associated with specific stains, fluorescent dyes or fluorescent proteins (e.g. GFP = Green, RFP = Magenta). Another use of could be non linear colors scale are often used to encode other information examples are fluorescent life time in FLIMM imaging. See links for guides and options for creating pseudo-colored images. If you use pseudocolor images provide a grayscale version for comparison in the image figure or the supplements.</p>
+<label aria-controls="sd-tab-item-17-content" class="sd-tab-label" for="sd-tab-item-17">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-17-content">
+<p>Greyscale provides the best and usually “fairest” contrast for a single channel. LookUp Tables can emphasize certain pixel value ranges that are relevant to a particular study. For instance color LUTs can be associated with specific stains, fluorescent dyes or fluorescent proteins (e.g. GFP = Green, RFP = Magenta). Another use of could be non linear colors scale are often used to encode other information examples are fluorescent life time in FLIMM imaging. See links for guides and options for creating pseudo-colored images. If you use pseudocolor images provide a grayscale version for comparison in the image figure or the supplements.</p>
 </div>
 <input id="sd-tab-item-18" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-18">
-Example</label><div class="sd-tab-content docutils">
+<label aria-controls="sd-tab-item-18-content" class="sd-tab-label" for="sd-tab-item-18">
+Example</label><div class="sd-tab-content docutils" id="sd-tab-item-18-content">
 <img alt="../_images/Calibration_bar_24042901.png" src="../_images/Calibration_bar_24042901.png" />
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/d760fe1a3e0afcbeaef63d837e1ae9dc/Calibration_bar_24042901.svg"><span class="xref download myst">Download SVG</span></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/d760fe1a3e0afcbeaef63d837e1ae9dc/Calibration_bar_24042901.svg"><span class="xref download myst">Download SVG</span></a></p>
 </div>
 <input id="sd-tab-item-19" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-19">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-19-content" class="sd-tab-label" for="sd-tab-item-19">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-19-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=JT9mUkEG-C0&amp;amp;ab_channel=Microcourses">Best Practices for Pseudo-coloring Fluorescence Microscopy Images</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">Learn how to create figures using the OMERO extension OMERO.figure.</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=JT9mUkEG-C0&amp;amp;ab_channel=Microcourses">Best Practices for Pseudo-coloring Fluorescence Microscopy Images</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=YeCFaB7VAAQ">Learn how to create figures using the OMERO extension OMERO.figure.</a></p></li>
 </ul>
 </div>
 </div>
@@ -688,18 +688,18 @@ Resources</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><a class="reference internal" href="../_images/ImageColors_9.png"><img alt="../_images/ImageColors_9.png" src="../_images/ImageColors_9.png" style="height: 50px;" /></a>   Gamma adjustments: additionally provide linear-adjusted image for comparison</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-20" name="sd-tab-set-8" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-20">
-Description</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">Gamma as well as other non-linear adjustments change relative pixel intensity and color relations and can negatively influence optical intensity comparisons. Overenhancement of specific regions can also occur. Therefore, those changes need to be reported and the original images should be provided for transparency. Upload of original image data to a publicly accessible data repository e.g. Zenodo is recommended as an optional validation step for the reader.</p>
+<label aria-controls="sd-tab-item-20-content" class="sd-tab-label" for="sd-tab-item-20">
+Description</label><div class="sd-tab-content docutils" id="sd-tab-item-20-content">
+<p>Gamma as well as other non-linear adjustments change relative pixel intensity and color relations and can negatively influence optical intensity comparisons. Overenhancement of specific regions can also occur. Therefore, those changes need to be reported and the original images should be provided for transparency. Upload of original image data to a publicly accessible data repository e.g. Zenodo is recommended as an optional validation step for the reader.</p>
 </div>
 <input id="sd-tab-item-21" name="sd-tab-set-8" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-21">
-Resources</label><div class="sd-tab-content docutils">
-<p class="sd-card-text"><strong>Tutorials</strong></p>
+<label aria-controls="sd-tab-item-21-content" class="sd-tab-label" for="sd-tab-item-21">
+Resources</label><div class="sd-tab-content docutils" id="sd-tab-item-21-content">
+<p><strong>Tutorials</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://micro.magnet.fsu.edu/primer/java/digitalimaging/processing/gamma/index.html">Text based explanation specific to microscopy.</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/FvwXQnP7nLQ?si=v8RbWl62IVC5jaJ3">Video from Photography explaining gamma.</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://youtu.be/KxgoLBY1vZw?si=sqKTY1zMVaWUo6Da">Video from Photography explaining gamma.</a></p></li>
+<li><p><a class="reference external" href="https://micro.magnet.fsu.edu/primer/java/digitalimaging/processing/gamma/index.html">Text based explanation specific to microscopy.</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/FvwXQnP7nLQ?si=v8RbWl62IVC5jaJ3">Video from Photography explaining gamma.</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/KxgoLBY1vZw?si=sqKTY1zMVaWUo6Da">Video from Photography explaining gamma.</a></p></li>
 </ul>
 </div>
 </div>

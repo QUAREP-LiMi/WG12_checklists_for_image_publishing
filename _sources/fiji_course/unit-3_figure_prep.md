@@ -46,9 +46,15 @@ In [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotati
 :width: 100%
 
 Processed overview and crop for one panel of an image figure.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 You can download the result of [Unit 2: Format and annotations](./unit-2_format.md) here: [composite_scale.tif](./unit-2_resources/unit-2_examples/composite_scale.tif) and [composite_crop_scale.tif](./unit-2_resources/unit-2_examples/composite_crop_scale.tif).
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. 
+:::
 
 Typically, we want to present other image panels too, for instance, compare wild type versus a treatment. In this case, the first image is of U2-OS cells treated with DMSO as a control. In our example figure, we now want to compare U2-OS cells treated with Nocodazole acquired with the same settings.
 
@@ -59,6 +65,8 @@ Typically, we want to present other image panels too, for instance, compare wild
 :width: 100%
 
 Processed overview and crop for treatment panel of an image figure.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 :::{note}
@@ -69,6 +77,10 @@ You can already see one of the challenges with annotations in processed images. 
 
 You can download the original image for the treatment here: [multichannel_image_treat.tif](./unit-3_resources/examples/multichannel_image_treat.tif). Then perform the processing described in [Unit 1: Visibility](./unit-1_visibility.md) and [Unit 2: Format and annotations](./unit-2_format.md).
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445).
+:::
+
 :::{important}
 
 For an accurate qualitative comparison, the images need to be processed with the same settings, since differences introduced by the processing itself (e.g., a brighter contrast on the treated condition) would otherwise be indistinguishable from real biological differences. 
@@ -77,6 +89,9 @@ For an accurate qualitative comparison, the images need to be processed with the
 
 You can download the result here: [composite_treat_scale.tif](./unit-3_resources/examples/composite_treat_scale.tif) and [composite_treat_crop_scale.tif](./unit-3_resources/examples/composite_treat_crop_scale.tif).
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. 
+:::
 
 ## BioVoxxel Figure Tools
 
@@ -120,6 +135,8 @@ Open all images for export. You can then export all the images as .svg files:
 
 Plugins > BioVoxxel Figure Tools > Export all images as SVG
 
+Select a Target folder and press ok. You may also selecte "Keep multichannel composite".
+
 ```{figure} ./unit-3_resources/figure/export_all_svg.png
 :alt: In
 :align: center
@@ -135,6 +152,9 @@ You can download the examples here (right-click and select "Save Link As..."):
 - [03_composite_treat_crop_scale.svg](./unit-3_resources/examples/03_composite_treat_crop_scale.svg)
 - [04_composite_treat_scale.svg](./unit-3_resources/examples/04_composite_treat_scale.svg)
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. 
+:::
 
 ## Figures in Inkscape
 
@@ -150,6 +170,37 @@ Open the template in Inkscape:
 
 Figure template in inkscape.
 ```
+
+## Overview over core inkscape interface
+
+An official tutorial you find here: [Inkscape Beginners’ Guide](https://inkscape-manuals.readthedocs.io/en/latest/).
+
+```{figure} ./unit-3_resources/inkscape/inkscape_interface_overview.png
+:alt: In
+:align: center
+:name: Figure_template
+:width: 100%
+
+Overview of the main Inkscape interface: (a) Menu bar. (b) Tool Controls bar: its options change depending on the active tool. (c) Toolbox: tools for creating and editing objects. In this course we only use the Selector (arrow) and the Text tool (A|). (d) Canvas and page: the white page is your figure; only what lies on the page is exported. (e) Docked dialogs: where most of the work happens (here the Export dialog is open). (f) Color palette and status bar.
+```
+
+Important docked dialogs (most explained in more detail later):
+* Document Properties (`Ctrl+Shift+D`): page size and units - already set with template.
+* Layers and Objects (`Ctrl+Shift+L`): organize and find the elements of your figure.
+* Fill and Stroke (`Ctrl+Shift+F`): colors of objects and their outlines.
+* Text and Font (`Ctrl+Shift+T`): font family, size and style.
+* Align and Distribute (`Ctrl+Shift+A`): line up panels and labels precisely.
+* Export (`Ctrl+Shift+E`): save the figure as PNG, PDF or SVG.
+
+Dialogs open as tabs in the docked area (e). Click a tab to switch, or close it with the x. If a dialog disappears, reopen it via the menu or its shortcut.
+
+Navigation:
+* Pan (move around the canvas): hold the middle mouse button and drag, or hold Space and drag
+* Scroll up & down: mouse wheel
+* Scroll left & right: Shift + mouse wheel
+* Zoom: Ctrl + mouse wheel
+* Shortcuts: `1` zoom to 100%, `3` zoom to selection, `5` fit page
+
 
 ## Import images into inkscape
 
@@ -185,13 +236,17 @@ The first step is to resize the image to fit the image figure. When resizing, ma
 :width: 100%
 
 Resize image panel to fit the figure. Note the lock on the aspect ratio, used to resize the image uniformly.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
+
+To move different objects on the canvas/page use the selector (cursor in the tool bar) and then select the object and drag on the canvas. 
 
 ## Modify scale bar
 
 Next, you can select an annotation in Layers and Objects. Modify the size and location of the annotation.
 
-Layer > Layers and Objects...
+Layer > Layers and Objects... (`Ctrl+Shift+L`)
 
 ```{figure} ./unit-3_resources/annotations/inkscape_layers_objects.png
 :alt: In
@@ -200,6 +255,8 @@ Layer > Layers and Objects...
 :width: 100%
 
 Layers and objects allow for selecting the different annotations.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 :::{important}
@@ -207,7 +264,6 @@ Layers and objects allow for selecting the different annotations.
 Ensure that the annotations are legible. Make sure the annotations do not obscure any data.
 
 :::
-
 
 ```{figure} ./unit-3_resources/annotations/inkscape_annotations.png
 :alt: In
@@ -239,7 +295,9 @@ Scale bars can be presented in different forms and location. Make sure that they
 :name: edited_annotations2
 :width: 100%
 
-Different examples of annotated scale. 
+Different examples of annotated scale.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 :::{tip}
 
@@ -248,7 +306,6 @@ To make annotations simpler in the image, one can specify the physical dimension
 If different image panels have the same scale bar, you can put the scale bar in the first image. It is critical that images of different dimensions (e.g., overview and enlarged) show the correct scale.   
 
 :::
-
 
 ## Modify ROIs
 
@@ -263,11 +320,13 @@ Also, the location of the inset or an enlarged crop should be marked in the over
 :width: 100%
 
 The ROI when added as an overlay can also be exported in the SVG and imported in inkscape. You can then modify the color and thickness of the ROI.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 The appearance of the ROI can then be modified via:
 
-Object > Fill and Stroke...
+Object > Fill and Stroke... (`Ctrl+Shift+F`)
 
 For changing the color, select the Stroke tab. In the Fill and Stroke interface select the "Stroke Paint" tab.
 
@@ -295,6 +354,8 @@ Choose the color of the annotation such that there is good contrast with the ima
 :width: 100%
 
 Adjust the color of the ROI.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 After the color has been adjusted, modify the line width of the ROI. Select the Stroke style tab in the Fill and Stroke interface, then adjust the Width setting:
@@ -307,6 +368,8 @@ After the color has been adjusted, modify the line width of the ROI. Select the 
 :width: 100%
 
 Adjust the width of the ROI lines so that the ROI is clearly visible.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ## Additional annotations
@@ -316,11 +379,75 @@ Consider adding annotations, such as cell type and treatment, to help the viewer
 ```{figure} ./unit-3_resources/annotations/annotated_panel.png
 :alt: In
 :align: center
-:name: annotated_image
+:name: text_and_font
 :width: 100%
+
+Add text annotations.
+```
+
+### Text labels
+
+Add text with the *text tool* (A|) and then modify fonts and font size using: 
+
+Text and Font: Text > Text and Font... (`Ctrl+Shift+T`)
+
+```{figure} ./unit-3_resources/inkscape/text_and_font.png
+:alt: In
+:align: center
+:name: annotated_image
+:width: 75%
 
 Example of possible annotations in an image.
 ```
+
+### Arrows
+
+Draw a line: Select the Pen (Bezier) tool (B)
+
+Add the arrowhead via Fill and Stroke: Object > Fill and Stroke... (`Ctrl+Shift+F`)
+
+Adjust look: Set the stroke width, change the size of the line if you only want the arrow head. Change color via stroke paint.   
+
+
+```{figure} ./unit-3_resources/inkscape/arrows.png
+:alt: In
+:align: center
+:name: annotated_image
+:width: 75%
+
+Example of possible annotations in an image.
+```
+
+### Quickly structure multiple objects
+
+You can align multiple objects using:
+
+Align and Distribute: Object > Align and Distribute... (`Ctrl+Shift+A`)
+
+```{figure} ./unit-3_resources/inkscape/align_distribute.png
+:alt: In
+:align: center
+:name: align_distribute
+:width: 50%
+
+Align and distribute different objects. 
+```
+
+:::{tip}
+
+When moving objects, you may notice that they sometimes jump to or "cling" to other objects, the page border or grid lines. This behaviour is called snapping and helps you align objects precisely. You can toggle it with the snapping icon in the top right corner or with the `%` key.
+
+
+```{figure} ./unit-3_resources/inkscape/snapping.png
+:alt: In
+:align: center
+:name: snapping
+:width: 50%
+
+Toggle the snapping behaviour. 
+```
+
+:::
 
 
 ## Export image figure
@@ -340,6 +467,8 @@ Finally define the location for saving and a export format. We recommend PDF (*.
 :width: 100%
 
 Example of possible annotations in an image.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 You can download the intermediate result of the tutorial here: [figure_example.svg](./unit-3_resources/examples/figure_example.svg) (right-click and select "Save Link As...").
@@ -358,6 +487,8 @@ See below a proposal for an image figure legend:
 :width: 100%
 
 Nocodazole treatment results in the appearance of small rounded cells in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration over 24 h show appearance of small rounded cells (White Arrowheads). (d) Cropped image of a small rounded cell. Scale bar represents 100 µm (a) and 20 µm (b). 
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 :::{important} 
@@ -478,6 +609,11 @@ Channel 4
 
 ::::
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted.
+:::
+
+
 This bonus exercise will show an example of doing this. In Unit-1 I have asked you to create and save the grayscale color images. You can download the examples also here:
 
 You can download the examples grayscale images here (right-click and select "Save Link As..."): 
@@ -520,6 +656,10 @@ Channel 3: Min = 64; Max = 3195
 
 ::::
 
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted.
+:::
+
 Export the images as SVG and import them into Inkscape
 
 Plugins > BioVoxxel Figure Tools > Export all images as SVG
@@ -533,6 +673,8 @@ Then load the images into Inkscape figure template. For a comparison we also add
 :width: 100%
 
 Merge multichannel image provided with grayscale single channel. (a) merge image. (b) Nucleus channel. (c) Actin channel. (d) Mitochondria channel. (e) ER channel. 
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 I like to provide the merged color image with annotated colors for an overview, placed next to the grayscale single-channel images with their respective channel information annotated.

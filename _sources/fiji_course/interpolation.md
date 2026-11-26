@@ -16,7 +16,7 @@ After image processing (e.g., image reconstruction, cropping, rotation, adjustin
 
 ## Raster graphics
 
-In order to understand many of the issues we will discuss below, we need to first understand the concept of raster graphics. Any digital image, including a microscopy image, is a raster graphic and thus a grid of pixels (i.e., a raster). A raster image has a discrete number of pixels in width and height, and each pixel has a specific intensity value, in bits (Figure 1).
+In order to understand many of the issues we will discuss below, we need to first understand the concept of raster graphics. Any digital image, including a microscopy image, is a raster graphic and thus a grid of pixels (i.e., a raster). A raster image has a discrete number of pixels in width and height, and each pixel has a specific intensity value, in bits (see {numref}`DPI-1`).
 
 ```{figure} ./interpolation_resources/DPI_Fig1.png
 ---
@@ -24,7 +24,9 @@ alt: Demonstration of raster images
 align: center
 name: DPI-1
 ---
-Figure 1: (A) Example raster image with 1024 pixels x 1024 pixels and 8-bit depth. (B) A 100 pixels x 100 pixels crop  (A, yellow outline) reveals the discrete nature of a raster image. Continuous objects are discretized into individual pixels in space. 
+(A) Example raster image with 1024 pixels x 1024 pixels and 8-bit depth. (B) A 100 pixels x 100 pixels crop  (A, yellow outline) reveals the discrete nature of a raster image. Continuous objects are discretized into individual pixels in space. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
 Typical image processing and analysis software are performing mathematical operations on this grid of pixels and thus are raster graphics software. Important for scientific images to understand is that each pixel in the image corresponds to an actual scientific measurement in a defined space on the imaged object. Thus, any computation on these values needs to be performed with care to not alter this information improperly.  
@@ -43,7 +45,7 @@ Physical dimension of A4 page (Width x Height): 210 mm x 297 mm or 8.27 inches x
 8.27 inches x 300 dpi = 2481
 11.69 inches x 300 dpi = 3507
 
-An A4 page of 2480 x 3508 pixels corresponds to a printing resolution of 300 dpi (Figure 2). 
+An A4 page of 2480 x 3508 pixels corresponds to a printing resolution of 300 dpi (see {numref}`DPI-2`). 
 
 ```{figure} ./interpolation_resources/DPI_Fig2.png
 ---
@@ -52,6 +54,8 @@ align: center
 name: DPI-2
 ---
 Figure 2: Mock A4 journal page at 300 dpi printing resolution. This translates to a dimension of 2480 x 3508 pixels. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
 #### Images on page with 300 dpi
@@ -67,16 +71,18 @@ alt: Example journal page with figure placed
 align: center
 name: DPI-3
 ---
-Figure 3: Mock A4 journal page with example image at 300 dpi without resizing and each pixel of the example image corresponding directly to the required printing resolution. 
+Mock A4 journal page with example image at 300 dpi without resizing and each pixel of the example image corresponding directly to the required printing resolution. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
-Thus our image would have a printed size of 87 mm x 87 mm. This would be a pretty large panel in our final figure. Typically, one would also like to show other information (e.g., images, graphs). Thus, the image needs to be **resized** (Figure 3). 
+Thus our image would have a printed size of 87 mm x 87 mm. This would be a pretty large panel in our final figure. Typically, one would also like to show other information (e.g., images, graphs). Thus, the image needs to be **resized** (see {numref}`DPI-3`). 
 
 Resizing an image using raster image processing software means, in simple terms, that the number of pixels in the image needs to change. Thus, for enlarging an image the pixel number needs to increase, and if the image is reduced the number of pixels is reduced. This operation in raster graphics is done using interpolation algorithms. 
 
 ### Resizing for scientific images
 
-This poses a problem for scientific images. As we introduced above, each pixel in a scientific image corresponds to a specific measurement in space (sample) that has been acquired using a microscope. Ideally, we don't want to alter this information at all. However, using different methods for resizing images can have dramatically different effects on the data (Figure 4).
+This poses a problem for scientific images. As we introduced above, each pixel in a scientific image corresponds to a specific measurement in space (sample) that has been acquired using a microscope. Ideally, we don't want to alter this information at all. However, using different methods for resizing images can have dramatically different effects on the data (see {numref}`DPI-4`).
 
 ```{figure} ./interpolation_resources/DPI_Fig4.png
 ---
@@ -84,7 +90,9 @@ alt: Image resized with different interpolations
 align: center
 name: DPI-4
 ---
-Figure 4: (A) Original crop from example image (see Figure 1). (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using the bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation with averaging. 
+(A) Original crop from example image (see Figure 1). (B-E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using the bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation with averaging. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
 Depending on which algorithm is used, the individual pixel values are altered in different ways. In this example, different resizing methods were performed using Fiji's _**Image > Adjust > Size...**_. While we will not go into detail on all methods, it is **important** to understand that the size change of a raster image using raster graphics software needs to use some form of computation, and depending on what precise operation is carried out, this can alter the pixel values.

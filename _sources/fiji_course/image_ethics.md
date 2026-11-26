@@ -38,6 +38,9 @@ Image processing is an essential step in preparing microscopy data for publicati
 :width: 75%
 
 This is the same image processed with different settings in the Lysosome channel. Left, fewer Lysosomes are visible and they are only close to the Nucleus compared to right. 
+
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 This section introduces guiding principles for ethical image processing. It draws on the seminal work of [Douglas W. Cromey](https://medicine.arizona.edu/person/douglas-w-cromey-ms), whose contributions have helped define best practices in the responsible handling of scientific images:
@@ -55,6 +58,8 @@ This section introduces guiding principles for ethical image processing. It draw
 :width: 50%
 
 Process copy of image: (Left) Original image. (Right) Image processing performed on copy.
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Brightness/contrast adjusted, median filter applied. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 - Keep unprocessed image data file.
@@ -71,6 +76,8 @@ Process copy of image: (Left) Original image. (Right) Image processing performed
 :width: 50%
 
 Image processing: Linear adjustments such as adjustment of brightness contrast on the entire image.
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Brightness/contrast adjusted. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 - Linear adjustments on the entire image are fine, e.g., brightness and contrast.
@@ -85,6 +92,8 @@ Image processing: Linear adjustments such as adjustment of brightness contrast o
 :width: 50%
 
 Overview and crop shown side by side.
+
+Original image and figure: Helena Jambor, CC BY 4.0. 
 ```
 
 - Cropping is acceptable for visualization.
@@ -102,6 +111,8 @@ Overview and crop shown side by side.
 :width: 75%
 
 The same image processed with different settings produces different visual results.
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 - Acquire images under identical conditions.
@@ -117,6 +128,8 @@ The same image processed with different settings produces different visual resul
 :width: 75%
 
 Filters and extreme brightness contrast adjustments drastically alter images and remove information: (Left) original with acceptable brightness contrast adjustments. (Right) Median filter with Sigma 1 and drastic brightness contrast adjustments that crop low intensities.
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 - Filters to beautify images are usually not recommended.
@@ -136,6 +149,10 @@ Manipulations applied to only one area of an image, and not to others, are quest
 :align: center
 :name: process_part
 :width: 50%
+
+A median filter was applied to part of an image to demonstrate highly questionable manipulation.
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Modified by Christopher Schmied cropped, adjusted brightness/contrast, median filter applied incorrectly to part of image to demonstrate questionable manipulation.
 ```
 
 ## Cloning and Copying Parts of an Image into Another is Really Bad
@@ -151,6 +168,10 @@ Cloning or copying objects from other parts of an image or from a different imag
 :align: center
 :name: duplicate
 :width: 50%
+
+Multiple image duplications from a part of an image to a different part to demonstrate highly questionable manipulation.
+
+Original image(s): Michael Ebner (CC BY 4.0) from [Schmied et al. 2024. BMC Biology](https://doi.org/10.1186/s12915-024-02015-8). Modified by Christopher Schmied cropped, adjusted brightness/contrast, duplicated to demonstrate questionable manipulation. 
 ```
 
 Improper image duplication is a big issue in the scientific literature:
@@ -179,6 +200,8 @@ Further reading list for quantitative microscopy:
 :width: 75%
 
 Effect of lossy compression due to JPEG compression: (Left) Unprocessed example. (Right) Copy saved as .jpg. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
 - Lossy compression alters images permanently.
@@ -194,6 +217,8 @@ Effect of lossy compression due to JPEG compression: (Left) Unprocessed example.
 :width: 100%
 
 Nocodazole induces cell death in U2-OS cells: (a) U2-OS cells treated with DMSO only. (b) Cropped image of a single cell treated with DMSO. (c) U2-OS cells treated with Nocodazole at a 5 µM concentration show increased cell death. Note the many small round cells (White Arrowheads). (d) Cropped image of a dead or dying cell. Scale bar represents 100 µm (a) and 20 µm (b).  
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 - Imaged objects have real world dimension. 
@@ -216,6 +241,8 @@ Images are typically processed as raster graphics (a grid of pixels). Therefore,
 :width: 75%
 
 Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90-degree rotation. (Right) 45-degree rotation with bilinear interpolation.
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
 ```{figure} ./interpolation_resources/DPI_Fig4.png
@@ -223,5 +250,8 @@ Interpolation and rotation. (Left) 10 x 10 px original. (Middle) 90-degree rotat
 :align: center
 :name: ethics_resize
 :width: 75%
+
 Interpolation and rescaling: (A) Original crop from example image. (B–E) The crop is resized with different interpolation methods. (B) The example image crop is increased in size by 50% using the nearest neighbor interpolation. (C) The example image crop is upsampled using bilinear interpolation. (D) Downsampling using nearest neighbor interpolation without averaging. (E) Downsampling of the example image crop with nearest neighbor interpolation and averaging. 
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
