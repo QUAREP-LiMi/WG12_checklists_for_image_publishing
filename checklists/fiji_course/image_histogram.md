@@ -47,6 +47,8 @@ Finally, the light intensity that the microscope captures is represented as diff
 :width: 100%
 
 Illustration demonstrating digital sampling in space and intensity. (a) Illustration of a real object, e.g., a cell, with a smooth, continuous outline and continuous intensity within. (b) A modern microscope samples this signal (yellow grid lines) and transforms (quantizes) it into a digital representation, thus quantizing the continuous analog information into discrete pixels and gray values. (c) The sampled cell as a digital image; note the clear loss of information due to this digital sampling.
+
+Image: Christopher Schmied, CC BY 4.0.
 ```
 
 ```{admonition} Think about it
@@ -68,13 +70,15 @@ Why should you care about that? See below how different numbers of gray values i
 :name: bit_depth
 :width: 100%
 
-Visualization of different intensity sampling on a Fiji sample image. (a) Two gray values are available. (b) Four gray values. (c) Sixteen gray values. (d) 256 gray values.
+Visualization of different intensity sampling on a Fiji sample image. (a) 1-bit: Two gray values are available. (b) 2-bit: Four gray values. (c) 4-bit: Sixteen gray values. (d) 8-bit: 256 gray values. Notice the clear stepping artefacts, particularly visible in the background (a–c), which are not perceivable at 8-bit.
+
+Original image(s): Mathias Appel, [Siberian tiger](https://commons.wikimedia.org/wiki/File:Siberian_Tiger_-_53009149078.jpg), CC0 1.0. Wikimedia commons. Cropped, adjusted brightness/contrast and reduced to 1–8 bit for illustration. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ```{admonition} Think about it
 :class: tip
 
-The 1-bit image looks bad, and the face is very hard to recognize. The 2-bit image is better, and the 4-bit image is already quite good, but there are still clear stepping artifacts. The 8-bit image and the gradient below appear continuous.
+The 1-bit image looks bad, and the tigeris very hard to recognize. The 2-bit image is better, and the 4-bit image is already quite good, but there are still clear stepping artifacts. The 8-bit image and the gradient below appear continuous.
 
 Would 8-bit therefore be sufficient in terms of gray values for all applications? Can you think of cases when this would be sufficient, and when it would be a problem?
 
@@ -96,6 +100,8 @@ We can check these artifacts using the image itself, but often they are not easi
 :width: 100%
 
 Images demonstrating different intensity sampling problems. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b-e) Different intensity sampling problems introduced into the same image. 
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ```{admonition} Exercise
@@ -133,6 +139,8 @@ Analyze > Histogram (Ctrl + H; Mac: ⌘ + H)
 :width: 75%
 
 Image Histogram: the number of pixels (y-axis) is plotted over the gray values (x-axis).
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 The image histogram shows the intensity distributions over all pixels (black plots), with the x-axis plotting the gray values and the y-axis plotting the number of pixels {numref}`histogram_good`. 
@@ -145,6 +153,8 @@ The image histogram shows the intensity distributions over all pixels (black plo
 :width: 75%
 
 Information in the histogram: (a) The dark pixels of the background (note the offset). (b) The higher gray values of the signal that are distributed over a larger gray value range. (c) The entire range of gray values currently visualized in the display. Since it is an 8-bit image, the entire bit range of the image is displayed. 
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 There are two peaks, see {numref}`histogram_annotated`. (a) The first sharp peak has many pixels with low gray values. These values correspond mostly to the background of the image (e.g., dark pixels). (b) The second flatter peak shows pixels with a wide distribution over different larger gray values. These correspond to the signal from the imaged object. (c) Below you will find a calibration bar that shows the minimum and maximum values displayed and their corresponding displayed gray value. 
@@ -161,6 +171,8 @@ The second peak is often not easily visible. Thus, we can apply a log scale on t
 :width: 75%
 
 Histogram with log scale
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 Now we would like to understand what constitutes a well-acquired image based on its histogram. In general, good original microscopy images preserve both the low and high intensity values and show a varying signal. We can see this clearly in {numref}`histogram_demonstrated`:
@@ -172,6 +184,8 @@ Now we would like to understand what constitutes a well-acquired image based on 
 :width: 50%
 
 An example showing the hallmarks of a well-acquired image: (a) Offset. (b) Varying signal with more or less continuous signal distribution. (c) The highest signal falls within the upper third of the gray value range but does not reach the maximum value.
+
+Images: Christopher Schmied, CC BY 4.0. 
 ```
 
 (a) Low values do not start at 0; there is a clear "offset" present in the image, with low intensity varying around a low gray value.
@@ -186,6 +200,10 @@ Since we now understand how a regular histogram should look, we can study differ
 - [c_image.png](./image_histogram_resources/c_image.png)
 - [d_image.png](./image_histogram_resources/d_image.png)
 - [e_image.png](./image_histogram_resources/e_image.png)
+
+:::{div} figure-legend
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped.
+:::
 
 ```{admonition} Exercise
 :class: tip
@@ -209,6 +227,8 @@ This is not necessarily a corrupted or unusable image. Under certain conditions,
 :width: 75%
 
 Low contrast. The full range of the histogram is not utilized.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ### Low intensity cut
@@ -224,6 +244,8 @@ This can severely impact image measurements. When measuring object size, dim edg
 :width: 75%
 
 Low intensity values cut, no offset. Note the peak at the lowest gray value, indicating that the low signal is pushed down to the same minimum value.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ### High intensity clipped
@@ -239,6 +261,8 @@ This severely impacts the resolution of different structures, since details in t
 :width: 75%
 
 High intensity values cut, i.e., clipped. The image is oversaturated. Note the peak at the highest gray value, indicating that the high signal is pushed to the same maximum value.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 :::{note}
@@ -262,6 +286,8 @@ As with the previous examples, this makes accurate quantitative comparison unrel
 :width: 75%
 
 Histogram rescaled non-continuous intensity distribution.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ## Solution 
@@ -274,4 +300,6 @@ Histogram rescaled non-continuous intensity distribution.
 :width: 100%
 
 Images demonstrating different intensity sampling errors. (a) The starting image, an F-actin cytoskeleton stain channel of a cell cluster. (b) Low contrast image. (c) Low intensities cut off. (d) Oversaturated image with high intensities clipped. (e) Histogram resampled. 
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```

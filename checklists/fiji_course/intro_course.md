@@ -16,6 +16,8 @@ After the course, the learner will be able to produce an image figure from an or
 :width: 100%
 
 Example of an image figure with key annotations provided, such as a scale bar and content including the shown image colors. An enlarged crop is shown next to the overview to focus the viewer on a key result. The origin of the crop is annotated in the overview. Additional annotations, such as white arrowheads, are used to further guide the viewer.
+
+Original image(s): Christopher Wolff (CC0), from [Wolff et al. 2025, iScience](https://doi.org/10.1016/j.isci.2025.112445). Brightness/contrast and LUTs adjusted, cropped and annotated. Figure: Composed by Christopher Schmied, CC BY 4.0.
 ```
 
 ##  Scope of course
@@ -30,6 +32,9 @@ For the complete set of recommendations, see the full set of [checklists](https:
 :name: figure-checklist
 
 Condensed checklist. 
+
+Image: QUAREP-LiMi WG 12, CC BY 4.0.
+
 ```
 
 ## Who this course is for
@@ -67,6 +72,37 @@ The units follow the image processing workflow step by step: adjusting visibilit
 Total time for the course is about 1–2 hours. Each teaching unit is self-contained and can be executed individually. The individual tasks performed in each unit can also be followed using the condensed checklist (see {numref}`figure-checklist`).
 
 For more content on image processing ethics and image interpolation, see: [Further information](./intro_background.md).   
+
+```{admonition} License and how to cite this course
+:class: tip
+
+[![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+## License
+
+Unless otherwise noted, all text, images, figures, videos and other media in this
+repository (in particular the contents of `fiji_course/`) are licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en) (CC BY 4.0).
+
+**Attribution when reusing material from this course:**
+QUAREP-LiMi WG12, *How to publish images*,
+[https://quarep-limi.github.io/WG12_checklists_for_image_publishing/](https://quarep-limi.github.io/WG12_checklists_for_image_publishing/), CC BY 4.0
+
+Third-party material (e.g. images reused from publications) is excluded and remains
+under its original license, as indicated in its caption.
+
+Source code (e.g. Python, JavaScript, configuration and build files) is licensed
+under the BSD 3-Clause License, see LICENSE.
+
+## How to cite
+
+This course builds on the community checklists for publishing images and image analyses.
+If you use it in teaching, training or publications, please cite:
+
+> Schmied, C., Nelson, M.S., Avilov, S. et al. Community-developed checklists for
+> publishing images and image analyses. *Nat Methods* **21**, 170–181 (2024).
+> [https://doi.org/10.1038/s41592-023-01987-9](https://doi.org/10.1038/s41592-023-01987-9)
+```
 
 ## Materials
 

@@ -44,3 +44,10 @@ img {
 .bd-content .bd-article-container {
     max-width: 920px;
 }
+
+figcaption,
+.figure-legend,
+.figure-legend p {
+    font-size: 0.9em;
+    color: var(--pst-color-text-muted);
+}
