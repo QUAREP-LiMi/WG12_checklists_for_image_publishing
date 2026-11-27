@@ -71,7 +71,9 @@ The units follow the image processing workflow step by step: adjusting visibilit
 
 Total time for the course is about 1–2 hours. Each teaching unit is self-contained and can be executed individually. The individual tasks performed in each unit can also be followed using the condensed checklist (see {numref}`figure-checklist`).
 
-For more content on image processing ethics and image interpolation, see: [Further information](./intro_background.md).   
+For more content on image processing ethics and image interpolation, see: [Further information](./intro_background.md).
+
+## License, attribution and how to cite
 
 ```{admonition} License and how to cite this course
 :class: tip
@@ -119,6 +121,7 @@ We selected Fiji and Inkscape because they are free, open source, and familiar t
 We recommend using the latest versions of these programs.
 :::
 
+- Input, processed, and result images can also be downloaded from a [Zenodo repository](https://doi.org/10.5281/zenodo.19852464).
 
 ## Further material: Image publication
 
@@ -129,7 +132,6 @@ Cheatsheets for creating image figures:
 Images for the examples:
 
 - Images were published here: Wolff C. et al. Morphological profiling data resource enables prediction of chemical compound properties. iScience 2025 ([doi: 10.1016/j.isci.2025.112445](https://doi.org/10.1016/j.isci.2025.112445))
-- Input, processed, and result images can also be downloaded from a [Zenodo repository](https://doi.org/10.5281/zenodo.19852464).
 
 BioImaging North America: Figure Making Best Practices:
 

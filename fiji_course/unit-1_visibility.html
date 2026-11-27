@@ -1132,8 +1132,8 @@ File &gt; Save As &gt; Tiff…</p>
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="hPZsetwLZxly" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#hPZsetwLZxly {
+<div class="output text_html"><div id="QMMuxnbVzquz" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#QMMuxnbVzquz {
    --jq-multiple-choice-bg: #392061;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1356,7 +1356,7 @@ File &gt; Save As &gt; Tiff…</p>
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionshPZsetwLZxly=[{"question": "You raise the brightness on a channel until a faint real signal disappears from view. What's the problem?", "type": "many_choice", "answers": [{"answer": "It's fine, brightness doesn't change the underlying data", "correct": false, "feedback": "Brightness/contrast don't alter the pixel values themselves, but they do change what a reader sees, which is what matters for a figure."}, {"answer": "The adjustment now misrepresents what's actually in the image", "correct": true, "feedback": "Correct. If a real signal becomes invisible, the figure no longer truthfully represents what was measured."}, {"answer": "It's only a problem if you also crop the image", "correct": false, "feedback": "Cropping is a separate issue; this problem exists with brightness/contrast alone."}]}];
+</style></div><script type="application/javascript">var questionsQMMuxnbVzquz=[{"question": "You raise the brightness on a channel until a faint real signal disappears from view. What's the problem?", "type": "many_choice", "answers": [{"answer": "It's fine, brightness doesn't change the underlying data", "correct": false, "feedback": "Brightness/contrast don't alter the pixel values themselves, but they do change what a reader sees, which is what matters for a figure."}, {"answer": "The adjustment now misrepresents what's actually in the image", "correct": true, "feedback": "Correct. If a real signal becomes invisible, the figure no longer truthfully represents what was measured."}, {"answer": "It's only a problem if you also crop the image", "correct": false, "feedback": "Cropping is a separate issue; this problem exists with brightness/contrast alone."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -2418,8 +2418,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("hPZsetwLZxly")) {
-    show_questions(questionshPZsetwLZxly, hPZsetwLZxly);
+  if (document.getElementById("QMMuxnbVzquz")) {
+    show_questions(questionsQMMuxnbVzquz, QMMuxnbVzquz);
   } else {
     setTimeout(try_show, 200);
   }
